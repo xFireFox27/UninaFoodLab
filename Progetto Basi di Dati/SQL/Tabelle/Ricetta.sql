@@ -1,0 +1,5 @@
+CREATE TABLE Ricetta (
+    IdRicetta VARCHAR(1000) PRIMARY KEY,
+    Nome VARCHAR(100) NOT NULL,
+    Descrizione VARCHAR(1000) NOT NULL,
+)
