@@ -1,5 +1,0 @@
-CREATE TABLE Ricetta (
-    IdRicetta SERIAL PRIMARY KEY,
-    Nome VARCHAR(100) NOT NULL UNIQUE,
-    Descrizione VARCHAR(1000) NOT NULL,
-)
