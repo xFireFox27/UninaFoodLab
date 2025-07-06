@@ -1,8 +1,8 @@
 CREATE TABLE Riceve (
-    IdNotifica VARCHAR(1000) NOT NULL,
-    UsernameUtente VARCHAR(1000) NOT NULL,
+    IdNotifica INTEGER NOT NULL,
+    UsernameUtente VARCHAR(100) NOT NULL,
 
     CONSTRAINT PK_Riceve PRIMARY KEY (IdNotifica, UsernameUtente),
-    CONSTRAINT FK_Riceve_Notifica FOREIGN KEY (IdNotifica) REFERENCES Notifica(IdNotifica),
-    CONSTRAINT FK_Riceve_Utente FOREIGN KEY (UsernameUtente) REFERENCES Utente(Username)
+    CONSTRAINT FK_Riceve_Notifica FOREIGN KEY (IdNotifica) REFERENCES Notifica(IdNotifica) ON DELETE CASCADE,
+    CONSTRAINT FK_Riceve_Utente FOREIGN KEY (UsernameUtente) REFERENCES Utente(Username) ON DELETE CASCADE
 )

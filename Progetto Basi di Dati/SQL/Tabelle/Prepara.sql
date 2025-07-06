@@ -1,8 +1,8 @@
 CREATE TABLE Prepara (
-    IdSessionePresenza VARCHAR(1000) NOT NULL,
-    IdRicetta VARCHAR(1000) NOT NULL,
+    IdSessionePresenza INTEGER NOT NULL,
+    IdRicetta INTEGER NOT NULL,
 
     CONSTRAINT PK_Prepara PRIMARY KEY (IdSessionePresenza, IdRicetta),
-    CONSTRAINT FK_Prepara_SessionePresenza FOREIGN KEY (IdSessionePresenza) REFERENCES SessioneInPresenza(IdSessione),
+    CONSTRAINT FK_Prepara_SessionePresenza FOREIGN KEY (IdSessionePresenza) REFERENCES SessioneInPresenza(IdSessione) ON DELETE CASCADE,
     CONSTRAINT FK_Prepara_Ricetta FOREIGN KEY (IdRicetta) REFERENCES Ricetta(IdRicetta)
 )

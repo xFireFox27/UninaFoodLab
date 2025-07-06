@@ -1,6 +1,6 @@
 CREATE TABLE Composizione (
-    IdIngrediente VARCHAR(1000) NOT NULL,
-    IdRicetta VARCHAR(1000) NOT NULL,
+    IdIngrediente INTEGER NOT NULL,
+    IdRicetta INTEGER NOT NULL,
     Quantità FLOAT NOT NULL,
 
     CONSTRAINT PK_Composizione PRIMARY KEY (IdIngrediente, IdRicetta),
