@@ -1,0 +1,39 @@
+\documentclass{book}
+\usepackage[margin=3cm]{geometry}
+
+% STEP 1: include the package
+\usepackage{uninafrontespizio}
+
+% STEP 2: Front-page configuration
+\Universita{Università degli Studi di Napoli Federico II}
+\Facolta{Scuola Politecnica e delle Scienze di Base}
+\Dipartimento{Dipartimento di Ingegneria Elettrica e Tecnologie dell'Informazione}
+\CorsoDiLaurea{Corso di Laurea Triennale in Informatica}
+% \Materia{Tesi di Laurea in Hacky Typesetting} % optional
+\AnnoAccademico{Anno Accademico 2024--2025}
+\Titolo{UninaFoodLab Database}
+
+
+\Logo{logo-federico-II.pdf} %path to logo image
+\LogoWidth{3.5cm} %optional, default: 3cm
+\LogoPosition{below-uni} % or top, or below-title, or above-title, or no-logo
+
+\begin{document}
+    % STEP 3: use \makefrontpage and/or \makefrontpagealt
+    \pagestyle{empty}
+    \makefrontpage%
+    % \makefrontpagealt
+    \pagestyle{headings}
+    \tableofcontents
+    \chapter{Foo}
+    \section{Bar}
+    \chapter{Nerd}
+    \section{Nerdone}
+    Nerdone
+    \chapter{palle}
+    \section{palleone}
+    pallacce
+    \section{palle due}
+    palle due
+   
+\end{document}

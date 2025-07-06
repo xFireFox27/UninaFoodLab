@@ -1,0 +1,18 @@
+﻿Topic(idTopic, Nome, Descrizione)
+Insegna(IdTopic, UsernameChef)
+Corso(IdCorso, Titolo, Frequenza, NumLezioni, Anno, DataInizio, IdTopic, UsernameChef)
+Chef(Username, Nome, Cognome, Password)
+Utente(Username, Nome, Cognome, Password)
+Notifica(IdNotifica, DataInvio, Oggetto, Testo, UsernameChef)
+Riceve(UsernameUtente, IdNotifica)
+Iscrizione(IdCorso, UsernameUtente, DataIscrizione)
+SessioneOnline(IdSessione, Link, Data, Durata, NumSessione, IdCorso)
+SessioneInPresenza(IdSessione, Luogo, Aula, Data, Durata, NumSessione, IdCorso)
+Adesione(UsernameUtente, IdSessionePresenza)
+Ricetta(IdRicetta, Nome, Descrizione)
+Prepara(IdSessionePresenza, IdRicetta)
+Ingrediente(IdIngrediente, Nome, UnitàDiMisura, Allergene)
+Composizione(IdIngrediente, IdRicetta, Quantità)
+
+
+
