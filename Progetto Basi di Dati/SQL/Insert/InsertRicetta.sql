@@ -114,7 +114,6 @@ VALUES
 ('Croissant', 'Dolce di pasta sfoglia a forma di mezzaluna.'),
 ('Macarons', 'Dolcetti di pasta di mandorle.'),
 ('Omelette', 'Frittata tipica francese dal cuore cremoso.'),
-
 ('Pancarré', 'Pane bianco morbido, usato per fare tramezzini e toast.'),
 ('Pane Bianco', 'Pane bianco con crosta sottile.'),
 ('Pane Integrale', 'Pane integrale con crosta spessa.'),
