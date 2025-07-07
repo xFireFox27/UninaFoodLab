@@ -8,7 +8,7 @@ DECLARE
 BEGIN
     -- Ottieni lo username del chef per il corso
     SELECT c.UsernameChef INTO ChefUsername
-    FROM Corso c 
+    FROM Corso AS c 
     WHERE c.idCorso = NEW.IdCorso;
 
     -- Controlla sovrapposizioni con tutte le sessioni del chef
