@@ -1,4 +1,6 @@
--- RICETTA 1: Spaghetti Aglio Olio e Peperoncino
+-- Cucina Italiana
+
+-- Spaghetti Aglio Olio e Peperoncino
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Spaghetti'), 
@@ -12,7 +14,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Prezzemolo'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Spaghetti Aglio Olio e Peperoncino'), 10);
 
--- RICETTA 2: Pasta e Patate
+-- Pasta e Patate
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Rigatoni'), 
@@ -28,7 +30,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Concentrato di pomodoro'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pasta e Patate'), 20);
 
--- RICETTA 3: Carbonara
+-- Carbonara
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Spaghetti'), 
@@ -42,7 +44,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pepe nero'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Carbonara'), 2);
 
--- RICETTA 4: Pesto alla Genovese
+-- Pesto alla Genovese
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Linguine'), 
@@ -58,7 +60,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pesto alla Genovese'), 60);
 
--- RICETTA 5: Polpette al Sugo
+-- Polpette al Sugo
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Manzo macinato'), 
@@ -74,7 +76,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Basilico'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Polpette al Sugo'), 10);
 
--- RICETTA 6: Parmigiana di Melanzane
+-- Parmigiana di Melanzane
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Melanzane'), 
@@ -90,7 +92,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Parmigiana di Melanzane'), 50);
 
--- RICETTA 7: Arancini di Riso
+-- Arancini di Riso
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Riso Carnaroli'), 
@@ -106,7 +108,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Arancini di Riso'), 2);
 
--- RICETTA 8: Caponata
+-- Caponata
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Melanzane'), 
@@ -122,7 +124,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Capperi sotto sale'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Caponata'), 20);
 
--- RICETTA 9: Cacciucco
+-- Cacciucco
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Orata'), 
@@ -138,7 +140,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Vino bianco'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Cacciucco'), 100);
 
--- RICETTA 10: Zuppa di Cozze
+-- Zuppa di Cozze
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cozze'), 
@@ -154,7 +156,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Peperoncino'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Zuppa di Cozze'), 1);
 
--- RICETTA 11: Pasta alla Norma
+-- Pasta alla Norma
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Rigatoni'), 
@@ -170,7 +172,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Aglio'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pasta alla Norma'), 2);
 
--- RICETTA 12: Pasta alla Puttanesca
+-- Pasta alla Puttanesca
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Spaghetti'), 
@@ -186,7 +188,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Aglio'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pasta alla Puttanesca'), 2);
 
--- RICETTA 13: Pasta al Forno
+-- Pasta al Forno
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Rigatoni'), 
@@ -200,7 +202,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Besciamella'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pasta al Forno'), 100);
 
--- RICETTA 14: Ragù alla Bolognese
+-- Ragù alla Bolognese
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Manzo macinato'), 
@@ -216,7 +218,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Vino rosso'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Ragù alla Bolognese'), 100);
 
--- RICETTA 15: Ragù Napoletano
+-- Ragù Napoletano
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Manzo macinato'), 
@@ -232,7 +234,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Basilico'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Ragù Napoletano'), 15);
 
--- RICETTA 16: Sartù di Riso
+-- Sartù di Riso
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Riso Carnaroli'), 
@@ -248,7 +250,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pangrattato'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sartù di Riso'), 30);
 
--- RICETTA 17: Risotto ai Funghi Porcini
+-- Risotto ai Funghi Porcini
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Riso Carnaroli'), 
@@ -266,7 +268,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Burro'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Risotto ai Funghi Porcini'), 30);
 
--- RICETTA 18: Risotto alla Milanese
+-- Risotto alla Milanese
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Riso Carnaroli'), 
@@ -284,7 +286,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Parmigiano Reggiano'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Risotto alla Milanese'), 50);
 
--- RICETTA 19: Risotto al Nero di Seppia
+-- Risotto al Nero di Seppia
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Riso Carnaroli'), 
@@ -302,7 +304,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Prezzemolo'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Risotto al Nero di Seppia'), 10);
 
--- RICETTA 20: Spaghetti alle Vongole
+-- Spaghetti alle Vongole
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Spaghetti'), 
@@ -318,7 +320,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Spaghetti alle Vongole'), 40);
 
--- RICETTA 21: Spaghetti con le Sarde
+-- Spaghetti con le Sarde
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Spaghetti'), 
@@ -336,7 +338,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cipolla bianca'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Spaghetti con le Sarde'), 60);
 
--- RICETTA 22: Sarde a Beccafico
+-- Sarde a Beccafico
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sarde'), 
@@ -352,7 +354,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Limoni'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sarde a Beccafico'), 1);
 
--- RICETTA 23: Cotoletta alla Milanese
+-- Cotoletta alla Milanese
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lombo di vitello'), 
@@ -366,7 +368,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Limoni'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Cotoletta alla Milanese'), 1);
 
--- RICETTA 24: Fritto Misto
+-- Fritto Misto
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Gamberi'), 
@@ -382,7 +384,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio di semi'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Fritto Misto'), 200);
 
--- RICETTA 25: Insalata di Polpo
+-- Insalata di Polpo
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Polpo'), 
@@ -398,7 +400,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Insalata di Polpo'), 5);
 
--- RICETTA 26: Orata al Sale
+-- Orata al Sale
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Orata'), 
@@ -414,7 +416,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Orata al Sale'), 20);
 
--- RICETTA 27: Lasagna alla Bolognese
+-- Lasagna alla Bolognese
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
 VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sfoglia per lasagne'), 
@@ -427,4 +429,536 @@ VALUES
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Lasagna alla Bolognese'), 80),
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Mozzarella di bufala'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Lasagna alla Bolognese'), 150);
+
+-- Pizza Napoletana
+
+-- Pizza Margherita
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Margherita'), 250),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Margherita'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Margherita'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Margherita'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Margherita'), 15),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Passata di pomodoro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Margherita'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Mozzarella di bufala'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Margherita'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Basilico'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Margherita'), 8);
+
+-- Pizza Romana
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Romana'), 250),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Romana'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Romana'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Romana'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Romana'), 15),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Passata di pomodoro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Romana'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acciughe sott''olio'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Romana'), 40),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Capperi sotto sale'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Romana'), 20),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olive nere'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Romana'), 30);
+
+-- Pizza Ortolana
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Ortolana'), 250),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Ortolana'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Ortolana'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Ortolana'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Ortolana'), 15),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Fior di latte'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Ortolana'), 120),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchine'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Ortolana'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Melanzane'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Ortolana'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Peperoni'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Ortolana'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pomodorini ciliegino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Ortolana'), 80);
+
+-- Pizza Diavola
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Diavola'), 250),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Diavola'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Diavola'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Diavola'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Diavola'), 15),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Passata di pomodoro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Diavola'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Fior di latte'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Diavola'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Salame piccante'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Diavola'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Peperoncino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Diavola'), 1);
+
+-- Pizza Capricciosa
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Capricciosa'), 250),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Capricciosa'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Capricciosa'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Capricciosa'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Capricciosa'), 15),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Passata di pomodoro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Capricciosa'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Fior di latte'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Capricciosa'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Champignon'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Capricciosa'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Carciofini sott''olio'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Capricciosa'), 40),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Prosciutto cotto'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Capricciosa'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olive nere'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Capricciosa'), 30);
+
+-- Pizza Fritta
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Fritta'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Fritta'), 180),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Fritta'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Fritta'), 6),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Fritta'), 20),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Passata di pomodoro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Fritta'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Provola'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Fritta'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Ricotta fresca'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Fritta'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Prosciutto cotto'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Fritta'), 40),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pepe nero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Fritta'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio di semi'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Fritta'), 200);
+
+-- Montanara
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Montanara'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Montanara'), 120),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Montanara'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Montanara'), 4),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Montanara'), 10),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Passata di pomodoro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Montanara'), 50),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Basilico'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Montanara'), 6),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Parmigiano Reggiano'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Montanara'), 30),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio di semi'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Montanara'), 150);
+
+-- Pizza Filetto
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Filetto'), 250),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Filetto'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Filetto'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Filetto'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Filetto'), 15),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Fior di latte'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Filetto'), 120),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pomodorini ciliegino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Filetto'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Basilico'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Filetto'), 8);
+
+-- Pizza Salsiccia e Friarielli
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Salsiccia e Friarielli'), 250),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Salsiccia e Friarielli'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Salsiccia e Friarielli'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Salsiccia e Friarielli'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Salsiccia e Friarielli'), 15),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Fior di latte'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Salsiccia e Friarielli'), 120),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Salsiccia'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Salsiccia e Friarielli'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Friarielli'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Salsiccia e Friarielli'), 100);
+
+-- Cucina Indiana
+
+-- Pollo Tandoori
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Petto di pollo'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Tandoori'), 400),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Yogurt greco'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Tandoori'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zenzero fresco'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Tandoori'), 15),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Aglio'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Tandoori'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Limoni'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Tandoori'), 1),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Paprika dolce'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Tandoori'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Curcuma'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Tandoori'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Curry in polvere'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Tandoori'), 8),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Tandoori'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Tandoori'), 20);
+
+-- Curry
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Petto di pollo'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Curry'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Latte di cocco'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Curry'), 400),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cipolla bianca'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Curry'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Aglio'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Curry'), 4),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zenzero fresco'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Curry'), 20),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pomodorini ciliegino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Curry'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Curry in polvere'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Curry'), 15),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Curcuma'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Curry'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Paprika dolce'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Curry'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Peperoncino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Curry'), 1),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Curry'), 6),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Curry'), 30);
+
+-- Pane Naan
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Naan'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Yogurt greco'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Naan'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Latte intero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Naan'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Naan'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Naan'), 10),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Naan'), 6),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Naan'), 25),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Aglio'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Naan'), 2);
+
+-- Samosa
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Samosa'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Samosa'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Samosa'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio di semi'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Samosa'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Patate'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Samosa'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Piselli'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Samosa'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cipolla bianca'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Samosa'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zenzero fresco'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Samosa'), 10),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Aglio'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Samosa'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Curry in polvere'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Samosa'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Curcuma'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Samosa'), 2);
+
+-- Chicken Tikka
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Petto di pollo'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chicken Tikka'), 400),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Yogurt greco'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chicken Tikka'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Limoni'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chicken Tikka'), 1),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Aglio'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chicken Tikka'), 4),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zenzero fresco'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chicken Tikka'), 15),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Curry in polvere'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chicken Tikka'), 10),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Paprika dolce'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chicken Tikka'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Curcuma'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chicken Tikka'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Peperoncino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chicken Tikka'), 1),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chicken Tikka'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chicken Tikka'), 25);
+
+-- Panificazione
+
+-- Pane Bianco
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Bianco'), 500),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Bianco'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Bianco'), 10),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Bianco'), 10),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Bianco'), 20);
+
+-- Pane Integrale
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina integrale'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Integrale'), 500),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Integrale'), 350),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Integrale'), 12),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Integrale'), 10),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Integrale'), 25),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Miele'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Integrale'), 15);
+
+-- Focaccia Ligure
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Focaccia Ligure'), 500),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Focaccia Ligure'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Focaccia Ligure'), 8),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Focaccia Ligure'), 12),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Focaccia Ligure'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale grosso'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Focaccia Ligure'), 5);
+
+-- Focaccia Barese
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Focaccia Barese'), 500),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Focaccia Barese'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Focaccia Barese'), 8),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Focaccia Barese'), 10),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Focaccia Barese'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pomodorini ciliegino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Focaccia Barese'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olive nere'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Focaccia Barese'), 50),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Origano'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Focaccia Barese'), 5);
+
+-- Pane di Segale
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina di segale'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane di Segale'), 400),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane di Segale'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane di Segale'), 350),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane di Segale'), 15),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane di Segale'), 12),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Miele'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane di Segale'), 20);
+
+-- Pane Carasau
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Semola di grano duro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Carasau'), 500),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Carasau'), 250),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Carasau'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Carasau'), 8);
+
+-- Pane Toscano
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Toscano'), 500),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Toscano'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane Toscano'), 10);
+
+-- Pane di Altamura
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Semola di grano duro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane di Altamura'), 500),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane di Altamura'), 320),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane di Altamura'), 12),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pane di Altamura'), 10);
+
+-- Baguette
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Baguette'), 500),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Baguette'), 325),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Baguette'), 8),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Baguette'), 10);
+
+-- Ciabatta
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Ciabatta'), 500),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Ciabatta'), 350),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Ciabatta'), 6),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Ciabatta'), 10),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Ciabatta'), 25);
+
+-- Piadina Romagnola
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Piadina Romagnola'), 400),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Piadina Romagnola'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Piadina Romagnola'), 8),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Piadina Romagnola'), 40),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Bicarbonato'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Piadina Romagnola'), 3);
+
+-- Pizza in Teglia
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza in Teglia'), 500),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza in Teglia'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza in Teglia'), 8),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza in Teglia'), 10),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza in Teglia'), 50),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Passata di pomodoro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza in Teglia'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Mozzarella di bufala'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza in Teglia'), 200);
+
+-- Casatiello
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Casatiello'), 500),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Casatiello'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Casatiello'), 15),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Casatiello'), 8),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Casatiello'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Casatiello'), 4),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pecorino Romano'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Casatiello'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Salame piccante'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Casatiello'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Prosciutto cotto'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Casatiello'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Provola'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Casatiello'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pepe nero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Casatiello'), 3);
 
