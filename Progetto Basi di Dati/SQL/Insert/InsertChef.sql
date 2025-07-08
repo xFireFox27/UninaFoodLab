@@ -14,4 +14,15 @@ VALUES
     ('Giorgio', 'Bruno', 'ChefGiorgio', 'g2B!6t3@qZ'),
     ('Valentina', 'Greco', 'ChefValentina', 'v9G&3j8@lX'),
     ('Simone', 'Rinaldi', 'ChefSimone', 's7R$2g6!hV'),
-    ('Chiara', 'Fontana', 'ChefChiara', 'c4F*1p4#zY');
+    ('Chiara', 'Fontana', 'ChefChiara', 'c4F*1p4#zY'),
+    ('Matteo', 'Leone', 'ChefMatteo', 'm8L!6t3@qZ'),
+    ('Giulia', 'Caruso', 'ChefGiulia', 'g2C&9d6@kT'),
+    ('Davide', 'De Luca', 'ChefDavide', 'd3D$7b2!hR'),
+    ('Roberta', 'Marino', 'ChefRoberta', 'r5M*1p4#zY'),
+    ('Francesco', 'Gatti', 'ChefFrancesco', 'f8G!6t3@qZ'),
+    ('Elisa', 'Rossi', 'ChefElisa', 'e2R&3j8@lX'),
+    ('Nicola', 'Barbieri', 'ChefNicola', 'n9B$2g6!hV'),
+    ('Martina', 'Sanna', 'ChefMartina', 'm4S*1p4#zY'),
+    ('Alessia', 'Piras', 'ChefAlessia', 'a7P!6t3@qZ'),
+    ('Alessandro', 'Bologna', 'FranchinoErCriminale', 's3C&9d6@kT'),
+    ('Laura', 'Moretti', 'ChefLaura', 'l5M$7b2!hR');
