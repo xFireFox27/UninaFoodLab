@@ -7,6 +7,9 @@ CREATE TABLE SessioneOnline (
     IdCorso INTEGER NOT NULL,
 
     CONSTRAINT FK_SessioneOnline_Corso FOREIGN KEY (IdCorso) REFERENCES Corso(idCorso) ON DELETE CASCADE,
-    CONSTRAINT CK_Data CHECK (Data >= CURRENT_TIMESTAMP),
-    CONSTRAINT CK_Link CHECK (Link LIKE 'https://%')
+    CONSTRAINT CK_Link CHECK (Link LIKE 'https://%'),
+    CONSTRAINT CK_Durata CHECK (Durata > 60 AND Durata < 180),
+    CONSTRAINT CK_Data CHECK (Data >= (SELECT DataInizio
+                                       FROM Corso
+                                       WHERE idCorso = IdCorso))
 )
