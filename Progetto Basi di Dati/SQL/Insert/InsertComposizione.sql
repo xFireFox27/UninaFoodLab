@@ -430,7 +430,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Mozzarella di bufala'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Lasagna alla Bolognese'), 150);
 
--- CUCINA SPAGNOLA
+-- Cucina Spagnola
 
 -- Tapas
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
@@ -619,7 +619,7 @@ VALUES
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Empanada al Forno'), 100);
 
 
--- CUCINA GIAPPONESE
+-- Cucina Giapponese
 
 -- Nigiri
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
@@ -858,7 +858,7 @@ VALUES
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Mochi'), 30);
 
 
--- CUCINA AMERICANA
+-- Cucina Americana
 
 -- Beef Jerky
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
@@ -1060,7 +1060,7 @@ VALUES
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Fragole'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Cheesecake'), 150);
 
--- CUCINA FRANCESE
+-- Cucina Francese
 
 -- Soupe a l'oignon
 INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
@@ -1801,4 +1801,534 @@ VALUES
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Casatiello'), 100),
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pepe nero'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Casatiello'), 3);
+
+-- Cucina Messicana
+
+-- Chili di Carne
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Manzo macinato'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chili di Carne'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Fagioli cannellini'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chili di Carne'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pomodorini ciliegino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chili di Carne'), 250),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cipolla bianca'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chili di Carne'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Peperoni'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chili di Carne'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Aglio'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chili di Carne'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Paprika piccante'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chili di Carne'), 10),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Peperoncino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chili di Carne'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Chili di Carne'), 30);
+
+-- Nachos con Formaggio
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Tortilla chips'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Nachos con Formaggio'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Formaggio cheddar'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Nachos con Formaggio'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Peperoncino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Nachos con Formaggio'), 1),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cipolla bianca'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Nachos con Formaggio'), 50);
+
+-- Guacamole
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Avocado'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Guacamole'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lime'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Guacamole'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cipolla bianca'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Guacamole'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pomodorini ciliegino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Guacamole'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Aglio'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Guacamole'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Peperoncino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Guacamole'), 1),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Guacamole'), 5);
+
+-- Tacos
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Tortilla di mais'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Tacos'), 6),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Manzo macinato'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Tacos'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Fagioli neri'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Tacos'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Formaggio cheddar'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Tacos'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lattuga'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Tacos'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pomodorini ciliegino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Tacos'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cipolla bianca'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Tacos'), 50),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Paprika piccante'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Tacos'), 8);
+
+-- Burrito
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Tortilla di grano'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Burrito'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Manzo macinato'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Burrito'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Fagioli neri'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Burrito'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Riso basmati'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Burrito'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Formaggio cheddar'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Burrito'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lattuga'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Burrito'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pomodorini ciliegino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Burrito'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cipolla bianca'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Burrito'), 50);
+
+-- Quesadilla
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Tortilla di mais'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Quesadilla'), 4),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Formaggio cheddar'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Quesadilla'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Peperoni'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Quesadilla'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cipolla bianca'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Quesadilla'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pomodorini ciliegino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Quesadilla'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio di semi'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Quesadilla'), 20);
+
+-- Cucina Cinese
+
+-- Baozi
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Baozi'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Baozi'), 7),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lonza di Maiale'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Baozi'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cipolla bianca'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Baozi'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zenzero fresco'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Baozi'), 10),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Salsa di soia'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Baozi'), 30),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio di semi'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Baozi'), 20);
+
+-- Dim Sum
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Dim Sum'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Gamberi'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Dim Sum'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lonza di Maiale'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Dim Sum'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Funghi shiitake'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Dim Sum'), 50),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cipollotto'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Dim Sum'), 30),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zenzero fresco'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Dim Sum'), 8),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Salsa di soia'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Dim Sum'), 25);
+
+-- Riso Fritto
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Riso basmati'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Riso Fritto'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Riso Fritto'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Carote'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Riso Fritto'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Piselli'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Riso Fritto'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cipollotto'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Riso Fritto'), 40),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Aglio'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Riso Fritto'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Salsa di soia'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Riso Fritto'), 40),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio di semi'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Riso Fritto'), 30);
+
+-- Involtini Primavera
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sfoglia per lasagne'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Involtini Primavera'), 8),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Carote'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Involtini Primavera'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cavolo'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Involtini Primavera'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Funghi shiitake'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Involtini Primavera'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cipollotto'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Involtini Primavera'), 30),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zenzero fresco'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Involtini Primavera'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Salsa di soia'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Involtini Primavera'), 20),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio di semi'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Involtini Primavera'), 200);
+
+-- Anatra alla Pechinese
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Anatra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Anatra alla Pechinese'), 800),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Miele'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Anatra alla Pechinese'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Salsa di soia'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Anatra alla Pechinese'), 50),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zenzero fresco'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Anatra alla Pechinese'), 15),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cipollotto'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Anatra alla Pechinese'), 50),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cetrioli'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Anatra alla Pechinese'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Tortilla di grano'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Anatra alla Pechinese'), 6);
+
+-- Pollo Kung Pao
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Petto di pollo'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Kung Pao'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Arachidi'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Kung Pao'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Peperoni'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Kung Pao'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cipollotto'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Kung Pao'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Aglio'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Kung Pao'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zenzero fresco'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Kung Pao'), 10),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Salsa di soia'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Kung Pao'), 40),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Peperoncino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Kung Pao'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio di semi'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pollo Kung Pao'), 30);
+
+-- Pasticceria
+
+-- Torta di Mele
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Mele'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta di Mele'), 400),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta di Mele'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta di Mele'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta di Mele'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Burro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta di Mele'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cannella'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta di Mele'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito per dolci'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta di Mele'), 10);
+
+-- Torta Caprese
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cacao amaro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Caprese'), 50),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Mandorle'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Caprese'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Caprese'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Caprese'), 4),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Burro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Caprese'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero a velo'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Caprese'), 30);
+
+-- Torta della Nonna
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta della Nonna'), 250),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Burro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta della Nonna'), 120),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta della Nonna'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta della Nonna'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Crema pasticcera'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta della Nonna'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pinoli'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta della Nonna'), 40);
+
+-- Torta di Ciliegie
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Ciliegie'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta di Ciliegie'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta di Ciliegie'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta di Ciliegie'), 120),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta di Ciliegie'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Burro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta di Ciliegie'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito per dolci'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta di Ciliegie'), 10);
+
+-- Torta Ricotta e Pere
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Ricotta fresca'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Ricotta e Pere'), 250),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pere'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Ricotta e Pere'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Nocciole'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Ricotta e Pere'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Ricotta e Pere'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Ricotta e Pere'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Ricotta e Pere'), 2);
+
+-- Biscotto all'Amarena
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Biscotto all''Amarena'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Biscotto all''Amarena'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Burro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Biscotto all''Amarena'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Biscotto all''Amarena'), 1),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Amarene'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Biscotto all''Amarena'), 50);
+
+-- Cantucci
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Cantucci'), 250),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Mandorle'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Cantucci'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Cantucci'), 120),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Cantucci'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito per dolci'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Cantucci'), 8);
+
+-- Torta Sacher
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cacao amaro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Sacher'), 40),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Sacher'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Sacher'), 120),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Sacher'), 4),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Burro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Sacher'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Confettura di albicocche'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Sacher'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cioccolato fondente'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torta Sacher'), 150);
+
+-- Strudel di Mele
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Mele'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Strudel di Mele'), 500),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Strudel di Mele'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uvetta'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Strudel di Mele'), 50),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cannella'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Strudel di Mele'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Strudel di Mele'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Burro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Strudel di Mele'), 40);
+
+-- Babà
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Babà'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Babà'), 10),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Babà'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Babà'), 30),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Burro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Babà'), 50),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Rum'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Babà'), 100);
+
+-- Tiramisu
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Savoiardi'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Tiramisu'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Mascarpone'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Tiramisu'), 250),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Tiramisu'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Tiramisu'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Caffè espresso'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Tiramisu'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cacao amaro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Tiramisu'), 10),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Liquore al caffè'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Tiramisu'), 50);
+
+-- Crostata di Frutta
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Crostata di Frutta'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Burro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Crostata di Frutta'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Crostata di Frutta'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Crostata di Frutta'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Crema pasticcera'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Crostata di Frutta'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Fragole'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Crostata di Frutta'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Mirtilli'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Crostata di Frutta'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Gelatina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Crostata di Frutta'), 20);
+
+-- Torrone
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Mandorle'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torrone'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Miele'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torrone'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torrone'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Albumi'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Torrone'), 2);
+
+-- Panettone
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Panettone'), 500),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Panettone'), 20),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Panettone'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Burro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Panettone'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Panettone'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Canditi'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Panettone'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uvetta'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Panettone'), 80);
+
+-- Pandoro
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pandoro'), 500),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pandoro'), 20),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pandoro'), 4),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Burro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pandoro'), 250),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pandoro'), 120),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Vaniglia'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pandoro'), 5),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero a velo'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pandoro'), 50);
+
+-- Zeppole di San Giuseppe
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Acqua'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Zeppole di San Giuseppe'), 250),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Burro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Zeppole di San Giuseppe'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Zeppole di San Giuseppe'), 150),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Zeppole di San Giuseppe'), 4),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Zeppole di San Giuseppe'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Zeppole di San Giuseppe'), 10),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Crema pasticcera'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Zeppole di San Giuseppe'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Amarene'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Zeppole di San Giuseppe'), 50),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero a velo'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Zeppole di San Giuseppe'), 30),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio di semi'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Zeppole di San Giuseppe'), 500);
+
+-- Sfogliatella Frolla
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Farina 00'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 300),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Burro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 120),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 1),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sale fino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Ricotta fresca'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 400),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Semola di grano duro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 1),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Canditi'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Latte intero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Vaniglia'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cannella'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 1);
 
