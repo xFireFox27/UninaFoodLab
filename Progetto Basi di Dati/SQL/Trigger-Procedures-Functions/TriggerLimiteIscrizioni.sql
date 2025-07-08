@@ -13,6 +13,8 @@ BEGIN
         RAISE EXCEPTION 'Il numero massimo di iscrizioni per il corso % è stato raggiunto (% iscritti). Non è possibile aggiungere ulteriori iscrizioni.',
             NEW.IdCorso, NumeroIscrizioni;
     END IF;
+
+    RETURN NEW;
 END;
 $$;
 

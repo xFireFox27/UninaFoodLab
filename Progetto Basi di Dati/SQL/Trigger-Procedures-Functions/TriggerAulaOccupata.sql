@@ -17,6 +17,8 @@ BEGIN
     ) THEN RAISE EXCEPTION 'L''aula % è occupata in data %', 
         NEW.Aula, NEW.Data;
     END IF;
+
+    RETURN NEW;
 END;
 $$;
 
