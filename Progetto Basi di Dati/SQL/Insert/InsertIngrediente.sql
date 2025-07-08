@@ -17,6 +17,7 @@ VALUES
     ('Farina integrale', true, 'g'),
     ('Farina di segale', true, 'g'),
     ('Semola di grano duro', true, 'g'),
+    ('Grano cotto', true, 'g'),
     
     -- Verdure e ortaggi
     ('Aglio', false, 'spicchi'),
