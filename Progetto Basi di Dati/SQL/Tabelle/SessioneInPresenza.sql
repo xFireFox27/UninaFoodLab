@@ -9,5 +9,7 @@ CREATE TABLE SessioneInPresenza (
 
     CONSTRAINT FK_SessioneInPresenza_Corso FOREIGN KEY (IdCorso) REFERENCES Corso(idCorso) ON DELETE CASCADE,
     CONSTRAINT CK_Luogo CHECK (Luogo IN ('MonteSantangelo', 'ViaClaudio', 'PiazzaleTecchio', 'PortaDiMassa', 'ViaMarina')),
-    CONSTRAINT CK_Data CHECK (Data >= CURRENT_TIMESTAMP),
+    CONSTRAINT CK_Durata CHECK (Durata > 30),
+    --trigger che controlla che la data della sessione sia maggiore o uguale alla data di creazione del corso
 )
+
