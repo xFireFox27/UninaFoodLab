@@ -9,4 +9,9 @@ VALUES
     ('Elena', 'Martini', 'ChefElena', 'e2M!6t3@qZ'),
     ('Marco', 'Conti', 'ChefMarco', 'm8N#4v5*eW'),
     ('Sara', 'Ferrari', 'ChefSara', 's1F$7b2!hR'),
-    ('Alessandro', 'Romano', 'ChefAle', 'a3L&9d6@kT');
+    ('Alessandro', 'Romano', 'ChefAle', 'a3L&9d6@kT'),
+    ('Kenshiro', 'Hokuto', 'KenshiroHokuto', 'h5K*1p4#zY'),
+    ('Giorgio', 'Bruno', 'ChefGiorgio', 'g2B!6t3@qZ'),
+    ('Valentina', 'Greco', 'ChefValentina', 'v9G&3j8@lX'),
+    ('Simone', 'Rinaldi', 'ChefSimone', 's7R$2g6!hV'),
+    ('Chiara', 'Fontana', 'ChefChiara', 'c4F*1p4#zY');
