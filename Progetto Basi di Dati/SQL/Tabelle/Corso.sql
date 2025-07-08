@@ -11,5 +11,6 @@ CREATE TABLE Corso (
     CONSTRAINT FK_Corso_Topic FOREIGN KEY (IdTopic) REFERENCES Topic(idTopic),
     CONSTRAINT FK_Corso_Chef FOREIGN KEY (UsernameChef) REFERENCES Chef(Username) ON DELETE CASCADE,
     CONSTRAINT CK_Frequenza CHECK (Frequenza IN ('Settimanale', 'Ogni giorno', 'Ogni due giorni', 'Ogni tre giorni')),
-    CONSTRAINT CK_NumLezioni CHECK (NumLezioni BETWEEN 1 AND 100)
+    CONSTRAINT CK_NumLezioni CHECK (NumLezioni BETWEEN 1 AND 100),
+    CONSTRAINT CK_Anno CHECK (Anno = EXTRACT(YEAR FROM DataInizio))
 )
