@@ -36,7 +36,7 @@ VALUES
        ('Pizza Capricciosa', 'Pizza con base pomodoro condita con funghi, carciofini sott''olio, prosciutto cotto e olive.'),
        ('Pizza Fritta', 'Base di impasto per la pizza condita per metà con pomodoro, provola, ricotta, salumi e pepe, richiusa su se stessa e fritta in olio bollente.'),
        ('Montanara', 'Pizza fritta condita con pomodoro, basilico e parmigiano.'),
-       ('Pizza Filetto', 'Pizza con base Fior di Latte condita con pomodorini freschi tagliati a filetto e basilico.'),--la scrive bruno
+       ('Pizza Filetto', 'Pizza con base Fior di Latte condita con pomodorini freschi tagliati a filetto e basilico.'),
        ('Pizza Salsiccia e Friarielli', 'Pizza con base Fior di Latte condita con salsiccia e friarielli.'),
        --Cucina Spagnola
        ('Tapas', 'Piccole porzioni di cibo servite come antipasto.'),
