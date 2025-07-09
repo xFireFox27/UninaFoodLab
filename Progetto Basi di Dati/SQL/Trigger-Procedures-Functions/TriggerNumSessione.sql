@@ -12,7 +12,7 @@ BEGIN
         SELECT IdCorso FROM SessioneOnline WHERE IdCorso = NEW.IdCorso
         UNION
         SELECT IdCorso FROM SessioneInPresenza WHERE IdCorso = NEW.IdCorso
-    ) AS TutteSessioni;
+    );
 
     -- Se non ci sono sessioni esistenti, deve essere la prima
     IF SessioniEsistenti = 0 THEN
@@ -29,9 +29,9 @@ BEGIN
         SELECT NumSessione FROM SessioneOnline WHERE IdCorso = NEW.IdCorso
         UNION
         SELECT NumSessione FROM SessioneInPresenza WHERE IdCorso = NEW.IdCorso
-    ) AS TutteSessioni;
+    );
 
-    -- Controlla che il nuovo numero sia sequenziale
+    -- Controlla che il nuovo numero sia il successivo
     IF NEW.NumSessione <= MaxNumSessioni THEN
         RAISE EXCEPTION 'Il numero di sessione % non può essere minore o uguale al numero dell''ultima sessione % per il corso %',
             NEW.NumSessione, MaxNumSessioni, NEW.IdCorso;

@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION CalcoloNumeroAdesioni(idSessione INTEGER)
+CREATE OR REPLACE FUNCTION CalcoloNumeroAdesioni(idSessione INTEGER) -- funzione per calcolare il numero di adesioni a una sessione in presenza
 RETURNS INTEGER
 LANGUAGE plpgsql
 AS $$

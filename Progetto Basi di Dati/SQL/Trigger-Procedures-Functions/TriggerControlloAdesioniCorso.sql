@@ -2,17 +2,8 @@ CREATE OR REPLACE FUNCTION ControlloAdesioniCorso()
 RETURNS TRIGGER
 LANGUAGE plpgsql
 AS $$
-DECLARE
-    IdCorso INTEGER;
 BEGIN
-    SELECT sip.IdCorso INTO IdCorso
-    FROM SessioneInPresenza AS sip
-    WHERE sip.IdCorso = NEW.IdCorso;
-
-    IF IdCorso IS NULL THEN
-        RAISE EXCEPTION 'Il corso con ID % non esiste.', NEW.IdCorso;
-    END IF;
-
+    -- Controlla se l'utente non è iscritto al corso e nel caso solleva un'eccezione
     IF NOT EXISTS (
         SELECT 1
         FROM Iscrizione AS i
