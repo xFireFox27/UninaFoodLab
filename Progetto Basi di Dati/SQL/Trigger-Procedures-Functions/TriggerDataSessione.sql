@@ -16,7 +16,6 @@ BEFORE INSERT OR UPDATE ON SessioneOnline
 FOR EACH ROW
 EXECUTE FUNCTION ControlloDataSessione();
 
-
 CREATE TRIGGER TR_Insert_DataSessione_Presenza
 BEFORE INSERT OR UPDATE ON SessioneInPresenza
 FOR EACH ROW
