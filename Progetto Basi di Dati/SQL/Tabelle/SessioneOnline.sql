@@ -8,8 +8,6 @@ CREATE TABLE SessioneOnline (
 
     CONSTRAINT FK_SessioneOnline_Corso FOREIGN KEY (IdCorso) REFERENCES Corso(idCorso) ON DELETE CASCADE,
     CONSTRAINT CK_Link CHECK (Link LIKE 'https://%'),
-    CONSTRAINT CK_Durata CHECK (Durata > 60 AND Durata < 180),
-    CONSTRAINT CK_Data CHECK (Data >= (SELECT DataInizio
-                                       FROM Corso
-                                       WHERE idCorso = IdCorso))
+    CONSTRAINT CK_Durata CHECK (Durata > 60 AND Durata < 180)
+
 )

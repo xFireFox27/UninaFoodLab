@@ -1,6 +1,6 @@
 CREATE OR REPLACE FUNCTION ControlloAnnoCorso()
 RETURNS TRIGGER 
-LANGUAGE plpgsql;
+LANGUAGE plpgsql
 AS $$
 BEGIN
     -- Controlla se l'anno del corso è compreso tra l'anno corrente e il prossimo
@@ -10,7 +10,7 @@ BEGIN
     END IF;
     RETURN NEW;
 END;
-$$
+$$;
 
 
 CREATE TRIGGER TriggerAnnoCorso
