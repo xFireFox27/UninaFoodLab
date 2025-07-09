@@ -14,7 +14,7 @@ BEGIN
     IF EXISTS (
         SELECT 1
         FROM (
-            -- Sessioni online del chef
+            -- seleziona data di inizio e fine delle sessioni online dello chef
             SELECT so.Data, so.Data + (so.Durata || ' minutes')::INTERVAL AS DataFine
             FROM SessioneOnline AS so
             JOIN Corso AS c ON so.IdCorso = c.idCorso
@@ -22,7 +22,7 @@ BEGIN
             
             UNION ALL
             
-            -- Sessioni in presenza del chef
+            -- seleziona data di inizio e fine delle sessioni in presenza dello chef
             SELECT sip.Data, sip.Data + (sip.Durata || ' minutes')::INTERVAL AS DataFine
             FROM SessioneInPresenza AS sip
             JOIN Corso AS c ON sip.IdCorso = c.idCorso
