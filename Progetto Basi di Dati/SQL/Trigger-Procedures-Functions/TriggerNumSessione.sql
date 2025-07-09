@@ -34,10 +34,10 @@ BEGIN
     -- Controlla che il nuovo numero sia il successivo
     IF NEW.NumSessione <= MaxNumSessioni THEN
         RAISE EXCEPTION 'Il numero di sessione % non può essere minore o uguale al numero dell''ultima sessione % per il corso %',
-            NEW.NumSessione, MaxNumSessioni, NEW.IdCorso;
+            NEW.NumSessione, MaxNumSessioni, (SELECT Titolo FROM Corso WHERE idCorso = NEW.IdCorso);
     ELSIF NEW.NumSessione > MaxNumSessioni + 1 THEN
         RAISE EXCEPTION 'Il numero di sessione % non può essere maggiore di % per il corso %',
-            NEW.NumSessione, MaxNumSessioni + 1, NEW.IdCorso;
+            NEW.NumSessione, MaxNumSessioni + 1, (SELECT Titolo FROM Corso WHERE idCorso = NEW.IdCorso);
     END IF;
 
     RETURN NEW;

@@ -5,7 +5,7 @@ CREATE TABLE Topic (
 
     CONSTRAINT CK_Topic_Nome CHECK (Nome IN ('Cucina Italiana', 'Pizza Napoletana', 'Cucina Cinese', 
     'Cucina Messicana', 'Cucina Giapponese', 'Cucina Indiana', 'Cucina Francese', 
-    'Cucina Spagnola', 'Cucina Americana', 'Cucina Mediterranea', 'Pasticceria', 'Panificazione'))
+    'Cucina Spagnola', 'Cucina Americana', 'Cucina Mediterranea', 'Pasticceria', 'Panificazione')) -- controllo che il nome del topic sia un valore valido
 );
 
 
