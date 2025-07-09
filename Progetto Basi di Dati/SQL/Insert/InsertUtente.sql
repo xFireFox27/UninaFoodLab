@@ -1,7 +1,7 @@
 INSERT INTO Utente(Nome, Cognome, Username, Password)
 VALUES ('Giuliano', 'Laccetti', 'giuliano.laccetti', 'NapoliCampione2026'),
-       ('Luigi', 'Bros', 'luigi.bros', 'passwordLuigi'),
-       ('Mario', 'Bros', 'mario.bros', 'passwordMario'),
+       ('Luigi', 'Mario', 'luigi.mario', 'passwordLuigi'),
+       ('Mario', 'Mario', 'mario.mario', 'passwordMario'),
        ('Christian', 'Ranavolo', 'IL_NERDONE_11', 'Zombie11'),
        ('Bruno', 'Capuozzo', 'bohqualcosaboh', 'passwordBruno'),
        ('Niccolò', 'Cavallo', 'pete_990', 'passwordNiccolò'),
