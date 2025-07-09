@@ -5,25 +5,25 @@ AS $$
 DECLARE
     ChefUsername VARCHAR(100);
 BEGIN
-    -- Ottieni lo username del chef per il corso
+    -- Ottieni lo username dello chef per il corso
     SELECT c.UsernameChef INTO ChefUsername
     FROM Corso AS c 
     WHERE c.idCorso = NEW.IdCorso;
 
-    -- Controlla se esistono sovrapposizioni con le sessioni del chef
+    -- Controlla se esistono sovrapposizioni con le sessioni dello chef
     IF EXISTS (
         SELECT 1
         FROM (
-            -- Sessioni online del chef
-            SELECT so.Data, so.Data + (so.Durata || ' minutes')::INTERVAL AS DataFine
+            -- Sessioni online dello chef
+            SELECT so.Data, so.Data + (so.Durata || ' minutes')::INTERVAL AS DataFine --seleziona data di inizio e fine
             FROM SessioneOnline AS so
             JOIN Corso AS c ON so.IdCorso = c.idCorso
             WHERE c.UsernameChef = ChefUsername
             
             UNION ALL
             
-            -- Sessioni in presenza del chef
-            SELECT sip.Data, sip.Data + (sip.Durata || ' minutes')::INTERVAL AS DataFine
+            -- Sessioni in presenza dello chef
+            SELECT sip.Data, sip.Data + (sip.Durata || ' minutes')::INTERVAL AS DataFine --seleziona data di inizio e fine
             FROM SessioneInPresenza AS sip
             JOIN Corso AS c ON sip.IdCorso = c.idCorso
             WHERE c.UsernameChef = ChefUsername

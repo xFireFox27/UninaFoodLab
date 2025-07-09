@@ -11,12 +11,13 @@ BEGIN
 END;
 $$;
 
-
+-- Trigger per sessioni in presenza
 CREATE TRIGGER TR_Insert_Data_Sessione_In_Presenza_con_Corso
 BEFORE INSERT OR UPDATE ON SessioneInPresenza
 FOR EACH ROW
 EXECUTE FUNCTION ControlloSessioneCorsoData();
 
+-- Trigger per sessioni online
 CREATE TRIGGER TR_Insert_Data_Sessione_Online_con_Corso
 BEFORE INSERT OR UPDATE ON SessioneOnline
 FOR EACH ROW
