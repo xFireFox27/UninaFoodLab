@@ -27,6 +27,7 @@ VALUES
     ('Scalogno', false, 'g'),
     ('Sedano', false, 'g'),
     ('Carote', false, 'g'),
+    ('Cavolo', false, 'g'),
     ('Patate', false, 'g'),
     ('Pomodori San Marzano Pelati', false, 'g'),
     ('Pomodorini ciliegino', false, 'g'),

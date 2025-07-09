@@ -1,6 +1,6 @@
 INSERT INTO Chef(Nome, Cognome, Username, Password)
 VALUES
-    ('Giuseppe', 'Esposito', 'ChefPeppe', 'PasswordGiuseppe'),
+    ('Giuseppe', 'Esposito', 'ChefPino', 'PasswordGiuseppe'),
     ('Maria', 'Rossi', 'ChefMaria', 'PasswordMaria'),
     ('Antonio', 'Bianchi', 'ChefAntonio', 'PasswordAntonio'),
     ('Francesca', 'Verdi', 'ChefFrancesca', 'PasswordFrancesca'),
