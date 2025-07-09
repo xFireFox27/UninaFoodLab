@@ -13,4 +13,4 @@ CREATE TABLE Corso (
     CONSTRAINT CK_Frequenza CHECK (Frequenza IN ('Settimanale', 'Ogni giorno', 'Ogni due giorni', 'Ogni tre giorni')),
     CONSTRAINT CK_NumLezioni CHECK (NumLezioni BETWEEN 1 AND 100),
     CONSTRAINT CK_Anno CHECK (Anno = EXTRACT(YEAR FROM DataInizio))
-)
+) 

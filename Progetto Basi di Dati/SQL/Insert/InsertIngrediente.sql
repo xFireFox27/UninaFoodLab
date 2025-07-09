@@ -17,6 +17,7 @@ VALUES
     ('Farina integrale', true, 'g'),
     ('Farina di segale', true, 'g'),
     ('Semola di grano duro', true, 'g'),
+    ('Grano cotto', true, 'g'),
     
     -- Verdure e ortaggi
     ('Aglio', false, 'spicchi'),
@@ -63,6 +64,7 @@ VALUES
     ('Funghi shiitake', false, 'g'),
     ('Fungo Rosso', false, 'pz'),
     ('Fungo Chiodino', false, 'g'),
+    ('Tartufo nero', false, 'g'),
     
     -- Pesce
     ('Salmone', true, 'g'),
