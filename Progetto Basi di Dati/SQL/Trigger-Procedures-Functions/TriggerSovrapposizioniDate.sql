@@ -31,8 +31,8 @@ BEGIN
         WHERE NEW.Data < DataFine 
         AND NEW.Data + (NEW.Durata || ' minutes')::INTERVAL > Data
     ) THEN
-        RAISE EXCEPTION 'Lo chef % ha già una sessione programmata che si sovrappone con l''orario %.', 
-            ChefUsername, NEW.Data;
+        RAISE EXCEPTION 'Lo chef % ha già una sessione programmata che si sovrappone con l''orario % - %.', 
+            ChefUsername, NEW.Data, NEW.Data + (NEW.Durata || ' minutes')::INTERVAL;
     END IF;
 
     RETURN NEW;

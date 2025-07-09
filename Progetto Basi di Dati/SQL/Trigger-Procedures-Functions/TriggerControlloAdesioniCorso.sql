@@ -18,7 +18,7 @@ BEGIN
         WHERE i.IdCorso = corso_id
         AND i.UsernameUtente = NEW.UsernameUtente
     ) THEN
-        RAISE EXCEPTION 'L''utente % non è iscritto al corso con ID %.', NEW.UsernameUtente, corso_id;
+        RAISE EXCEPTION 'L''utente % non è iscritto al corso %.', NEW.UsernameUtente, (SELECT Titolo FROM Corso WHERE idCorso = corso_id);
     END IF;
 
     RETURN NEW;

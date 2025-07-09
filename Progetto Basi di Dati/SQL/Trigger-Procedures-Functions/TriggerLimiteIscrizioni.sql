@@ -11,7 +11,7 @@ BEGIN
     WHERE IdCorso = NEW.IdCorso;
     IF NumeroIscrizioni >= MaxNumeroIscrizioni THEN
         RAISE EXCEPTION 'Il numero massimo di iscrizioni per il corso % è stato raggiunto (% iscritti). Non è possibile aggiungere ulteriori iscrizioni.',
-            NEW.IdCorso, NumeroIscrizioni;
+            (SELECT Titolo FROM Corso WHERE idCorso = NEW.IdCorso), NumeroIscrizioni;
     END IF;
 
     RETURN NEW;
