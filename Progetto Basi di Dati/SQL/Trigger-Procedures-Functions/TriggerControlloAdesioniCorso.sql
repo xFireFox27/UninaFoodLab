@@ -9,7 +9,7 @@ BEGIN
     SELECT sip.IdCorso
     INTO corso_id
     FROM SessioneInPresenza AS sip
-    WHERE sip.IdSessione = NEW.IdSessione;
+    WHERE sip.IdSessione = NEW.IdSessioneInPresenza;
     
     -- Controlla se l'utente non è iscritto al corso e nel caso solleva un'eccezione
     IF NOT EXISTS (
