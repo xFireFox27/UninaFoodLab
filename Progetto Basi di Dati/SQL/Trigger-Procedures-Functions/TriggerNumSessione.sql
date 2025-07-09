@@ -37,7 +37,7 @@ BEGIN
             NEW.NumSessione, MaxNumSessioni, NEW.IdCorso;
     ELSIF NEW.NumSessione > MaxNumSessioni + 1 THEN
         RAISE EXCEPTION 'Il numero di sessione % non può essere maggiore di % per il corso %',
-            NEW.NumSessione, MaxNumSessioni + 1, NEW.IdCorso;
+            NEW.NumSessione, MaxNumSessioni + 1, (SELECT Titolo FROM Corso WHERE idCorso = NEW.IdCorso);
     END IF;
 
     RETURN NEW;
