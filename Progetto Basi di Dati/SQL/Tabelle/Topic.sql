@@ -9,4 +9,3 @@ CREATE TABLE Topic (
 );
 
 
-;
