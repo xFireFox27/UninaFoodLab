@@ -38,6 +38,7 @@ VALUES
        ('Montanara', 'Pizza fritta condita con pomodoro, basilico e parmigiano.'),
        ('Pizza Filetto', 'Pizza con base Fior di Latte condita con pomodorini freschi tagliati a filetto e basilico.'),
        ('Pizza Salsiccia e Friarielli', 'Pizza con base Fior di Latte condita con salsiccia e friarielli.'),
+       ('Pizza Zeb89', 'La pizza più fiera del mondo.'),
        --Cucina Spagnola
        ('Tapas', 'Piccole porzioni di cibo servite come antipasto.'),
        ('Tortilla di Patate', 'Frittata di uova e patate cotta in padella.'),

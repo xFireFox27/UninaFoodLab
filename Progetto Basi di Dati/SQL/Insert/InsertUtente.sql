@@ -6,6 +6,7 @@ VALUES ('Giuliano', 'Laccetti', 'giuliano.laccetti', 'NapoliCampione2026'),
        ('Bruno', 'Capuozzo', 'bohqualcosaboh', 'passwordBruno'),
        ('Niccolò', 'Cavallo', 'pete_990', 'passwordNiccolò'),
        ('Carmine', 'Amato', 'xFireFox27', 'passwordCarmine'),
+       ('Kenneth', 'Caselli', 'Zeb89', 'passwordZeb'),
        ('Antonio', 'Capuozzo', 'antonio.capuozzo', 'passwordAntonio')
        ('Giordano', 'Bruno', 'giordano.bruno', 'passwordGiordano'),
        ('Francesco', 'De Luca', 'francesco.deluca', 'passwordFrancesco'),

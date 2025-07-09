@@ -64,6 +64,7 @@ VALUES
     ('Funghi shiitake', false, 'g'),
     ('Fungo Rosso', false, 'pz'),
     ('Fungo Chiodino', false, 'g'),
+    ('Tartufo nero', false, 'g'),
     
     -- Pesce
     ('Salmone', true, 'g'),
