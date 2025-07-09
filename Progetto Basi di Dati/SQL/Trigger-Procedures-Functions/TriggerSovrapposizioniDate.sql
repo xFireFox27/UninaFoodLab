@@ -5,12 +5,12 @@ AS $$
 DECLARE
     ChefUsername VARCHAR(100);
 BEGIN
-    -- Ottieni lo username dello chef per il corso
+    -- Ottieni lo username del chef per il corso
     SELECT c.UsernameChef INTO ChefUsername
     FROM Corso AS c 
     WHERE c.idCorso = NEW.IdCorso;
 
-    -- Controlla se esistono sovrapposizioni con le sessioni dello chef
+    -- Controlla se esistono sovrapposizioni con le sessioni del chef
     IF EXISTS (
         SELECT 1
         FROM (

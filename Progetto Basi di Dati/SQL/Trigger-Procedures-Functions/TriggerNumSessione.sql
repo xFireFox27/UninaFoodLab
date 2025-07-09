@@ -23,7 +23,7 @@ BEGIN
         RETURN NEW;
     END IF;
 
-    -- Trova il numero massimo numero di sessione esistente da entrambe le tabelle
+    -- Trova il numero massimo di sessione esistente da entrambe le tabelle
     SELECT MAX(NumSessione) INTO MaxNumSessioni
     FROM (
         SELECT NumSessione FROM SessioneOnline WHERE IdCorso = NEW.IdCorso

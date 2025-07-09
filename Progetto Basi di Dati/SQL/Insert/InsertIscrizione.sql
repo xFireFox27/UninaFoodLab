@@ -2,8 +2,8 @@ INSERT INTO Iscrizione(IdCorso, UsernameUtente)
 VALUES 
 ((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di pizza napoletana' AND Anno = 2025), 'Zeb89'),
 ((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina italiana' AND Anno = 2025), 'giuliano.laccetti'),
-((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina cinese' AND Anno = 2025), 'luigi.bros'),
-((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina messicana' AND Anno = 2025), 'mario.bros'),
+((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina cinese' AND Anno = 2025), 'luigi.mario'),
+((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina messicana' AND Anno = 2025), 'mario.mario'),
 ((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina giapponese' AND Anno = 2025), 'IL_NERDONE_11'),
 ((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina indiana' AND Anno = 2025), 'bohqualcosaboh'),
 ((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina francese' AND Anno = 2025), 'pete_990'),
@@ -60,7 +60,7 @@ VALUES
 ((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina cinese' AND Anno = 2025), 'caesar.zeppeli'),
 ((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina francese' AND Anno = 2025), 'rohan.kishibe'),
 ((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina giapponese' AND Anno = 2025), 'suzy.q'),
-((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina indiana' AND Anno = 2025), 'yasuho.hirose');
+((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina indiana' AND Anno = 2025), 'yasuho.hirose'),
 ((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina francese' AND Anno = 2025), 'kira.yoshikage'),
 ((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina spagnola' AND Anno = 2025), 'giorgio.bianchi'),
 ((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina americana' AND Anno = 2025), 'luca.verdi'),
@@ -86,8 +86,8 @@ VALUES
 ((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina spagnola' AND Anno = 2025), 'donkey.kong'),
 ((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina spagnola' AND Anno = 2025), 'diddy.kong'),
 ((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina americana' AND Anno = 2025), 'cranky.kong'),
-((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina italiana' AND Anno = 2025), 'mario.bros'),
-((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina messicana' AND Anno = 2025), 'francesco.deluca'),
+((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina italiana' AND Anno = 2025), 'mario.mario'),
+((SELECT IdCorso FROM Corso WHERE Titolo = 'Corso di cucina messicana' AND Anno = 2025), 'francesco.deluca')
 
 
 

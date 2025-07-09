@@ -16,12 +16,6 @@ BEGIN
 END;
 $$;
 
-
-
-
-
-
-
 CREATE TRIGGER Tr_Insert_Corso_Topic
 AFTER INSERT ON Corso
 FOR EACH ROW

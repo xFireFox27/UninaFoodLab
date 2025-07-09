@@ -6,11 +6,9 @@ DECLARE
     MaxNumeroIscrizioni INTEGER:= 50;
     NumeroIscrizioni INTEGER;
 BEGIN
-    SELECT COUNT(*) INTO NumeroIscrizioni -- Conta il numero di iscritti al corso
+    SELECT COUNT(*) INTO NumeroIscrizioni
     FROM Iscrizione
     WHERE IdCorso = NEW.IdCorso;
-    
-    -- se il numero di iscrizioni supera il limite(ovvero 50), solleva un'eccezione
     IF NumeroIscrizioni >= MaxNumeroIscrizioni THEN
         RAISE EXCEPTION 'Il numero massimo di iscrizioni per il corso % è stato raggiunto (% iscritti). Non è possibile aggiungere ulteriori iscrizioni.',
             NEW.IdCorso, NumeroIscrizioni;
