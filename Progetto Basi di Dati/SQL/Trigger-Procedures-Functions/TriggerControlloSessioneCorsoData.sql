@@ -11,7 +11,6 @@ BEGIN
 END;
 $$;
 
-
 CREATE TRIGGER TR_Insert_Data_Sessione_In_Presenza_con_Corso
 BEFORE INSERT OR UPDATE ON SessioneInPresenza
 FOR EACH ROW
