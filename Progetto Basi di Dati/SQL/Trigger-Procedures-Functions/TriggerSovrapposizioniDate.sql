@@ -14,16 +14,16 @@ BEGIN
     IF EXISTS (
         SELECT 1
         FROM (
-            -- Sessioni online dello chef
-            SELECT so.Data, so.Data + (so.Durata || ' minutes')::INTERVAL AS DataFine --seleziona data di inizio e fine
+            -- seleziona data di inizio e fine delle sessioni online dello chef
+            SELECT so.Data, so.Data + (so.Durata || ' minutes')::INTERVAL AS DataFine
             FROM SessioneOnline AS so
             JOIN Corso AS c ON so.IdCorso = c.idCorso
             WHERE c.UsernameChef = ChefUsername
             
             UNION ALL
             
-            -- Sessioni in presenza dello chef
-            SELECT sip.Data, sip.Data + (sip.Durata || ' minutes')::INTERVAL AS DataFine --seleziona data di inizio e fine
+            -- seleziona data di inizio e fine delle sessioni in presenza dello chef
+            SELECT sip.Data, sip.Data + (sip.Durata || ' minutes')::INTERVAL AS DataFine
             FROM SessioneInPresenza AS sip
             JOIN Corso AS c ON sip.IdCorso = c.idCorso
             WHERE c.UsernameChef = ChefUsername
