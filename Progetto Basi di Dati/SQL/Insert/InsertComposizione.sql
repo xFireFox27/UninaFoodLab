@@ -1493,7 +1493,7 @@ VALUES
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Zeb89'), 100),
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Fior di latte'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Zeb89'), 120),
-    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Funghi Porcini'), 
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Funghi porcini'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pizza Zeb89'), 80);
 
 -- Cucina Indiana
@@ -1943,7 +1943,7 @@ VALUES
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Baozi'), 200),
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lievito di birra'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Baozi'), 7),
-    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lonza di Maiale'), 
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lonza di maiale'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Baozi'), 150),
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cipolla bianca'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Baozi'), 80),
@@ -1961,7 +1961,7 @@ VALUES
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Dim Sum'), 150),
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Gamberi'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Dim Sum'), 100),
-    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lonza di Maiale'), 
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Lonza di maiale'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Dim Sum'), 80),
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Funghi shiitake'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Dim Sum'), 50),
@@ -2341,10 +2341,6 @@ VALUES
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 400),
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Semola di grano duro'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 100),
-    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Zucchero'), 
-     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 100),
-    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
-     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 1),
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Canditi'), 
      (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Sfogliatella Frolla'), 80),
     ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Latte intero'), 
