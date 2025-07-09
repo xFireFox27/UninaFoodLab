@@ -10,13 +10,14 @@ BEGIN
             WHERE sip.Luogo = NEW.Luogo 
             AND sip.Aula = NEW.Aula
                 -- La nuova sessione inizia durante una sessione esistente
-            AND (NEW.Data >= sip.Data AND NEW.Data < sip.Data + (sip.Durata  ' minutes')::INTERVAL)
+            AND (NEW.Data >= sip.Data AND NEW.Data < sip.Data + (sip.Durata || ' minutes')::INTERVAL)
                 -- La nuova sessione finisce durante una sessione esistente
-                OR (NEW.Data + (NEW.Durata  ' minutes')::INTERVAL > sip.Data AND NEW.Data + (NEW.Durata  ' minutes')::INTERVAL <= sip.Data + (sip.Durata  ' minutes')::INTERVAL)
+                OR (NEW.Data + (NEW.Durata || ' minutes')::INTERVAL > sip.Data AND NEW.Data + (NEW.Durata || ' minutes')::INTERVAL <= sip.Data + (sip.Durata || ' minutes')::INTERVAL)
                 -- La nuova sessione contiene completamente una sessione esistente
-                OR (NEW.Data <= sip.Data AND NEW.Data + (NEW.Durata  ' minutes')::INTERVAL >= sip.Data + (sip.Durata  ' minutes')::INTERVAL)
-    ) THEN RAISE EXCEPTION 'L''aula % è occupata in data %', 
-        NEW.Aula, NEW.Data;
+                OR (NEW.Data <= sip.Data AND NEW.Data + (NEW.Durata || ' minutes')::INTERVAL >= sip.Data + (sip.Durata || ' minutes')::INTERVAL)
+    ) THEN 
+        RAISE EXCEPTION 'L''aula % nel luogo % è occupata in data %', 
+            NEW.Aula, NEW.Luogo, NEW.Data;
     END IF;
 
     RETURN NEW;
