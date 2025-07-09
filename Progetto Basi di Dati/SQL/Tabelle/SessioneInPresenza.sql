@@ -9,6 +9,6 @@ CREATE TABLE SessioneInPresenza (
 
     CONSTRAINT FK_SessioneInPresenza_Corso FOREIGN KEY (IdCorso) REFERENCES Corso(idCorso) ON DELETE CASCADE,
     CONSTRAINT CK_Luogo CHECK (Luogo IN ('MonteSantangelo', 'ViaClaudio', 'PiazzaleTecchio', 'PortaDiMassa', 'ViaMarina')),
-    CONSTRAINT CK_Durata CHECK (Durata > 60 AND Durata < 180),
+    CONSTRAINT CK_Durata CHECK (Durata > 60 AND Durata < 180)
 )
 
