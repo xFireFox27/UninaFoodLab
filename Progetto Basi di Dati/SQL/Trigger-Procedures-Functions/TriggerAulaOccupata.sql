@@ -3,6 +3,7 @@ RETURNS TRIGGER
 LANGUAGE plpgsql
 AS $$
 BEGIN
+    -- Controlla se esiste già una sessione in presenza nello stesso luogo e aula che si sovrappone con la nuova sessione
     IF EXISTS (
             SELECT 1
             FROM SessioneInPresenza AS sip

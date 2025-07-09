@@ -3,7 +3,7 @@ RETURNS TRIGGER
 LANGUAGE plpgsql
 AS $$
 BEGIN
-    -- Controlla se lo Chef insegna il Topic del Corso
+    -- Controlla se lo Chef non insegna il Topic del Corso e nel caso solleva un'eccezione
     IF NOT EXISTS (
         SELECT 1
         FROM Insegna AS i
