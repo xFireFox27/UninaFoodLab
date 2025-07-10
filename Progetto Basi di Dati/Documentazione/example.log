@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.10)  10 JUL 2025 17:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.10)  10 JUL 2025 18:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -380,32 +380,41 @@ Package pdftex.def Info: ../Diagramma ER/ER.png  used on input line 45.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <../Diagramma UML/UML.png>] [8 <../Diagramma ER/ER.png>]
-Chapter 3.
-[9
+<../Diagramma UML Ristrutturato/UMLRistrutturato.png, id=35, 1855.93375pt x 753.81625pt>
+File: ../Diagramma UML Ristrutturato/UMLRistrutturato.png Graphic file (type png)
+<use ../Diagramma UML Ristrutturato/UMLRistrutturato.png>
+Package pdftex.def Info: ../Diagramma UML Ristrutturato/UMLRistrutturato.png  used on input line 56.
+(pdftex.def)             Requested size: 443.57848pt x 180.16045pt.
+[7 <../Diagramma UML/UML.png>]
 
-] [10
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8 <../Diagramma ER/ER.png>] [9 <../Diagramma UML Ristrutturato/UMLRistrutturato.png>] [10
+
+]
+Chapter 3.
+[11] [12
 
 ]
 Chapter 4.
-[11] (example.aux)
+[13] (example.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 12874 strings out of 474486
- 268436 string characters out of 5743283
- 1929542 words of memory out of 5000000
- 34958 multiletter control sequences out of 15000+600000
- 561748 words of font info for 48 fonts, out of 8000000 for 9000
+ 12887 strings out of 474486
+ 268958 string characters out of 5743283
+ 1930542 words of memory out of 5000000
+ 34970 multiletter control sequences out of 15000+600000
+ 562083 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,6n,107p,522b,233s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on example.pdf (11 pages, 369342 bytes).
+ 99i,7n,107p,522b,235s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
+Output written on example.pdf (13 pages, 450743 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
+ 93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

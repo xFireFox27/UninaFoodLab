@@ -51,10 +51,26 @@
     implica la trasformazione delle entità e delle relazioni del modello concettuale, al fine di renderne più agevole l'implementazione 
     in un database relazionale. Durante questa fase, si identificano le chiavi primarie e le chiavi esterne, si rimuovono gli attributi multipli
     e le gerarchie di specializzazione, si normalizzano le tabelle per ridurre la ridondanza dei dati.
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=\textwidth]{../Diagramma UML Ristrutturato/UMLRistrutturato.png}
+        \caption{Diagramma UML ristrutturato}
+        \label{fig:uml-ristrutturato}
+    \end{figure}
     \section{Identificazione delle chiavi primarie}
     Le chiavi primarie sono gli attributi che identificano in modo univoco ogni record in una tabella. Nella nostra ristrutturazione
     abbiamo fatto uso di chiavi surrogate, ossia chiavi artificiali create per garantire l'unicità dei record nel caso in cui non esistano 
     chiavi naturali adatte. Queste chiavi non hanno un significato intrinseco, ma sono utilizzate per facilitare le operazioni sulle tabelle.
+    \section{Identificazione delle chiavi esterne}
+    Le chiavi esterne sono gli attributi che collegano le tabelle tra loro, rappresentando le relazioni tra le entità. Il loro scopo 
+    è quello di assicurare che i dati siano coerenti e che le relazioni siano mantenute.
+    \section{Rimozione degli attributi multipli}
+    Non sono presenti attributi multipli nel modello concettuale.
+    \section{Rimozione delle gerarchie di specializzazione}
+    Sono presenti due gerarchie di specializzazione: la prima relativa alla classe "Persona"
+    \begin{itemize}
+        \item 'Persona' si specializza in "Chef" e "Utente"
+    \end{itemize}
     \section{Analisi delle ridondanze}
     Non sono presenti ridondanze significative nel modello concettuale. 
     \chapter{Progettazione Logica}
