@@ -1,459 +1,291 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.4)  10 JUL 2025 17:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.10)  10 JUL 2025 17:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/carmineamato/Desktop/Progetto clone/UninaFoodLab/Progetto Basi di Dat
-i/Documentazione/example.tex"
-
-(/Users/carmineamato/Desktop/Progetto clone/UninaFoodLab/Progetto Basi di Dati/
-Documentazione/example.tex
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-06-09>
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/base/book.cls
-Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/base/bk10.clo
-File: bk10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+**"c:/Users/utente/Documents/Università/Progetto BD-OO/UninaFoodLab/Progetto Basi di Dati/Documentazione/example.tex"
+(c:/Users/utente/Documents/Università/Progetto BD-OO/UninaFoodLab/Progetto Basi di Dati/Documentazione/example.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+(C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/base\bk10.clo
+File: bk10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count275
-\c@chapter=\count276
-\c@section=\count277
-\c@subsection=\count278
-\c@subsubsection=\count279
-\c@paragraph=\count280
-\c@subparagraph=\count281
-\c@figure=\count282
-\c@table=\count283
-\abovecaptionskip=\skip49
-\belowcaptionskip=\skip50
-\bibindent=\dimen148
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/geometry/geometry.sty
+\c@part=\count187
+\c@chapter=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/graphics/keyval.sty
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/iftex/ifvtex.sty
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/iftex/iftex.sty
-Package: iftex 2024/12/12 v1.0g TeX engine tests
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count284
-\Gm@cntv=\count285
-\c@Gm@tempcnt=\count286
-\Gm@bindingoffset=\dimen149
-\Gm@wd@mp=\dimen150
-\Gm@odd@mp=\dimen151
-\Gm@even@mp=\dimen152
-\Gm@layoutwidth=\dimen153
-\Gm@layoutheight=\dimen154
-\Gm@layouthoffset=\dimen155
-\Gm@layoutvoffset=\dimen156
+\Gm@cnth=\count196
+\Gm@cntv=\count197
+\c@Gm@tempcnt=\count198
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
 \Gm@dimlist=\toks18
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/geometry/geometry.cfg)) (uninafrontespizio.sty
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
+) (uninafrontespizio.sty
 Package: uninafrontespizio 2018/07/24 UniNA Frontespizio Package
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/setspace/setspace.sty
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/etoolbox/etoolbox.sty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count287
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/pgf/frontendlayer/tikz.sty
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/pgf/basiclayer/pgf.sty
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/pgf/utilities/pgfrcs.sty
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/utilities/pgfutil-common.tex
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count199
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks19
-\pgfutil@tempdima=\dimen157
-\pgfutil@tempdimb=\dimen158
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box53
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/utilities/pgfrcs.code.tex
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/pgf.revision.tex)
+\pgfutil@tempdima=\dimen151
+\pgfutil@tempdimb=\dimen152
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box51
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/pgf/basiclayer/pgfcore.sty
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/graphics/graphicx.sty
-Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/graphics/graphics.sty
-Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/graphics/trig.sty
-Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 106.
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/graphics-def/pdftex.def
-File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen159
-\Gin@req@width=\dimen160
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/pgf/systemlayer/pgfsys.sty
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/systemlayer/pgfsys.code.tex
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/utilities/pgfkeys.code.tex
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks20
 \pgfkeys@temptoks=\toks21
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks22
 ))
-\pgf@x=\dimen161
-\pgf@y=\dimen162
-\pgf@xa=\dimen163
-\pgf@ya=\dimen164
-\pgf@xb=\dimen165
-\pgf@yb=\dimen166
-\pgf@xc=\dimen167
-\pgf@yc=\dimen168
-\pgf@xd=\dimen169
-\pgf@yd=\dimen170
+\pgf@x=\dimen153
+\pgf@y=\dimen154
+\pgf@xa=\dimen155
+\pgf@ya=\dimen156
+\pgf@xb=\dimen157
+\pgf@yb=\dimen158
+\pgf@xc=\dimen159
+\pgf@yc=\dimen160
+\pgf@xd=\dimen161
+\pgf@yd=\dimen162
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count288
-\c@pgf@countb=\count289
-\c@pgf@countc=\count290
-\c@pgf@countd=\count291
+\c@pgf@counta=\count266
+\c@pgf@countb=\count267
+\c@pgf@countc=\count268
+\c@pgf@countd=\count269
 \t@pgf@toka=\toks23
 \t@pgf@tokb=\toks24
 \t@pgf@tokc=\toks25
-\pgf@sys@id@count=\count292
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/systemlayer/pgf.cfg
+\pgf@sys@id@count=\count270
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/systemlayer/pgfsys-pdftex.def
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/systemlayer/pgfsys-common-pdf.def
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
-)))
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/systemlayer/pgfsyssoftpath.code.tex
+))) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count293
-\pgfsyssoftpath@bigbuffer@items=\count294
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/systemlayer/pgfsysprotocol.code.tex
+\pgfsyssoftpath@smallbuffer@items=\count271
+\pgfsyssoftpath@bigbuffer@items=\count272
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/xcolor/xcolor.sty
-Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/graphics-cfg/color.cfg
+)) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
-Package xcolor Info: Model `RGB' extended on input line 1365.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcore.code.tex
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/math/pgfmath.code.tex
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/math/pgfmathutil.code.tex)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen171
-\pgfmath@count=\count295
-\pgfmath@box=\box54
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen163
+\pgfmath@count=\count273
+\pgfmath@box=\box52
 \pgfmath@toks=\toks26
 \pgfmath@stack@operand=\toks27
 \pgfmath@stack@operation=\toks28
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/math/pgfmathfunctions.code.tex)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/math/pgfmathfunctions.basic.code.tex)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/math/pgfmathfunctions.trigonometric.code.tex)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/math/pgfmathfunctions.random.code.tex)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/math/pgfmathfunctions.comparison.code.tex)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/math/pgfmathfunctions.base.code.tex)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/math/pgfmathfunctions.round.code.tex)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/math/pgfmathfunctions.misc.code.tex)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/math/pgfmathfunctions.integerarithmetics.code.tex)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/math/pgfmathcalc.code.tex)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count296
-))
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/math/pgfint.code.tex)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcorepoints.code.tex
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count274
+)) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen172
-\pgf@picmaxx=\dimen173
-\pgf@picminy=\dimen174
-\pgf@picmaxy=\dimen175
-\pgf@pathminx=\dimen176
-\pgf@pathmaxx=\dimen177
-\pgf@pathminy=\dimen178
-\pgf@pathmaxy=\dimen179
-\pgf@xx=\dimen180
-\pgf@xy=\dimen181
-\pgf@yx=\dimen182
-\pgf@yy=\dimen183
-\pgf@zx=\dimen184
-\pgf@zy=\dimen185
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcorepathconstruct.code.tex
+\pgf@picminx=\dimen164
+\pgf@picmaxx=\dimen165
+\pgf@picminy=\dimen166
+\pgf@picmaxy=\dimen167
+\pgf@pathminx=\dimen168
+\pgf@pathmaxx=\dimen169
+\pgf@pathminy=\dimen170
+\pgf@pathmaxy=\dimen171
+\pgf@xx=\dimen172
+\pgf@xy=\dimen173
+\pgf@yx=\dimen174
+\pgf@yy=\dimen175
+\pgf@zx=\dimen176
+\pgf@zy=\dimen177
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen186
-\pgf@path@lasty=\dimen187
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcorepathusage.code.tex
+\pgf@path@lastx=\dimen178
+\pgf@path@lasty=\dimen179
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen188
-\pgf@shorten@start@additional=\dimen189
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcorescopes.code.tex
+\pgf@shorten@end@additional=\dimen180
+\pgf@shorten@start@additional=\dimen181
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box55
-\pgf@hbox=\box56
-\pgf@layerbox@main=\box57
-\pgf@picture@serial@count=\count297
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcoregraphicstate.code.tex
+\pgfpic=\box53
+\pgf@hbox=\box54
+\pgf@layerbox@main=\box55
+\pgf@picture@serial@count=\count275
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen190
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcoretransformations.code.tex
+\pgflinewidth=\dimen182
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen191
-\pgf@pt@y=\dimen192
-\pgf@pt@temp=\dimen193
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcorequick.code.tex
+\pgf@pt@x=\dimen183
+\pgf@pt@y=\dimen184
+\pgf@pt@temp=\dimen185
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcoreobjects.code.tex
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcorepathprocessing.code.tex
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcorearrows.code.tex
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen194
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcoreshade.code.tex
+\pgfarrowsep=\dimen186
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen195
-\pgf@sys@shading@range@num=\count298
-\pgf@shadingcount=\count299
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcoreimage.code.tex
+\pgf@max=\dimen187
+\pgf@sys@shading@range@num=\count276
+\pgf@shadingcount=\count277
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcoreexternal.code.tex
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box58
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcorelayers.code.tex
+\pgfexternal@startupbox=\box56
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcoretransparency.code.tex
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcorepatterns.code.tex
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/basiclayer/pgfcorerdf.code.tex
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/modules/pgfmoduleshapes.code.tex
+))) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box59
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/modules/pgfmoduleplot.code.tex
+\pgfnodeparttextbox=\box57
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/pgf/compatibility/pgfcomp-version-0-65.sty
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen196
-\pgf@nodesepend=\dimen197
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/pgf/compatibility/pgfcomp-version-1-18.sty
+\pgf@nodesepstart=\dimen188
+\pgf@nodesepend=\dimen189
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-))
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/pgf/utilities/pgffor.sty
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/pgf/utilities/pgfkeys.sty
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/utilities/pgfkeys.code.tex))
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/pgf/math/pgfmath.sty
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/math/pgfmath.code.tex))
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/utilities/pgffor.code.tex
+)) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen198
-\pgffor@skip=\dimen199
+\pgffor@iter=\dimen190
+\pgffor@skip=\dimen191
 \pgffor@stack=\toks29
 \pgffor@toks=\toks30
-))
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/frontendlayer/tikz/tikz.code.tex
+)) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/libraries/pgflibraryplothandlers.code.tex
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count300
-\pgfplotmarksize=\dimen256
+\pgf@plot@mark@count=\count278
+\pgfplotmarksize=\dimen192
 )
-\tikz@lastx=\dimen257
-\tikz@lasty=\dimen258
-\tikz@lastxsaved=\dimen259
-\tikz@lastysaved=\dimen260
-\tikz@lastmovetox=\dimen261
-\tikz@lastmovetoy=\dimen262
-\tikzleveldistance=\dimen263
-\tikzsiblingdistance=\dimen264
-\tikz@figbox=\box60
-\tikz@figbox@bg=\box61
-\tikz@tempbox=\box62
-\tikz@tempbox@bg=\box63
-\tikztreelevel=\count301
-\tikznumberofchildren=\count302
-\tikznumberofcurrentchild=\count303
-\tikz@fig@count=\count304
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/modules/pgfmodulematrix.code.tex
+\tikz@lastx=\dimen193
+\tikz@lasty=\dimen194
+\tikz@lastxsaved=\dimen195
+\tikz@lastysaved=\dimen196
+\tikz@lastmovetox=\dimen197
+\tikz@lastmovetoy=\dimen198
+\tikzleveldistance=\dimen199
+\tikzsiblingdistance=\dimen256
+\tikz@figbox=\box58
+\tikz@figbox@bg=\box59
+\tikz@tempbox=\box60
+\tikz@tempbox@bg=\box61
+\tikztreelevel=\count279
+\tikznumberofchildren=\count280
+\tikznumberofcurrentchild=\count281
+\tikz@fig@count=\count282
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count305
-\pgfmatrixcurrentcolumn=\count306
-\pgf@matrix@numberofcolumns=\count307
+\pgfmatrixcurrentrow=\count283
+\pgfmatrixcurrentcolumn=\count284
+\pgf@matrix@numberofcolumns=\count285
 )
-\tikz@expandcount=\count308
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+\tikz@expandcount=\count286
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
+))) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@layerbox@background=\box64
-\pgf@layerboxsaved@background=\box65
-))
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count309
+\pgf@layerbox@background=\box62
+\pgf@layerboxsaved@background=\box63
+)) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count287
+\l__pdf_internal_box=\box64
 ) (example.aux)
 \openout1 = `example.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -489,46 +321,34 @@ LaTeX Font Info:    ... okay on input line 21.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/cont
-ext/base/mkii/supp-pdf.mkii
+(C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count310
-\scratchdimen=\dimen265
-\scratchbox=\box66
-\nofMPsegments=\count311
-\nofMParguments=\count312
+\scratchcounter=\count288
+\scratchdimen=\dimen257
+\scratchbox=\box65
+\nofMPsegments=\count289
+\nofMParguments=\count290
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count313
-\MPscratchDim=\dimen266
-\MPnumerator=\count314
-\makeMPintoPDFobject=\count315
+\MPscratchCnt=\count291
+\MPscratchDim=\dimen258
+\MPnumerator=\count292
+\makeMPintoPDFobject=\count293
 \everyMPtoPDFconversion=\toks32
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/epstopdf-pkg/epstopdf-base.sty
+) (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/00miktex/epstopdf-sys.cfg
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\utente\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 <logo-federico-II.pdf, id=4, 501.79471pt x 499.8675pt>
 File: logo-federico-II.pdf Graphic file (type pdf)
 <use logo-federico-II.pdf>
-Package pdftex.def Info: logo-federico-II.pdf  used on input line 24.
+Package pdftex.def Info: logo-federico-II.pdf  used on input line 25.
 (pdftex.def)             Requested size: 99.58464pt x 99.20135pt.
+ [1
 
 
-[1
-
-
-{/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/map/p
-dftex/pdftex.map} <./logo-federico-II.pdf>]
-
-[2
+{C:/Users/utente/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./logo-federico-II.pdf>] [2
 
 ] (example.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -539,66 +359,50 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `example.toc'.
 
-
-
-[3]
-
-[4
+ [3] [4
 
 ]
 Chapter 1.
-
-
-[5]
-
-[6
+[5] [6
 
 ]
 Chapter 2.
-
-
-[7]
-
-[8
-
-]
+<../Diagramma UML/UML.png, id=32, 1474.50874pt x 893.3375pt>
+File: ../Diagramma UML/UML.png Graphic file (type png)
+<use ../Diagramma UML/UML.png>
+Package pdftex.def Info: ../Diagramma UML/UML.png  used on input line 38.
+(pdftex.def)             Requested size: 443.57848pt x 268.7394pt.
+<../Diagramma ER/ER.png, id=34, 1670.24pt x 1028.84375pt>
+File: ../Diagramma ER/ER.png Graphic file (type png)
+<use ../Diagramma ER/ER.png>
+Package pdftex.def Info: ../Diagramma ER/ER.png  used on input line 45.
+(pdftex.def)             Requested size: 443.57848pt x 273.23885pt.
+[7 <../Diagramma UML/UML.png>] [8 <../Diagramma ER/ER.png>]
 Chapter 3.
+[9
 
-
-[9]
-
-[10
+] [10
 
 ]
 Chapter 4.
-
-
 [11] (example.aux)
  ***********
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-06-09>
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 12848 strings out of 468226
- 271942 string characters out of 5420954
- 641658 words of memory out of 5000000
- 41174 multiletter control sequences out of 15000+600000
- 630504 words of font info for 52 fonts, out of 8000000 for 9000
+ 12873 strings out of 474486
+ 268428 string characters out of 5743283
+ 1928542 words of memory out of 5000000
+ 34957 multiletter control sequences out of 15000+600000
+ 561748 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,5n,121p,512b,218s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/
-type1/public/amsfonts/cm/cmbx10.pfb></Users/carmineamato/Library/Application Su
-pport/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/c
-armineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publi
-c/amsfonts/cm/cmcsc10.pfb></Users/carmineamato/Library/Application Support/MiKT
-eX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/carmineamato
-/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/
-cm/cmr12.pfb></Users/carmineamato/Library/Application Support/MiKTeX/texmfs/ins
-tall/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on example.pdf (11 pages, 225837 bytes).
+ 99i,6n,107p,522b,233s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
+Output written on example.pdf (11 pages, 367338 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
+ 79 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
