@@ -170,20 +170,20 @@ INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
+OUTPUT example.pdf
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT ./logo-federico-II.pdf
 INPUT ./logo-federico-II.pdf
 INPUT ./logo-federico-II.pdf
 INPUT ./logo-federico-II.pdf
-OUTPUT example.pdf
 INPUT ./logo-federico-II.pdf
 INPUT ./logo-federico-II.pdf
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr17.tfm
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmcsc10.tfm
-INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsl10.tfm
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./example.toc
@@ -208,6 +208,14 @@ INPUT ../Diagramma ER/ER.png
 INPUT ../Diagramma ER/ER.png
 INPUT ../Diagramma ER/ER.png
 INPUT ../Diagramma ER/ER.png
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/tcrm1000.tfm
+INPUT ../Diagramma UML Ristrutturato/UMLRistrutturato.png
+INPUT ../Diagramma UML Ristrutturato/UMLRistrutturato.png
+INPUT ../Diagramma UML Ristrutturato/UMLRistrutturato.png
+INPUT ../Diagramma UML Ristrutturato/UMLRistrutturato.png
+INPUT ../Diagramma UML Ristrutturato/UMLRistrutturato.png
+INPUT ../Diagramma UML Ristrutturato/UMLRistrutturato.png
+INPUT ../Diagramma UML Ristrutturato/UMLRistrutturato.png
 INPUT ../SQL/Tabelle/Topic.sql
 INPUT ../SQL/Tabelle/Topic.sql
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmtt10.tfm
@@ -230,6 +238,8 @@ INPUT ../SQL/Tabelle/SessioneOnline.sql
 INPUT ../SQL/Tabelle/SessioneOnline.sql
 INPUT ../SQL/Tabelle/SessioneOnline.sql
 INPUT example.aux
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb
