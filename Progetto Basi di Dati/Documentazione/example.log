@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.4)  10 JUL 2025 17:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.4)  10 JUL 2025 17:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -63,44 +63,7 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@dimlist=\toks18
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/geometry/geometry.cfg)) (uninafrontespizio.sty
-Package: uninafrontespizio 2018/07/24 UniNA Frontespizio Package
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/setspace/setspace.sty
-Package: setspace 2022/12/04 v6.7b set line spacing
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/etoolbox/etoolbox.sty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count287
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/pgf/frontendlayer/tikz.sty
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/pgf/basiclayer/pgf.sty
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/pgf/utilities/pgfrcs.sty
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks19
-\pgfutil@tempdima=\dimen157
-\pgfutil@tempdimb=\dimen158
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box53
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/utilities/pgfrcs.code.tex
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/pgf/pgf.revision.tex)
-Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
-))
-Package: pgf 2023-01-15 v3.1.10 (3.1.10)
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/pgf/basiclayer/pgfcore.sty
+x/geometry/geometry.cfg))
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
@@ -123,9 +86,46 @@ Package graphics Info: Driver file: pdftex.def on input line 106.
 x/graphics-def/pdftex.def
 File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen159
-\Gin@req@width=\dimen160
+\Gin@req@height=\dimen157
+\Gin@req@width=\dimen158
+) (uninafrontespizio.sty
+Package: uninafrontespizio 2018/07/24 UniNA Frontespizio Package
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
 )
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count287
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/pgf/frontendlayer/tikz.sty
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/pgf/basiclayer/pgf.sty
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/pgf/utilities/pgfrcs.sty
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks19
+\pgfutil@tempdima=\dimen159
+\pgfutil@tempdimb=\dimen160
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box53
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/utilities/pgfrcs.code.tex
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/pgf/basiclayer/pgfcore.sty
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/pgf/systemlayer/pgfsys.sty
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
@@ -440,20 +440,20 @@ File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 ) (example.aux)
 \openout1 = `example.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -518,7 +518,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 <logo-federico-II.pdf, id=4, 501.79471pt x 499.8675pt>
 File: logo-federico-II.pdf Graphic file (type pdf)
 <use logo-federico-II.pdf>
-Package pdftex.def Info: logo-federico-II.pdf  used on input line 24.
+Package pdftex.def Info: logo-federico-II.pdf  used on input line 25.
 (pdftex.def)             Requested size: 99.58464pt x 99.20135pt.
 
 
@@ -555,97 +555,110 @@ Chapter 1.
 
 ]
 Chapter 2.
+<../Diagramma UML/UML.png, id=32, 1474.50874pt x 893.3375pt>
+File: ../Diagramma UML/UML.png Graphic file (type png)
+<use ../Diagramma UML/UML.png>
+Package pdftex.def Info: ../Diagramma UML/UML.png  used on input line 50.
+(pdftex.def)             Requested size: 443.57848pt x 268.7394pt.
+<../Diagramma ER/ER.png, id=34, 1670.24pt x 1028.84375pt>
+File: ../Diagramma ER/ER.png Graphic file (type png)
+<use ../Diagramma ER/ER.png>
+Package pdftex.def Info: ../Diagramma ER/ER.png  used on input line 56.
+(pdftex.def)             Requested size: 443.57848pt x 273.23885pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-[7]
 
-[8
+[7 <../Diagramma UML/UML.png>]
 
-]
+[8 <../Diagramma ER/ER.png>]
 Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--60
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--60
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--60
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--60
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--60
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--60
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--60
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--60
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--60
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--60
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--60
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--60
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--60
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--60
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--60
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--60
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
 
  []
 
 
 
-[9]
+[9
+
+]
 
 [10
 
@@ -660,13 +673,13 @@ L3 programming layer <2025-06-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 12851 strings out of 468226
- 271967 string characters out of 5420954
- 645658 words of memory out of 5000000
- 41177 multiletter control sequences out of 15000+600000
+ 12869 strings out of 468226
+ 272458 string characters out of 5420954
+ 645700 words of memory out of 5000000
+ 41195 multiletter control sequences out of 15000+600000
  630504 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,6n,121p,512b,218s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,6n,105p,512b,233s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/
 type1/public/amsfonts/cm/cmbx10.pfb></Users/carmineamato/Library/Application Su
 pport/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/c
@@ -676,9 +689,9 @@ eX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/carmineamato
 /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/
 cm/cmr12.pfb></Users/carmineamato/Library/Application Support/MiKTeX/texmfs/ins
 tall/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on example.pdf (11 pages, 235425 bytes).
+Output written on example.pdf (11 pages, 373939 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
+ 79 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
