@@ -526,4 +526,172 @@ Package pdftex.def Info: logo-federico-II.pdf  used on input line 25.
 
 
 {/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/map/p
-dftex/pdftex.map} <./logo-federico-II.pdf>
+dftex/pdftex.map} <./logo-federico-II.pdf>]
+
+[2
+
+] (example.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+)
+\tf@toc=\write4
+\openout4 = `example.toc'.
+
+
+
+[3]
+
+[4
+
+]
+Chapter 1.
+
+
+[5]
+
+[6
+
+]
+Chapter 2.
+<../Diagramma UML/UML.png, id=32, 1474.50874pt x 893.3375pt>
+File: ../Diagramma UML/UML.png Graphic file (type png)
+<use ../Diagramma UML/UML.png>
+Package pdftex.def Info: ../Diagramma UML/UML.png  used on input line 50.
+(pdftex.def)             Requested size: 443.57848pt x 268.7394pt.
+<../Diagramma ER/ER.png, id=34, 1670.24pt x 1028.84375pt>
+File: ../Diagramma ER/ER.png Graphic file (type png)
+<use ../Diagramma ER/ER.png>
+Package pdftex.def Info: ../Diagramma ER/ER.png  used on input line 56.
+(pdftex.def)             Requested size: 443.57848pt x 273.23885pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[7 <../Diagramma UML/UML.png>]
+
+[8 <../Diagramma ER/ER.png>]
+Chapter 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--78
+
+ []
+
+
+
+[9
+
+]
+
+[10
+
+]
+Chapter 4.
+
+
+[11] (example.aux)
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-06-09>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 12869 strings out of 468226
+ 272458 string characters out of 5420954
+ 645700 words of memory out of 5000000
+ 41195 multiletter control sequences out of 15000+600000
+ 630504 words of font info for 52 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 99i,6n,105p,512b,233s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/
+type1/public/amsfonts/cm/cmbx10.pfb></Users/carmineamato/Library/Application Su
+pport/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/c
+armineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publi
+c/amsfonts/cm/cmcsc10.pfb></Users/carmineamato/Library/Application Support/MiKT
+eX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/carmineamato
+/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/
+cm/cmr12.pfb></Users/carmineamato/Library/Application Support/MiKTeX/texmfs/ins
+tall/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
+Output written on example.pdf (11 pages, 373939 bytes).
+PDF statistics:
+ 79 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+
