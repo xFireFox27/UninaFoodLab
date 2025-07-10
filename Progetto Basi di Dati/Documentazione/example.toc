@@ -9,6 +9,7 @@
 \contentsline {section}{\numberline {2.6}Rimozione degli attributi multipli}{8}{}%
 \contentsline {section}{\numberline {2.7}Rimozione delle gerarchie di specializzazione}{9}{}%
 \contentsline {section}{\numberline {2.8}Analisi delle ridondanze}{9}{}%
+\contentsline {section}{\numberline {2.9}Class Diagram ristrutturato}{9}{}%
 \contentsline {chapter}{\numberline {3}Progettazione Logica}{11}{}%
 \contentsline {section}{\numberline {3.1}Schema Logico}{11}{}%
 \contentsline {chapter}{\numberline {4}Progettazione Fisica}{13}{}%

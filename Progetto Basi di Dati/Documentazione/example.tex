@@ -14,7 +14,6 @@
 \AnnoAccademico{Anno Accademico 2024--2025}
 \Titolo{UninaFoodLab Database}
 
-
 \Logo{logo-federico-II.pdf} %path to logo image
 \LogoWidth{3.5cm} %optional, default: 3cm
 \LogoPosition{below-uni} % or top, or below-title, or above-title, or no-logo
@@ -26,6 +25,7 @@
     % \makefrontpagealt
     \pagestyle{headings}
     \tableofcontents
+
     \chapter{Descrizione del progetto}
     \section{Descrizione sintetica del problema}
     Si vuole realizzare una base di dati relazionale per la gestione di corsi di cucina tematici.
@@ -62,12 +62,6 @@
     implica la trasformazione delle entità e delle relazioni del modello concettuale, al fine di renderne più agevole l'implementazione 
     in un database relazionale. Durante questa fase, si identificano le chiavi primarie e le chiavi esterne, si rimuovono gli attributi multipli
     e le gerarchie di specializzazione, si normalizzano le tabelle per ridurre la ridondanza dei dati.
-    \begin{figure}[h]
-        \centering
-        \includegraphics[width=\textwidth]{../Diagramma UML Ristrutturato/UMLRistrutturato.png}
-        \caption{Diagramma UML ristrutturato}
-        \label{fig:uml-ristrutturato}
-    \end{figure}
     \section{Identificazione delle chiavi primarie}
     Le chiavi primarie sono gli attributi che identificano in modo univoco ogni record in una tabella. Nella nostra ristrutturazione
     abbiamo fatto uso di chiavi surrogate, ossia chiavi artificiali create per garantire l'unicità dei record nel caso in cui non esistano 
@@ -78,12 +72,20 @@
     \section{Rimozione degli attributi multipli}
     Non sono presenti attributi multipli nel modello concettuale.
     \section{Rimozione delle gerarchie di specializzazione}
-    Sono presenti due gerarchie di specializzazione: la prima relativa alla classe "Persona"
+    Sono presenti due gerarchie di specializzazione:
     \begin{itemize}
         \item 'Persona' si specializza in "Chef" e "Utente"
+        \item 'Sessione' si specializza in "Sessione Online" e "Sessione in Presenza"
     \end{itemize}
     \section{Analisi delle ridondanze}
-    Non sono presenti ridondanze significative nel modello concettuale. 
+    Non sono presenti ridondanze significative nel modello concettuale.
+    \section{Class Diagram ristrutturato}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=\textwidth]{../Diagramma UML Ristrutturato/UMLRistrutturato.png}
+        \caption{Diagramma UML ristrutturato}
+        \label{fig:uml-ristrutturato}
+    \end{figure}
     
     \chapter{Progettazione Logica}
     \section{Schema Logico}
