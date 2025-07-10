@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.10)  10 JUL 2025 18:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.10)  10 JUL 2025 18:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -370,12 +370,12 @@ Chapter 2.
 <../Diagramma UML/UML.png, id=32, 1474.50874pt x 893.3375pt>
 File: ../Diagramma UML/UML.png Graphic file (type png)
 <use ../Diagramma UML/UML.png>
-Package pdftex.def Info: ../Diagramma UML/UML.png  used on input line 39.
+Package pdftex.def Info: ../Diagramma UML/UML.png  used on input line 50.
 (pdftex.def)             Requested size: 443.57848pt x 268.7394pt.
 <../Diagramma ER/ER.png, id=34, 1670.24pt x 1028.84375pt>
 File: ../Diagramma ER/ER.png Graphic file (type png)
 <use ../Diagramma ER/ER.png>
-Package pdftex.def Info: ../Diagramma ER/ER.png  used on input line 45.
+Package pdftex.def Info: ../Diagramma ER/ER.png  used on input line 56.
 (pdftex.def)             Requested size: 443.57848pt x 273.23885pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -383,7 +383,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <../Diagramma UML Ristrutturato/UMLRistrutturato.png, id=35, 1855.93375pt x 753.81625pt>
 File: ../Diagramma UML Ristrutturato/UMLRistrutturato.png Graphic file (type png)
 <use ../Diagramma UML Ristrutturato/UMLRistrutturato.png>
-Package pdftex.def Info: ../Diagramma UML Ristrutturato/UMLRistrutturato.png  used on input line 56.
+Package pdftex.def Info: ../Diagramma UML Ristrutturato/UMLRistrutturato.png  used on input line 67.
 (pdftex.def)             Requested size: 443.57848pt x 180.16045pt.
 [7 <../Diagramma UML/UML.png>]
 
@@ -393,6 +393,86 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ]
 Chapter 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--105
+
+ []
+
 [11] [12
 
 ]
@@ -404,15 +484,15 @@ L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 12887 strings out of 474486
- 268958 string characters out of 5743283
- 1930542 words of memory out of 5000000
- 34970 multiletter control sequences out of 15000+600000
+ 12888 strings out of 474486
+ 268967 string characters out of 5743283
+ 1931542 words of memory out of 5000000
+ 34971 multiletter control sequences out of 15000+600000
  562083 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,7n,107p,522b,235s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/utente/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on example.pdf (13 pages, 450743 bytes).
+Output written on example.pdf (13 pages, 456927 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
