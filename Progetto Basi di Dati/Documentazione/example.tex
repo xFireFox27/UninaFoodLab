@@ -27,10 +27,36 @@
     \tableofcontents
     \chapter{Descrizione del progetto}
     \section{Descrizione sintetica del problema}
+    Si vuole realizzare una base di dati relazionale per la gestione di corsi di cucina tematici.
+    Gli chef possono registrare corsi su specifici argomenti, specificando una data di inizio e
+    una frequenza delle sessioni. Ogni corso è articolato in più sessioni,
+    che possono essere di due tipi: online, oppure in presenza, in cui gli utenti svolgono attività pratiche.
+    Gli utenti possono iscriversi a più corsi e, nel caso delle sessioni pratiche, devono fornire una adesione
+    esplicita per confermare la loro partecipazione. Ogni sessione pratica prevede la preparazione di una o
+    più ricette, ciascuna delle quali richiede una specifica lista di ingredienti. Le adesioni vengono utilizzate
+    per pianificare correttamente la quantità di ingredienti necessari, evitando così sprechi alimentari. 
+    Il sistema prevede la possibilità di notificare gli utenti iscritti ad
+    un corso in caso di variazioni di programma.
+    
     \chapter{Progettazione Concettuale}
     \section{Introduzione}
     \chapter{Progettazione Logica}
     \section{Schema Logico}
+    \textbf{TOPIC}(\underline{IdTopic}, Nome, Descrizione)\\\\
+    \textbf{INSEGNA}(\underline{\underline{IdTopic}}, \underline{\underline{UsernameChef}})\\\\
+    \textbf{CORSO}(\underline{IdCorso}, Titolo, Frequenza, NumLezioni, DataInizio, \underline{\underline{IdTopic}}, \underline{\underline{UsernameChef}})\\\\
+    \textbf{CHEF}(\underline{Username}, Nome, Cognome, Password)\\\\
+    \textbf{UTENTE}(\underline{Username}, Nome, Cognome, Password)\\\\
+    \textbf{NOTIFICA}(\underline{IdNotifica}, DataInvio, Oggetto, Testo, \underline{\underline{UsernameChef}})\\\\
+    \textbf{RICEVE}(\underline{\underline{IdNotifica}}, \underline{\underline{UsernameUtente}})\\\\
+    \textbf{ISCRIZIONE}(\underline{\underline{UsernameUtente}}, \underline{\underline{IdCorso}}, DataIscrizione)\\\\
+    \textbf{SESSIONE ONLINE}(\underline{IdSessione}, Link, Data, Durata, NumSessione, \underline{\underline{IdCorso}})\\\\
+    \textbf{SESSIONE IN PRESENZA}(\underline{IdSessione}, Luogo, Aula, Data, Durata, NumSessione, \underline{\underline{IdCorso}})\\\\
+    \textbf{ADESIONE}(\underline{\underline{UsernameUtente}}, \underline{\underline{IdSessionePresenza}})\\\\
+    \textbf{RICETTA}(\underline{IdRicetta}, Nome, Descrizione)\\\\
+    \textbf{PREPARA}(\underline{\underline{IdSessionePresenza}}, \underline{\underline{IdRicetta}})\\\\
+    \textbf{INGREDIENTE}(\underline{IdIngrediente}, Nome, UnitàDiMisura, Allergene)\\\\
+    \textbf{COMPOSIZIONE}(\underline{\underline{IdRicetta}}, \underline{\underline{IdIngrediente}}, Quantità)\\\\
     \chapter{Progettazione Fisica}
     \section{Definizione tabelle}
     palle due
