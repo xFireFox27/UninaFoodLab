@@ -1,5 +1,6 @@
 \documentclass{book}
 \usepackage[margin=3cm]{geometry}
+\usepackage{graphicx} % Per inserire immagini
 
 % STEP 1: include the package
 \usepackage{uninafrontespizio}
@@ -40,6 +41,23 @@
     
     \chapter{Progettazione Concettuale}
     \section{Introduzione}
+    Una volta definito e analizzato il problema possiamo procedere con la progettazione concettuale della base di dati. In questa fase, 
+    l'obiettivo è quello di creare un modello concettuale che rappresenti le entità, le relazioni e le caratteristiche del dominio. Tale schema viene
+    rappresentato mediante un diagramma delle classi UML e un diagramma Entità-Relazioni (ER).    
+    \section{Diagrammi}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=\textwidth]{../Diagramma UML/UML.png}
+        \caption{Diagramma delle classi UML}
+        \label{fig:uml}
+    \end{figure}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=\textwidth]{../Diagramma ER/ER.png}
+        \caption{Diagramma Entità-Relazioni}
+        \label{fig:er}
+    \end{figure}
+    
     \chapter{Progettazione Logica}
     \section{Schema Logico}
     \textbf{TOPIC}(\underline{IdTopic}, Nome, Descrizione)\\\\
@@ -59,6 +77,5 @@
     \textbf{COMPOSIZIONE}(\underline{\underline{IdRicetta}}, \underline{\underline{IdIngrediente}}, Quantità)\\\\
     \chapter{Progettazione Fisica}
     \section{Definizione tabelle}
-    palle due
    
 \end{document}
