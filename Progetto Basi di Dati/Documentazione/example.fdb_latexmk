@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1751724828.81038 "/Users/carmineamato/Desktop/Progetto Basi di Dati/Documentazione/example.tex" "example.pdf" "example" 1751724829.21721 0
-  "/Users/carmineamato/Desktop/Progetto Basi di Dati/Documentazione/example.tex" 1751724827.8549 1098 ebde1126f18fa61c41524b845f9f9aef ""
+["pdflatex"] 1752160083.68302 "/Users/carmineamato/Desktop/Progetto clone/UninaFoodLab/Progetto Basi di Dati/Documentazione/example.tex" "example.pdf" "example" 1752160084.09232 0
+  "/Users/carmineamato/Desktop/Progetto clone/UninaFoodLab/Progetto Basi di Dati/Documentazione/example.tex" 1752160082.83445 1216 d2e100b4e31058725d8813ca3dd3b846 ""
   "/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map" 1751625201.97343 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1751624844.90566 13247005 d7d1b7864ef92e03393d1f5ad0e19ae6 ""
   "/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm" 1751622539.29832 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -99,11 +99,11 @@
   "/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty" 1751622543.43482 325 f9f16d12354225b7dd52a3321f085955 ""
   "/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/setspace/setspace.sty" 1751625201.54629 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty" 1751622544.97003 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "example.aux" 1751724829.126 923 5bbd88b81b2cb2dfe540c0fda1c6cb9f "pdflatex"
-  "example.tex" 1751724827.8549 1098 ebde1126f18fa61c41524b845f9f9aef ""
-  "example.toc" 1751724829.1264 376 8593d430c570aac4a0ee0ab561dcc5f3 "pdflatex"
-  "logo-federico-II.pdf" 1576617472 133374 80fc15669ec907fd5c7a726fc2c3d0c0 ""
-  "uninafrontespizio.sty" 1751625538.44678 5634 1bfa880c64007d78dab3dee241a717b2 ""
+  "example.aux" 1752160083.99994 1218 43bec876d358a683d47ba0b2267f24df "pdflatex"
+  "example.tex" 1752160082.83445 1216 d2e100b4e31058725d8813ca3dd3b846 ""
+  "example.toc" 1752160084.0006 553 601821b0a66fca11ccc0899b973cc46c "pdflatex"
+  "logo-federico-II.pdf" 1751984201.47726 133374 80fc15669ec907fd5c7a726fc2c3d0c0 ""
+  "uninafrontespizio.sty" 1751984201.47855 5634 1bfa880c64007d78dab3dee241a717b2 ""
   (generated)
   "example.aux"
   "example.log"
