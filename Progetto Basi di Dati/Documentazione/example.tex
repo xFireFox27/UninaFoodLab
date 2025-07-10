@@ -38,7 +38,7 @@
         \centering
         \includegraphics[width=\textwidth]{../Diagramma UML/UML.png}
         \caption{Diagramma delle classi UML}
-        \label{fig:uml}
+        \label{fig:uml}     
     \end{figure}
     \begin{figure}[h]
         \centering
@@ -46,7 +46,17 @@
         \caption{Diagramma Entità-Relazioni}
         \label{fig:er}
     \end{figure}
-    
+    \section{Ristrutturazione del modello concettuale}
+    Un'operazione fondamentale per il passaggio dal modello concettuale a quello logico è la ristrutturazione. Questo processo 
+    implica la trasformazione delle entità e delle relazioni del modello concettuale, al fine di renderne più agevole l'implementazione 
+    in un database relazionale. Durante questa fase, si identificano le chiavi primarie e le chiavi esterne, si rimuovono gli attributi multipli
+    e le gerarchie di specializzazione, si normalizzano le tabelle per ridurre la ridondanza dei dati.
+    \section{Identificazione delle chiavi primarie}
+    Le chiavi primarie sono gli attributi che identificano in modo univoco ogni record in una tabella. Nella nostra ristrutturazione
+    abbiamo fatto uso di chiavi surrogate, ossia chiavi artificiali create per garantire l'unicità dei record nel caso in cui non esistano 
+    chiavi naturali adatte. Queste chiavi non hanno un significato intrinseco, ma sono utilizzate per facilitare le operazioni sulle tabelle.
+    \section{Analisi delle ridondanze}
+    Non sono presenti ridondanze significative nel modello concettuale. 
     \chapter{Progettazione Logica}
     \section{Schema Logico}
     \chapter{Progettazione Fisica}
