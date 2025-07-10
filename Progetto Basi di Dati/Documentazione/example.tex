@@ -1,6 +1,30 @@
 \documentclass{book}
 \usepackage[margin=3cm]{geometry}
-\usepackage{graphicx} % Per inserire immagini
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+
+
+% Configurazione SQL
+\lstdefinestyle{sqlstyle}{
+    language=SQL,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{green!60!black},
+    stringstyle=\color{red},
+    numberstyle=\tiny\color{gray},
+    numbers=left,
+    numbersep=5pt,
+    frame=single,
+    breaklines=true,
+    breakatwhitespace=true,
+    tabsize=2,
+    showspaces=false,
+    showstringspaces=false,
+    captionpos=b
+}
+
+\lstset{style=sqlstyle}
 
 % STEP 1: include the package
 \usepackage{uninafrontespizio}
@@ -76,6 +100,29 @@
     \textbf{INGREDIENTE}(\underline{IdIngrediente}, Nome, UnitàDiMisura, Allergene)\\\\
     \textbf{COMPOSIZIONE}(\underline{\underline{IdRicetta}}, \underline{\underline{IdIngrediente}}, Quantità)\\\\
     \chapter{Progettazione Fisica}
+    La base di dati è stata implementata utilizzando PostgreSQL, un sistema di gestione di basi di dati relazionali open source.
+    La progettazione fisica della base di dati è stata effettuata seguendo le linee guida del modello relazionale, 
+    definendo le tabelle, le chiavi primarie e le chiavi esterne per garantire l'integrità referenziale tra le entità.
+    Qui di seguito sono riportate le definizioni delle tabelle utilizzate nel database ed eventuali triggers, procedures, functions o vincoli implementati.
     \section{Definizione tabelle}
-   
+    Seguono le definizioni delle tabelle estratte dallo script di creazione del database.
+    \section{Definizione della tabella TOPIC}
+    \lstinputlisting[caption=Creazione tabella Topic]{../SQL/Tabelle/Topic.sql}
+    La tabella \textbf{Topic} rappresenta le categorie tematiche dei corsi di cucina. Ogni topic ha un identificatore univoco generato automaticamente e un nome che deve essere scelto tra i valori predefiniti specificati nel constraint CHECK.\\\\\\\\
+    \section{Definizione della tabella CHEF}
+    \lstinputlisting[caption=Creazione tabella Chef]{../SQL/Tabelle/Chef.sql}
+    La tabella \textbf{Chef} rappresenta gli chef che possono insegnare i corsi di cucina. Ogni chef ha un identificatore univoco (Username) e le informazioni personali come nome, cognome e password. \\\\\\\\\\\\\\\\\\
+    \section{Definizione della tabella UTENTE}
+    \lstinputlisting[caption=Creazione tabella Utente]{../SQL/Tabelle/Utente.sql}
+    La tabella \textbf{Utente} rappresenta gli utenti che possono iscriversi ai corsi di cucina. Ogni utente ha un identificatore univoco (Username) e le informazioni personali come nome, cognome e password. \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    \section{Definizione della tabella CORSO}
+    \lstinputlisting[caption=Creazione tabella Corso]{../SQL/Tabelle/Corso.sql}
+    La tabella \textbf{Corso} rappresenta i corsi di cucina. Ogni corso ha un identificatore univoco (IdCorso), un titolo, una frequenza, il numero di lezioni, una data di inizio e un riferimento al topic e allo chef che lo insegna. \\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    \section{Definizione della tabella SESSIONEINPRESENZA}
+    \lstinputlisting[caption=Creazione tabella Sessione in Presenza]{../SQL/Tabelle/SessioneInPresenza.sql}
+    La tabella \textbf{SessioneInPresenza} rappresenta le sessioni in presenza dei corsi di cucina. Ogni sessione ha un identificatore univoco (IdSessione), un luogo, un'aula, una data, una durata, un numero di sessione e un riferimento al corso a cui appartiene. \\\\
+    \section{Definizione della tabella SESSIONEONLINE}
+    \lstinputlisting[caption=Creazione tabella Sessione Online]{../SQL/Tabelle/SessioneOnline.sql}
+    La tabella \textbf{SessioneOnline} rappresenta le sessioni online dei corsi di cucina. Ogni sessione ha un identificatore univoco (IdSessione), un link, una data, una durata, un numero di sessione e un riferimento al corso a cui appartiene. \\\\
+  
 \end{document}

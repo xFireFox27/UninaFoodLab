@@ -7,3 +7,9 @@
 \contentsline {section}{\numberline {3.1}Schema Logico}{9}{}%
 \contentsline {chapter}{\numberline {4}Progettazione Fisica}{11}{}%
 \contentsline {section}{\numberline {4.1}Definizione tabelle}{11}{}%
+\contentsline {section}{\numberline {4.2}Definizione della tabella TOPIC}{11}{}%
+\contentsline {section}{\numberline {4.3}Definizione della tabella CHEF}{12}{}%
+\contentsline {section}{\numberline {4.4}Definizione della tabella UTENTE}{12}{}%
+\contentsline {section}{\numberline {4.5}Definizione della tabella CORSO}{13}{}%
+\contentsline {section}{\numberline {4.6}Definizione della tabella SESSIONEINPRESENZA}{14}{}%
+\contentsline {section}{\numberline {4.7}Definizione della tabella SESSIONEONLINE}{14}{}%

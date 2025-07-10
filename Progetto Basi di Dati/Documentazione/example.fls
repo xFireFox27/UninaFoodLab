@@ -30,6 +30,28 @@ INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdftex.def
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdftex.def
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdftex.def
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/listings.sty
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/listings.sty
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstpatch.sty
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstpatch.sty
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstpatch.sty
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstmisc.sty
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstmisc.sty
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstmisc.sty
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/listings.cfg
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/listings.cfg
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/listings.cfg
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1.sty
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1.sty
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/listings/lstlang1.sty
 INPUT ./uninafrontespizio.sty
 INPUT uninafrontespizio.sty
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/setspace/setspace.sty
@@ -68,14 +90,6 @@ INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
-INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty
-INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
-INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
-INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/color.cfg
-INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx
-INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx
-INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/mathcolor.ltx
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.tex
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.tex
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.tex
@@ -194,6 +208,27 @@ INPUT ../Diagramma ER/ER.png
 INPUT ../Diagramma ER/ER.png
 INPUT ../Diagramma ER/ER.png
 INPUT ../Diagramma ER/ER.png
+INPUT ../SQL/Tabelle/Topic.sql
+INPUT ../SQL/Tabelle/Topic.sql
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmtt9.tfm
+INPUT ../SQL/Tabelle/Topic.sql
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr9.tfm
+INPUT ../SQL/Tabelle/Chef.sql
+INPUT ../SQL/Tabelle/Chef.sql
+INPUT ../SQL/Tabelle/Chef.sql
+INPUT ../SQL/Tabelle/Utente.sql
+INPUT ../SQL/Tabelle/Utente.sql
+INPUT ../SQL/Tabelle/Utente.sql
+INPUT ../SQL/Tabelle/Corso.sql
+INPUT ../SQL/Tabelle/Corso.sql
+INPUT ../SQL/Tabelle/Corso.sql
+INPUT ../SQL/Tabelle/SessioneInPresenza.sql
+INPUT ../SQL/Tabelle/SessioneInPresenza.sql
+INPUT ../SQL/Tabelle/SessioneInPresenza.sql
+INPUT ../SQL/Tabelle/SessioneOnline.sql
+INPUT ../SQL/Tabelle/SessioneOnline.sql
+INPUT ../SQL/Tabelle/SessioneOnline.sql
 INPUT example.aux
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -205,5 +240,9 @@ INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/font
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsl10.pfb
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsl10.pfb
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt9.pfb
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt9.pfb
