@@ -11,15 +11,15 @@
 \contentsline {section}{\numberline {2.8}Analisi delle ridondanze}{5}{}%
 \contentsline {section}{\numberline {2.9}Class Diagram ristrutturato}{5}{}%
 \contentsline {section}{\numberline {2.10}Dizionario delle classi}{5}{}%
-\contentsline {section}{\numberline {2.11}Dizionario delle associazioni}{5}{}%
-\contentsline {section}{\numberline {2.12}Dizionario dei vincoli}{5}{}%
-\contentsline {chapter}{\numberline {3}Progettazione Logica}{6}{}%
-\contentsline {section}{\numberline {3.1}Schema Logico}{6}{}%
-\contentsline {chapter}{\numberline {4}Progettazione Fisica}{7}{}%
-\contentsline {section}{\numberline {4.1}Definizione tabelle}{7}{}%
-\contentsline {section}{\numberline {4.2}Definizione della tabella TOPIC}{7}{}%
-\contentsline {section}{\numberline {4.3}Definizione della tabella CHEF}{8}{}%
-\contentsline {section}{\numberline {4.4}Definizione della tabella UTENTE}{8}{}%
-\contentsline {section}{\numberline {4.5}Definizione della tabella CORSO}{9}{}%
-\contentsline {section}{\numberline {4.6}Definizione della tabella SESSIONEINPRESENZA}{10}{}%
-\contentsline {section}{\numberline {4.7}Definizione della tabella SESSIONEONLINE}{10}{}%
+\contentsline {section}{\numberline {2.11}Dizionario delle associazioni}{6}{}%
+\contentsline {section}{\numberline {2.12}Dizionario dei vincoli}{6}{}%
+\contentsline {chapter}{\numberline {3}Progettazione Logica}{7}{}%
+\contentsline {section}{\numberline {3.1}Schema Logico}{7}{}%
+\contentsline {chapter}{\numberline {4}Progettazione Fisica}{8}{}%
+\contentsline {section}{\numberline {4.1}Definizione tabelle}{8}{}%
+\contentsline {section}{\numberline {4.2}Definizione della tabella TOPIC}{8}{}%
+\contentsline {section}{\numberline {4.3}Definizione della tabella CHEF}{9}{}%
+\contentsline {section}{\numberline {4.4}Definizione della tabella UTENTE}{9}{}%
+\contentsline {section}{\numberline {4.5}Definizione della tabella CORSO}{10}{}%
+\contentsline {section}{\numberline {4.6}Definizione della tabella SESSIONEINPRESENZA}{11}{}%
+\contentsline {section}{\numberline {4.7}Definizione della tabella SESSIONEONLINE}{11}{}%
