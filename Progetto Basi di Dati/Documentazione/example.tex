@@ -132,32 +132,40 @@
         \hline
         \textbf{Associazione} & \textbf{Descrizione} & \textbf{Classi coinvolte} \\
         \hline
-        Insegna & Associa uno chef a un topic che insegna & Chef, Topic \\
+        Insegna & Associa uno chef a un topic che insegna & Chef[0,*], Topic[1,*] \\
         \hline
-        Riceve & Associa un utente a una notifica ricevuta & Utente, Notifica \\
+        Riceve & Associa un utente a una notifica ricevuta & Utente[1,*], Notifica[0,*] \\
         \hline
-        È iscritto a & Associa un utente a un corso a cui è iscritto & Utente, Corso, Iscrizione (Classe di associazione) \\
+        È iscritto a & Associa un utente a un corso a cui è iscritto & Utente[0,*], Corso[0,*], Iscrizione (Classe di associazione) \\
         \hline
-        Aderisce a & Associa un utente a una sessione in presenza a cui partecipa & Utente, Sessione in Presenza \\
+        Aderisce a & Associa un utente a una sessione in presenza a cui partecipa & Utente[1,*], SessioneInPresenza[0,*] \\
         \hline
-        Si prepara & Associa una sessione in presenza a una ricetta che si prepara & Sessione in Presenza, Ricetta \\
+        Si prepara & Associa una sessione in presenza a una ricetta che si prepara & SessioneInPresenza[0,*], Ricetta[1,*] \\
         \hline
-        È composta da & Associa una ricetta a un ingrediente che la compone & Ricetta, Ingrediente, Composizione (Classe di associazione) \\
+        È composta da & Associa una ricetta a un ingrediente che la compone & Ricetta[0,*], Ingrediente[1,*], Composizione (Classe di associazione) \\
         \hline
-        Tiene & Associa uno chef a un corso che insegna & Chef, Corso \\
+        Tiene & Associa uno chef a un corso che insegna & Chef[1], Corso[0,*] \\
         \hline
-        Afferisce a & Associa un corso al topic di appartenenza & Corso, Topic \\
+        Afferisce a & Associa un corso al topic di appartenenza & Corso[0,*], Topic[1] \\
         \hline
-        È composto da (Online) & Associa un corso alle sue sessioni online & Corso, Sessione Online \\
+        È composto da (Online) & Associa un corso alle sue sessioni online & Corso[1], SessioneOnline[1,*] \\
         \hline
-        È composto da (Presenza) & Associa un corso alle sue sessioni in presenza & Corso, Sessione in Presenza \\
+        È composto da (Presenza) & Associa un corso alle sue sessioni in presenza & Corso[1], SessioneInPresenza[1,*] \\
         \hline
-        Invia & Associa uno chef alle notifiche che invia & Chef, Notifica \\
+        Invia & Associa uno chef alle notifiche che invia & Chef[1], Notifica[0,*] \\
         \hline
         \end{tabular}
     \end{table}
         
     \section{Dizionario dei vincoli}
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|p{3cm}|p{4cm}|p{8cm}|}
+        \hline
+        \textbf{Nome} & \textbf{Descrizione} \\
+        \hline
+        \end{tabular}
+    \end{table}
     
     \chapter{Progettazione Logica}
     \section{Schema Logico}
