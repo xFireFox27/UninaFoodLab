@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.4)  10 JUL 2025 18:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.4)  11 JUL 2025 16:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -498,7 +498,7 @@ LaTeX Font Info:    ... okay on input line 45.
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
+* modes: 
 * h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
 * v-part:(T,H,B)=(85.35826pt, 624.25346pt, 85.35826pt)
 * \paperwidth=614.295pt
@@ -512,7 +512,7 @@ LaTeX Font Info:    ... okay on input line 45.
 * \headsep=18.06749pt
 * \topskip=10.0pt
 * \footskip=25.29494pt
-* \marginparwidth=125.0pt
+* \marginparwidth=69.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
@@ -520,8 +520,8 @@ LaTeX Font Info:    ... okay on input line 45.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -563,11 +563,7 @@ Package pdftex.def Info: logo-federico-II.pdf  used on input line 48.
 
 
 {/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/map/p
-dftex/pdftex.map} <./logo-federico-II.pdf>]
-
-[2
-
-] (example.toc
+dftex/pdftex.map} <./logo-federico-II.pdf>] (example.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -578,26 +574,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 
-[3]
-
-[4
+[1
 
 ]
 Chapter 1.
 
 
-[5]
-
-[6
+[2
 
 ]
 Chapter 2.
-<../Diagramma UML/UML.png, id=32, 1474.50874pt x 893.3375pt>
+<../Diagramma UML/UML.png, id=22, 1474.50874pt x 893.3375pt>
 File: ../Diagramma UML/UML.png Graphic file (type png)
 <use ../Diagramma UML/UML.png>
 Package pdftex.def Info: ../Diagramma UML/UML.png  used on input line 74.
 (pdftex.def)             Requested size: 443.57848pt x 268.7394pt.
-<../Diagramma ER/ER.png, id=34, 1670.24pt x 1028.84375pt>
+<../Diagramma ER/ER.png, id=24, 1670.24pt x 1028.84375pt>
 File: ../Diagramma ER/ER.png Graphic file (type png)
 <use ../Diagramma ER/ER.png>
 Package pdftex.def Info: ../Diagramma ER/ER.png  used on input line 80.
@@ -607,10 +599,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[7 <../Diagramma UML/UML.png>]
+[3
 
-[8 <../Diagramma ER/ER.png>]
-<../Diagramma UML Ristrutturato/UMLRistrutturato.png, id=44, 1855.93375pt x 753
+ <../Diagramma UML/UML.png>]
+
+[4 <../Diagramma ER/ER.png>]
+<../Diagramma UML Ristrutturato/UMLRistrutturato.png, id=33, 1855.93375pt x 753
 .81625pt>
 File: ../Diagramma UML Ristrutturato/UMLRistrutturato.png Graphic file (type pn
 g)
@@ -620,11 +614,7 @@ sed on input line 109.
 (pdftex.def)             Requested size: 443.57848pt x 180.16045pt.
 
 
-[9 <../Diagramma UML Ristrutturato/UMLRistrutturato.png>]
-
-[10
-
-]
+[5 <../Diagramma UML Ristrutturato/UMLRistrutturato.png>]
 Chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 119--134
@@ -708,9 +698,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--134
 
 
 
-[11]
-
-[12
+[6
 
 ]
 Chapter 4.
@@ -739,7 +727,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
 
 
-[13] (../SQL/Tabelle/Chef.sql)
+[7
+
+] (../SQL/Tabelle/Chef.sql)
 Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
@@ -896,7 +886,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
 
 
-[14] (../SQL/Tabelle/Corso.sql)
+[8] (../SQL/Tabelle/Corso.sql)
 Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
@@ -967,11 +957,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--153
  []
 
 
-Underfull \vbox (badness 1418) has occurred while \output is active []
 
-
-
-[15] (../SQL/Tabelle/SessioneInPresenza.sql)
+[9] (../SQL/Tabelle/SessioneInPresenza.sql)
 Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
@@ -993,18 +980,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
 
 
-[16] (example.aux)
+[10] (example.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 14842 strings out of 468226
- 300469 string characters out of 5420954
- 813813 words of memory out of 5000000
- 43128 multiletter control sequences out of 15000+600000
- 631473 words of font info for 56 fonts, out of 8000000 for 9000
+ 14840 strings out of 468226
+ 300448 string characters out of 5420954
+ 813794 words of memory out of 5000000
+ 43127 multiletter control sequences out of 15000+600000
+ 631120 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,6n,101p,512b,1410s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk
@@ -1018,11 +1005,10 @@ nts/cm/cmr10.pfb></Users/carmineamato/Library/Application Support/MiKTeX/texmfs
 /install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/carmineamato/Library/
 Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.p
 fb></Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts
-/type1/public/amsfonts/cm/cmsl10.pfb></Users/carmineamato/Library/Application S
-upport/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on example.pdf (16 pages, 501446 bytes).
+/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on example.pdf (11 pages, 484456 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
+ 91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
