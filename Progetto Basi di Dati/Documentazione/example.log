@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.7.11)  11 JUL 2025 18:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.7.11)  11 JUL 2025 18:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -314,8 +314,7 @@ File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count298
 \l__pdf_internal_box=\box66
-)
-No file example.aux.
+) (./example.aux)
 \openout1 = `example.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
@@ -332,6 +331,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -396,25 +396,29 @@ Package pdftex.def Info: logo-federico-II.pdf  used on input line 61.
  [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./logo-federico-II.pdf>]
-No file example.toc.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./logo-federico-II.pdf>] (./example.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+ [1
+
+])
 \tf@toc=\write4
 \openout4 = `example.toc'.
 
-[1
-
-]
+ [2]
 Capitolo 1.
-[2
+[3
 
 ]
 Capitolo 2.
-<../Diagramma UML/UML.png, id=26, 1474.50874pt x 893.3375pt>
+<../Diagramma UML/UML.png, id=30, 1474.50874pt x 893.3375pt>
 File: ../Diagramma UML/UML.png Graphic file (type png)
 <use ../Diagramma UML/UML.png>
 Package pdftex.def Info: ../Diagramma UML/UML.png  used on input line 87.
 (pdftex.def)             Requested size: 443.57848pt x 268.7394pt.
-<../Diagramma ER/ER.png, id=28, 1670.24pt x 1028.84375pt>
+<../Diagramma ER/ER.png, id=32, 1670.24pt x 1028.84375pt>
 File: ../Diagramma ER/ER.png Graphic file (type png)
 <use ../Diagramma ER/ER.png>
 Package pdftex.def Info: ../Diagramma ER/ER.png  used on input line 93.
@@ -422,19 +426,15 @@ Package pdftex.def Info: ../Diagramma ER/ER.png  used on input line 93.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3
+[4
 
- <../Diagramma UML/UML.png>] [4 <../Diagramma ER/ER.png>]
-<../Diagramma UML Ristrutturato/UMLRistrutturato.png, id=37, 1855.93375pt x 753.81625pt>
+ <../Diagramma UML/UML.png>] [5 <../Diagramma ER/ER.png>]
+<../Diagramma UML Ristrutturato/UMLRistrutturato.png, id=41, 1855.93375pt x 753.81625pt>
 File: ../Diagramma UML Ristrutturato/UMLRistrutturato.png Graphic file (type png)
 <use ../Diagramma UML Ristrutturato/UMLRistrutturato.png>
 Package pdftex.def Info: ../Diagramma UML Ristrutturato/UMLRistrutturato.png  used on input line 122.
 (pdftex.def)             Requested size: 443.57848pt x 180.16045pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 131.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 131.
-
+ [6{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <../Diagramma UML Ristrutturato/UMLRistrutturato.png>]
 Underfull \hbox (badness 2469) in paragraph at lines 138--138
 \T1/cmr/m/n/10 la piat-ta-for-ma, pos-so-no
  []
@@ -465,622 +465,430 @@ Underfull \hbox (badness 4886) in paragraph at lines 152--153
  []
 
 
-Underfull \hbox (badness 6526) in paragraph at lines 157--158
-[]\T1/cmr/m/n/10 ======= In-se-
+Overfull \hbox (19.21284pt too wide) in paragraph at lines 132--159
+ [][] 
  []
 
-
-Underfull \hbox (badness 1540) in paragraph at lines 166--166
+[7]
+Underfull \hbox (badness 1540) in paragraph at lines 178--178
 []\T1/cmr/m/n/10 Associa una ses-sio-ne in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
 []\T1/cmr/m/n/10 È com-po-sto da
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--176
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 []\T1/cmr/m/n/10 È com-po-sto da
  []
 
-/home/bruno/Scrivania/BDD/UninaFoodLab/Progetto Basi di Dati/Documentazione/example.tex:180: Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.180         \hline
-                    
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
-[]\T1/cmr/m/n/10 >>>>>>>
- []
-
-
-Overfull \hbox (115.98146pt too wide) in paragraph at lines 179--180
-\T1/cmr/m/n/10 4891d63e6843ad49011d8846fc1d65b8b2b12d23 
- []
-
-
-Overfull \hbox (19.21284pt too wide) in paragraph at lines 131--182
+Overfull \hbox (19.21284pt too wide) in paragraph at lines 166--193
  [][] 
  []
 
-
-LaTeX Warning: Float too large for page by 105.60161pt on input line 182.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <../Diagramma UML Ristrutturato/UMLRistrutturato.png>] [6] [7]
+[8] [9]
 Capitolo 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--211
+Underfull \hbox (badness 10000) in paragraph at lines 208--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--211
+Underfull \hbox (badness 10000) in paragraph at lines 208--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--211
+Underfull \hbox (badness 10000) in paragraph at lines 208--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--211
+Underfull \hbox (badness 10000) in paragraph at lines 208--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--211
+Underfull \hbox (badness 10000) in paragraph at lines 208--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--211
+Underfull \hbox (badness 10000) in paragraph at lines 208--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--211
+Underfull \hbox (badness 10000) in paragraph at lines 208--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--211
+Underfull \hbox (badness 10000) in paragraph at lines 208--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--211
+Underfull \hbox (badness 10000) in paragraph at lines 208--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--211
+Underfull \hbox (badness 10000) in paragraph at lines 208--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--211
+Underfull \hbox (badness 10000) in paragraph at lines 208--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--211
+Underfull \hbox (badness 10000) in paragraph at lines 208--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--211
+Underfull \hbox (badness 10000) in paragraph at lines 208--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--211
+Underfull \hbox (badness 10000) in paragraph at lines 208--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--211
+Underfull \hbox (badness 10000) in paragraph at lines 208--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--211
+Underfull \hbox (badness 10000) in paragraph at lines 208--223
 
  []
 
-[8
+[10
 
 ]
 Capitolo 4.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 219.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 231.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 ) (../SQL/Tabelle/Topic.sql
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <9> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
-[9
+[11
 
 ] (../SQL/Tabelle/Chef.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 (../SQL/Tabelle/Utente.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
-[10] (../SQL/Tabelle/Corso.sql) (../SQL/Tabelle/SessioneInPresenza.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
-
- []
-
-[11] (../SQL/Tabelle/SessioneOnline.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
+[12] (../SQL/Tabelle/Corso.sql) (../SQL/Tabelle/SessioneInPresenza.sql)
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+
+ []
+
+[13] (../SQL/Tabelle/SessioneOnline.sql)
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
 (../SQL/Tabelle/Adesione.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
-[12] (../SQL/Tabelle/Prepara.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+[14] (../SQL/Tabelle/Prepara.sql)
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
 (../SQL/Tabelle/Ricetta.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
 
-(../SQL/Tabelle/Ingrediente.sql) [13] (../SQL/Tabelle/Composizione.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+(../SQL/Tabelle/Ingrediente.sql) [15] (../SQL/Tabelle/Composizione.sql)
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
 (../SQL/Tabelle/Notifica.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
  []
 
-(../SQL/Tabelle/Riceve.sql [14])
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+(../SQL/Tabelle/Riceve.sql [16])
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
 
 (../SQL/Tabelle/Insegna.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
 
  []
 
-(../SQL/Tabelle/Iscrizione.sql [15])
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
-
- []
-
-(../SQL/Trigger-Procedures-Functions/CalcoloNumeroAdesioni.sql) [16] (../SQL/Trigger-Procedures-Functions/TriggerAnnoCorso.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+(../SQL/Tabelle/Iscrizione.sql [17])
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-[17] (../SQL/Trigger-Procedures-Functions/TriggerAulaOccupata.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
-
- []
-
-[18] (../SQL/Trigger-Procedures-Functions/TriggerControlloAdesioniCorso.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
-
- []
-
-[19] (../SQL/Trigger-Procedures-Functions/TriggerControlloInsegna.sql)
+(../SQL/Trigger-Procedures-Functions/CalcoloNumeroAdesioni.sql) [18] (../SQL/Trigger-Procedures-Functions/TriggerAnnoCorso.sql)
 Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
@@ -1165,7 +973,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
 
-[20] (../SQL/Trigger-Procedures-Functions/TriggerControlloSessioneCorsoData.sql) (../SQL/Trigger-Procedures-Functions/TriggerDataInizio.sql [21])
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+
+ []
+
+[19] (../SQL/Trigger-Procedures-Functions/TriggerAulaOccupata.sql)
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+
+ []
+
+[20] (../SQL/Trigger-Procedures-Functions/TriggerControlloAdesioniCorso.sql)
 Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
@@ -1205,138 +1053,259 @@ Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
 
-(../SQL/Trigger-Procedures-Functions/TriggerDataSessione.sql) [22] (../SQL/Trigger-Procedures-Functions/TriggerLimiteIscrizioni.sql) (../SQL/Trigger-Procedures-Functions/TriggerNumSessione.sql [23]) [24] (../SQL/Trigger-Procedures-Functions/TriggerSovrapposizioniDate.sql [25]) (../SQL/Trigger-Procedures-Functions/TriggerUsernameUtentiChef.sql) [26] [27]
+[21] (../SQL/Trigger-Procedures-Functions/TriggerControlloInsegna.sql)
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+[22] (../SQL/Trigger-Procedures-Functions/TriggerControlloSessioneCorsoData.sql) (../SQL/Trigger-Procedures-Functions/TriggerDataInizio.sql [23])
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+(../SQL/Trigger-Procedures-Functions/TriggerDataSessione.sql) [24] (../SQL/Trigger-Procedures-Functions/TriggerLimiteIscrizioni.sql) (../SQL/Trigger-Procedures-Functions/TriggerNumSessione.sql [25]) [26] (../SQL/Trigger-Procedures-Functions/TriggerSovrapposizioniDate.sql [27]) (../SQL/Trigger-Procedures-Functions/TriggerUsernameUtentiChef.sql) [28] [29]
 Capitolo 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
 
  []
 
-(../SQL/Insert/InsertChef.sql [28
+(../SQL/Insert/InsertChef.sql [30
 
 ])
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
 
  []
 
-(../SQL/Insert/InsertUtente.sql [29])
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
-
- []
-
-(../SQL/Insert/InsertCorso.sql [30])
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
+(../SQL/Insert/InsertUtente.sql [31])
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+
+ []
+
+(../SQL/Insert/InsertCorso.sql [32])
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
  []
 
 (../SQL/Insert/InsertSessioneInPresenza.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
 
  []
 
-[31] (../SQL/Insert/InsertSessioneOnline.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
+[33] (../SQL/Insert/InsertSessioneOnline.sql)
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
 
  []
 
 (../SQL/Insert/InsertAdesioni.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 340--341
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--341
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
 
  []
 
-(../SQL/Insert/InsertRicetta.sql [32] [33] [34] [35] [36])
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
-
- []
-
-(../SQL/Insert/InsertIngrediente.sql [37] [38] [39] [40]) [41]
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+(../SQL/Insert/InsertRicetta.sql [34] [35] [36] [37] [38])
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 
  []
 
-[42]
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+(../SQL/Insert/InsertIngrediente.sql [39] [40] [41] [42]) [43]
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 
  []
 
 (../SQL/Insert/InsertTopic.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
 
-[43] (../SQL/Insert/InsertInsegna.sql) (../SQL/Insert/InsertPrepara.sql [44]) (../SQL/Insert/InsertIscrizione.sql [45] [46] [47]) [48] (./example.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[45] (../SQL/Insert/InsertInsegna.sql) (../SQL/Insert/InsertPrepara.sql [46]) (../SQL/Insert/InsertIscrizione.sql [47] [48] [49]) [50] (./example.aux) ) 
 Here is how much of TeX's memory you used:
- 16487 strings out of 476034
- 322372 string characters out of 5792864
+ 16491 strings out of 476034
+ 322420 string characters out of 5792864
  2193388 words of memory out of 6000000
  36561 multiletter control sequences out of 15000+600000
  524525 words of font info for 50 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  99i,10n,94p,622b,1713s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfcc2488.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on example.pdf (49 pages, 715535 bytes).
+Output written on example.pdf (51 pages, 722161 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
- 157 compressed objects within 2 object streams
+ 248 PDF objects out of 1000 (max. 8388607)
+ 161 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

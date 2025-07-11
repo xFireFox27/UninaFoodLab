@@ -1,64 +1,64 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {chapter}{\numberline {1}Descrizione del progetto}{2}{}%
-\contentsline {section}{\numberline {1.1}Descrizione sintetica del problema}{2}{}%
-\contentsline {chapter}{\numberline {2}Progettazione Concettuale}{3}{}%
-\contentsline {section}{\numberline {2.1}Introduzione}{3}{}%
-\contentsline {section}{\numberline {2.2}Diagrammi UML e ER}{3}{}%
-\contentsline {section}{\numberline {2.3}Ristrutturazione del modello concettuale}{4}{}%
-\contentsline {section}{\numberline {2.4}Identificazione delle chiavi primarie}{4}{}%
-\contentsline {section}{\numberline {2.5}Identificazione delle chiavi esterne}{4}{}%
-\contentsline {section}{\numberline {2.6}Rimozione degli attributi multipli}{4}{}%
-\contentsline {section}{\numberline {2.7}Rimozione delle gerarchie di specializzazione}{5}{}%
-\contentsline {section}{\numberline {2.8}Analisi delle ridondanze}{5}{}%
-\contentsline {section}{\numberline {2.9}Class Diagram ristrutturato}{5}{}%
-\contentsline {section}{\numberline {2.10}Dizionario delle classi}{5}{}%
-\contentsline {section}{\numberline {2.11}Dizionario delle associazioni}{5}{}%
-\contentsline {section}{\numberline {2.12}Dizionario dei vincoli}{5}{}%
-\contentsline {chapter}{\numberline {3}Progettazione Logica}{8}{}%
-\contentsline {section}{\numberline {3.1}Schema Logico}{8}{}%
-\contentsline {chapter}{\numberline {4}Progettazione Fisica}{9}{}%
-\contentsline {section}{\numberline {4.1}Definizione tabelle}{9}{}%
-\contentsline {subsection}{\numberline {4.1.1}Definizione della tabella TOPIC}{9}{}%
-\contentsline {subsection}{\numberline {4.1.2}Definizione della tabella CHEF}{10}{}%
-\contentsline {subsection}{\numberline {4.1.3}Definizione della tabella UTENTE}{10}{}%
-\contentsline {subsection}{\numberline {4.1.4}Definizione della tabella CORSO}{11}{}%
-\contentsline {subsection}{\numberline {4.1.5}Definizione della tabella SESSIONEINPRESENZA}{11}{}%
-\contentsline {subsection}{\numberline {4.1.6}Definizione della tabella SESSIONEONLINE}{12}{}%
-\contentsline {subsection}{\numberline {4.1.7}Definizione della tabella ADESIONE}{12}{}%
-\contentsline {subsection}{\numberline {4.1.8}Definizione della tabella PREPARA}{13}{}%
-\contentsline {subsection}{\numberline {4.1.9}Definizione della tabella RICETTA}{13}{}%
-\contentsline {subsection}{\numberline {4.1.10}Definizione della tabella INGREDIENTE}{13}{}%
-\contentsline {subsection}{\numberline {4.1.11}Definizione della tabella COMPOSIZIONE}{14}{}%
-\contentsline {subsection}{\numberline {4.1.12}Definizione della tabella NOTIFICA}{14}{}%
-\contentsline {subsection}{\numberline {4.1.13}Definizione della tabella RICEVE}{15}{}%
-\contentsline {subsection}{\numberline {4.1.14}Definizione della tabella INSEGNA}{15}{}%
-\contentsline {subsection}{\numberline {4.1.15}Definizione della tabella ISCRIZIONE}{16}{}%
-\contentsline {section}{\numberline {4.2}Triggers, Procedures, Functions e Vincoli}{16}{}%
-\contentsline {subsection}{\numberline {4.2.1}Funzione per calcolare il numero di adesioni}{16}{}%
-\contentsline {subsection}{\numberline {4.2.2}Trigger per controllare che l'anno del corso sia valido}{17}{}%
-\contentsline {subsection}{\numberline {4.2.3}Trigger per controllare che l'aula della sessione in presenza non sia occupata}{18}{}%
-\contentsline {subsection}{\numberline {4.2.4}Trigger per controllare che l'utente che aderisce ad una sessione in presenza sia iscritto al corso}{19}{}%
-\contentsline {subsection}{\numberline {4.2.5}Trigger per controllare che lo chef insegni il topic del corso che tiene}{20}{}%
-\contentsline {subsection}{\numberline {4.2.6}Trigger per contollare che le sessioni siano programmate in date successive alla data di inizio del corso}{21}{}%
-\contentsline {subsection}{\numberline {4.2.7}Trigger per controllare che la data di inizio del corso sia valida}{21}{}%
-\contentsline {subsection}{\numberline {4.2.8}Trigger per controllare che la data delle sessioni sia valida}{22}{}%
-\contentsline {subsection}{\numberline {4.2.9}Trigger per controllare che il corso non abbia raggiunto il limite di 50 iscrizioni}{22}{}%
-\contentsline {subsection}{\numberline {4.2.10}Trigger per controllare che il numero sessione sia coerente con il numero della sessione precedente}{23}{}%
-\contentsline {subsection}{\numberline {4.2.11}Trigger per controllare che non ci sia una sovrapposizione di date tra le sessioni in presenza per lo stesso chef}{25}{}%
-\contentsline {subsection}{\numberline {4.2.12}Trigger per controllare che gli username degli chef e degli utenti siano univoci}{26}{}%
-\contentsline {chapter}{\numberline {5}Popolamento del database}{28}{}%
-\contentsline {section}{\numberline {5.1}Inserimento dei dati}{28}{}%
-\contentsline {subsection}{\numberline {5.1.1}Query di inserimento degli chef}{28}{}%
-\contentsline {subsection}{\numberline {5.1.2}Query di inserimento degli utenti}{29}{}%
-\contentsline {subsection}{\numberline {5.1.3}Query di inserimento dei corsi}{30}{}%
-\contentsline {subsection}{\numberline {5.1.4}Query di inserimento delle sessioni in presenza}{31}{}%
-\contentsline {subsection}{\numberline {5.1.5}Query di inserimento delle sessioni online}{32}{}%
-\contentsline {subsection}{\numberline {5.1.6}Query di inserimento delle adesioni}{32}{}%
-\contentsline {subsection}{\numberline {5.1.7}Query di inserimento delle ricette}{32}{}%
-\contentsline {subsection}{\numberline {5.1.8}Query di inserimento degli ingredienti}{37}{}%
-\contentsline {subsection}{\numberline {5.1.9}Query di inserimento della composizione delle ricette}{42}{}%
-\contentsline {subsection}{\numberline {5.1.10}Query di inserimento dei topic}{43}{}%
-\contentsline {subsection}{\numberline {5.1.11}Query di inserimento della tabella insegna}{44}{}%
-\contentsline {subsection}{\numberline {5.1.12}Query di inserimento della tabella prepara}{44}{}%
-\contentsline {subsection}{\numberline {5.1.13}Query di inserimento delle iscrizioni}{45}{}%
+\contentsline {chapter}{\numberline {1}Descrizione del progetto}{3}{}%
+\contentsline {section}{\numberline {1.1}Descrizione sintetica del problema}{3}{}%
+\contentsline {chapter}{\numberline {2}Progettazione Concettuale}{4}{}%
+\contentsline {section}{\numberline {2.1}Introduzione}{4}{}%
+\contentsline {section}{\numberline {2.2}Diagrammi UML e ER}{4}{}%
+\contentsline {section}{\numberline {2.3}Ristrutturazione del modello concettuale}{5}{}%
+\contentsline {section}{\numberline {2.4}Identificazione delle chiavi primarie}{5}{}%
+\contentsline {section}{\numberline {2.5}Identificazione delle chiavi esterne}{5}{}%
+\contentsline {section}{\numberline {2.6}Rimozione degli attributi multipli}{5}{}%
+\contentsline {section}{\numberline {2.7}Rimozione delle gerarchie di specializzazione}{6}{}%
+\contentsline {section}{\numberline {2.8}Analisi delle ridondanze}{6}{}%
+\contentsline {section}{\numberline {2.9}Class Diagram ristrutturato}{6}{}%
+\contentsline {section}{\numberline {2.10}Dizionario delle classi}{7}{}%
+\contentsline {section}{\numberline {2.11}Dizionario delle associazioni}{8}{}%
+\contentsline {section}{\numberline {2.12}Dizionario dei vincoli}{9}{}%
+\contentsline {chapter}{\numberline {3}Progettazione Logica}{10}{}%
+\contentsline {section}{\numberline {3.1}Schema Logico}{10}{}%
+\contentsline {chapter}{\numberline {4}Progettazione Fisica}{11}{}%
+\contentsline {section}{\numberline {4.1}Definizione tabelle}{11}{}%
+\contentsline {subsection}{\numberline {4.1.1}Definizione della tabella TOPIC}{11}{}%
+\contentsline {subsection}{\numberline {4.1.2}Definizione della tabella CHEF}{12}{}%
+\contentsline {subsection}{\numberline {4.1.3}Definizione della tabella UTENTE}{12}{}%
+\contentsline {subsection}{\numberline {4.1.4}Definizione della tabella CORSO}{13}{}%
+\contentsline {subsection}{\numberline {4.1.5}Definizione della tabella SESSIONEINPRESENZA}{13}{}%
+\contentsline {subsection}{\numberline {4.1.6}Definizione della tabella SESSIONEONLINE}{14}{}%
+\contentsline {subsection}{\numberline {4.1.7}Definizione della tabella ADESIONE}{14}{}%
+\contentsline {subsection}{\numberline {4.1.8}Definizione della tabella PREPARA}{15}{}%
+\contentsline {subsection}{\numberline {4.1.9}Definizione della tabella RICETTA}{15}{}%
+\contentsline {subsection}{\numberline {4.1.10}Definizione della tabella INGREDIENTE}{15}{}%
+\contentsline {subsection}{\numberline {4.1.11}Definizione della tabella COMPOSIZIONE}{16}{}%
+\contentsline {subsection}{\numberline {4.1.12}Definizione della tabella NOTIFICA}{16}{}%
+\contentsline {subsection}{\numberline {4.1.13}Definizione della tabella RICEVE}{17}{}%
+\contentsline {subsection}{\numberline {4.1.14}Definizione della tabella INSEGNA}{17}{}%
+\contentsline {subsection}{\numberline {4.1.15}Definizione della tabella ISCRIZIONE}{18}{}%
+\contentsline {section}{\numberline {4.2}Triggers, Procedures, Functions e Vincoli}{18}{}%
+\contentsline {subsection}{\numberline {4.2.1}Funzione per calcolare il numero di adesioni}{18}{}%
+\contentsline {subsection}{\numberline {4.2.2}Trigger per controllare che l'anno del corso sia valido}{19}{}%
+\contentsline {subsection}{\numberline {4.2.3}Trigger per controllare che l'aula della sessione in presenza non sia occupata}{20}{}%
+\contentsline {subsection}{\numberline {4.2.4}Trigger per controllare che l'utente che aderisce ad una sessione in presenza sia iscritto al corso}{21}{}%
+\contentsline {subsection}{\numberline {4.2.5}Trigger per controllare che lo chef insegni il topic del corso che tiene}{22}{}%
+\contentsline {subsection}{\numberline {4.2.6}Trigger per contollare che le sessioni siano programmate in date successive alla data di inizio del corso}{23}{}%
+\contentsline {subsection}{\numberline {4.2.7}Trigger per controllare che la data di inizio del corso sia valida}{23}{}%
+\contentsline {subsection}{\numberline {4.2.8}Trigger per controllare che la data delle sessioni sia valida}{24}{}%
+\contentsline {subsection}{\numberline {4.2.9}Trigger per controllare che il corso non abbia raggiunto il limite di 50 iscrizioni}{24}{}%
+\contentsline {subsection}{\numberline {4.2.10}Trigger per controllare che il numero sessione sia coerente con il numero della sessione precedente}{25}{}%
+\contentsline {subsection}{\numberline {4.2.11}Trigger per controllare che non ci sia una sovrapposizione di date tra le sessioni in presenza per lo stesso chef}{27}{}%
+\contentsline {subsection}{\numberline {4.2.12}Trigger per controllare che gli username degli chef e degli utenti siano univoci}{28}{}%
+\contentsline {chapter}{\numberline {5}Popolamento del database}{30}{}%
+\contentsline {section}{\numberline {5.1}Inserimento dei dati}{30}{}%
+\contentsline {subsection}{\numberline {5.1.1}Query di inserimento degli chef}{30}{}%
+\contentsline {subsection}{\numberline {5.1.2}Query di inserimento degli utenti}{31}{}%
+\contentsline {subsection}{\numberline {5.1.3}Query di inserimento dei corsi}{32}{}%
+\contentsline {subsection}{\numberline {5.1.4}Query di inserimento delle sessioni in presenza}{33}{}%
+\contentsline {subsection}{\numberline {5.1.5}Query di inserimento delle sessioni online}{34}{}%
+\contentsline {subsection}{\numberline {5.1.6}Query di inserimento delle adesioni}{34}{}%
+\contentsline {subsection}{\numberline {5.1.7}Query di inserimento delle ricette}{34}{}%
+\contentsline {subsection}{\numberline {5.1.8}Query di inserimento degli ingredienti}{39}{}%
+\contentsline {subsection}{\numberline {5.1.9}Query di inserimento della composizione delle ricette}{44}{}%
+\contentsline {subsection}{\numberline {5.1.10}Query di inserimento dei topic}{45}{}%
+\contentsline {subsection}{\numberline {5.1.11}Query di inserimento della tabella insegna}{46}{}%
+\contentsline {subsection}{\numberline {5.1.12}Query di inserimento della tabella prepara}{46}{}%
+\contentsline {subsection}{\numberline {5.1.13}Query di inserimento delle iscrizioni}{47}{}%
