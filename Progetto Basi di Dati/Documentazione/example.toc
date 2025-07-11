@@ -39,3 +39,26 @@
 \contentsline {subsection}{\numberline {4.2.2}Trigger per controllare che l'anno del corso sia valido}{18}{}%
 \contentsline {subsection}{\numberline {4.2.3}Trigger per controllare che l'aula della sessione in presenza non sia occupata}{19}{}%
 \contentsline {subsection}{\numberline {4.2.4}Trigger per controllare che l'utente che aderisce ad una sessione in presenza sia iscritto al corso}{20}{}%
+\contentsline {subsection}{\numberline {4.2.5}Trigger per controllare che lo chef insegni il topic del corso che tiene}{21}{}%
+\contentsline {subsection}{\numberline {4.2.6}Trigger per contollare che le sessioni siano programmate in date successive alla data di inizio del corso}{22}{}%
+\contentsline {subsection}{\numberline {4.2.7}Trigger per controllare che la data di inizio del corso sia valida}{22}{}%
+\contentsline {subsection}{\numberline {4.2.8}Trigger per controllare che la data delle sessioni sia valida}{23}{}%
+\contentsline {subsection}{\numberline {4.2.9}Trigger per controllare che il corso non abbia raggiunto il limite di 50 iscrizioni}{23}{}%
+\contentsline {subsection}{\numberline {4.2.10}Trigger per controllare che il numero sessione sia coerente con il numero della sessione precedente}{24}{}%
+\contentsline {subsection}{\numberline {4.2.11}Trigger per controllare che non ci sia una sovrapposizione di date tra le sessioni in presenza per lo stesso chef}{26}{}%
+\contentsline {subsection}{\numberline {4.2.12}Trigger per controllare che gli username degli chef e degli utenti siano univoci}{27}{}%
+\contentsline {chapter}{\numberline {5}Popolamento del database}{29}{}%
+\contentsline {section}{\numberline {5.1}Inserimento dei dati}{29}{}%
+\contentsline {subsection}{\numberline {5.1.1}Query di inserimento degli chef}{29}{}%
+\contentsline {subsection}{\numberline {5.1.2}Query di inserimento degli utenti}{30}{}%
+\contentsline {subsection}{\numberline {5.1.3}Query di inserimento dei corsi}{31}{}%
+\contentsline {subsection}{\numberline {5.1.4}Query di inserimento delle sessioni in presenza}{32}{}%
+\contentsline {subsection}{\numberline {5.1.5}Query di inserimento delle sessioni online}{33}{}%
+\contentsline {subsection}{\numberline {5.1.6}Query di inserimento delle adesioni}{33}{}%
+\contentsline {subsection}{\numberline {5.1.7}Query di inserimento delle ricette}{33}{}%
+\contentsline {subsection}{\numberline {5.1.8}Query di inserimento degli ingredienti}{38}{}%
+\contentsline {subsection}{\numberline {5.1.9}Query di inserimento della composizione delle ricette}{43}{}%
+\contentsline {subsection}{\numberline {5.1.10}Query di inserimento dei topic}{44}{}%
+\contentsline {subsection}{\numberline {5.1.11}Query di inserimento della tabella insegna}{45}{}%
+\contentsline {subsection}{\numberline {5.1.12}Query di inserimento della tabella prepara}{45}{}%
+\contentsline {subsection}{\numberline {5.1.13}Query di inserimento delle iscrizioni}{46}{}%
