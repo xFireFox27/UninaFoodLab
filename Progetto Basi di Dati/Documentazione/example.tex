@@ -242,4 +242,8 @@
     \subsection{Trigger per controllare che l'aula della sessione in presenza non sia occupata}
     \lstinputlisting[caption=Trigger per controllare l'aula della sessione in presenza]{../SQL/Trigger-Procedures-Functions/TriggerAulaOccupata.sql}
     Questo trigger viene attivato prima dell'inserimento o aggiornamento di una sessione in presenza e verifica che l'aula specificata non sia già occupata da un'altra sessione in presenza nello stesso orario. Se l'aula è occupata, il trigger genera un errore e impedisce l'inserimento della sessione. Questo è utile per evitare conflitti di programmazione e garantire che le sessioni in presenza possano essere svolte senza problemi logistici.
+
+    \subsection{Trigger per controllare che l'utente che aderisce ad una sessione in presenza sia iscritto al corso}
+    \lstinputlisting[caption=Trigger per controllare l'iscrizione dell'utente]{../SQL/Trigger-Procedures-Functions/TriggerControlloAdesioniCorso.sql}
+    Questo trigger viene attivato prima dell'inserimento di una nuova adesione e verifica che l'utente che sta aderendo a una sessione in presenza sia iscritto al corso corrispondente. Se l'utente non è iscritto al corso, il trigger genera un errore e impedisce l'inserimento dell'adesione. Questo è utile per garantire che solo gli utenti iscritti ai corsi possano partecipare alle sessioni in presenza, mantenendo la coerenza dei dati e le regole del sistema.
 \end{document}

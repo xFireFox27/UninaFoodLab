@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.4)  11 JUL 2025 17:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.4)  11 JUL 2025 17:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -629,15 +629,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 4.
-)
-\tf@toc=\write4
-\openout4 = `example.toc'.
-
 
 
 [1
 
-]
+])
+\tf@toc=\write4
+\openout4 = `example.toc'.
+
+
 
 [2]
 Capitolo 1.
@@ -1206,21 +1206,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
 
 [17] (../SQL/Trigger-Procedures-Functions/TriggerAulaOccupata.sql)
+(../SQL/Trigger-Procedures-Functions/TriggerControlloAdesioniCorso.sql
 
-[18] (example.aux)
+[18])
+
+[19] (example.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16416 strings out of 468226
- 329435 string characters out of 5420954
- 883212 words of memory out of 5000000
- 44630 multiletter control sequences out of 15000+600000
+ 16426 strings out of 468226
+ 329978 string characters out of 5420954
+ 882212 words of memory out of 5000000
+ 44637 multiletter control sequences out of 15000+600000
  639063 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,10n,101p,575b,1708s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,10n,101p,591b,1720s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk
 /ljfour/jknappen/ec/dpi600/ectt0900.pk> </Users/carmineamato/Library/Applicatio
 n Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0500.pk> </
@@ -1241,9 +1244,9 @@ ibrary/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi60
 ata/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1200.pk> </Users/carmineamato/Librar
 y/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecc
 c1440.pk>
-Output written on example.pdf (19 pages, 540196 bytes).
+Output written on example.pdf (20 pages, 543805 bytes).
 PDF statistics:
- 532 PDF objects out of 1000 (max. 8388607)
+ 535 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

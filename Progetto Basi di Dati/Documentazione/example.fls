@@ -292,6 +292,9 @@ INPUT ../SQL/Trigger-Procedures-Functions/TriggerAnnoCorso.sql
 INPUT ../SQL/Trigger-Procedures-Functions/TriggerAulaOccupata.sql
 INPUT ../SQL/Trigger-Procedures-Functions/TriggerAulaOccupata.sql
 INPUT ../SQL/Trigger-Procedures-Functions/TriggerAulaOccupata.sql
+INPUT ../SQL/Trigger-Procedures-Functions/TriggerControlloAdesioniCorso.sql
+INPUT ../SQL/Trigger-Procedures-Functions/TriggerControlloAdesioniCorso.sql
+INPUT ../SQL/Trigger-Procedures-Functions/TriggerControlloAdesioniCorso.sql
 INPUT example.aux
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt0900.pk
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt0900.pk

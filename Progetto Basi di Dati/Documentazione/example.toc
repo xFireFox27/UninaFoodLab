@@ -38,3 +38,4 @@
 \contentsline {subsection}{\numberline {4.2.1}Funzione per calcolare il numero di adesioni}{16}{}%
 \contentsline {subsection}{\numberline {4.2.2}Trigger per controllare che l'anno del corso sia valido}{17}{}%
 \contentsline {subsection}{\numberline {4.2.3}Trigger per controllare che l'aula della sessione in presenza non sia occupata}{18}{}%
+\contentsline {subsection}{\numberline {4.2.4}Trigger per controllare che l'utente che aderisce ad una sessione in presenza sia iscritto al corso}{18}{}%
