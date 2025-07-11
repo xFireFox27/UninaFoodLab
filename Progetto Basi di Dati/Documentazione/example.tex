@@ -125,38 +125,38 @@
     \end{figure}
     \section{Dizionario delle classi}
     
+    \section{Dizionario delle associazioni}
     \begin{table}[h]
         \centering
         \begin{tabular}{|p{3cm}|p{4cm}|p{8cm}|}
         \hline
-        \textbf{Classe} & \textbf{Descrizione} & \textbf{Attributi} \\
+        \textbf{Associazione} & \textbf{Descrizione} & \textbf{Classi coinvolte} \\
         \hline
-        Chef & Rappresenta gli chef che insegnano i corsi & Username (string), Nome (string), Cognome (string), Password (string) \\
+        Insegna & Associa uno chef a un topic che insegna & Chef, Topic \\
         \hline
-        & & \\
+        Riceve & Associa un utente a una notifica ricevuta & Utente, Notifica \\
         \hline
-        & & \\
+        È iscritto a & Associa un utente a un corso a cui è iscritto & Utente, Corso \\
         \hline
-        & & \\
+        Aderisce a & Associa un utente a una sessione in presenza a cui partecipa & Utente, Sessione in Presenza \\
         \hline
-        & & \\
+        Si prepara & Associa una sessione in presenza a una ricetta che si prepara & Sessione in Presenza, Ricetta \\
         \hline
-        & & \\
+        È composta da & Associa una ricetta a un ingrediente che la compone & Ricetta, Ingrediente \\
         \hline
-        & & \\
+        Tiene & Associa uno chef a un corso che insegna & Chef, Corso \\
         \hline
-        & & \\
+        Afferisce a & Associa un corso al topic di appartenenza & Corso, Topic \\
         \hline
-        & & \\
+        È composto da (Online) & Associa un corso alle sue sessioni online & Corso, Sessione Online \\
         \hline
-        & & \\
+        È composto da (Presenza) & Associa un corso alle sue sessioni in presenza & Corso, Sessione in Presenza \\
         \hline
-        & & \\
+        Invia & Associa uno chef alle notifiche che invia & Chef, Notifica \\
         \hline
         \end{tabular}
     \end{table}
-    
-    \section{Dizionario delle associazioni}
+        
     \section{Dizionario dei vincoli}
     
     \chapter{Progettazione Logica}
