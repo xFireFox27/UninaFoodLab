@@ -13,28 +13,28 @@
 \contentsline {section}{\numberline {2.8}Analisi delle ridondanze}{6}{}%
 \contentsline {section}{\numberline {2.9}Class Diagram ristrutturato}{6}{}%
 \contentsline {section}{\numberline {2.10}Dizionario delle classi}{6}{}%
-\contentsline {section}{\numberline {2.11}Dizionario delle associazioni}{6}{}%
-\contentsline {section}{\numberline {2.12}Dizionario dei vincoli}{6}{}%
-\contentsline {chapter}{\numberline {3}Progettazione Logica}{7}{}%
-\contentsline {section}{\numberline {3.1}Schema Logico}{7}{}%
-\contentsline {chapter}{\numberline {4}Progettazione Fisica}{8}{}%
-\contentsline {section}{\numberline {4.1}Definizione tabelle}{8}{}%
-\contentsline {subsection}{\numberline {4.1.1}Definizione della tabella TOPIC}{8}{}%
-\contentsline {subsection}{\numberline {4.1.2}Definizione della tabella CHEF}{9}{}%
-\contentsline {subsection}{\numberline {4.1.3}Definizione della tabella UTENTE}{9}{}%
-\contentsline {subsection}{\numberline {4.1.4}Definizione della tabella CORSO}{10}{}%
-\contentsline {subsection}{\numberline {4.1.5}Definizione della tabella SESSIONEINPRESENZA}{10}{}%
-\contentsline {subsection}{\numberline {4.1.6}Definizione della tabella SESSIONEONLINE}{11}{}%
-\contentsline {subsection}{\numberline {4.1.7}Definizione della tabella ADESIONE}{11}{}%
-\contentsline {subsection}{\numberline {4.1.8}Definizione della tabella PREPARA}{12}{}%
-\contentsline {subsection}{\numberline {4.1.9}Definizione della tabella RICETTA}{12}{}%
-\contentsline {subsection}{\numberline {4.1.10}Definizione della tabella INGREDIENTE}{12}{}%
-\contentsline {subsection}{\numberline {4.1.11}Definizione della tabella COMPOSIZIONE}{13}{}%
-\contentsline {subsection}{\numberline {4.1.12}Definizione della tabella NOTIFICA}{13}{}%
-\contentsline {subsection}{\numberline {4.1.13}Definizione della tabella RICEVE}{14}{}%
-\contentsline {subsection}{\numberline {4.1.14}Definizione della tabella INSEGNA}{14}{}%
-\contentsline {subsection}{\numberline {4.1.15}Definizione della tabella ISCRIZIONE}{15}{}%
-\contentsline {section}{\numberline {4.2}Triggers, Procedures, Functions e Vincoli}{15}{}%
-\contentsline {subsection}{\numberline {4.2.1}Funzione per calcolare il numero di adesioni}{15}{}%
-\contentsline {subsection}{\numberline {4.2.2}Trigger per controllare che l'anno del corso sia valido}{16}{}%
-\contentsline {subsection}{\numberline {4.2.3}Trigger per controllare che l'aula della sessione in presenza non sia occupata}{16}{}%
+\contentsline {section}{\numberline {2.11}Dizionario delle associazioni}{7}{}%
+\contentsline {section}{\numberline {2.12}Dizionario dei vincoli}{7}{}%
+\contentsline {chapter}{\numberline {3}Progettazione Logica}{8}{}%
+\contentsline {section}{\numberline {3.1}Schema Logico}{8}{}%
+\contentsline {chapter}{\numberline {4}Progettazione Fisica}{9}{}%
+\contentsline {section}{\numberline {4.1}Definizione tabelle}{9}{}%
+\contentsline {subsection}{\numberline {4.1.1}Definizione della tabella TOPIC}{9}{}%
+\contentsline {subsection}{\numberline {4.1.2}Definizione della tabella CHEF}{10}{}%
+\contentsline {subsection}{\numberline {4.1.3}Definizione della tabella UTENTE}{10}{}%
+\contentsline {subsection}{\numberline {4.1.4}Definizione della tabella CORSO}{11}{}%
+\contentsline {subsection}{\numberline {4.1.5}Definizione della tabella SESSIONEINPRESENZA}{11}{}%
+\contentsline {subsection}{\numberline {4.1.6}Definizione della tabella SESSIONEONLINE}{12}{}%
+\contentsline {subsection}{\numberline {4.1.7}Definizione della tabella ADESIONE}{12}{}%
+\contentsline {subsection}{\numberline {4.1.8}Definizione della tabella PREPARA}{13}{}%
+\contentsline {subsection}{\numberline {4.1.9}Definizione della tabella RICETTA}{13}{}%
+\contentsline {subsection}{\numberline {4.1.10}Definizione della tabella INGREDIENTE}{13}{}%
+\contentsline {subsection}{\numberline {4.1.11}Definizione della tabella COMPOSIZIONE}{14}{}%
+\contentsline {subsection}{\numberline {4.1.12}Definizione della tabella NOTIFICA}{14}{}%
+\contentsline {subsection}{\numberline {4.1.13}Definizione della tabella RICEVE}{15}{}%
+\contentsline {subsection}{\numberline {4.1.14}Definizione della tabella INSEGNA}{15}{}%
+\contentsline {subsection}{\numberline {4.1.15}Definizione della tabella ISCRIZIONE}{16}{}%
+\contentsline {section}{\numberline {4.2}Triggers, Procedures, Functions e Vincoli}{16}{}%
+\contentsline {subsection}{\numberline {4.2.1}Funzione per calcolare il numero di adesioni}{16}{}%
+\contentsline {subsection}{\numberline {4.2.2}Trigger per controllare che l'anno del corso sia valido}{17}{}%
+\contentsline {subsection}{\numberline {4.2.3}Trigger per controllare che l'aula della sessione in presenza non sia occupata}{17}{}%
