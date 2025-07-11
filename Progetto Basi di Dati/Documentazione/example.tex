@@ -131,27 +131,27 @@
         \hline
         \textbf{Classe} & \textbf{Descrizione} & \textbf{Attributi} \\
         \hline
-        Chef & Rappresenta gli chef che insegnano i corsi & Username (string), Nome (string), Cognome (string), Password (string) \\
+        Chef & Rappresenta gli chef della piattaforma, possono tenere corsi sugli argomenti di cui sono esperti & Username (string), Nome (string), Cognome (string), Password (string) \\
         \hline
-        & & \\
+        Utente & Rappresenta gli utenti della piattaforma, possono iscriversi ai corsi & Username (string), Nome (string), Cognome (string), Password (string) \\
         \hline
-        & & \\
+        Topic & Rappresenta gli argomenti dei corsi e le conoscenze degli chef & IdTopic (string), Nome (string), Descrizione (string) \\
         \hline
-        & & \\
+        Corso & Rappresenta i corsi tenuti dagli chef e ai quali gli utenti possono iscriversi & IdCorso (string), Titolo (string), Frequenza (string), NumLezioni (integer), Anno(integer), DataInizio (date) \\
         \hline
-        & & \\
+        Iscrizione & Rappresenta l'iscrizione di un utente a un corso & DataIscrizione (date) \\
         \hline
-        & & \\
+        Notifica & Rappresenta le notifiche che gli chef possono inviare agli utenti & IdNotifica (string), DataInvio (date), Oggetto (string), Testo (string) \\
         \hline
-        & & \\
+        SessioneOnline & Rappresenta le sessioni online dei corsi & IdSessione (string), Link (string), Data (date), Durata (integer), NumSessione (integer) \\
         \hline
-        & & \\
+        SessioneInPresenza & Rappresenta le sessioni in presenza dei corsi & IdSessione (string), Luogo (string), Aula (string), Data (date), Durata (integer), NumSessione (integer) \\
         \hline
-        & & \\
+        Ricetta & Rappresenta le ricette che possono essere preparate durante le sessioni in presenza & IdRicetta (string), Nome (string), Descrizione (string) \\
         \hline
-        & & \\
+        Ingrediente & Rappresenta gli ingredienti utilizzabili per le ricette & IdIngrediente (string), Nome (string), UnitàDiMisura (string), Allergene (boolean) \\
         \hline
-        & & \\
+        Composizione & Rappresenta le quantità di ogni ingrediente in una ricetta & Quantità(float) \\
         \hline
         \end{tabular}
     \end{table}
