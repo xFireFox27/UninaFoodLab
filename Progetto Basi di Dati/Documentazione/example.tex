@@ -125,12 +125,14 @@
     \end{figure}
     \section{Dizionario delle classi}
     
+    \section{Dizionario delle associazioni}
     \begin{table}[h]
         \centering
         \begin{tabular}{|p{3cm}|p{4cm}|p{8cm}|}
         \hline
-        \textbf{Classe} & \textbf{Descrizione} & \textbf{Attributi} \\
+        \textbf{Associazione} & \textbf{Descrizione} & \textbf{Classi coinvolte} \\
         \hline
+<<<<<<< HEAD
         Chef & Rappresenta gli chef della piattaforma, possono tenere corsi sugli argomenti di cui sono esperti & Username (string), Nome (string), Cognome (string), Password (string) \\
         \hline
         Utente & Rappresenta gli utenti della piattaforma, possono iscriversi ai corsi & Username (string), Nome (string), Cognome (string), Password (string) \\
@@ -152,12 +154,42 @@
         Ingrediente & Rappresenta gli ingredienti utilizzabili per le ricette & IdIngrediente (string), Nome (string), UnitàDiMisura (string), Allergene (boolean) \\
         \hline
         Composizione & Rappresenta le quantità di ogni ingrediente in una ricetta & Quantità(float) \\
+=======
+        Insegna & Associa uno chef a un topic che insegna & Chef[0,*], Topic[1,*] \\
+        \hline
+        Riceve & Associa un utente a una notifica ricevuta & Utente[1,*], Notifica[0,*] \\
+        \hline
+        È iscritto a & Associa un utente a un corso a cui è iscritto & Utente[0,*], Corso[0,*], Iscrizione (Classe di associazione) \\
+        \hline
+        Aderisce a & Associa un utente a una sessione in presenza a cui partecipa & Utente[1,*], SessioneInPresenza[0,*] \\
+        \hline
+        Si prepara & Associa una sessione in presenza a una ricetta che si prepara & SessioneInPresenza[0,*], Ricetta[1,*] \\
+        \hline
+        È composta da & Associa una ricetta a un ingrediente che la compone & Ricetta[0,*], Ingrediente[1,*], Composizione (Classe di associazione) \\
+        \hline
+        Tiene & Associa uno chef a un corso che insegna & Chef[1], Corso[0,*] \\
+        \hline
+        Afferisce a & Associa un corso al topic di appartenenza & Corso[0,*], Topic[1] \\
+        \hline
+        È composto da (Online) & Associa un corso alle sue sessioni online & Corso[1], SessioneOnline[1,*] \\
+        \hline
+        È composto da (Presenza) & Associa un corso alle sue sessioni in presenza & Corso[1], SessioneInPresenza[1,*] \\
+        \hline
+        Invia & Associa uno chef alle notifiche che invia & Chef[1], Notifica[0,*] \\
+>>>>>>> 4891d63e6843ad49011d8846fc1d65b8b2b12d23
         \hline
         \end{tabular}
     \end{table}
-    
-    \section{Dizionario delle associazioni}
+        
     \section{Dizionario dei vincoli}
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|p{3cm}|p{4cm}|p{8cm}|}
+        \hline
+        \textbf{Nome} & \textbf{Descrizione} \\
+        \hline
+        \end{tabular}
+    \end{table}
     
     \chapter{Progettazione Logica}
     \section{Schema Logico}
@@ -245,5 +277,139 @@
 
     \subsection{Trigger per controllare che l'utente che aderisce ad una sessione in presenza sia iscritto al corso}
     \lstinputlisting[caption=Trigger per controllare l'iscrizione dell'utente]{../SQL/Trigger-Procedures-Functions/TriggerControlloAdesioniCorso.sql}
-    Questo trigger viene attivato prima dell'inserimento di una nuova adesione e verifica che l'utente che sta aderendo a una sessione in presenza sia iscritto al corso corrispondente. Se l'utente non è iscritto al corso, il trigger genera un errore e impedisce l'inserimento dell'adesione. Questo è utile per garantire che solo gli utenti iscritti ai corsi possano partecipare alle sessioni in presenza, mantenendo la coerenza dei dati e le regole del sistema.
+    Questo trigger viene attivato prima dell'inserimento di una nuova adesione e verifica che l'utente che sta aderendo a una sessione in presenza sia iscritto al corso corrispondente. Se l'utente non è iscritto al corso, il trigger genera un errore e impedisce l'inserimento dell'adesione. Questo è utile per garantire che solo gli utenti iscritti ai corsi possano partecipare alle sessioni in presenza, mantenendo la coerenza dei dati e le regole del sistema.\\\\\\\\\\\\\\\\
+
+    \subsection{Trigger per controllare che lo chef insegni il topic del corso che tiene}
+    \lstinputlisting[caption=Trigger per controllare il topic del corso]{../SQL/Trigger-Procedures-Functions/TriggerControlloInsegna.sql}
+    Questo trigger viene attivato prima dell'inserimento di un nuovo corso e verifica che lo chef che sta insegnando il corso sia effettivamente associato al topic del corso stesso. Se lo chef non insegna il topic specificato, il trigger genera un errore e impedisce l'inserimento del corso. Questo è utile per garantire che i corsi siano tenuti da chef competenti nei rispettivi argomenti, mantenendo la qualità dell'insegnamento.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    
+    \subsection{Trigger per contollare che le sessioni siano programmate in date successive alla data di inizio del corso}
+    \lstinputlisting[caption=Trigger per controllare le date delle sessioni]{../SQL/Trigger-Procedures-Functions/TriggerControlloSessioneCorsoData.sql}
+    Questo trigger viene attivato prima dell'inserimento o aggiornamento di una sessione e verifica che la data della sessione sia successiva alla data di inizio del corso a cui appartiene. Se la data della sessione non è valida, il trigger genera un errore e impedisce l'inserimento della sessione. Questo è utile per garantire che le sessioni siano programmate correttamente in relazione al corso, evitando conflitti di programmazione e garantendo che le sessioni si svolgano dopo l'inizio del corso stesso.
+    
+    \subsection{Trigger per controllare che la data di inizio del corso sia valida}
+    \lstinputlisting[caption=Trigger per controllare la data di inizio del corso]{../SQL/Trigger-Procedures-Functions/TriggerDataInizio.sql}
+    Questo trigger viene attivato prima dell'inserimento o aggiornamento di un nuovo corso e verifica che la data di inizio del corso sia valida. Se la data non è valida, il trigger genera un errore e impedisce l'inserimento del corso. Questo è utile per garantire che i corsi siano pianificati correttamente e che le date siano coerenti.\\\\\\\\\\\\\\\\
+
+    \subsection{Trigger per controllare che la data delle sessioni sia valida}
+    \lstinputlisting[caption=Trigger per controllare la data delle sessioni]{../SQL/Trigger-Procedures-Functions/TriggerDataSessione.sql}
+    Questo trigger viene attivato prima dell'inserimento o aggiornamento di una sessione e verifica che la data della sessione sia valida. Se la data non è valida, il trigger genera un errore e impedisce l'inserimento della sessione. Questo è utile per garantire che le sessioni siano programmate correttamente e che le date siano coerenti.
+
+    \subsection{Trigger per controllare che il corso non abbia raggiunto il limite di 50 iscrizioni}
+    \lstinputlisting[caption=Trigger per controllare il limite di iscrizioni al corso]{../SQL/Trigger-Procedures-Functions/TriggerLimiteIscrizioni.sql}
+    Questo trigger viene attivato prima dell'inserimento di una nuova iscrizione e verifica che il corso a cui l'utente sta cercando di iscriversi non abbia già raggiunto il limite di 50 iscrizioni. Se il limite è stato raggiunto, il trigger genera un errore e impedisce l'inserimento dell'iscrizione. Questo è utile per garantire che i corsi non superino il numero massimo di partecipanti, mantenendo la qualità dell'insegnamento e la gestione delle risorse.
+
+    \subsection{Trigger per controllare che il numero sessione sia coerente con il numero della sessione precedente}
+    \lstinputlisting[caption=Trigger per controllare il numero della sessione]{../SQL/Trigger-Procedures-Functions/TriggerNumSessione.sql}
+    Questo trigger viene attivato prima dell'inserimento di una sessione e verifica che il numero della sessione sia coerente con il numero della sessione precedente. Se il numero della sessione non è valido, il trigger genera un errore e impedisce l'inserimento della sessione. Questo è utile per garantire che le sessioni siano programmate in modo sequenziale e che non ci siano salti nei numeri delle sessioni, mantenendo la coerenza del sistema.
+    
+    \subsection{Trigger per controllare che non ci sia una sovrapposizione di date tra le sessioni in presenza per lo stesso chef}
+    \lstinputlisting[caption=Trigger per controllare la sovrapposizione di date tra le sessioni in presenza]{../SQL/Trigger-Procedures-Functions/TriggerSovrapposizioniDate.sql}
+    Questo trigger viene attivato prima dell'inserimento di una sessione in presenza e verifica che non ci sia una sovrapposizione di date tra le sessioni in presenza per lo stesso chef. Se c'è una sovrapposizione, il trigger genera un errore e impedisce l'inserimento della sessione. Questo è utile per evitare conflitti di programmazione e garantire che gli chef possano gestire le loro sessioni in presenza senza problemi logistici.
+
+    \subsection{Trigger per controllare che gli username degli chef e degli utenti siano univoci}
+    \lstinputlisting[caption=Trigger per controllare l'unicità degli username]{../SQL/Trigger-Procedures-Functions/TriggerUsernameUtentiChef.sql}
+    Questo trigger viene attivato prima dell'inserimento o aggiornamento di un nuovo chef o utente e verifica che lo username sia univoco. Se lo username è già presente nel database, il trigger genera un errore e impedisce l'inserimento o l'aggiornamento. Questo è utile per garantire che gli username degli chef e degli utenti siano univoci, evitando conflitti e garantendo l'integrità dei dati.
+  
+
+    \chapter{Popolamento del database}
+    \section{Inserimento dei dati}
+    Il database è stato popolato con dati di esempio per testare le funzionalità e verificare il corretto funzionamento delle query. Sono stati inseriti corsi, sessioni, adesioni, ricette e ingredienti, in modo da simulare un ambiente di apprendimento realistico. Di seguito sono riportati alcuni esempi di query utilizzate per il popolamento del database.\\\\
+    \subsection{Query di inserimento degli chef}
+    \lstinputlisting[caption=Query di inserimento degli chef]{../SQL/Insert/InsertChef.sql}
+    Questa query inserisce gli chef nel database, specificando il loro username, nome, cognome e password. Gli chef sono i responsabili dei corsi di cucina.\\\\
+
+    \subsection{Query di inserimento degli utenti}
+    \lstinputlisting[caption=Query di inserimento degli utenti]{../SQL/Insert/InsertUtente.sql}
+    Questa query inserisce gli utenti nel database, specificando il loro username, nome, cognome e password. Gli utenti sono coloro che si iscrivono ai corsi di cucina.\\\\
+
+    \subsection{Query di inserimento dei corsi}
+    \lstinputlisting[caption=Query di inserimento dei corsi]{../SQL/Insert/InsertCorso.sql}
+    Questa query inserisce i corsi nel database, specificando il titolo, la frequenza, il numero di lezioni, la data di inizio, il topic e lo chef che insegna il corso. I corsi sono le categorie tematiche dei corsi di cucina.\\\\
+
+    \subsection{Query di inserimento delle sessioni in presenza}
+    \lstinputlisting[caption=Query di inserimento delle sessioni in presenza]{../SQL/Insert/InsertSessioneInPresenza.sql}
+    Questa query inserisce le sessioni in presenza nel database, specificando il luogo, l'aula, la data, la durata, il numero di sessione e il corso a cui appartiene. Le sessioni in presenza sono le sessioni pratiche dei corsi di cucina.\\\\
+
+    \subsection{Query di inserimento delle sessioni online}
+    \lstinputlisting[caption=Query di inserimento delle sessioni online]{../SQL/Insert/InsertSessioneOnline.sql}
+    Questa query inserisce le sessioni online nel database, specificando il link, la data, la durata, il numero di sessione e il corso a cui appartiene. Le sessioni online sono le sessioni teoriche dei corsi di cucina.\\\\
+
+    \subsection{Query di inserimento delle adesioni}
+    \lstinputlisting[caption=Query di inserimento delle adesioni]{../SQL/Insert/InsertAdesioni.sql}
+    Questa query inserisce le adesioni degli utenti alle sessioni in presenza dei corsi di cucina, specificando l'utente e la sessione in presenza a cui si riferiscono.\\\\
+
+    \subsection{Query di inserimento delle ricette}
+    \lstinputlisting[caption=Query di inserimento delle ricette]{../SQL/Insert/InsertRicetta.sql}
+    Questa query inserisce le ricette nel database, specificando il nome e la descrizione della ricetta. Le ricette sono associate alle sessioni in presenza dei corsi di cucina.\\\\
+
+    \subsection{Query di inserimento degli ingredienti}
+    \lstinputlisting[caption=Query di inserimento degli ingredienti]{../SQL/Insert/InsertIngrediente.sql}
+    Questa query inserisce gli ingredienti nel database, specificando il nome, l'unità di misura e se è un allergene.\\\\
+
+    \subsection{Query di inserimento della composizione delle ricette}
+\begin{lstlisting}[caption=Query di inserimento della composizione delle ricette]
+-- Cucina Italiana
+
+-- Spaghetti Aglio Olio e Peperoncino
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Spaghetti'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Spaghetti Aglio Olio e Peperoncino'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Aglio'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Spaghetti Aglio Olio e Peperoncino'), 3),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Olio extravergine d''oliva'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Spaghetti Aglio Olio e Peperoncino'), 40),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Peperoncino'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Spaghetti Aglio Olio e Peperoncino'), 1),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Prezzemolo'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Spaghetti Aglio Olio e Peperoncino'), 10);
+
+-- Pasta e Patate
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Rigatoni'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pasta e Patate'), 80),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Patate'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pasta e Patate'), 200),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Sedano'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pasta e Patate'), 50),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Carote'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pasta e Patate'), 50),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Cipolla bianca'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pasta e Patate'), 60),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Concentrato di pomodoro'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Pasta e Patate'), 20);
+
+-- Carbonara
+INSERT INTO Composizione (IdIngrediente, IdRicetta, Quantita)
+VALUES
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Spaghetti'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Carbonara'), 100),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Guanciale'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Carbonara'), 50),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Uova di gallina'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Carbonara'), 2),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pecorino Romano'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Carbonara'), 40),
+    ((SELECT IdIngrediente FROM Ingrediente WHERE Nome = 'Pepe nero'), 
+     (SELECT IdRicetta FROM Ricetta WHERE Nome = 'Carbonara'), 2);
+\end{lstlisting}
+Questa query inserisce la composizione delle ricette nel database, specificando la ricetta, l'ingrediente e la quantità necessaria per ciascuno di essi. Per brevità abbiamo omesso parte del codice, dato che raggiunge 2500 righe.\\\\
+
+    \subsection{Query di inserimento dei topic}
+    \lstinputlisting[caption=Query di inserimento dei topic]{../SQL/Insert/InsertTopic.sql}
+    Questa query inserisce i topic nel database, specificando il nome e la descrizione del topic. I topic rappresentano le categorie tematiche dei corsi di cucina.\\\\
+
+    \subsection{Query di inserimento della tabella insegna}
+    \lstinputlisting[caption=Query di inserimento della tabella insegna]{../SQL/Insert/InsertInsegna.sql}
+    Questa query inserisce i record nella tabella \textbf{Insegna}, che rappresenta la relazione tra i topic e gli chef che li insegnano.
+
+    \subsection{Query di inserimento della tabella prepara}
+    \lstinputlisting[caption=Query di inserimento della tabella prepara]{../SQL/Insert/InsertPrepara.sql}
+    Questa query inserisce i record nella tabella \textbf{Prepara}, che rappresenta la relazione tra le sessioni in presenza e le ricette che vengono preparate durante le sessioni.
+
+    \subsection{Query di inserimento delle iscrizioni}
+    \lstinputlisting[caption=Query di inserimento delle iscrizioni]{../SQL/Insert/InsertIscrizione.sql}
+    Questa query inserisce le iscrizioni degli utenti ai corsi di cucina, specificando l'utente, il corso e la data di iscrizione.
 \end{document}
