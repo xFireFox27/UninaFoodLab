@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1752251517.52023 "/Users/carmineamato/Desktop/Progetto clone/UninaFoodLab/Progetto Basi di Dati/Documentazione/example.tex" "example.pdf" "example" 1752251519.04504 0
+["pdflatex"] 1752251592.32015 "/Users/carmineamato/Desktop/Progetto clone/UninaFoodLab/Progetto Basi di Dati/Documentazione/example.tex" "example.pdf" "example" 1752251593.82129 0
   "../Diagramma ER/ER.png" 1751984201.47328 191177 6150c6a1cb2edcff4a35320f73244ed3 ""
   "../Diagramma UML Ristrutturato/UMLRistrutturato.png" 1751984201.47428 187282 a6e15f186f7c669a341664b32bf10a3c ""
   "../Diagramma UML/UML.png" 1751984201.47503 168799 b73d8f17793de4a26ef19d5f3e78712f ""
@@ -42,7 +42,7 @@
   "../SQL/Trigger-Procedures-Functions/TriggerNumSessione.sql" 1752079938.34875 2050 9001e0ff062839a2c2db7e075e7df24f ""
   "../SQL/Trigger-Procedures-Functions/TriggerSovrapposizioniDate.sql" 1752080130.38741 1810 9451e1a72fb026eff6a9c31376d02c3f ""
   "../SQL/Trigger-Procedures-Functions/TriggerUsernameUtentiChef.sql" 1752250444.59553 1077 1c5bb45ede1c481e847bea7d35cfb499 ""
-  "/Users/carmineamato/Desktop/Progetto clone/UninaFoodLab/Progetto Basi di Dati/Documentazione/example.tex" 1752251515.60934 30690 b1910a290b0e231a83b3e5c8aaf34acc ""
+  "/Users/carmineamato/Desktop/Progetto clone/UninaFoodLab/Progetto Basi di Dati/Documentazione/example.tex" 1752251590.39323 31833 f58ec43a9212e71493ccec7882efa3d0 ""
   "/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map" 1752245542.74873 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1752245548.44024 25420 71506e299f45bdd5dbaa00cc03a0cdcf ""
   "/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1752246176.81563 31952 5af86e816302561f81e7df49a1ca7603 ""
@@ -173,9 +173,9 @@
   "/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty" 1751622543.43482 325 f9f16d12354225b7dd52a3321f085955 ""
   "/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/setspace/setspace.sty" 1751625201.54629 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xcolor/xcolor.sty" 1751622544.97003 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "example.aux" 1752251518.85344 14771 337f8422b3cbe3ac8598239faccefe27 "pdflatex"
-  "example.tex" 1752251515.60934 30690 b1910a290b0e231a83b3e5c8aaf34acc ""
-  "example.toc" 1752251518.85543 5900 652b6eac0e822b4313e96df9d4e6e56e "pdflatex"
+  "example.aux" 1752251593.65292 14771 ecd8e33985d16a635c0b09d03b7446ae "pdflatex"
+  "example.tex" 1752251590.39323 31833 f58ec43a9212e71493ccec7882efa3d0 ""
+  "example.toc" 1752251593.65496 5900 843759e3947332df32c3b5f56220dca0 "pdflatex"
   "logo-federico-II.pdf" 1751984201.47726 133374 80fc15669ec907fd5c7a726fc2c3d0c0 ""
   "uninafrontespizio.sty" 1751984201.47855 5634 1bfa880c64007d78dab3dee241a717b2 ""
   (generated)

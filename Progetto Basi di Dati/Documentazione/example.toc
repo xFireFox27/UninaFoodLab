@@ -13,8 +13,8 @@
 \contentsline {section}{\numberline {2.8}Analisi delle ridondanze}{6}{}%
 \contentsline {section}{\numberline {2.9}Class Diagram ristrutturato}{6}{}%
 \contentsline {section}{\numberline {2.10}Dizionario delle classi}{6}{}%
-\contentsline {section}{\numberline {2.11}Dizionario delle associazioni}{7}{}%
-\contentsline {section}{\numberline {2.12}Dizionario dei vincoli}{7}{}%
+\contentsline {section}{\numberline {2.11}Dizionario delle associazioni}{6}{}%
+\contentsline {section}{\numberline {2.12}Dizionario dei vincoli}{6}{}%
 \contentsline {chapter}{\numberline {3}Progettazione Logica}{8}{}%
 \contentsline {section}{\numberline {3.1}Schema Logico}{8}{}%
 \contentsline {chapter}{\numberline {4}Progettazione Fisica}{9}{}%
