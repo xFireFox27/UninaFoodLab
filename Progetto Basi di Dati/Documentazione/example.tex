@@ -1,8 +1,13 @@
 \documentclass[oneside]{book}
 \usepackage[margin=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{xcolor}
+
+
 
 
 % Configurazione SQL
@@ -25,6 +30,14 @@
 }
 
 \lstset{style=sqlstyle}
+
+% Configurazione per caratteri accentati
+\lstset{
+    literate={à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+             {À}{{\`A}}1 {È}{{\`E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+             {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+             {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+}
 
 % STEP 1: include the package
 \usepackage{uninafrontespizio}
@@ -138,23 +151,63 @@
     Qui di seguito sono riportate le definizioni delle tabelle utilizzate nel database ed eventuali triggers, procedures, functions o vincoli implementati.
     \section{Definizione tabelle}
     Seguono le definizioni delle tabelle estratte dallo script di creazione del database.
-    \section{Definizione della tabella TOPIC}
+    \subsection{Definizione della tabella TOPIC}
     \lstinputlisting[caption=Creazione tabella Topic]{../SQL/Tabelle/Topic.sql}
-    La tabella \textbf{Topic} rappresenta le categorie tematiche dei corsi di cucina. Ogni topic ha un identificatore univoco generato automaticamente e un nome che deve essere scelto tra i valori predefiniti specificati nel constraint CHECK.\\\\\\\\
-    \section{Definizione della tabella CHEF}
+    La tabella \textbf{Topic} rappresenta le categorie tematiche dei corsi di cucina. Ogni topic ha un identificatore univoco generato automaticamente e un nome che deve essere scelto tra i valori predefiniti specificati nel constraint CHECK.\\\\\\\\\\
+    \subsection{Definizione della tabella CHEF}
     \lstinputlisting[caption=Creazione tabella Chef]{../SQL/Tabelle/Chef.sql}
-    La tabella \textbf{Chef} rappresenta gli chef che possono insegnare i corsi di cucina. Ogni chef ha un identificatore univoco (Username) e le informazioni personali come nome, cognome e password. \\\\\\\\\\\\\\\\\\
-    \section{Definizione della tabella UTENTE}
+    La tabella \textbf{Chef} rappresenta gli chef che possono tenere corsi di cucina. Ogni chef ha un identificatore univoco (Username) e le informazioni personali come nome, cognome e password. \\\\\\\\\\\\\\\\\\
+    \subsection{Definizione della tabella UTENTE}
     \lstinputlisting[caption=Creazione tabella Utente]{../SQL/Tabelle/Utente.sql}
-    La tabella \textbf{Utente} rappresenta gli utenti che possono iscriversi ai corsi di cucina. Ogni utente ha un identificatore univoco (Username) e le informazioni personali come nome, cognome e password. \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-    \section{Definizione della tabella CORSO}
+    La tabella \textbf{Utente} rappresenta gli utenti che possono iscriversi ai corsi di cucina. Ogni utente ha un identificatore univoco (Username) e le informazioni personali come nome, cognome e password. \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    \subsection{Definizione della tabella CORSO}
     \lstinputlisting[caption=Creazione tabella Corso]{../SQL/Tabelle/Corso.sql}
-    La tabella \textbf{Corso} rappresenta i corsi di cucina. Ogni corso ha un identificatore univoco (IdCorso), un titolo, una frequenza, il numero di lezioni, una data di inizio e un riferimento al topic e allo chef che lo insegna. \\\\\\\\\\\\\\\\\\\\\\\\\\\\
-    \section{Definizione della tabella SESSIONEINPRESENZA}
+    La tabella \textbf{Corso} rappresenta i corsi di cucina. Ogni corso ha un identificatore univoco (IdCorso), un titolo, una frequenza, il numero di lezioni, una data di inizio e un riferimento al topic e allo chef che lo insegna. 
+    \subsection{Definizione della tabella SESSIONEINPRESENZA}
     \lstinputlisting[caption=Creazione tabella Sessione in Presenza]{../SQL/Tabelle/SessioneInPresenza.sql}
     La tabella \textbf{SessioneInPresenza} rappresenta le sessioni in presenza dei corsi di cucina. Ogni sessione ha un identificatore univoco (IdSessione), un luogo, un'aula, una data, una durata, un numero di sessione e un riferimento al corso a cui appartiene. \\\\
-    \section{Definizione della tabella SESSIONEONLINE}
+    \subsection{Definizione della tabella SESSIONEONLINE}
     \lstinputlisting[caption=Creazione tabella Sessione Online]{../SQL/Tabelle/SessioneOnline.sql}
     La tabella \textbf{SessioneOnline} rappresenta le sessioni online dei corsi di cucina. Ogni sessione ha un identificatore univoco (IdSessione), un link, una data, una durata, un numero di sessione e un riferimento al corso a cui appartiene. \\\\
+    \subsection{Definizione della tabella ADESIONE}
+    \lstinputlisting[caption=Creazione tabella Adesione]{../SQL/Tabelle/Adesione.sql}
+    La tabella \textbf{Adesione} rappresenta le adesioni degli utenti alle sessioni in presenza dei corsi di cucina. Ogni adesione ha un riferimento all'utente e alla sessione in presenza a cui si riferisce. Questa tabella è necessaria per calcolare il numero di ingredienti necessari per ogni sessione in presenza. \\\\
+    \subsection{Definizione della tabella PREPARA}
+    \lstinputlisting[caption=Creazione tabella Prepara]{../SQL/Tabelle/Prepara.sql}
+    La tabella \textbf{Prepara} rappresenta la relazione tra le sessioni in presenza e le ricette. Ogni record in questa tabella associa una sessione in presenza a una ricetta specifica. \\\\
+    \subsection{Definizione della tabella RICETTA}
+    \lstinputlisting[caption=Creazione tabella Ricetta]{../SQL/Tabelle/Ricetta.sql}
+    La tabella \textbf{Ricetta} rappresenta le ricette associate alle sessioni in presenza dei corsi di cucina. Ogni ricetta ha un identificatore univoco (IdRicetta), un nome e una descrizione. \\\\
+    \subsection{Definizione della tabella INGREDIENTE}
+    \lstinputlisting[caption=Creazione tabella Ingrediente]{../SQL/Tabelle/Ingrediente.sql}
+    La tabella \textbf{Ingrediente} rappresenta gli ingredienti utilizzati nelle ricette. Ogni ingrediente ha un identificatore univoco (IdIngrediente), un nome, un'unità di misura e un flag che indica se è un allergene. 
+    \subsection{Definizione della tabella COMPOSIZIONE}
+    \lstinputlisting[caption=Creazione tabella Composizione]{../SQL/Tabelle/Composizione.sql}
+    La tabella \textbf{Composizione} rappresenta la relazione tra le ricette e gli ingredienti. Ogni record in questa tabella associa una ricetta a varo ingredienti che la compongono, specificando la quantità necessaria per ciascuno di essi.  \\\\\\\\\\\\\\
+    \subsection{Definizione della tabella NOTIFICA}
+    \lstinputlisting[caption=Creazione tabella Notifica]{../SQL/Tabelle/Notifica.sql}
+    La tabella \textbf{Notifica} rappresenta le notifiche inviate dagli chef agli utenti iscritti ai corsi. Ogni notifica ha un identificatore univoco (IdNotifica), una data di invio, un oggetto, un testo e un riferimento allo chef che l'ha inviata. \\\\
+    \subsection{Definizione della tabella RICEVE}
+    \lstinputlisting[caption=Creazione tabella Riceve]{../SQL/Tabelle/Riceve.sql}
+    La tabella \textbf{Riceve} rappresenta la relazione tra le notifiche e gli utenti che le ricevono. Ogni record in questa tabella associa una notifica a un utente specifico, consentendo di tenere traccia delle notifiche inviate a ciascun utente. \\\\\\
+    \subsection{Definizione della tabella INSEGNA}
+    \lstinputlisting[caption=Creazione tabella Insegna]{../SQL/Tabelle/Insegna.sql}
+    La tabella \textbf{Insegna} rappresenta la relazione tra i topic e gli chef che li insegnano. Ogni record in questa tabella associa un topic a uno chef specifico, consentendo di tenere traccia dei topic insegnati da ciascun chef. \\\\\\\\\\\\\\
+    \subsection{Definizione della tabella ISCRIZIONE}
+    \lstinputlisting[caption=Creazione tabella Iscrizione]{../SQL/Tabelle/Iscrizione.sql}
+    La tabella \textbf{Iscrizione} rappresenta le iscrizioni degli utenti ai corsi di cucina. Ogni iscrizione ha un riferimento all'utente e al corso a cui si riferisce, insieme alla data di iscrizione. Questa tabella è necessaria per tenere traccia degli utenti iscritti a ciascun corso e per gestire le notifiche relative ai corsi. \\\\
   
+    \section{Triggers, Procedures, Functions e Vincoli}
+    Durante la progettazione fisica della base di dati, sono stati implementati alcuni triggers, procedures, functions e vincoli per garantire l'integrità dei dati e automatizzare alcune operazioni. Di seguito sono riportati alcuni esempi:
+    \subsection{Funzione per calcolare il numero di adesioni}
+    \lstinputlisting[caption=Funzione per calcolare il numero di adesioni]{../SQL/Trigger-Procedures-Functions/CalcoloNumeroAdesioni.sql}
+    Questa funzione calcola il numero di adesioni per una sessione in presenza. Necessaria per pianificare correttamente la quantità di ingredienti necessari per ogni sessione in presenza.
+    
+    \subsection{Trigger per controllare che l'anno del corso sia valido}
+    \lstinputlisting[caption=Trigger per controllare l'anno del corso]{../SQL/Trigger-Procedures-Functions/TriggerAnnoCorso.sql}
+    Questo trigger viene attivato prima dell'inserimento o aggiornamento di un nuovo corso e verifica che l'anno del corso sia valido. Se l'anno non è valido, il trigger genera un errore e impedisce l'inserimento del corso. Questo è utile per garantire che i corsi siano pianificati correttamente e che le date siano coerenti con l'anno accademico corrente o successivo.
+
+    \subsection{Trigger per controllare che l'aula della sessione in presenza non sia occupata}
+    \lstinputlisting[caption=Trigger per controllare l'aula della sessione in presenza]{../SQL/Trigger-Procedures-Functions/TriggerAulaOccupata.sql}
+    Questo trigger viene attivato prima dell'inserimento o aggiornamento di una sessione in presenza e verifica che l'aula specificata non sia già occupata da un'altra sessione in presenza nello stesso orario. Se l'aula è occupata, il trigger genera un errore e impedisce l'inserimento della sessione. Questo è utile per evitare conflitti di programmazione e garantire che le sessioni in presenza possano essere svolte senza problemi logistici.
 \end{document}
