@@ -37,4 +37,4 @@
 \contentsline {section}{\numberline {4.2}Triggers, Procedures, Functions e Vincoli}{16}{}%
 \contentsline {subsection}{\numberline {4.2.1}Funzione per calcolare il numero di adesioni}{16}{}%
 \contentsline {subsection}{\numberline {4.2.2}Trigger per controllare che l'anno del corso sia valido}{17}{}%
-\contentsline {subsection}{\numberline {4.2.3}Trigger per controllare che l'aula della sessione in presenza non sia occupata}{17}{}%
+\contentsline {subsection}{\numberline {4.2.3}Trigger per controllare che l'aula della sessione in presenza non sia occupata}{18}{}%
