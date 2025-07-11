@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.4)  11 JUL 2025 17:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.4)  11 JUL 2025 17:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -65,70 +65,6 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/geometry/geometry.cfg))
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/base/inputenc.sty
-Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks19
-\inpenc@posthook=\toks20
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/base/fontenc.sty
-Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/babel/babel.sty
-Package: babel 2025/05/14 v25.9 The multilingual framework for pdfLaTeX, LuaLaT
-eX and XeLaTeX
-\babel@savecnt=\count287
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
-ne 2043.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
-ne 2045.
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
-e 2047.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
-e 2048.
-LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
-on input line 2049.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
-on input line 2051.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
-on input line 2076.
-\U@D=\dimen157
-\l@unhyphenated=\language79
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/babel/txtbabel.def)
-\bbl@readstream=\read2
-\bbl@dirlevel=\count288
-
-*************************************
-* Local config file bblopts.cfg used
-*
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/arabi/bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/babel-italian/italian.ldf
-Language: italian 2024/10/10 v.1.5.01 Italian support for the babel system
-
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
-ric/babel/locale/it/babel-italian.tex
-Package babel Info: Importing font and identification data for italian
-(babel)             from babel-it.ini. Reported on input line 11.
-)
-\it@lettering=\count289
-\it@doublequoteactive=\count290
-\it@ISOcompliance=\count291
-))
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
-x/etoolbox/etoolbox.sty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count292
-)
-(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -150,23 +86,23 @@ Package graphics Info: Driver file: pdftex.def on input line 106.
 x/graphics-def/pdftex.def
 File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen158
-\Gin@req@width=\dimen159
+\Gin@req@height=\dimen157
+\Gin@req@width=\dimen158
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/listings/listings.sty
-\lst@mode=\count293
+\lst@mode=\count287
 \lst@gtempboxa=\box53
-\lst@token=\toks21
-\lst@length=\count294
-\lst@currlwidth=\dimen160
-\lst@column=\count295
-\lst@pos=\count296
-\lst@lostspace=\dimen161
-\lst@width=\dimen162
-\lst@newlines=\count297
-\lst@lineno=\count298
-\lst@maxwidth=\dimen163
+\lst@token=\toks19
+\lst@length=\count288
+\lst@currlwidth=\dimen159
+\lst@column=\count289
+\lst@pos=\count290
+\lst@lostspace=\dimen160
+\lst@width=\dimen161
+\lst@newlines=\count291
+\lst@lineno=\count292
+\lst@maxwidth=\dimen162
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/listings/lstpatch.sty
@@ -175,8 +111,8 @@ File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/listings/lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count299
-\lst@skipnumbers=\count300
+\c@lstnumber=\count293
+\lst@skipnumbers=\count294
 \lst@framebox=\box54
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
@@ -218,6 +154,11 @@ x/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count295
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/pgf/frontendlayer/tikz.sty
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/pgf/basiclayer/pgf.sty
@@ -225,9 +166,9 @@ x/pgf/basiclayer/pgf.sty
 x/pgf/utilities/pgfrcs.sty
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks22
-\pgfutil@tempdima=\dimen164
-\pgfutil@tempdimb=\dimen165
+\pgfutil@everybye=\toks20
+\pgfutil@tempdima=\dimen163
+\pgfutil@tempdimb=\dimen164
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/utilities/pgfutil-latex.def
@@ -251,33 +192,33 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks23
-\pgfkeys@temptoks=\toks24
+\pgfkeys@pathtoks=\toks21
+\pgfkeys@temptoks=\toks22
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/utilities/pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks25
+\pgfkeys@tmptoks=\toks23
 ))
-\pgf@x=\dimen166
-\pgf@y=\dimen167
-\pgf@xa=\dimen168
-\pgf@ya=\dimen169
-\pgf@xb=\dimen170
-\pgf@yb=\dimen171
-\pgf@xc=\dimen172
-\pgf@yc=\dimen173
-\pgf@xd=\dimen174
-\pgf@yd=\dimen175
+\pgf@x=\dimen165
+\pgf@y=\dimen166
+\pgf@xa=\dimen167
+\pgf@ya=\dimen168
+\pgf@xb=\dimen169
+\pgf@yb=\dimen170
+\pgf@xc=\dimen171
+\pgf@yc=\dimen172
+\pgf@xd=\dimen173
+\pgf@yd=\dimen174
 \w@pgf@writea=\write3
-\r@pgf@reada=\read3
-\c@pgf@counta=\count301
-\c@pgf@countb=\count302
-\c@pgf@countc=\count303
-\c@pgf@countd=\count304
-\t@pgf@toka=\toks26
-\t@pgf@tokb=\toks27
-\t@pgf@tokc=\toks28
-\pgf@sys@id@count=\count305
+\r@pgf@reada=\read2
+\c@pgf@counta=\count296
+\c@pgf@countb=\count297
+\c@pgf@countc=\count298
+\c@pgf@countd=\count299
+\t@pgf@toka=\toks24
+\t@pgf@tokb=\toks25
+\t@pgf@tokc=\toks26
+\pgf@sys@id@count=\count300
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/systemlayer/pgf.cfg
@@ -296,8 +237,8 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count306
-\pgfsyssoftpath@bigbuffer@items=\count307
+\pgfsyssoftpath@smallbuffer@items=\count301
+\pgfsyssoftpath@bigbuffer@items=\count302
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/systemlayer/pgfsysprotocol.code.tex
@@ -313,12 +254,12 @@ ric/pgf/math/pgfmath.code.tex
 ric/pgf/math/pgfmathutil.code.tex)
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen176
-\pgfmath@count=\count308
+\pgfmath@dimen=\dimen175
+\pgfmath@count=\count303
 \pgfmath@box=\box56
-\pgfmath@toks=\toks29
-\pgfmath@stack@operand=\toks30
-\pgfmath@stack@operation=\toks31
+\pgfmath@toks=\toks27
+\pgfmath@stack@operand=\toks28
+\pgfmath@stack@operation=\toks29
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/math/pgfmathfunctions.code.tex)
@@ -342,39 +283,39 @@ ric/pgf/math/pgfmathfunctions.integerarithmetics.code.tex)
 ric/pgf/math/pgfmathcalc.code.tex)
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count309
+\c@pgfmathroundto@lastzeros=\count304
 ))
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/math/pgfint.code.tex)
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen177
-\pgf@picmaxx=\dimen178
-\pgf@picminy=\dimen179
-\pgf@picmaxy=\dimen180
-\pgf@pathminx=\dimen181
-\pgf@pathmaxx=\dimen182
-\pgf@pathminy=\dimen183
-\pgf@pathmaxy=\dimen184
-\pgf@xx=\dimen185
-\pgf@xy=\dimen186
-\pgf@yx=\dimen187
-\pgf@yy=\dimen188
-\pgf@zx=\dimen189
-\pgf@zy=\dimen190
+\pgf@picminx=\dimen176
+\pgf@picmaxx=\dimen177
+\pgf@picminy=\dimen178
+\pgf@picmaxy=\dimen179
+\pgf@pathminx=\dimen180
+\pgf@pathmaxx=\dimen181
+\pgf@pathminy=\dimen182
+\pgf@pathmaxy=\dimen183
+\pgf@xx=\dimen184
+\pgf@xy=\dimen185
+\pgf@yx=\dimen186
+\pgf@yy=\dimen187
+\pgf@zx=\dimen188
+\pgf@zy=\dimen189
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen191
-\pgf@path@lasty=\dimen192
+\pgf@path@lastx=\dimen190
+\pgf@path@lasty=\dimen191
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen193
-\pgf@shorten@start@additional=\dimen194
+\pgf@shorten@end@additional=\dimen192
+\pgf@shorten@start@additional=\dimen193
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcorescopes.code.tex
@@ -382,19 +323,19 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box57
 \pgf@hbox=\box58
 \pgf@layerbox@main=\box59
-\pgf@picture@serial@count=\count310
+\pgf@picture@serial@count=\count305
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen195
+\pgflinewidth=\dimen194
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen196
-\pgf@pt@y=\dimen197
-\pgf@pt@temp=\dimen198
+\pgf@pt@x=\dimen195
+\pgf@pt@y=\dimen196
+\pgf@pt@temp=\dimen197
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcorequick.code.tex
@@ -411,14 +352,14 @@ File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen199
+\pgfarrowsep=\dimen198
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen256
-\pgf@sys@shading@range@num=\count311
-\pgf@shadingcount=\count312
+\pgf@max=\dimen199
+\pgf@sys@shading@range@num=\count306
+\pgf@shadingcount=\count307
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcoreimage.code.tex
@@ -457,8 +398,8 @@ File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen257
-\pgf@nodesepend=\dimen258
+\pgf@nodesepstart=\dimen256
+\pgf@nodesepend=\dimen257
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/pgf/compatibility/pgfcomp-version-1-18.sty
@@ -477,10 +418,10 @@ ric/pgf/math/pgfmath.code.tex))
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen259
-\pgffor@skip=\dimen260
-\pgffor@stack=\toks32
-\pgffor@toks=\toks33
+\pgffor@iter=\dimen258
+\pgffor@skip=\dimen259
+\pgffor@stack=\toks30
+\pgffor@toks=\toks31
 ))
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/frontendlayer/tikz/tikz.code.tex
@@ -489,34 +430,34 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count313
-\pgfplotmarksize=\dimen261
+\pgf@plot@mark@count=\count308
+\pgfplotmarksize=\dimen260
 )
-\tikz@lastx=\dimen262
-\tikz@lasty=\dimen263
-\tikz@lastxsaved=\dimen264
-\tikz@lastysaved=\dimen265
-\tikz@lastmovetox=\dimen266
-\tikz@lastmovetoy=\dimen267
-\tikzleveldistance=\dimen268
-\tikzsiblingdistance=\dimen269
+\tikz@lastx=\dimen261
+\tikz@lasty=\dimen262
+\tikz@lastxsaved=\dimen263
+\tikz@lastysaved=\dimen264
+\tikz@lastmovetox=\dimen265
+\tikz@lastmovetoy=\dimen266
+\tikzleveldistance=\dimen267
+\tikzsiblingdistance=\dimen268
 \tikz@figbox=\box62
 \tikz@figbox@bg=\box63
 \tikz@tempbox=\box64
 \tikz@tempbox@bg=\box65
-\tikztreelevel=\count314
-\tikznumberofchildren=\count315
-\tikznumberofcurrentchild=\count316
-\tikz@fig@count=\count317
+\tikztreelevel=\count309
+\tikznumberofchildren=\count310
+\tikznumberofcurrentchild=\count311
+\tikz@fig@count=\count312
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count318
-\pgfmatrixcurrentcolumn=\count319
-\pgf@matrix@numberofcolumns=\count320
+\pgfmatrixcurrentrow=\count313
+\pgfmatrixcurrentcolumn=\count314
+\pgf@matrix@numberofcolumns=\count315
 )
-\tikz@expandcount=\count321
+\tikz@expandcount=\count316
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
@@ -531,24 +472,24 @@ File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count322
+\l__color_backend_stack_int=\count317
 ) (example.aux)
 \openout1 = `example.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -584,23 +525,21 @@ LaTeX Font Info:    ... okay on input line 58.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \it@ocap on input line 58.
-LaTeX Info: Redefining \it@ccap on input line 58.
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/cont
 ext/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count323
-\scratchdimen=\dimen270
+\scratchcounter=\count318
+\scratchdimen=\dimen269
 \scratchbox=\box68
-\nofMPsegments=\count324
-\nofMParguments=\count325
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count326
-\MPscratchDim=\dimen271
-\MPnumerator=\count327
-\makeMPintoPDFobject=\count328
-\everyMPtoPDFconversion=\toks35
+\nofMPsegments=\count319
+\nofMParguments=\count320
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count321
+\MPscratchDim=\dimen270
+\MPnumerator=\count322
+\makeMPintoPDFobject=\count323
+\everyMPtoPDFconversion=\toks33
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/epstopdf-pkg/epstopdf-base.sty
@@ -612,11 +551,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 x/00miktex/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count329
+\c@lstlisting=\count324
 <logo-federico-II.pdf, id=4, 501.79471pt x 499.8675pt>
 File: logo-federico-II.pdf Graphic file (type pdf)
 <use logo-federico-II.pdf>
-Package pdftex.def Info: logo-federico-II.pdf  used on input line 61.
+Package pdftex.def Info: logo-federico-II.pdf  used on input line 48.
 (pdftex.def)             Requested size: 99.58464pt x 99.20135pt.
 
 
@@ -626,143 +565,170 @@ Package pdftex.def Info: logo-federico-II.pdf  used on input line 61.
 {/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/map/p
 dftex/pdftex.map} <./logo-federico-II.pdf>] (example.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 4.
+(Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 4.
-
-
-[1
-
-])
+(Font)              <5> on input line 2.
+)
 \tf@toc=\write4
 \openout4 = `example.toc'.
 
 
 
-[2]
-Capitolo 1.
-
-
-[3
+[1
 
 ]
-Capitolo 2.
-<../Diagramma UML/UML.png, id=29, 1474.50874pt x 893.3375pt>
+Chapter 1.
+
+
+[2
+
+]
+Chapter 2.
+<../Diagramma UML/UML.png, id=22, 1474.50874pt x 893.3375pt>
 File: ../Diagramma UML/UML.png Graphic file (type png)
 <use ../Diagramma UML/UML.png>
-Package pdftex.def Info: ../Diagramma UML/UML.png  used on input line 87.
+Package pdftex.def Info: ../Diagramma UML/UML.png  used on input line 74.
 (pdftex.def)             Requested size: 443.57848pt x 268.7394pt.
-<../Diagramma ER/ER.png, id=31, 1670.24pt x 1028.84375pt>
+<../Diagramma ER/ER.png, id=24, 1670.24pt x 1028.84375pt>
 File: ../Diagramma ER/ER.png Graphic file (type png)
 <use ../Diagramma ER/ER.png>
-Package pdftex.def Info: ../Diagramma ER/ER.png  used on input line 93.
+Package pdftex.def Info: ../Diagramma ER/ER.png  used on input line 80.
 (pdftex.def)             Requested size: 443.57848pt x 273.23885pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[4
+[3
 
  <../Diagramma UML/UML.png>]
 
-[5 <../Diagramma ER/ER.png>]
-<../Diagramma UML Ristrutturato/UMLRistrutturato.png, id=40, 1855.93375pt x 753
+[4 <../Diagramma ER/ER.png>]
+<../Diagramma UML Ristrutturato/UMLRistrutturato.png, id=33, 1855.93375pt x 753
 .81625pt>
 File: ../Diagramma UML Ristrutturato/UMLRistrutturato.png Graphic file (type pn
 g)
 <use ../Diagramma UML Ristrutturato/UMLRistrutturato.png>
 Package pdftex.def Info: ../Diagramma UML Ristrutturato/UMLRistrutturato.png  u
-sed on input line 122.
+sed on input line 109.
 (pdftex.def)             Requested size: 443.57848pt x 180.16045pt.
 
-Overfull \hbox (19.21284pt too wide) in paragraph at lines 130--157
+Overfull \hbox (19.21284pt too wide) in paragraph at lines 117--144
  [][] 
  []
 
 
 
-[6 <../Diagramma UML Ristrutturato/UMLRistrutturato.png>]
+[5 <../Diagramma UML Ristrutturato/UMLRistrutturato.png>]
 
-[7]
-Capitolo 3.
+[6]
+Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--179
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--179
+Underfull \hbox (badness 10000) in paragraph at lines 151--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--179
+Underfull \hbox (badness 10000) in paragraph at lines 151--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--179
+Underfull \hbox (badness 10000) in paragraph at lines 151--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--179
+Underfull \hbox (badness 10000) in paragraph at lines 151--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--179
+Underfull \hbox (badness 10000) in paragraph at lines 151--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--179
+Underfull \hbox (badness 10000) in paragraph at lines 151--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--179
+Underfull \hbox (badness 10000) in paragraph at lines 151--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--179
+Underfull \hbox (badness 10000) in paragraph at lines 151--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--179
+Underfull \hbox (badness 10000) in paragraph at lines 151--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--179
+Underfull \hbox (badness 10000) in paragraph at lines 151--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--179
+Underfull \hbox (badness 10000) in paragraph at lines 151--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--179
+Underfull \hbox (badness 10000) in paragraph at lines 151--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--179
+Underfull \hbox (badness 10000) in paragraph at lines 151--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--179
+Underfull \hbox (badness 10000) in paragraph at lines 151--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--179
+Underfull \hbox (badness 10000) in paragraph at lines 151--166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--166
+
+ []
+
+
+
+[7
+
+]
+Chapter 4.
+(../SQL/Tabelle/Topic.sql
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
@@ -770,483 +736,286 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--179
 
 [8
 
-]
-Capitolo 4.
-(../SQL/Tabelle/Topic.sql
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <9> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
-
- []
-
-
-
-[9
-
 ] (../SQL/Tabelle/Chef.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 (../SQL/Tabelle/Utente.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
-[10] (../SQL/Tabelle/Corso.sql) (../SQL/Tabelle/SessioneInPresenza.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
-
- []
-
-
-
-[11] (../SQL/Tabelle/SessioneOnline.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
-
- []
-
-(../SQL/Tabelle/Adesione.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
-
- []
-
-
-
-[12] (../SQL/Tabelle/Prepara.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
-
- []
-
-(../SQL/Tabelle/Ricetta.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
-
- []
-
-(../SQL/Tabelle/Ingrediente.sql)
-
-[13] (../SQL/Tabelle/Composizione.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
-
- []
-
-(../SQL/Tabelle/Notifica.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
-
- []
-
-(../SQL/Tabelle/Riceve.sql
-
-[14])
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
-
  []
 
-(../SQL/Tabelle/Insegna.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
-
- []
-
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
-(../SQL/Tabelle/Iscrizione.sql
 
-[15])
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
-(../SQL/Trigger-Procedures-Functions/CalcoloNumeroAdesioni.sql)
 
-[16] (../SQL/Trigger-Procedures-Functions/TriggerAnnoCorso.sql)
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
- []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+[9] (../SQL/Tabelle/Corso.sql)
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
- []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+[10] (../SQL/Tabelle/SessioneInPresenza.sql)
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
-
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+(../SQL/Tabelle/SessioneOnline.sql)
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
-
-
 
-[17] (../SQL/Trigger-Procedures-Functions/TriggerAulaOccupata.sql)
-(../SQL/Trigger-Procedures-Functions/TriggerControlloAdesioniCorso.sql
 
-[18])
 
-[19] (example.aux)
+[11] (example.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16426 strings out of 468226
- 329978 string characters out of 5420954
- 882212 words of memory out of 5000000
- 44637 multiletter control sequences out of 15000+600000
- 639063 words of font info for 58 fonts, out of 8000000 for 9000
+ 14844 strings out of 468226
+ 300560 string characters out of 5420954
+ 813794 words of memory out of 5000000
+ 43131 multiletter control sequences out of 15000+600000
+ 631120 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,10n,101p,591b,1720s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,10n,101p,512b,1410s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk
-/ljfour/jknappen/ec/dpi600/ectt0900.pk> </Users/carmineamato/Library/Applicatio
-n Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0500.pk> </
-Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfo
-ur/jknappen/ec/dpi600/ecbx1200.pk> </Users/carmineamato/Library/Application Sup
-port/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk> </Users
-/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jk
-nappen/ec/dpi600/ecbx1440.pk> </Users/carmineamato/Library/Application Support/
-MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2074.pk> </Users/carm
-ineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappe
-n/ec/dpi600/ecrm1000.pk> </Users/carmineamato/Library/Application Support/MiKTe
-X/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk> </Users/carmineam
-ato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/
-dpi600/ecbx2488.pk> </Users/carmineamato/Library/Application Support/MiKTeX/tex
-mfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk> </Users/carmineamato/L
-ibrary/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi60
-0/eccc2488.pk> </Users/carmineamato/Library/Application Support/MiKTeX/texmfs/d
-ata/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1200.pk> </Users/carmineamato/Librar
-y/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecc
-c1440.pk>
-Output written on example.pdf (20 pages, 543805 bytes).
+/ljfour/jknappen/ec/dpi600/tcrm1000.pk></Users/carmineamato/Library/Application
+ Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></User
+s/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb></Users/carmineamato/Library/Application Support/Mi
+KTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></Users/carminea
+mato/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></Users/carmineamato/Library/Application Support/MiKTeX/texmfs
+/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/carmineamato/Library/
+Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.p
+fb></Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts
+/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on example.pdf (12 pages, 485676 bytes).
 PDF statistics:
- 535 PDF objects out of 1000 (max. 8388607)
+ 94 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
