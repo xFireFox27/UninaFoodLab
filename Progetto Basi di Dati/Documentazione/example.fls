@@ -170,20 +170,20 @@ INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
-OUTPUT example.pdf
-INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT ./logo-federico-II.pdf
 INPUT ./logo-federico-II.pdf
 INPUT ./logo-federico-II.pdf
 INPUT ./logo-federico-II.pdf
+OUTPUT example.pdf
 INPUT ./logo-federico-II.pdf
 INPUT ./logo-federico-II.pdf
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr12.tfm
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmr17.tfm
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmcsc10.tfm
+INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsl10.tfm
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./example.toc

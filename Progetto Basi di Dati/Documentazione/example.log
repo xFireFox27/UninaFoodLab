@@ -473,20 +473,7 @@ File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
 x/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count317
-) (example.aux
-
-example.aux:34: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.34 <
-      <<<<<< HEAD
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-)
+) (example.aux)
 \openout1 = `example.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
@@ -565,24 +552,18 @@ x/00miktex/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@lstlisting=\count324
-
-
-[1
-
-{/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/map/p
-dftex/pdftex.map}]
-
-[2
-
-]
-<logo-federico-II.pdf, id=12, 501.79471pt x 499.8675pt>
+<logo-federico-II.pdf, id=4, 501.79471pt x 499.8675pt>
 File: logo-federico-II.pdf Graphic file (type pdf)
 <use logo-federico-II.pdf>
 Package pdftex.def Info: logo-federico-II.pdf  used on input line 48.
 (pdftex.def)             Requested size: 99.58464pt x 99.20135pt.
 
 
-[1 <./logo-federico-II.pdf>]
+[1
+
+
+{/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/map/p
+dftex/pdftex.map} <./logo-federico-II.pdf>]
 
 [2
 
@@ -611,12 +592,12 @@ Chapter 1.
 
 ]
 Chapter 2.
-<../Diagramma UML/UML.png, id=39, 1474.50874pt x 893.3375pt>
+<../Diagramma UML/UML.png, id=32, 1474.50874pt x 893.3375pt>
 File: ../Diagramma UML/UML.png Graphic file (type png)
 <use ../Diagramma UML/UML.png>
 Package pdftex.def Info: ../Diagramma UML/UML.png  used on input line 74.
 (pdftex.def)             Requested size: 443.57848pt x 268.7394pt.
-<../Diagramma ER/ER.png, id=41, 1670.24pt x 1028.84375pt>
+<../Diagramma ER/ER.png, id=34, 1670.24pt x 1028.84375pt>
 File: ../Diagramma ER/ER.png Graphic file (type png)
 <use ../Diagramma ER/ER.png>
 Package pdftex.def Info: ../Diagramma ER/ER.png  used on input line 80.
@@ -629,7 +610,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [7 <../Diagramma UML/UML.png>]
 
 [8 <../Diagramma ER/ER.png>]
-<../Diagramma UML Ristrutturato/UMLRistrutturato.png, id=50, 1855.93375pt x 753
+<../Diagramma UML Ristrutturato/UMLRistrutturato.png, id=44, 1855.93375pt x 753
 .81625pt>
 File: ../Diagramma UML Ristrutturato/UMLRistrutturato.png Graphic file (type pn
 g)
@@ -1017,15 +998,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--159
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  14842 strings out of 468226
  300469 string characters out of 5420954
- 813848 words of memory out of 5000000
+ 813813 words of memory out of 5000000
  43128 multiletter control sequences out of 15000+600000
  631473 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1043,9 +1020,9 @@ Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.p
 fb></Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts
 /type1/public/amsfonts/cm/cmsl10.pfb></Users/carmineamato/Library/Application S
 upport/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on example.pdf (18 pages, 503089 bytes).
+Output written on example.pdf (16 pages, 501446 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
+ 112 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
