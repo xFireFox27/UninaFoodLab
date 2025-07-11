@@ -67,6 +67,6 @@ VALUES ('Giuliano', 'Laccetti', 'giuliano.laccetti', 'NapoliCampione2026'),
        ('Gon', 'Freecss', 'gon.freecss', 'PasswordGon'),
        ('Killua', 'Zoldyck', 'killua.zoldyck', 'PasswordKillua'),
        ('Salvatore', 'Esposito', 'salvatore.esposito', 'passwordSalvatore'),
-       ('Marco', 'D’Amore', 'marco.damore', 'passwordMarco'),
+       ('Marco', 'D''Amore', 'marco.damore', 'passwordMarco'),
        ('Gennaro', 'Savastano', 'gennaro.savastano', 'passwordGennaro'),
        ('Ciro', 'Di Marzio', 'ciro.dimazio', 'passwordCiro')

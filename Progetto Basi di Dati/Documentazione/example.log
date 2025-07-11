@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.4)  11 JUL 2025 17:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.4)  11 JUL 2025 18:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1228,21 +1228,360 @@ Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
 
 [18] (../SQL/Trigger-Procedures-Functions/TriggerControlloAdesioniCorso.sql)
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
-[19] (example.aux)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+
+[19] (../SQL/Trigger-Procedures-Functions/TriggerControlloInsegna.sql)
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+
+[20] (../SQL/Trigger-Procedures-Functions/TriggerControlloSessioneCorsoData.sql
+) (../SQL/Trigger-Procedures-Functions/TriggerDataInizio.sql
+
+[21])
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
+
+ []
+
+(../SQL/Trigger-Procedures-Functions/TriggerDataSessione.sql)
+
+[22] (../SQL/Trigger-Procedures-Functions/TriggerLimiteIscrizioni.sql)
+(../SQL/Trigger-Procedures-Functions/TriggerNumSessione.sql
+
+[23])
+
+[24] (../SQL/Trigger-Procedures-Functions/TriggerSovrapposizioniDate.sql
+
+[25]) (../SQL/Trigger-Procedures-Functions/TriggerUsernameUtentiChef.sql)
+
+[26]
+
+[27]
+Capitolo 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
+
+ []
+
+(../SQL/Insert/InsertChef.sql
+
+[28
+
+])
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+
+ []
+
+(../SQL/Insert/InsertUtente.sql
+
+[29])
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+
+ []
+
+(../SQL/Insert/InsertCorso.sql
+
+[30])
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+
+ []
+
+(../SQL/Insert/InsertSessioneInPresenza.sql)
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
+
+ []
+
+
+
+[31] (../SQL/Insert/InsertSessioneOnline.sql)
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+(../SQL/Insert/InsertAdesioni.sql)
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+
+ []
+
+(../SQL/Insert/InsertRicetta.sql
+
+[32]
+
+[33]
+
+[34]
+
+[35]
+
+[36])
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
+
+ []
+
+(../SQL/Insert/InsertIngrediente.sql
+
+[37]
+
+[38]
+
+[39]
+
+[40])
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
+
+ []
+
+
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
+
+ []
+
+(../SQL/Insert/InsertTopic.sql)
+Underfull \hbox (badness 10000) in paragraph at lines 370--371
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--371
+
+ []
+
+
+
+[43] (../SQL/Insert/InsertInsegna.sql) (../SQL/Insert/InsertPrepara.sql
+
+[44]) (../SQL/Insert/InsertIscrizione.sql
+
+[45]
+
+[46]
+
+[47])
+
+[48] (example.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16426 strings out of 468226
- 329978 string characters out of 5420954
- 882212 words of memory out of 5000000
- 44637 multiletter control sequences out of 15000+600000
+ 16586 strings out of 468226
+ 337871 string characters out of 5420954
+ 1051671 words of memory out of 5000000
+ 44735 multiletter control sequences out of 15000+600000
  639063 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,10n,101p,591b,1708s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,10n,101p,639b,1726s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk
 /ljfour/jknappen/ec/dpi600/ectt0900.pk> </Users/carmineamato/Library/Applicatio
 n Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0500.pk> </
@@ -1263,9 +1602,9 @@ ibrary/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi60
 ata/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1200.pk> </Users/carmineamato/Librar
 y/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecc
 c1440.pk>
-Output written on example.pdf (20 pages, 543905 bytes).
+Output written on example.pdf (49 pages, 665609 bytes).
 PDF statistics:
- 535 PDF objects out of 1000 (max. 8388607)
+ 651 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
