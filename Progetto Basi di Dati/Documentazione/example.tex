@@ -129,7 +129,7 @@
 
     \begin{table}[h]
         \centering
-        \begin{tabular}{|p{3cm}|p{4cm}|p{8cm}|}
+        \begin{tabular}{|p{3cm}|p{5cm}|p{8cm}|}
             \hline
             \textbf{Classe} & \textbf{Descrizione} & \textbf{Attributi} \\
             \hline
@@ -163,7 +163,7 @@
 
     \begin{table}[h]
         \centering
-        \begin{tabular}{|p{3cm}|p{4cm}|p{8cm}|}
+        \begin{tabular}{|p{3cm}|p{5cm}|p{8cm}|}
             \hline
             \textbf{Associazione} & \textbf{Descrizione} & \textbf{Classi coinvolte} \\
             \hline
@@ -175,7 +175,7 @@
             \hline
             Aderisce a & Associa un utente a una sessione in presenza a cui partecipa & Utente[1,*], SessioneInPresenza[0,*] \\
             \hline
-            Si prepara & Associa una sessione in presenza a una ricetta che si prepara & SessioneInPresenza[0,*], Ricetta[1,*] \\
+            Si prepara & Associa una sessione in presenza a una ricetta preparata in quella sessione & SessioneInPresenza[0,*], Ricetta[1,*] \\
             \hline
             È composta da & Associa una ricetta a un ingrediente che la compone & Ricetta[0,*], Ingrediente[1,*], Composizione (Classe di associazione) \\
             \hline
@@ -196,38 +196,40 @@
     \section{Dizionario dei vincoli}
     \begin{table}[h]
         \centering
-        \begin{tabular}{|p{4cm}|p{10cm}|}
+        \begin{tabular}{|p{4cm}|p{12cm}|}
             \hline
             \textbf{Nome} & \textbf{Descrizione} \\
             \hline
-            Validità Anno & Questo vincolo viene attivato prima dell'inserimento o aggiornamento di un nuovo corso e verifica che l'anno del corso sia valido. Se l'anno non è valido, il trigger genera un errore e impedisce l'inserimento del corso. Questo è utile per garantire che i corsi siano pianificati correttamente e che le date siano coerenti con l'anno accademico corrente o successivo. \\
+            Validità Anno & Questo vincolo viene attivato prima dell'inserimento o aggiornamento di un nuovo corso e verifica che l'anno del corso sia l'anno corrente o il successivo. Se l'anno non è valido, il trigger genera un errore e impedisce l'inserimento del corso. Questo è utile per garantire che i corsi siano pianificati correttamente e che le date siano coerenti con l'anno accademico corrente o successivo. \\
             \hline
             Aula Occupata & Questo vincolo viene attivato prima dell'inserimento o aggiornamento di una sessione in presenza e verifica che l'aula specificata non sia già occupata da un'altra sessione in presenza nello stesso orario. Se l'aula è occupata, il trigger genera un errore e impedisce l'inserimento della sessione. Questo è utile per evitare conflitti di programmazione e garantire che le sessioni in presenza possano essere svolte senza problemi logistici. \\
             \hline
             Iscrizione Per Adesione & Questo vincolo viene attivato prima dell'inserimento di una nuova adesione e verifica che l'utente che sta aderendo a una sessione in presenza sia iscritto al corso corrispondente. Se l'utente non è iscritto al corso, il trigger genera un errore e impedisce l'inserimento dell'adesione. Questo è utile per garantire che solo gli utenti iscritti ai corsi possano partecipare alle sessioni in presenza, mantenendo la coerenza dei dati e le regole del sistema. \\
             \hline
-            Insegnamenti Chef & Questo vincolo viene attivato prima dell'inserimento di un nuovo corso e verifica che lo chef che sta insegnando il corso sia effettivamente associato al topic del corso stesso. Se lo chef non insegna il topic specificato, il trigger genera un errore e impedisce l'inserimento del corso. Questo è utile per garantire che i corsi siano tenuti da chef competenti nei rispettivi argomenti, mantenendo la qualità dell'insegnamento. \\
+            Insegnamenti Chef & Questo vincolo viene attivato prima dell'inserimento di un nuovo corso e verifica che lo chef che sta creando il corso insegni effettivamente il topic associato a questo. Se lo chef non insegna il topic specificato, il trigger genera un errore e impedisce l'inserimento del corso. Questo è utile per garantire che i corsi siano tenuti da chef competenti nei rispettivi argomenti, mantenendo la qualità dell'insegnamento. \\
             \hline
             Data Sessione Corso & Questo vincolo viene attivato prima dell'inserimento o aggiornamento di una sessione e verifica che la data della sessione sia successiva alla data di inizio del corso a cui appartiene. Se la data della sessione non è valida, il trigger genera un errore e impedisce l'inserimento della sessione. Questo è utile per garantire che le sessioni siano programmate correttamente in relazione al corso, evitando conflitti di programmazione e garantendo che le sessioni si svolgano dopo l'inizio del corso stesso. \\
+            \hline
+            Data Inizio Corso & Questo vincolo viene attivato prima dell'inserimento o aggiornamento di un nuovo corso e verifica che la data di inizio del corso sia una data futura. Se la data non è valida, il trigger genera un errore e impedisce l'inserimento del corso. Questo è utile per garantire che i corsi siano pianificati correttamente e che le date siano coerenti. \\
             \hline
         \end{tabular}
     \end{table}
 
     \begin{table}[h]
         \centering
-        \begin{tabular}{|p{4cm}|p{10cm}|}
+        \begin{tabular}{|p{4cm}|p{12cm}|}
             \hline
-            Data Inizio Corso & Questo vincolo viene attivato prima dell'inserimento o aggiornamento di un nuovo corso e verifica che la data di inizio del corso sia valida. Se la data non è valida, il trigger genera un errore e impedisce l'inserimento del corso. Questo è utile per garantire che i corsi siano pianificati correttamente e che le date siano coerenti. \\
+            \textbf{Nome} & \textbf{Descrizione} \\
             \hline
             Limite Iscrizione & Questo vincolo viene attivato prima dell'inserimento di una nuova iscrizione e verifica che il corso a cui l'utente sta cercando di iscriversi non abbia già raggiunto il limite di 50 iscrizioni. Se il limite è stato raggiunto, il trigger genera un errore e impedisce l'inserimento dell'iscrizione. Questo è utile per garantire che i corsi non superino il numero massimo di partecipanti, mantenendo la qualità dell'insegnamento e la gestione delle risorse. \\ 
             \hline
             Numero Sessione & Questo vincolo viene attivato prima dell'inserimento di una sessione e verifica che il numero della sessione sia coerente con il numero della sessione precedente. Se il numero della sessione non è valido, il trigger genera un errore e impedisce l'inserimento della sessione. Questo è utile per garantire che le sessioni siano programmate in modo sequenziale e che non ci siano salti nei numeri delle sessioni, mantenendo la coerenza del sistema. \\
             \hline
-            Sovrapposizioni Date & Questo vincolo viene attivato prima dell'inserimento di una sessione in presenza e verifica che non ci sia una sovrapposizione di date tra le sessioni in presenza per lo stesso chef. Se c'è una sovrapposizione, il trigger genera un errore e impedisce l'inserimento della sessione. Questo è utile per evitare conflitti di programmazione e garantire che gli chef possano gestire le loro sessioni in presenza senza problemi logistici. \\
+            Sovrapposizioni Date & Questo vincolo viene attivato prima dell'inserimento di una sessione e verifica che non ci sia una sovrapposizione di date tra le sessioni per lo stesso chef. Se c'è una sovrapposizione, il trigger genera un errore e impedisce l'inserimento della sessione. Questo è utile per evitare conflitti di programmazione e garantire che gli chef possano gestire le loro sessioni in presenza senza problemi logistici. \\
             \hline
             Unicità Username Utenti Chef & Questo vincolo viene attivato prima dell'inserimento o aggiornamento di un nuovo chef o utente e verifica che lo username sia univoco. Se lo username è già presente nel database, il trigger genera un errore e impedisce l'inserimento o l'aggiornamento. Questo è utile per garantire che gli username degli chef e degli utenti siano univoci, evitando conflitti e garantendo l'integrità dei dati. \\
             \hline
-            Data Sessione & Questo vincolo viene attivato prima dell'inserimento o aggiornamento di una sessione e verifica che la data della sessione sia valida. Se la data non è valida, il trigger genera un errore e impedisce l'inserimento della sessione. Questo è utile per garantire che le sessioni siano programmate correttamente e che le date siano coerenti. \\
+            Data Sessione & Questo vincolo viene attivato prima dell'inserimento o aggiornamento di una sessione e verifica che la data della sessione sia una data futura. Se la data non è valida, il trigger genera un errore e impedisce l'inserimento della sessione. Questo è utile per garantire che le sessioni siano programmate correttamente e che le date siano coerenti. \\
             \hline
             CK Topic Nome & Questo vincolo controlla che il nome del topic sia compreso in un elenco di cucine disponibili. \\
             \hline
@@ -239,7 +241,7 @@
             \hline
             CK Luogo & Questo vincolo controlla che il luogo in cui è tenuta la sessione in presenza sia compreso in un elenco di luoghi validi. \\
             \hline
-            CK Durata & Questo vincolo controlla che la durata di una sessione in presenza sia compresa tra 60 e 180 minuti. \\
+            CK Durata & Questo vincolo controlla che la durata di una sessione, online o in presenza, sia compresa tra 60 e 180 minuti. \\
             \hline
             CK Link & Questo vincolo controlla che il link abbia un formato valido. \\
             \hline
