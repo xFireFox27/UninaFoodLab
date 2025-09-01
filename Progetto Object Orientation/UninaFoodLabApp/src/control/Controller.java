@@ -4,14 +4,19 @@ import java.awt.Font;
 import java.awt.FontFormatException;
 import java.awt.GraphicsEnvironment;
 import java.io.IOException;
+import java.sql.SQLException;
 
 import javax.swing.UIManager;
 
-import boundary.LoginFrame;
+import DAO.*;
+import boundary.*;
+import entity.Chef;
 
 public class Controller {
 	
 	public LoginFrame loginFrame;
+	private ChefDAO chefDao;
+	
 	
 	/**
 	 * Launch the application.
@@ -22,12 +27,23 @@ public class Controller {
 	}
 	
 	public Controller() {
-		loginFrame = new LoginFrame();
+		loginFrame = new LoginFrame(this);
 		loginFrame.setVisible(true);
 	}
 	
 	
-	
+	public Chef LoginChef(String username, String password) throws SQLException {
+		chefDao = new ChefDAO();
+		Chef chef = chefDao.creaChef(username, password);
+		if (chef != null) {
+			loginFrame.setVisible(false);
+			return chef;
+		} else {
+			loginFrame.showErrorMessage("Chef non trovato!");
+			return null;
+		
+		}
+	}
 	
 	
 	
