@@ -6,7 +6,7 @@ import entity.Chef;
 
 public class ChefDAO {
 	
-	public Chef creaChef(String username, String password) throws SQLException {
+	public Chef creaChef(String username, String password) {
 		String sql = "SELECT * FROM chef WHERE username = ? AND password = ?";
 		try (Connection conn = DB.getConnection();
 			PreparedStatement st = conn.prepareStatement(sql)) {

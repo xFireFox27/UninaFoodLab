@@ -32,7 +32,7 @@ public class Controller {
 	}
 	
 	
-	public Chef LoginChef(String username, String password) throws SQLException {
+	public Chef LoginChef(String username, String password) {
 		chefDao = new ChefDAO();
 		Chef chef = chefDao.creaChef(username, password);
 		if (chef != null) {
