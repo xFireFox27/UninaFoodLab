@@ -10,7 +10,7 @@ import javax.swing.UIManager;
 
 import DAO.*;
 import boundary.*;
-import entity.Chef;
+import entity.*;
 
 public class Controller {
 	
