@@ -36,15 +36,21 @@ public class Controller {
 	
 	public Chef LoginChef(String username, String password) {
 		chefDao = new ChefDAO();
-		Chef chef = chefDao.creaChef(username, password);
-		if (chef != null) {
-			loginFrame.setVisible(false);
-			homepageChef.setVisible(true);
-			return chef;
-		} else {
-			loginFrame.showErrorMessage("Chef non trovato!");
-			return null;
+		try {
+			Chef chef = chefDao.creaChef(username, password);
 		
+			if (chef != null) {
+				loginFrame.setVisible(false);
+				homepageChef.setVisible(true);
+				return chef;
+			} else {
+				loginFrame.showErrorMessage("Chef non trovato!");
+				return null;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			loginFrame.showErrorMessage("Errore di connessione al database.");
+			return null;
 		}
 	}
 	
