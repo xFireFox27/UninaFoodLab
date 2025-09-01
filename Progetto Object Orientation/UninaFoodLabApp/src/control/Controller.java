@@ -15,6 +15,7 @@ import entity.*;
 public class Controller {
 	
 	public LoginFrame loginFrame;
+	public HomepageChef homepageChef;
 	private ChefDAO chefDao;
 	
 	
@@ -28,6 +29,7 @@ public class Controller {
 	
 	public Controller() {
 		loginFrame = new LoginFrame(this);
+		homepageChef = new HomepageChef(this);
 		loginFrame.setVisible(true);
 	}
 	
@@ -37,6 +39,7 @@ public class Controller {
 		Chef chef = chefDao.creaChef(username, password);
 		if (chef != null) {
 			loginFrame.setVisible(false);
+			homepageChef.setVisible(true);
 			return chef;
 		} else {
 			loginFrame.showErrorMessage("Chef non trovato!");

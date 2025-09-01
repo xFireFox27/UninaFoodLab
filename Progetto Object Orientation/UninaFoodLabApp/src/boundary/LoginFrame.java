@@ -39,6 +39,7 @@ public class LoginFrame extends JFrame {
 	 */
 	public LoginFrame(Controller c) {
 		theController = c;
+		setResizable(false);
 		setTitle("LoginChef");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(450, 250, 689, 472);
@@ -50,7 +51,7 @@ public class LoginFrame extends JFrame {
 		setContentPane(contentPane);
 		GridBagLayout gbl_contentPane = new GridBagLayout();
 		gbl_contentPane.columnWidths = new int[]{226, 182, 201, 0};
-		gbl_contentPane.rowHeights = new int[]{97, 15, 24, 0, 0, 27, 23, 0, 49, 61, 0};
+		gbl_contentPane.rowHeights = new int[]{97, 15, 24, 33, 37, 27, 33, 49, 69, 61, 0};
 		gbl_contentPane.columnWeights = new double[]{0.0, 1.0, 1.0, Double.MIN_VALUE};
 		gbl_contentPane.rowWeights = new double[]{1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE};
 		contentPane.setLayout(gbl_contentPane);
@@ -76,9 +77,9 @@ public class LoginFrame extends JFrame {
 		contentPane.add(lblUsername, gbc_lblUsername);
 		
 		usernameField = new JTextField();
+		usernameField.setFont(new Font("Dialog", Font.PLAIN, 15));
 		GridBagConstraints gbc_usernameField = new GridBagConstraints();
-		gbc_usernameField.fill = GridBagConstraints.HORIZONTAL;
-		gbc_usernameField.anchor = GridBagConstraints.NORTH;
+		gbc_usernameField.fill = GridBagConstraints.BOTH;
 		gbc_usernameField.insets = new Insets(0, 0, 5, 5);
 		gbc_usernameField.gridx = 1;
 		gbc_usernameField.gridy = 3;
@@ -97,9 +98,10 @@ public class LoginFrame extends JFrame {
 		contentPane.add(lblPassword, gbc_lblPassword);
 		
 		passwordField = new JPasswordField();
+		passwordField.setFont(new Font("Dialog", Font.PLAIN, 15));
 		GridBagConstraints gbc_passwordField = new GridBagConstraints();
 		gbc_passwordField.insets = new Insets(0, 0, 5, 5);
-		gbc_passwordField.fill = GridBagConstraints.HORIZONTAL;
+		gbc_passwordField.fill = GridBagConstraints.BOTH;
 		gbc_passwordField.gridx = 1;
 		gbc_passwordField.gridy = 6;
 		contentPane.add(passwordField, gbc_passwordField);
