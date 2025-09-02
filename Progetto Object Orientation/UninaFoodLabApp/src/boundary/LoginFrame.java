@@ -54,7 +54,7 @@ public class LoginFrame extends JFrame {
 		
 		JLabel lblTitolo = new JLabel("UninaFoodLab");
 		lblTitolo.setBackground(new Color(236, 233, 233));
-		lblTitolo.setForeground(new Color(0, 191, 255));
+		lblTitolo.setForeground(new Color(26, 95, 180));
 		lblTitolo.setFont(new Font("Helvetica", Font.BOLD, 33));
 		contentPane.add(lblTitolo, "cell 1 1,alignx center,aligny center");
 		
