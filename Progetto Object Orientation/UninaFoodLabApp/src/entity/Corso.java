@@ -12,6 +12,17 @@ public class Corso {
 	private String idTopic;
 	private String usernameChef;
 	
+	public Corso(int newIdCorso, String newTitolo, String newFrequenza, int newNumLezioni, int newAnno, Date newData, String newIdTopic, String newUsername) {
+		this.idCorso = newIdCorso;
+		this.titolo = newTitolo;
+		this.frequenza = newFrequenza;
+		this.numLezioni = newNumLezioni;
+		this.AnnoFrequenza = newAnno;
+		this.dataInizio = newData;
+		this.idTopic = newIdTopic;
+		this.usernameChef = newUsername;
+	}
+	
 	public int getIdCorso() {
 		return idCorso;
 	}

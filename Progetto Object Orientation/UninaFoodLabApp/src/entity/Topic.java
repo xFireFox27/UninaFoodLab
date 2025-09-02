@@ -1,22 +1,22 @@
 package entity;
 
-public class Ricetta {
-	private int idRicetta;
+public class Topic {
+	private int idTopic;
 	private String nome;
 	private String descrizione;
 	
-	public Ricetta(int newIdRicetta, String newNome, String newDescrizione) {
-		this.idRicetta = newIdRicetta;
+	public Topic(int newIdTopic, String newNome, String newDescrizione) {
+		this.idTopic = newIdTopic;
 		this.nome = newNome;
 		this.descrizione = newDescrizione;
 	}
 	
-	public int getIdRicetta() {
-		return idRicetta;
+	public int getIdTopic() {
+		return idTopic;
 	}
 	
-	public void setIdRicetta(int newIdRicetta) {
-		this.idRicetta = newIdRicetta;
+	public void setIdTopic(int newIdTopic) {
+		this.idTopic = newIdTopic;
 	}
 	
 	public String getNome() {
@@ -34,5 +34,4 @@ public class Ricetta {
 	public void setDescrizione(String newDescrizione) {
 		this.descrizione = newDescrizione;
 	}
-	
 }
