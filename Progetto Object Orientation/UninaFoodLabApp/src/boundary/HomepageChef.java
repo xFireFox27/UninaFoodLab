@@ -15,6 +15,8 @@ import javax.swing.SwingConstants;
 import control.Controller;
 import net.miginfocom.swing.MigLayout;
 import javax.swing.JList;
+import javax.swing.border.SoftBevelBorder;
+import javax.swing.border.BevelBorder;
 
 public class HomepageChef extends JFrame {
 
@@ -49,6 +51,7 @@ public class HomepageChef extends JFrame {
 		
 
 		JButton btnNuovoCorso = new JButton("Crea Nuovo Corso");
+		btnNuovoCorso.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		btnNuovoCorso.setOpaque(true);
 		btnNuovoCorso.setBackground(new Color(98, 160, 234));
 		btnNuovoCorso.setForeground(new Color(255, 255, 255));
@@ -62,6 +65,7 @@ public class HomepageChef extends JFrame {
 		
 
 		JButton btnVisualizzaCorsi = new JButton("Visualizza Corsi");
+		btnVisualizzaCorsi.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		btnVisualizzaCorsi.setOpaque(true);
 		btnVisualizzaCorsi.setForeground(new Color(255, 255, 255));
 		btnVisualizzaCorsi.setBackground(new Color(98, 160, 234));
@@ -75,6 +79,7 @@ public class HomepageChef extends JFrame {
 		
 
 		JButton btnNotifiche = new JButton("Notifiche");
+		btnNotifiche.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		btnNotifiche.setOpaque(true);
 		btnNotifiche.setForeground(new Color(255, 255, 255));
 		btnNotifiche.setBackground(new Color(98, 160, 234));
