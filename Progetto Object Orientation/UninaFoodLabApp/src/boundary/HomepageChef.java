@@ -42,12 +42,15 @@ public class HomepageChef extends JFrame {
 
  
 		JLabel titleLabel = new JLabel("Benvenuto "+ theController.getNomeChefCorrente()+"!");
+		titleLabel.setForeground(new Color(26, 95, 180));
 		titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		titleLabel.setFont(titleLabel.getFont().deriveFont(24f));
 		contentPane.add(titleLabel, "cell 0 1 5 1,alignx center");
 		
 
 		JButton btnNuovoCorso = new JButton("Crea Nuovo Corso");
+		btnNuovoCorso.setBackground(new Color(98, 160, 234));
+		btnNuovoCorso.setForeground(new Color(255, 255, 255));
 		btnNuovoCorso.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
@@ -58,6 +61,8 @@ public class HomepageChef extends JFrame {
 		
 
 		JButton btnVisualizzaCorsi = new JButton("Visualizza Corsi");
+		btnVisualizzaCorsi.setForeground(new Color(255, 255, 255));
+		btnVisualizzaCorsi.setBackground(new Color(98, 160, 234));
 		btnVisualizzaCorsi.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
@@ -68,6 +73,8 @@ public class HomepageChef extends JFrame {
 		
 
 		JButton btnInviaNotifiche = new JButton("Invia Notifiche");
+		btnInviaNotifiche.setForeground(new Color(255, 255, 255));
+		btnInviaNotifiche.setBackground(new Color(98, 160, 234));
 		btnInviaNotifiche.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
