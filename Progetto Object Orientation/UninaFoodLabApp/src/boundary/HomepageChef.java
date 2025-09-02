@@ -39,10 +39,6 @@ public class HomepageChef extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(new MigLayout("", "[grow][150px][150px][150px][grow]", "[grow][50px][20px][40px][20px][40px][20px][40px][grow]"));
-		
- 		JList<String> list = new JList<>(new String[] {"Nuovo Corso", "Visualizza Corsi", "Notifiche", "Report Mensile"});
-		list.setBackground(new Color(255, 255, 255));
-		contentPane.add(list, "cell 0 1 1 8,grow");
 
  
 		JLabel titleLabel = new JLabel("Benvenuto "+ theController.getNomeChefCorrente()+"!");
