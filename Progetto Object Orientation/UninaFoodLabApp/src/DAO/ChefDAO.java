@@ -8,6 +8,7 @@ import entity.Chef;
 
 public class ChefDAO implements ChefDaoInterface {
 	
+	@Override
 	public Chef creaChef(String username, String password) throws SQLException {
 		String sql = "SELECT * FROM chef WHERE username = ? AND password = ?";
 		try (Connection conn = DB.getConnection();
