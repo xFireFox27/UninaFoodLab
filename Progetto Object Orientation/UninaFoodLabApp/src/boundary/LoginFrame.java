@@ -46,13 +46,14 @@ public class LoginFrame extends JFrame {
 		setBounds(450, 250, 689, 472);
 		setMinimumSize(new Dimension(689, 472));
 		contentPane = new JPanel();
-		contentPane.setBackground(new Color(220, 220, 220));
+		contentPane.setBackground(new Color(255, 255, 255));
 		contentPane.setForeground(new Color(255, 0, 255));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(new MigLayout("", "[grow][300px,center][grow]", "[grow][][34px][][24px][28px][24px][28px][64px][grow]"));
 		
 		JLabel lblTitolo = new JLabel("UninaFoodLab");
+		lblTitolo.setBackground(new Color(236, 233, 233));
 		lblTitolo.setForeground(new Color(0, 191, 255));
 		lblTitolo.setFont(new Font("Helvetica", Font.BOLD, 33));
 		contentPane.add(lblTitolo, "cell 1 1,alignx center,aligny center");
@@ -63,6 +64,7 @@ public class LoginFrame extends JFrame {
 		contentPane.add(lblUsername, "cell 1 4,alignx left,aligny center");
 		
 		usernameField = new JTextField();
+		usernameField.setBackground(new Color(222, 221, 218));
 		usernameField.setFont(new Font("Dialog", Font.PLAIN, 15));
 		contentPane.add(usernameField, "cell 1 5,growx");
 		usernameField.setColumns(10);
@@ -73,6 +75,7 @@ public class LoginFrame extends JFrame {
 		contentPane.add(lblPassword, "cell 1 6,alignx left,aligny center");
 		
 		passwordField = new JPasswordField();
+		passwordField.setBackground(new Color(222, 221, 218));
 		passwordField.setFont(new Font("Dialog", Font.PLAIN, 15));
 		contentPane.add(passwordField, "cell 1 7,growx");
 		
