@@ -1,10 +1,12 @@
 package DAO;
 
 import java.sql.*;
+
+import DaoInterface.ChefDaoInterface;
 import dbConnection.DB;
 import entity.Chef;
 
-public class ChefDAO {
+public class ChefDAO implements ChefDaoInterface {
 	
 	public Chef creaChef(String username, String password) throws SQLException {
 		String sql = "SELECT * FROM chef WHERE username = ? AND password = ?";
