@@ -49,6 +49,7 @@ public class HomepageChef extends JFrame {
 		
 
 		JButton btnNuovoCorso = new JButton("Crea Nuovo Corso");
+		btnNuovoCorso.setOpaque(true);
 		btnNuovoCorso.setBackground(new Color(98, 160, 234));
 		btnNuovoCorso.setForeground(new Color(255, 255, 255));
 		btnNuovoCorso.addActionListener(new ActionListener() {
@@ -61,6 +62,7 @@ public class HomepageChef extends JFrame {
 		
 
 		JButton btnVisualizzaCorsi = new JButton("Visualizza Corsi");
+		btnVisualizzaCorsi.setOpaque(true);
 		btnVisualizzaCorsi.setForeground(new Color(255, 255, 255));
 		btnVisualizzaCorsi.setBackground(new Color(98, 160, 234));
 		btnVisualizzaCorsi.addActionListener(new ActionListener() {
@@ -72,16 +74,17 @@ public class HomepageChef extends JFrame {
 		contentPane.add(btnVisualizzaCorsi, "cell 2 3,grow");
 		
 
-		JButton btnInviaNotifiche = new JButton("Invia Notifiche");
-		btnInviaNotifiche.setForeground(new Color(255, 255, 255));
-		btnInviaNotifiche.setBackground(new Color(98, 160, 234));
-		btnInviaNotifiche.addActionListener(new ActionListener() {
+		JButton btnNotifiche = new JButton("Notifiche");
+		btnNotifiche.setOpaque(true);
+		btnNotifiche.setForeground(new Color(255, 255, 255));
+		btnNotifiche.setBackground(new Color(98, 160, 234));
+		btnNotifiche.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
 				//theController.apriGestioneNotifiche();
 			}
 		});
-		contentPane.add(btnInviaNotifiche, "cell 3 3,grow");
+		contentPane.add(btnNotifiche, "cell 3 3,grow");
 		
 
 		JList<String> list = new JList();
