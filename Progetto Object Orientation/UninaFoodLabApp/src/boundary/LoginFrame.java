@@ -96,7 +96,7 @@ public class LoginFrame extends JFrame {
 			}
 		});
 		LoginButton.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		LoginButton.setBackground(new Color(100, 149, 237));
+		LoginButton.setBackground(new Color(98, 160, 234));
 		LoginButton.setForeground(new Color(248, 248, 255));
 		LoginButton.setFont(new Font("Palatino", Font.BOLD, 24));
 		contentPane.add(LoginButton, "cell 1 8,growx");
