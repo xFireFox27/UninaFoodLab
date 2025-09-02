@@ -24,6 +24,7 @@ import control.Controller;
 import javax.swing.border.BevelBorder;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import net.miginfocom.swing.MigLayout;
 
 public class LoginFrame extends JFrame {
 
@@ -39,7 +40,7 @@ public class LoginFrame extends JFrame {
 	 */
 	public LoginFrame(Controller c) {
 		theController = c;
-		setResizable(false);
+		setResizable(true);
 		setTitle("LoginChef");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(450, 250, 689, 472);
@@ -49,62 +50,31 @@ public class LoginFrame extends JFrame {
 		contentPane.setForeground(new Color(255, 0, 255));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		GridBagLayout gbl_contentPane = new GridBagLayout();
-		gbl_contentPane.columnWidths = new int[]{226, 182, 201, 0};
-		gbl_contentPane.rowHeights = new int[]{97, 15, 24, 33, 37, 27, 33, 49, 69, 61, 0};
-		gbl_contentPane.columnWeights = new double[]{0.0, 1.0, 1.0, Double.MIN_VALUE};
-		gbl_contentPane.rowWeights = new double[]{1.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE};
-		contentPane.setLayout(gbl_contentPane);
+		contentPane.setLayout(new MigLayout("", "[grow][300px,center][grow]", "[grow][][34px][][24px][28px][24px][28px][64px][grow]"));
 		
 		JLabel lblTitolo = new JLabel("UninaFoodLab");
 		lblTitolo.setForeground(new Color(0, 191, 255));
 		lblTitolo.setFont(new Font("Helvetica", Font.BOLD, 33));
-		GridBagConstraints gbc_lblTitolo = new GridBagConstraints();
-		gbc_lblTitolo.fill = GridBagConstraints.HORIZONTAL;
-		gbc_lblTitolo.insets = new Insets(0, 0, 5, 5);
-		gbc_lblTitolo.gridx = 1;
-		gbc_lblTitolo.gridy = 0;
-		contentPane.add(lblTitolo, gbc_lblTitolo);
+		contentPane.add(lblTitolo, "cell 1 1,alignx center,aligny center");
 		
 		JLabel lblUsername = new JLabel("Username");
 		lblUsername.setForeground(new Color(100, 149, 237));
 		lblUsername.setFont(new Font("Dialog", Font.BOLD, 20));
-		GridBagConstraints gbc_lblUsername = new GridBagConstraints();
-		gbc_lblUsername.anchor = GridBagConstraints.WEST;
-		gbc_lblUsername.insets = new Insets(0, 0, 5, 5);
-		gbc_lblUsername.gridx = 1;
-		gbc_lblUsername.gridy = 2;
-		contentPane.add(lblUsername, gbc_lblUsername);
+		contentPane.add(lblUsername, "cell 1 4,alignx left,aligny center");
 		
 		usernameField = new JTextField();
 		usernameField.setFont(new Font("Dialog", Font.PLAIN, 15));
-		GridBagConstraints gbc_usernameField = new GridBagConstraints();
-		gbc_usernameField.fill = GridBagConstraints.BOTH;
-		gbc_usernameField.insets = new Insets(0, 0, 5, 5);
-		gbc_usernameField.gridx = 1;
-		gbc_usernameField.gridy = 3;
-		contentPane.add(usernameField, gbc_usernameField);
+		contentPane.add(usernameField, "cell 1 5,growx");
 		usernameField.setColumns(10);
 		
 		JLabel lblPassword = new JLabel("Password");
 		lblPassword.setForeground(new Color(100, 149, 237));
 		lblPassword.setFont(new Font("Dialog", Font.BOLD, 20));
-		GridBagConstraints gbc_lblPassword = new GridBagConstraints();
-		gbc_lblPassword.fill = GridBagConstraints.VERTICAL;
-		gbc_lblPassword.anchor = GridBagConstraints.WEST;
-		gbc_lblPassword.insets = new Insets(0, 0, 5, 5);
-		gbc_lblPassword.gridx = 1;
-		gbc_lblPassword.gridy = 5;
-		contentPane.add(lblPassword, gbc_lblPassword);
+		contentPane.add(lblPassword, "cell 1 6,alignx left,aligny center");
 		
 		passwordField = new JPasswordField();
 		passwordField.setFont(new Font("Dialog", Font.PLAIN, 15));
-		GridBagConstraints gbc_passwordField = new GridBagConstraints();
-		gbc_passwordField.insets = new Insets(0, 0, 5, 5);
-		gbc_passwordField.fill = GridBagConstraints.BOTH;
-		gbc_passwordField.gridx = 1;
-		gbc_passwordField.gridy = 6;
-		contentPane.add(passwordField, gbc_passwordField);
+		contentPane.add(passwordField, "cell 1 7,growx");
 		
 		JButton LoginButton = new JButton("LOGIN");
 		LoginButton.addActionListener(new ActionListener() {
@@ -125,12 +95,7 @@ public class LoginFrame extends JFrame {
 		LoginButton.setBackground(new Color(100, 149, 237));
 		LoginButton.setForeground(new Color(248, 248, 255));
 		LoginButton.setFont(new Font("Palatino", Font.BOLD, 24));
-		GridBagConstraints gbc_LoginButton = new GridBagConstraints();
-		gbc_LoginButton.insets = new Insets(0, 0, 5, 5);
-		gbc_LoginButton.fill = GridBagConstraints.BOTH;
-		gbc_LoginButton.gridx = 1;
-		gbc_LoginButton.gridy = 8;
-		contentPane.add(LoginButton, gbc_LoginButton);
+		contentPane.add(LoginButton, "cell 1 8,growx");
 
 	}
 
