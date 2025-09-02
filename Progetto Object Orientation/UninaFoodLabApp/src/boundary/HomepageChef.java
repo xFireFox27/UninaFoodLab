@@ -40,13 +40,11 @@ public class HomepageChef extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(new MigLayout("", "[grow][150px][150px][150px][grow]", "[grow][50px][20px][40px][20px][40px][20px][40px][grow]"));
 		
-<<<<<<< HEAD
-		JList<String> list = new JList<>(new String[] {"Nuovo Corso", "Visualizza Corsi", "Notifiche", "Report Mensile"});
+ 		JList<String> list = new JList<>(new String[] {"Nuovo Corso", "Visualizza Corsi", "Notifiche", "Report Mensile"});
 		list.setBackground(new Color(255, 255, 255));
 		contentPane.add(list, "cell 0 1 1 8,grow");
 
-=======
-
+ 
 		JLabel titleLabel = new JLabel("Benvenuto "+ theController.getNomeChefCorrente()+"!");
 		titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		titleLabel.setFont(titleLabel.getFont().deriveFont(24f));
@@ -83,9 +81,8 @@ public class HomepageChef extends JFrame {
 		contentPane.add(btnInviaNotifiche, "cell 3 3,grow");
 		
 
-		JList list = new JList();
+		JList<String> list = new JList();
 		list.setBackground(new Color(240, 240, 240));
 		contentPane.add(list, "cell 1 5 3 1,grow");
->>>>>>> origin/main
-	}
+ 	}
 }
