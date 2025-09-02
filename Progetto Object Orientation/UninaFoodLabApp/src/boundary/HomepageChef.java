@@ -37,9 +37,9 @@ public class HomepageChef extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(new MigLayout("", "[grow][102.00][67.00][300px][grow]", "[grow][][34px,grow][][24px][28px][24px][28px][64px][grow]"));
 		
-		JList list = new JList();
+		JList<String> list = new JList<>(new String[] {"Palle", "Pallacce", "Palline", "Palloni"});
 		list.setBackground(new Color(192, 192, 192));
-		contentPane.add(list, "cell 0 1 1 8,grow");
+		contentPane.add(list, "cell 0 0 1 9,grow");
 
 	}
 
