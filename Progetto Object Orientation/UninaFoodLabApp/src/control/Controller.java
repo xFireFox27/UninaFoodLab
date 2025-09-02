@@ -17,6 +17,7 @@ public class Controller {
 	public LoginFrame loginFrame;
 	public HomepageChef homepageChef;
 	private ChefDAO chefDao;
+	private Chef chef;
 	
 	
 	/**
@@ -37,7 +38,7 @@ public class Controller {
 	public void LoginChef(String username, String password) {
 		chefDao = new ChefDAO();
 		try {
-			Chef chef = chefDao.creaChef(username, password);
+			chef = chefDao.creaChef(username, password);
 		
 			if (chef != null) {
 				loginFrame.setVisible(false);
@@ -75,5 +76,16 @@ public class Controller {
 	        e.printStackTrace();
 	    }
 	}
+	
+	public String getNomeChefCorrente() {
+	    if (chef != null) {
+	        String nome = chef.getNome();
+	        System.out.println("Debug - Nome chef: " + nome); // Debug
+	        return nome != null && !nome.isEmpty() ? nome : "Chef";
+	    }
+	    return "Chef";
+	}
+
 
 }
+
