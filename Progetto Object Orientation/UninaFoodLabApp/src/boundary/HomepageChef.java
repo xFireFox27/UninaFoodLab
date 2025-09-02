@@ -27,7 +27,8 @@ public class HomepageChef extends JFrame {
 		setTitle("Homepage");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setMinimumSize(new Dimension(689, 472));
-		setBounds(450, 250, 900, 600);
+		setSize(900, 600);
+		setLocationRelativeTo(null);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 255, 255));
 		contentPane.setForeground(new Color(255, 0, 255));
