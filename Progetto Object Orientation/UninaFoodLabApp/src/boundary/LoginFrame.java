@@ -43,7 +43,8 @@ public class LoginFrame extends JFrame {
 		setResizable(true);
 		setTitle("LoginChef");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(450, 250, 689, 472);
+		setSize(689, 472);
+		setLocationRelativeTo(null);
 		setMinimumSize(new Dimension(689, 472));
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 255, 255));
