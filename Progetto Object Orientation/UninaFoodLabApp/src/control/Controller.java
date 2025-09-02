@@ -78,14 +78,11 @@ public class Controller {
 	}
 	
 	public String getNomeChefCorrente() {
-	    if (chef != null) {
-	        String nome = chef.getNome();
-	        System.out.println("Debug - Nome chef: " + nome); // Debug
-	        return nome != null && !nome.isEmpty() ? nome : "Chef";
-	    }
-	    return "Chef";
+		if (chef != null) {
+			return chef.getNome();
+		}
+		return "Chef";
 	}
-
 
 }
 
