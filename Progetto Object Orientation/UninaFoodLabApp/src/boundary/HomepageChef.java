@@ -10,6 +10,7 @@ import javax.swing.border.EmptyBorder;
 
 import control.Controller;
 import net.miginfocom.swing.MigLayout;
+import javax.swing.JList;
 
 public class HomepageChef extends JFrame {
 
@@ -34,7 +35,11 @@ public class HomepageChef extends JFrame {
 		contentPane.setForeground(new Color(255, 0, 255));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		contentPane.setLayout(new MigLayout("", "[grow][300px,center][grow]", "[grow][][34px][][24px][28px][24px][28px][64px][grow]"));
+		contentPane.setLayout(new MigLayout("", "[grow][102.00][67.00][300px][grow]", "[grow][][34px,grow][][24px][28px][24px][28px][64px][grow]"));
+		
+		JList list = new JList();
+		list.setBackground(new Color(192, 192, 192));
+		contentPane.add(list, "cell 0 1 1 8,grow");
 
 	}
 
