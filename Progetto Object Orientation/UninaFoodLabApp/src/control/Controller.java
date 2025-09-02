@@ -30,7 +30,7 @@ public class Controller {
 	
 	public Controller() {
 		loginFrame = new LoginFrame(this);
-		homepageChef = new HomepageChef(this);
+		
 		loginFrame.setVisible(true);
 	}
 	
@@ -42,6 +42,7 @@ public class Controller {
 		
 			if (chef != null) {
 				loginFrame.setVisible(false);
+				homepageChef = new HomepageChef(this);
 				homepageChef.setVisible(true);
 				return;
 			} else {
