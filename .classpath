@@ -6,12 +6,12 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/carmineamato/Desktop/Object Orientation/UninaFoodLab/Progetto Object Orientation/UninaFoodLabApp/lib/postgresql-42.7.7.jar">
+	<classpathentry kind="lib" path="Progetto Object Orientation/UninaFoodLabApp/lib/com.miglayout.swing_11.4.2.jar"/>
+	<classpathentry kind="lib" path="Progetto Object Orientation/UninaFoodLabApp/lib/com.miglayout.core_11.4.2.jar"/>
+	<classpathentry kind="lib" path="Progetto Object Orientation/UninaFoodLabApp/lib/postgresql-42.7.7.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="com.miglayout.swing_11.4.2.jar"/>
-	<classpathentry kind="lib" path="com.miglayout.core_11.4.2.jar"/>
 	<classpathentry kind="output" path="Progetto Object Orientation/UninaFoodLabApp/bin"/>
 </classpath>
