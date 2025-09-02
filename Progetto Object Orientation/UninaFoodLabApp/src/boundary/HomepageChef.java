@@ -26,8 +26,12 @@ public class HomepageChef extends JFrame {
 		setResizable(true);
 		setTitle("Homepage");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+<<<<<<< HEAD
 		setBounds(450, 250, 689, 472);
 		setMinimumSize(new Dimension(689, 472));
+=======
+		setBounds(100, 100, 900, 600);
+>>>>>>> origin/main
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 255, 255));
 		contentPane.setForeground(new Color(255, 0, 255));
