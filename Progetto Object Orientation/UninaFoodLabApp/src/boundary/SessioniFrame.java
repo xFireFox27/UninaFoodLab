@@ -47,14 +47,12 @@ public class SessioniFrame extends JFrame {
         titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
         getContentPane().add(titleLabel, "cell 0 0 2 1,alignx center");
         
-     // Pannello Sessioni in Presenza
+        // Pannello Sessioni in Presenza
         JPanel panelPresenza = new JPanel(new MigLayout("", "[grow]", "[30px][grow]"));
         TitledBorder borderPresenza = BorderFactory.createTitledBorder("Sessioni in Presenza");
         borderPresenza.setTitleColor(new Color(98, 160, 233));
         panelPresenza.setBorder(borderPresenza);
 
-
-        
         JLabel lblPresenza = new JLabel("Sessioni Pratiche in Aula");
         lblPresenza.setForeground(new Color(26, 95, 180));
         lblPresenza.setFont(lblPresenza.getFont().deriveFont(Font.BOLD, 14f));
@@ -63,6 +61,8 @@ public class SessioniFrame extends JFrame {
         listModelPresenza = new DefaultListModel<>();
         listSessioniPresenza = new JList<>(listModelPresenza);
         listSessioniPresenza.setForeground(new Color(26, 95, 180));
+        listSessioniPresenza.setPreferredSize(new Dimension(450, 500));
+        listSessioniPresenza.setVisibleRowCount(-1);
         listSessioniPresenza.addListSelectionListener(e -> {
             if (!e.getValueIsAdjusting()) {
                 int selectedIndex = listSessioniPresenza.getSelectedIndex();
@@ -74,17 +74,16 @@ public class SessioniFrame extends JFrame {
         });
         
         JScrollPane scrollPresenza = new JScrollPane(listSessioniPresenza);
+        scrollPresenza.setPreferredSize(new Dimension(450, 500));
         panelPresenza.add(scrollPresenza, "cell 0 1,grow");
         getContentPane().add(panelPresenza, "cell 0 1,grow");
         
-     // Pannello Sessioni Online  
+        // Pannello Sessioni Online  
         JPanel panelOnline = new JPanel(new MigLayout("", "[grow]", "[30px][grow]"));
         TitledBorder borderOnline = BorderFactory.createTitledBorder("Sessioni Online");
         borderOnline.setTitleColor(new Color(98, 160, 233));
         panelOnline.setBorder(borderOnline);
 
-
-        
         JLabel lblOnline = new JLabel("Sessioni Online");
         lblOnline.setForeground(new Color(26, 95, 180));
         lblOnline.setFont(lblOnline.getFont().deriveFont(Font.BOLD, 14f));
@@ -93,6 +92,8 @@ public class SessioniFrame extends JFrame {
         listModelOnline = new DefaultListModel<>();
         listSessioniOnline = new JList<>(listModelOnline);
         listSessioniOnline.setForeground(new Color(26, 95, 180));
+        listSessioniOnline.setPreferredSize(new Dimension(450, 500));
+        listSessioniOnline.setVisibleRowCount(-1);
         listSessioniOnline.addListSelectionListener(e -> {
             if (!e.getValueIsAdjusting()) {
                 int selectedIndex = listSessioniOnline.getSelectedIndex();
@@ -104,6 +105,7 @@ public class SessioniFrame extends JFrame {
         });
         
         JScrollPane scrollOnline = new JScrollPane(listSessioniOnline);
+        scrollOnline.setPreferredSize(new Dimension(450, 500));
         panelOnline.add(scrollOnline, "cell 0 1,grow");
         getContentPane().add(panelOnline, "cell 1 1,grow");
         
@@ -114,7 +116,16 @@ public class SessioniFrame extends JFrame {
         btnTorna.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
         btnTorna.addActionListener(e -> theController.TornaCorsiFromSessioni());
         getContentPane().add(btnTorna, "cell 0 2,alignx left");
+        
+        // Pulsante per inserire nuova sessione
+        JButton btnNuovaSessione = new JButton("Nuova Sessione");
+        btnNuovaSessione.setBackground(new Color(98, 160, 233));
+        btnNuovaSessione.setForeground(new Color(248, 248, 255));
+        btnNuovaSessione.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
+        btnNuovaSessione.addActionListener(e -> theController.ApriInserimentoSessione(corso));
+        getContentPane().add(btnNuovaSessione, "cell 1 2,alignx right");
     }
+
     
     private void caricaSessioni() {
         sessioniPresenza = theController.getSessioniByCorso(corso);
@@ -124,7 +135,11 @@ public class SessioniFrame extends JFrame {
         aggiornaListeSessioni();
     }
     
-    private void aggiornaListeSessioni() {
+    public void aggiornaListeSessioni() {
+        // Ricarica i dati dal database
+        sessioniPresenza = theController.getSessioniByCorso(corso);
+        sessioniOnline = theController.getSessioniOnlineByCorso(corso);
+        
         // Aggiorna lista sessioni in presenza
         listModelPresenza.clear();
         if (sessioniPresenza != null && !sessioniPresenza.isEmpty()) {
@@ -154,4 +169,5 @@ public class SessioniFrame extends JFrame {
             listModelOnline.addElement("Nessuna sessione online");
         }
     }
+
 }

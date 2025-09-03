@@ -7,4 +7,5 @@ import entity.SessioneInPresenza;
 
 public interface SessioniInPresenzaDaoInterface {
     public List<SessioneInPresenza> getSessioniByCorso(Corso corso) throws SQLException;
+    public void insertSessione(SessioneInPresenza sessione) throws SQLException;
 }

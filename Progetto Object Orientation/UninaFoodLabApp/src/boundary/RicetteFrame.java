@@ -52,7 +52,12 @@ public class RicetteFrame extends JFrame {
         modelDisponibili = new DefaultListModel<>();
         listRicetteDisponibili = new JList<>(modelDisponibili);
         listRicetteDisponibili.setForeground(new Color(26, 95, 180));
-        panelDisponibili.add(new JScrollPane(listRicetteDisponibili), "cell 0 1,grow");
+        listRicetteDisponibili.setPreferredSize(new Dimension(350, 450));
+        listRicetteDisponibili.setVisibleRowCount(-1);
+        
+        JScrollPane scrollDisponibili = new JScrollPane(listRicetteDisponibili);
+        scrollDisponibili.setPreferredSize(new Dimension(350, 450));
+        panelDisponibili.add(scrollDisponibili, "cell 0 1,grow");
         
         getContentPane().add(panelDisponibili, "cell 0 1,grow");
         
@@ -84,7 +89,12 @@ public class RicetteFrame extends JFrame {
         modelAssociate = new DefaultListModel<>();
         listRicetteAssociate = new JList<>(modelAssociate);
         listRicetteAssociate.setForeground(new Color(26, 95, 180));
-        panelAssociate.add(new JScrollPane(listRicetteAssociate), "cell 0 1,grow");
+        listRicetteAssociate.setPreferredSize(new Dimension(350, 450));
+        listRicetteAssociate.setVisibleRowCount(-1);
+        
+        JScrollPane scrollAssociate = new JScrollPane(listRicetteAssociate);
+        scrollAssociate.setPreferredSize(new Dimension(350, 450));
+        panelAssociate.add(scrollAssociate, "cell 0 1,grow");
         
         getContentPane().add(panelAssociate, "cell 2 1,grow");
         
@@ -104,6 +114,7 @@ public class RicetteFrame extends JFrame {
         btnSalva.addActionListener(e -> salvaAssociazioni());
         getContentPane().add(btnSalva, "cell 2 2,alignx right");
     }
+
     
     private void caricaRicette() {
         List<Ricetta> ricette = theController.getAllRicette();

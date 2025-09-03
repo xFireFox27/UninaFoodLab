@@ -5,6 +5,7 @@ import java.awt.FontFormatException;
 import java.awt.GraphicsEnvironment;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.List;
 
 import javax.swing.UIManager;
@@ -20,6 +21,7 @@ public class Controller {
 	public CorsiFrame corsiFrame;
 	public SessioniFrame sessioniFrame;
 	public RicetteFrame ricetteFrame;
+	public InserimentoSessioneFrame inserimentoSessioneFrame;
 	private ChefDAO chefDao;
 	private CorsoDAO corsoDao;
 	private SessioniInPresenzaDAO sessioneDao;
@@ -103,19 +105,19 @@ public class Controller {
 		notificheFrame.setVisible(true);
 	}
 	
-	public List<Notifica> getNotificheChef(){
-		if(notificaDao == null) {
-			notificaDao = new NotificaDAO();
-		}
-		try {
-			List<Notifica> notifiche = notificaDao.getNotificheByChef(chef);
-			return notifiche;
-		}
-		catch (SQLException e) {
-			e.printStackTrace();
-			return null;
-		}
-	}
+//	public List<Notifica> getNotificheChef(){
+//		if(notificaDao == null) {
+//			notificaDao = new NotificaDAO();
+//		}
+//		try {
+//			List<Notifica> notifiche = notificaDao.getNotificheByChef(chef);
+//			return notifiche;
+//		}
+//		catch (SQLException e) {
+//			e.printStackTrace();
+//			return null;
+//		}
+//	}
 	
 	
 	
@@ -204,6 +206,54 @@ public class Controller {
 	        return null;
 	    }
 	}
+
+	public void ApriInserimentoSessione(Corso corso) {
+	    inserimentoSessioneFrame = new InserimentoSessioneFrame(this, corso);
+	    inserimentoSessioneFrame.setVisible(true);
+	}
+
+	
+	public void TornaSessioniFromInserimento() {
+	    sessioniFrame.aggiornaListeSessioni();
+	    inserimentoSessioneFrame.dispose();
+	}
+
+	public void inserisciSessioneInPresenza(Timestamp data, int durata, int numSessione, Corso corso, String luogo, String aula) {
+	    if (sessioneDao == null) {
+	        sessioneDao = new SessioniInPresenzaDAO();
+	    }
+	    try {
+	        SessioneInPresenza nuovaSessione = new SessioneInPresenza(data, durata, numSessione, corso, luogo, aula);
+	        sessioneDao.insertSessione(nuovaSessione);
+	        
+	        // Aggiorna la lista delle sessioni nel frame
+	        if (sessioniFrame != null) {
+	            // Ricarica le sessioni per aggiornare la vista
+	        }
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	        throw new RuntimeException("Errore durante l'inserimento della sessione in presenza: " + e.getMessage());
+	    }
+	}
+
+	public void inserisciSessioneOnline(Timestamp data, int durata, int numSessione, Corso corso, String link) {
+	    if (sessioneOnlineDao == null) {
+	        sessioneOnlineDao = new SessioneOnlineDAO();
+	    }
+	    try {
+	        SessioneOnline nuovaSessione = new SessioneOnline(data, durata, numSessione, corso, link);
+	        sessioneOnlineDao.insertSessione(nuovaSessione);
+	        
+	        // Aggiorna la lista delle sessioni nel frame
+	        if (sessioniFrame != null) {
+	            // Ricarica le sessioni per aggiornare la vista
+	        }
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	        throw new RuntimeException("Errore durante l'inserimento della sessione online: " + e.getMessage());
+	    }
+	}
+
 
 
 
