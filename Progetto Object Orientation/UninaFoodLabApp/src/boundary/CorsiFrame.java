@@ -133,7 +133,7 @@ public class CorsiFrame extends JFrame {
     private void filtraCorsi() {
         String topicSelezionato = (String) comboTopic.getSelectedItem();
         
-        if (topicSelezionato == null || topicSelezionato.equals("Tutti i topics")) {
+        if (topicSelezionato == null || topicSelezionato.equals("Tutti i topic")) {
             aggiornaListaCorsi(tuttiICorsi);
         } else {
             List<Corso> corsiFiltrati = tuttiICorsi.stream()

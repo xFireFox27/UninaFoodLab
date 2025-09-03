@@ -13,12 +13,15 @@ import javax.swing.JButton;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
 import control.Controller;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class HomepageChef extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	Controller theController;
+	private JLabel titleLabel;
 	
 	
 	public HomepageChef(Controller c) {
@@ -41,7 +44,7 @@ public class HomepageChef extends JFrame {
 		contentPane.add(panel, "cell 1 1 18 14,grow");
 		panel.setLayout(new MigLayout("", "[grow][150px][150px][150px][grow]", "[50px][grow][20px][40px][20px][40px][20px][grow][50px]"));
 		
-		JLabel titleLabel = new JLabel("Benvenuto <dynamic>!");
+		titleLabel = new JLabel("Benvenuto " + theController.getNomeChefCorrente() + "!");
 		titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		titleLabel.setForeground(new Color(26, 95, 180));
 		titleLabel.setFont(titleLabel.getFont().deriveFont(24f));
@@ -61,7 +64,6 @@ public class HomepageChef extends JFrame {
 		btnVisualizzaCorsi.setBackground(new Color(98, 160, 234));
 		btnVisualizzaCorsi.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
 				theController.ApriListaCorsi();
 			}
 		});
@@ -76,4 +78,3 @@ public class HomepageChef extends JFrame {
 	}
 
 }
-
