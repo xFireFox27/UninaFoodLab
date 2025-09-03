@@ -5,6 +5,7 @@ import java.awt.FontFormatException;
 import java.awt.GraphicsEnvironment;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
 
 import javax.swing.UIManager;
 
@@ -16,7 +17,9 @@ public class Controller {
 	
 	public LoginFrame loginFrame;
 	public HomepageChef homepageChef;
+	public CorsiFrame corsiFrame;
 	private ChefDAO chefDao;
+	private CorsoDAO corsoDao;
 	private Chef chef;
 	
 	
@@ -54,6 +57,36 @@ public class Controller {
 			loginFrame.showErrorMessage("Errore di connessione al database.");
 			return;
 		}
+	}
+	
+	
+	public void ApriListaCorsi() {
+		homepageChef.setVisible(false);
+		corsiFrame = new CorsiFrame(this);
+		corsiFrame.setVisible(true);
+		getCorsiChef();
+	}
+	
+	
+	
+	public List<Corso> getCorsiChef() {
+	    if (corsoDao == null) {
+	        corsoDao = new CorsoDAO();
+	        }
+	    try {
+	        List<Corso> corsi = corsoDao.getCorsiByChef(chef);
+	        return corsi;
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	        corsiFrame.showErrorMessage("Errore nel recupero dei corsi dal database.");
+	        return null;
+	    }
+	    
+	}
+
+	public void TornaHomepageFromCorsi() {
+		corsiFrame.setVisible(false);
+		homepageChef.setVisible(true);
 	}
 	
 	

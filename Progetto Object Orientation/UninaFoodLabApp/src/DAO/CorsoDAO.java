@@ -16,12 +16,12 @@ public class CorsoDAO implements CorsoDaoInterface {
 
 	public List<Corso> getCorsiByChef(Chef chef) throws SQLException {
 	    List<Corso> corsi = new ArrayList<>();
-	    String sql = "SELECT c.titolo, c.frequenza, c.num_lezioni, c.anno_frequenza, c.data_inizio, " +
-	                   "t.nome as topic_nome, t.descrizione as topic_descrizione " +
-	                   "FROM corso c " +
-	                   "JOIN chef ch ON c.username_chef = ch.username " +
-	                   "JOIN topic t ON c.nome_topic = t.nome " +
-	                   "WHERE ch.username = ?";
+	    String sql = "SELECT c.titolo, c.frequenza, c.numlezioni, c.anno, c.datainizio, " +
+                "t.nome as topic_nome, t.descrizione as topic_descrizione " +
+                "FROM corso AS c " +
+                "JOIN chef AS ch ON c.usernamechef = ch.username " +
+                "JOIN topic AS t ON c.idtopic = t.idtopic " +
+                "WHERE ch.username = ?";
 
 	    try (Connection connection = DB.getConnection();
 	         PreparedStatement stmt = connection.prepareStatement(sql)) {
@@ -37,9 +37,9 @@ public class CorsoDAO implements CorsoDaoInterface {
 	                Corso corso = new Corso(
 	                    rs.getString("titolo"),
 	                    rs.getString("frequenza"),
-	                    rs.getInt("num_lezioni"),
-	                    rs.getInt("anno_frequenza"),
-	                    rs.getDate("data_inizio"),
+	                    rs.getInt("numlezioni"),
+	                    rs.getInt("anno"),
+	                    rs.getDate("datainizio"),
 	                    topic,
 	                    chef
 	                );

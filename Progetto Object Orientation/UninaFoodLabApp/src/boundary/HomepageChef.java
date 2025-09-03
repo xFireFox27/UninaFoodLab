@@ -72,7 +72,7 @@ public class HomepageChef extends JFrame {
 		btnVisualizzaCorsi.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
-				//theController.apriListaCorsi();
+				theController.ApriListaCorsi();
 			}
 		});
 		contentPane.add(btnVisualizzaCorsi, "cell 2 3,grow");
