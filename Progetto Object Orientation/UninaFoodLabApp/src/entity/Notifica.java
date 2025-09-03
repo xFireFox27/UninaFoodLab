@@ -1,16 +1,16 @@
 package entity;
-import java.util.Date;
+import java.sql.Timestamp;
 
 public class Notifica {
 	private int idNotifica;
-	private String usernameChef;
+	private Chef chef;
 	private String oggetto;
 	private String testo;
-	private Date dataInvio;
+	private Timestamp dataInvio;
 	
-	public Notifica(int newIdNotifica, String newUsername, String newOggetto, String newTesto, Date newData) {
+	public Notifica(int newIdNotifica, Chef newChef, String newOggetto, String newTesto, Timestamp newData) {
 		this.idNotifica = newIdNotifica;
-		this.usernameChef = newUsername;
+		this.chef = newChef;
 		this.oggetto = newOggetto;
 		this.testo = newTesto;
 		this.dataInvio = newData;
@@ -24,12 +24,12 @@ public class Notifica {
 		this.idNotifica = newIdNotifica;
 	}
 	
-	public String getUsernameChef() {
-		return usernameChef;
+	public Chef getChef() {
+		return chef;
 	}
 	
-	public void setUsernameChef(String newUsername) {
-		this.usernameChef = newUsername;
+	public void setChef(Chef newChef) {
+		this.chef = newChef;
 	}
 	
 	public String getOggetto() {
@@ -48,11 +48,11 @@ public class Notifica {
 		this.testo = newTesto;
 	}
 	
-	public Date getDataInvio() {
+	public Timestamp getDataInvio() {
 		return dataInvio;
 	}
 	
-	public void setDataInvio(Date newData) {
+	public void setDataInvio(Timestamp newData) {
 		this.dataInvio = newData;
 	}
 }

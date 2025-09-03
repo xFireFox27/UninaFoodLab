@@ -1,27 +1,27 @@
 package entity;
 
 public class Prepara {
-	private int idSessionePresenza;
-	private int idRicetta;
+	private SessioneInPresenza sessioneInPresenza;
+	private Ricetta ricetta;
 	
-	public Prepara(int newIdSessione, int newIdRicetta) {
-		this.idSessionePresenza = newIdSessione;
-		this.idRicetta = newIdRicetta;
+	public Prepara(SessioneInPresenza newSessione, Ricetta newRicetta) {
+		this.sessioneInPresenza = newSessione;
+		this.ricetta = newRicetta;
 	}
 	
-	public int getIdSessionePresenza() {
-		return idSessionePresenza;
+	public SessioneInPresenza getSessioneInPresenza() {
+		return sessioneInPresenza;
 	}
 	
-	public void setIdSessionePresenza(int newIdSessione) {
-		this.idSessionePresenza = newIdSessione;
+	public void setSessioneInPresenza(SessioneInPresenza newSessione) {
+		this.sessioneInPresenza = newSessione;
 	}
 	
-	public int getIdRicetta() {
-		return idRicetta;
+	public Ricetta getIdRicetta() {
+		return ricetta;
 	}
 	
-	public void setIdRicetta(int newIdRicetta) {
-		this.idRicetta = newIdRicetta;
+	public void setIdRicetta(Ricetta newRicetta) {
+		this.ricetta = newRicetta;
 	}
 }

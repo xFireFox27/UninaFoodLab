@@ -1,27 +1,27 @@
 package entity;
 
 public class Insegna {
-	private int idTopic;
-	private String usernameChef;
+	private Topic topic;
+	private Chef chef;
 	
-	public Insegna(int newIdTopic, String newUsernameChef) {
-		this.idTopic = newIdTopic;
-		this.usernameChef = newUsernameChef;
+	public Insegna(Topic newIdTopic, Chef newChef) {
+		this.topic = newIdTopic;
+		this.chef = newChef;
 	}
 	
-	public int getIdTopic() {
-		return idTopic;
+	public Topic getIdTopic() {
+		return topic;
 	}
 	
-	public void setIdTopic(int newIdTopic) {
-		this.idTopic = newIdTopic;
+	public void setIdTopic(Topic newTopic) {
+		this.topic = newTopic;
 	}
 	
-	public String getUsernameChef() {
-		return usernameChef;
+	public Chef getChef() {
+		return chef;
 	}
 	
-	public void setUsernameChef(String newUsername) {
-		this.usernameChef = newUsername;
+	public void setUsernameChef(Chef newChef) {
+		this.chef = newChef;
 	}
 }

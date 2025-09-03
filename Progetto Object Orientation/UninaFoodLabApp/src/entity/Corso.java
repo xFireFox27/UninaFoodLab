@@ -9,18 +9,18 @@ public class Corso {
 	private int numLezioni;
 	private int AnnoFrequenza;
 	private Date dataInizio;
-	private String idTopic;
-	private String usernameChef;
+	private Topic topic;
+	private Chef chef;
 	
-	public Corso(int newIdCorso, String newTitolo, String newFrequenza, int newNumLezioni, int newAnno, Date newData, String newIdTopic, String newUsername) {
+	public Corso(int newIdCorso, String newTitolo, String newFrequenza, int newNumLezioni, int newAnno, Date newData, Topic newtopic, Chef newChef) {
 		this.idCorso = newIdCorso;
 		this.titolo = newTitolo;
 		this.frequenza = newFrequenza;
 		this.numLezioni = newNumLezioni;
 		this.AnnoFrequenza = newAnno;
 		this.dataInizio = newData;
-		this.idTopic = newIdTopic;
-		this.usernameChef = newUsername;
+		this.topic = newtopic;
+		this.chef = newChef;
 	}
 	
 	public int getIdCorso() {
@@ -71,19 +71,19 @@ public class Corso {
 		this.dataInizio = newData;
 	}
 	
-	public String getIdTopic() {
-		return idTopic;
+	public Topic getIdTopic() {
+		return topic;
 	}
 	
-	public void setIdTopic(String newIdTopic) {
-		this.idTopic = newIdTopic;
+	public void setIdTopic(Topic newTopic) {
+		this.topic = newTopic;
 	}
 	
-	public String getUsernameChef() {
-		return usernameChef;
+	public Chef getChef() {
+		return chef;
 	}
 	
-	public void setUsernameChef(String newUsername) {
-		this.usernameChef = newUsername;
+	public void setChef(Chef newChef) {
+		this.chef = newChef;
 	}
 }
