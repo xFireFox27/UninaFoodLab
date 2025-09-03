@@ -1,22 +1,12 @@
 package entity;
 
 public class Ricetta {
-	private int idRicetta;
 	private String nome;
 	private String descrizione;
 	
-	public Ricetta(int newIdRicetta, String newNome, String newDescrizione) {
-		this.idRicetta = newIdRicetta;
+	public Ricetta(String newNome, String newDescrizione) {
 		this.nome = newNome;
 		this.descrizione = newDescrizione;
-	}
-	
-	public int getIdRicetta() {
-		return idRicetta;
-	}
-	
-	public void setIdRicetta(int newIdRicetta) {
-		this.idRicetta = newIdRicetta;
 	}
 	
 	public String getNome() {
