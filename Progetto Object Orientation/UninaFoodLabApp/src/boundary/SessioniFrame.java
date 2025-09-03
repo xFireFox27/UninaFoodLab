@@ -5,24 +5,33 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
+import java.util.stream.Collectors;
 import control.Controller;
 import entity.Corso;
+import entity.Sessione;
 import entity.SessioneInPresenza;
+import entity.SessioneOnline;
 import net.miginfocom.swing.MigLayout;
+import javax.swing.border.SoftBevelBorder;
+import javax.swing.border.TitledBorder;
+import javax.swing.border.BevelBorder;
 
 public class SessioniFrame extends JFrame {
     private Controller theController;
     private Corso corso;
-    private JList<String> listSessioni;
-    private DefaultListModel<String> listModel;
-    private List<SessioneInPresenza> sessioni;
+    private JList<String> listSessioniPresenza;
+    private JList<String> listSessioniOnline;
+    private DefaultListModel<String> listModelPresenza;
+    private DefaultListModel<String> listModelOnline;
+    private List<SessioneInPresenza> sessioniPresenza;
+    private List<SessioneOnline> sessioniOnline;
     
     public SessioniFrame(Controller c, Corso corso) {
         this.theController = c;
         this.corso = corso;
         
-        setTitle("Sessioni Pratiche - " + corso.getTitolo());
-        setSize(800, 600);
+        setTitle("Gestione Sessioni - " + corso.getTitolo());
+        setSize(1000, 700);
         setLocationRelativeTo(null);
         
         initComponents();
@@ -30,51 +39,119 @@ public class SessioniFrame extends JFrame {
     }
     
     private void initComponents() {
-        setLayout(new MigLayout("", "[grow]", "[50px][grow][40px]"));
+        getContentPane().setLayout(new MigLayout("", "[grow,fill][grow,fill]", "[50px][grow][40px]"));
         
-        JLabel titleLabel = new JLabel("Sessioni Pratiche - " + corso.getTitolo());
+        JLabel titleLabel = new JLabel("Gestione Sessioni - " + corso.getTitolo());
+        titleLabel.setForeground(new Color(26, 95, 180));
         titleLabel.setFont(titleLabel.getFont().deriveFont(20f));
-        add(titleLabel, "cell 0 0,alignx center");
+        titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
+        getContentPane().add(titleLabel, "cell 0 0 2 1,alignx center");
         
-        listModel = new DefaultListModel<>();
-        listSessioni = new JList<>(listModel);
-        listSessioni.addListSelectionListener(e -> {
+     // Pannello Sessioni in Presenza
+        JPanel panelPresenza = new JPanel(new MigLayout("", "[grow]", "[30px][grow]"));
+        TitledBorder borderPresenza = BorderFactory.createTitledBorder("Sessioni in Presenza");
+        borderPresenza.setTitleColor(new Color(98, 160, 233));
+        panelPresenza.setBorder(borderPresenza);
+
+
+        
+        JLabel lblPresenza = new JLabel("Sessioni Pratiche in Aula");
+        lblPresenza.setForeground(new Color(26, 95, 180));
+        lblPresenza.setFont(lblPresenza.getFont().deriveFont(Font.BOLD, 14f));
+        panelPresenza.add(lblPresenza, "cell 0 0,alignx center");
+        
+        listModelPresenza = new DefaultListModel<>();
+        listSessioniPresenza = new JList<>(listModelPresenza);
+        listSessioniPresenza.setForeground(new Color(26, 95, 180));
+        listSessioniPresenza.addListSelectionListener(e -> {
             if (!e.getValueIsAdjusting()) {
-                int selectedIndex = listSessioni.getSelectedIndex();
-                if (selectedIndex >= 0 && sessioni != null && selectedIndex < sessioni.size()) {
-                    SessioneInPresenza sessioneSelezionata = sessioni.get(selectedIndex);
+                int selectedIndex = listSessioniPresenza.getSelectedIndex();
+                if (selectedIndex >= 0 && sessioniPresenza != null && selectedIndex < sessioniPresenza.size()) {
+                    SessioneInPresenza sessioneSelezionata = sessioniPresenza.get(selectedIndex);
                     theController.ApriGestioneRicette(sessioneSelezionata);
                 }
             }
         });
         
-        add(new JScrollPane(listSessioni), "cell 0 1,grow");
+        JScrollPane scrollPresenza = new JScrollPane(listSessioniPresenza);
+        panelPresenza.add(scrollPresenza, "cell 0 1,grow");
+        getContentPane().add(panelPresenza, "cell 0 1,grow");
         
+     // Pannello Sessioni Online  
+        JPanel panelOnline = new JPanel(new MigLayout("", "[grow]", "[30px][grow]"));
+        TitledBorder borderOnline = BorderFactory.createTitledBorder("Sessioni Online");
+        borderOnline.setTitleColor(new Color(98, 160, 233));
+        panelOnline.setBorder(borderOnline);
+
+
+        
+        JLabel lblOnline = new JLabel("Sessioni Online");
+        lblOnline.setForeground(new Color(26, 95, 180));
+        lblOnline.setFont(lblOnline.getFont().deriveFont(Font.BOLD, 14f));
+        panelOnline.add(lblOnline, "cell 0 0,alignx center");
+        
+        listModelOnline = new DefaultListModel<>();
+        listSessioniOnline = new JList<>(listModelOnline);
+        listSessioniOnline.setForeground(new Color(26, 95, 180));
+        listSessioniOnline.addListSelectionListener(e -> {
+            if (!e.getValueIsAdjusting()) {
+                int selectedIndex = listSessioniOnline.getSelectedIndex();
+                if (selectedIndex >= 0 && sessioniOnline != null && selectedIndex < sessioniOnline.size()) {
+                    SessioneOnline sessioneSelezionata = sessioniOnline.get(selectedIndex);
+                    
+                }
+            }
+        });
+        
+        JScrollPane scrollOnline = new JScrollPane(listSessioniOnline);
+        panelOnline.add(scrollOnline, "cell 0 1,grow");
+        getContentPane().add(panelOnline, "cell 1 1,grow");
+        
+        // Pulsante per tornare indietro
         JButton btnTorna = new JButton("Torna ai Corsi");
+        btnTorna.setBackground(new Color(98, 160, 233));
+        btnTorna.setForeground(new Color(248, 248, 255));
+        btnTorna.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
         btnTorna.addActionListener(e -> theController.TornaCorsiFromSessioni());
-        add(btnTorna, "cell 0 2,alignx left");
+        getContentPane().add(btnTorna, "cell 0 2,alignx left");
     }
     
     private void caricaSessioni() {
-        sessioni = theController.getSessioniByCorso(corso);
-        aggiornaListaSessioni();
+        sessioniPresenza = theController.getSessioniByCorso(corso);
+        
+        sessioniOnline = theController.getSessioniOnlineByCorso(corso);
+        
+        aggiornaListeSessioni();
     }
     
-    private void aggiornaListaSessioni() {
-        listModel.clear();
-        if (sessioni != null && !sessioni.isEmpty()) {
-            for (SessioneInPresenza sessione : sessioni) {
-
+    private void aggiornaListeSessioni() {
+        // Aggiorna lista sessioni in presenza
+        listModelPresenza.clear();
+        if (sessioniPresenza != null && !sessioniPresenza.isEmpty()) {
+            for (SessioneInPresenza sessione : sessioniPresenza) {
                 String descrizione = String.format("Sessione %d - %s - %s %s", 
                     sessione.getNumSessione(),
                     sessione.getData().toString(),
                     sessione.getLuogo(),
                     sessione.getAula());
-                listModel.addElement(descrizione);
+                listModelPresenza.addElement(descrizione);
             }
         } else {
-            listModel.addElement("Nessuna sessione trovata");
+            listModelPresenza.addElement("Nessuna sessione in presenza");
+        }
+        
+        // Aggiorna lista sessioni online
+        listModelOnline.clear();
+        if (sessioniOnline != null && !sessioniOnline.isEmpty()) {
+            for (SessioneOnline sessione : sessioniOnline) {
+                String descrizione = String.format("Sessione %d - %s - Link: %s", 
+                    sessione.getNumSessione(),
+                    sessione.getData().toString(),
+                    sessione.getLink());
+                listModelOnline.addElement(descrizione);
+            }
+        } else {
+            listModelOnline.addElement("Nessuna sessione online");
         }
     }
-
 }

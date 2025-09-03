@@ -9,6 +9,9 @@ import control.Controller;
 import entity.SessioneInPresenza;
 import entity.Ricetta;
 import net.miginfocom.swing.MigLayout;
+import javax.swing.border.SoftBevelBorder;
+import javax.swing.border.TitledBorder;
+import javax.swing.border.BevelBorder;
 
 public class RicetteFrame extends JFrame {
     private Controller theController;
@@ -32,55 +35,74 @@ public class RicetteFrame extends JFrame {
     }
     
     private void initComponents() {
-        setLayout(new MigLayout("", "[grow][100px][grow]", "[50px][grow][40px]"));
+        getContentPane().setLayout(new MigLayout("", "[grow][100px][grow]", "[50px][grow][40px]"));
         
-        JLabel titleLabel = new JLabel("Gestione Ricette - Sessione " + sessione.getNumSessione());
+        JLabel titleLabel = new JLabel("Gestione Ricette");
+        titleLabel.setForeground(new Color(26, 95, 180));
         titleLabel.setFont(titleLabel.getFont().deriveFont(18f));
         titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
-        add(titleLabel, "cell 0 0 3 1,alignx center");
+        getContentPane().add(titleLabel, "cell 0 0 3 1,alignx center");
         
         // Panel per ricette disponibili
         JPanel panelDisponibili = new JPanel(new MigLayout("", "[grow]", "[][grow]"));
         panelDisponibili.setBorder(BorderFactory.createTitledBorder("Ricette Disponibili"));
+        TitledBorder borderDisponibili = (TitledBorder) panelDisponibili.getBorder();
+        borderDisponibili.setTitleColor(new Color(98, 160, 233));
         
         modelDisponibili = new DefaultListModel<>();
         listRicetteDisponibili = new JList<>(modelDisponibili);
+        listRicetteDisponibili.setForeground(new Color(26, 95, 180));
         panelDisponibili.add(new JScrollPane(listRicetteDisponibili), "cell 0 1,grow");
         
-        add(panelDisponibili, "cell 0 1,grow");
+        getContentPane().add(panelDisponibili, "cell 0 1,grow");
         
         // Panel per i pulsanti
         JPanel panelPulsanti = new JPanel(new MigLayout("", "[grow]", "[grow][][grow]"));
         
         JButton btnAggiungi = new JButton(">>>");
+        btnAggiungi.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
+        btnAggiungi.setBackground(new Color(98, 160, 233));
+        btnAggiungi.setForeground(new Color(245, 255, 250));
         btnAggiungi.addActionListener(e -> aggiungiRicetta());
         panelPulsanti.add(btnAggiungi, "cell 0 1,growx");
         
         JButton btnRimuovi = new JButton("<<<");
+        btnRimuovi.setBackground(new Color(98, 160, 233));
+        btnRimuovi.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
+        btnRimuovi.setForeground(new Color(248, 248, 255));
         btnRimuovi.addActionListener(e -> rimuoviRicetta());
         panelPulsanti.add(btnRimuovi, "cell 0 2,growx");
         
-        add(panelPulsanti, "cell 1 1,grow");
+        getContentPane().add(panelPulsanti, "cell 1 1,grow");
         
         // Panel per ricette associate
         JPanel panelAssociate = new JPanel(new MigLayout("", "[grow]", "[][grow]"));
         panelAssociate.setBorder(BorderFactory.createTitledBorder("Ricette Associate"));
+        TitledBorder borderAssociate = (TitledBorder) panelAssociate.getBorder();
+        borderAssociate.setTitleColor(new Color(98, 160, 233));
         
         modelAssociate = new DefaultListModel<>();
         listRicetteAssociate = new JList<>(modelAssociate);
+        listRicetteAssociate.setForeground(new Color(26, 95, 180));
         panelAssociate.add(new JScrollPane(listRicetteAssociate), "cell 0 1,grow");
         
-        add(panelAssociate, "cell 2 1,grow");
+        getContentPane().add(panelAssociate, "cell 2 1,grow");
         
         // Pulsante per tornare indietro
         JButton btnTorna = new JButton("Torna alle Sessioni");
+        btnTorna.setForeground(new Color(248, 248, 255));
+        btnTorna.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
+        btnTorna.setBackground(new Color(98, 160, 233));
         btnTorna.addActionListener(e -> theController.TornaSessioniFromRicette());
-        add(btnTorna, "cell 0 2,alignx left");
+        getContentPane().add(btnTorna, "cell 0 2,alignx left");
         
         // Pulsante per salvare
         JButton btnSalva = new JButton("Salva Associazioni");
+        btnSalva.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
+        btnSalva.setForeground(new Color(248, 248, 255));
+        btnSalva.setBackground(new Color(98, 160, 233));
         btnSalva.addActionListener(e -> salvaAssociazioni());
-        add(btnSalva, "cell 2 2,alignx right");
+        getContentPane().add(btnSalva, "cell 2 2,alignx right");
     }
     
     private void caricaRicette() {

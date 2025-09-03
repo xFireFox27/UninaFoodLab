@@ -23,6 +23,7 @@ public class Controller {
 	private ChefDAO chefDao;
 	private CorsoDAO corsoDao;
 	private SessioniInPresenzaDAO sessioneDao;
+	private SessioneOnlineDAO sessioneOnlineDao;
 	private RicettaDAO ricettaDao;
 	private Chef chef;
 	
@@ -168,6 +169,19 @@ public class Controller {
 	    ricetteFrame.setVisible(false);
 	    sessioniFrame.setVisible(true);
 	}
+	
+	public List<SessioneOnline> getSessioniOnlineByCorso(Corso corso) {
+	    if (sessioneOnlineDao == null) {
+	        sessioneOnlineDao = new SessioneOnlineDAO();
+	    }
+	    try {
+	        return sessioneOnlineDao.getSessioniByCorso(corso);
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	        return null;
+	    }
+	}
+
 
 
 

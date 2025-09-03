@@ -91,6 +91,7 @@ public class CorsiFrame extends JFrame {
 
         listModel = new DefaultListModel<>();
         listCorsi = new JList<>(listModel);
+        listCorsi.setForeground(new Color(26, 95, 180));
         listCorsi.setBackground(new Color(240, 240, 240));
         
         JScrollPane scrollPane = new JScrollPane(listCorsi);
@@ -134,7 +135,7 @@ public class CorsiFrame extends JFrame {
     private void filtraCorsi() {
         String topicSelezionato = (String) comboTopic.getSelectedItem();
         
-        if (topicSelezionato == null || topicSelezionato.equals("Tutti i topic")) {
+        if (topicSelezionato == null || topicSelezionato.equals("Tutti i topics")) {
             aggiornaListaCorsi(tuttiICorsi);
         } else {
             List<Corso> corsiFiltrati = tuttiICorsi.stream()
