@@ -3,7 +3,6 @@ package entity;
 import java.util.Date;
 
 public class Corso {
-	private int idCorso;
 	private String titolo;
 	private String frequenza;
 	private int numLezioni;
@@ -12,8 +11,7 @@ public class Corso {
 	private Topic topic;
 	private Chef chef;
 	
-	public Corso(int newIdCorso, String newTitolo, String newFrequenza, int newNumLezioni, int newAnno, Date newData, Topic newtopic, Chef newChef) {
-		this.idCorso = newIdCorso;
+	public Corso(String newTitolo, String newFrequenza, int newNumLezioni, int newAnno, Date newData, Topic newtopic, Chef newChef) {
 		this.titolo = newTitolo;
 		this.frequenza = newFrequenza;
 		this.numLezioni = newNumLezioni;
@@ -23,13 +21,7 @@ public class Corso {
 		this.chef = newChef;
 	}
 	
-	public int getIdCorso() {
-		return idCorso;
-	}
 	
-	public void setIdCorso(int newIdCorso) {
-		this.idCorso = newIdCorso;
-	}
 	
 	public String getTitolo() {
 		return titolo;
