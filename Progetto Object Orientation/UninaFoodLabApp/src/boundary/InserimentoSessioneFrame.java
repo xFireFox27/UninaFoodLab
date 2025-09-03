@@ -36,7 +36,7 @@ public class InserimentoSessioneFrame extends JDialog {
     private JTextField txtNumSessione;
     
     // Campi per sessione in presenza
-    private JTextField txtLuogo;
+    private JComboBox<String> cmbLuogo;
     private JTextField txtAula;
     private JPanel panelPresenza;
     
@@ -116,8 +116,11 @@ public class InserimentoSessioneFrame extends JDialog {
         JLabel lblLuogo = new JLabel("Luogo:");
         lblLuogo.setForeground(new Color(26, 95, 180));
         panelPresenza.add(lblLuogo, "cell 0 0,alignx trailing");
-        txtLuogo = new JTextField();
-        panelPresenza.add(txtLuogo, "cell 1 0,growx");
+        
+        String[] luoghi = {"MonteSantangelo", "ViaClaudio", "PiazzaleTecchio", "PortaDiMassa", "ViaMarina"};
+        cmbLuogo = new JComboBox<>(luoghi);
+        cmbLuogo.setForeground(new Color(98, 160, 233));
+        panelPresenza.add(cmbLuogo, "cell 1 0,growx");
 
         JLabel lblAula = new JLabel("Aula:");
         lblAula.setForeground(new Color(26, 95, 180));
@@ -196,12 +199,12 @@ public class InserimentoSessioneFrame extends JDialog {
 
             if (rbInPresenza.isSelected()) {
                 // Validazione campi sessione in presenza
-                if (txtLuogo.getText().trim().isEmpty() || txtAula.getText().trim().isEmpty()) {
-                    JOptionPane.showMessageDialog(this, "Compilare luogo e aula per la sessione in presenza", "Errore", JOptionPane.ERROR_MESSAGE);
+                if (cmbLuogo.getSelectedItem() == null || txtAula.getText().trim().isEmpty()) {
+                    JOptionPane.showMessageDialog(this, "Selezionare il luogo e inserire l'aula per la sessione in presenza", "Errore", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
                 
-                String luogo = txtLuogo.getText().trim();
+                String luogo = (String) cmbLuogo.getSelectedItem();
                 String aula = txtAula.getText().trim();
                 
                 theController.inserisciSessioneInPresenza(timestamp, durata, numSessione, corso, luogo, aula);
