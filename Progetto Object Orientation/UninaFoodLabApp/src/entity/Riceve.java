@@ -2,11 +2,11 @@ package entity;
 
 public class Riceve {
 	private int idNotifica;
-	private String usernameUtente;
+	private Utente utente;
 	
-	public Riceve(int newIdNotifica, String newUsername) {
+	public Riceve(int newIdNotifica, Utente newUtente) {
 		this.idNotifica = newIdNotifica;
-		this.usernameUtente = newUsername;
+		this.utente = newUtente;
 	}
 	
 	public int getIdNotifica() {
@@ -17,11 +17,11 @@ public class Riceve {
 		this.idNotifica = newIdNotifica;
 	}
 	
-	public String getUsernameUtente() {
-		return usernameUtente;
+	public Utente getUtente() {
+		return utente;
 	}
 	
-	public void setUsernameUtente(String newUsername) {
-		this.usernameUtente = newUsername;
+	public void setUtente(Utente newUtente) {
+		this.utente = newUtente;
 	}
 }

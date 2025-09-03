@@ -7,7 +7,7 @@ public class Corso {
 	private String titolo;
 	private String frequenza;
 	private int numLezioni;
-	private int AnnoFrequenza;
+	private int annoFrequenza;
 	private Date dataInizio;
 	private Topic topic;
 	private Chef chef;
@@ -17,7 +17,7 @@ public class Corso {
 		this.titolo = newTitolo;
 		this.frequenza = newFrequenza;
 		this.numLezioni = newNumLezioni;
-		this.AnnoFrequenza = newAnno;
+		this.annoFrequenza = newAnno;
 		this.dataInizio = newData;
 		this.topic = newtopic;
 		this.chef = newChef;
@@ -56,11 +56,11 @@ public class Corso {
 	}
 	
 	public int getAnnoFrequenza() {
-		return AnnoFrequenza;
+		return annoFrequenza;
 	}
 	
 	public void setAnnoFrequenza(int newAnno) {
-		AnnoFrequenza = newAnno;
+		annoFrequenza = newAnno;
 	}
 	
 	public Date getDataInizio() {
