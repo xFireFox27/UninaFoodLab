@@ -1,11 +1,13 @@
 package DaoInterface;
 
 import java.sql.SQLException;
-import java.sql.Date;
-import entity.Corso;
-import entity.Topic;
+import java.util.List;
+
 import entity.Chef;
+import entity.Corso;
 
 public interface CorsoDaoInterface {
-	public Corso creaCorso(int idCorso, String titolo, String frequenza, int numLezioni, int annoFrequenza, Date dataInizio, Topic topic, Chef chef) throws SQLException;
+	
+	public List<Corso> getCorsiByChef(Chef chef) throws SQLException;
+
 }
