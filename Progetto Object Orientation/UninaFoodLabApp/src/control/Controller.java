@@ -18,8 +18,12 @@ public class Controller {
 	public LoginFrame loginFrame;
 	public HomepageChef homepageChef;
 	public CorsiFrame corsiFrame;
+	public SessioniFrame sessioniFrame;
+	public RicetteFrame ricetteFrame;
 	private ChefDAO chefDao;
 	private CorsoDAO corsoDao;
+	private SessioniInPresenzaDAO sessioneDao;
+	private RicettaDAO ricettaDao;
 	private Chef chef;
 	
 	
@@ -117,6 +121,55 @@ public class Controller {
 		}
 		return "Chef";
 	}
+	
+
+	public void ApriGestioneSessioni(Corso corso) {
+	    corsiFrame.setVisible(false);
+	    sessioniFrame = new SessioniFrame(this, corso);
+	    sessioniFrame.setVisible(true);
+	}
+
+	public void TornaCorsiFromSessioni() {
+	    sessioniFrame.setVisible(false);
+	    corsiFrame.setVisible(true);
+	}
+
+	public List<SessioneInPresenza> getSessioniByCorso(Corso corso) {
+	    if (sessioneDao == null) {
+	        sessioneDao = new SessioniInPresenzaDAO();
+	    }
+	    try {
+	        return sessioneDao.getSessioniByCorso(corso);
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	        return null;
+	    }
+	}
+
+	public List<Ricetta> getAllRicette() {
+	    if (ricettaDao == null) {
+	        ricettaDao = new RicettaDAO();
+	    }
+	    try {
+	        return ricettaDao.getAllRicette();
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	        return null;
+	    }
+	}
+	
+	public void ApriGestioneRicette(SessioneInPresenza sessione) {
+	    sessioniFrame.setVisible(false);
+	    ricetteFrame = new RicetteFrame(this, sessione);
+	    ricetteFrame.setVisible(true);
+	}
+
+	public void TornaSessioniFromRicette() {
+	    ricetteFrame.setVisible(false);
+	    sessioniFrame.setVisible(true);
+	}
+
+
 
 }
 

@@ -109,6 +109,7 @@ public class CorsiFrame extends JFrame {
         contentPane.add(btnTorna, "cell 0 2,alignx left");
         
         caricaCorsi();
+        setupListSelection();
     }
     
     private void caricaCorsi() {
@@ -164,4 +165,19 @@ public class CorsiFrame extends JFrame {
     public void showErrorMessage(String message) {
 		JOptionPane.showMessageDialog(this, message, "Errore", JOptionPane.ERROR_MESSAGE);
 	}
+    
+    
+    private void setupListSelection() {
+        listCorsi.addListSelectionListener(e -> {
+            if (!e.getValueIsAdjusting()) {
+                int selectedIndex = listCorsi.getSelectedIndex();
+                if (selectedIndex >= 0 && tuttiICorsi != null && selectedIndex < tuttiICorsi.size()) {
+                    Corso corsoSelezionato = tuttiICorsi.get(selectedIndex);
+                    theController.ApriGestioneSessioni(corsoSelezionato);
+                }
+            }
+        });
+    }
+
+
 }
