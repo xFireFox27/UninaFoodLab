@@ -21,8 +21,6 @@ public class Corso {
 		this.chef = newChef;
 	}
 	
-	
-	
 	public String getTitolo() {
 		return titolo;
 	}

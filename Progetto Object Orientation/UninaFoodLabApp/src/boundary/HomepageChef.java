@@ -1,32 +1,26 @@
 package boundary;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JButton;
+import net.miginfocom.swing.MigLayout;
+import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
-
-import control.Controller;
-import net.miginfocom.swing.MigLayout;
-import javax.swing.JList;
+import javax.swing.JButton;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
+import control.Controller;
 
 public class HomepageChef extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	Controller theController;
-
-	/**
-	 * Create the frame.
-	 */
+	
+	
 	public HomepageChef(Controller c) {
 		theController = c;
 		setVisible(false);
@@ -35,39 +29,35 @@ public class HomepageChef extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(900, 600);
 		setLocationRelativeTo(null);
-		setMinimumSize(new Dimension(689, 472));
 		contentPane = new JPanel();
-		contentPane.setBackground(new Color(255, 255, 255));
+		contentPane.setBackground(new Color(53, 132, 228));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
 		setContentPane(contentPane);
-		contentPane.setLayout(new MigLayout("", "[grow][150px][150px][150px][grow]", "[grow][50px][20px][40px][20px][40px][20px][40px][grow]"));
-
- 
-		JLabel titleLabel = new JLabel("Benvenuto "+ theController.getNomeChefCorrente()+"!");
-		titleLabel.setForeground(new Color(26, 95, 180));
+		contentPane.setLayout(new MigLayout("", "[50px][grow][][][][][][][][][][][][][][][][][grow][50px]", "[50px][grow][][][][][][][][][][][][][grow][50px]"));
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(new Color(255, 255, 255));
+		contentPane.add(panel, "cell 1 1 18 14,grow");
+		panel.setLayout(new MigLayout("", "[grow][150px][150px][150px][grow]", "[50px][grow][20px][40px][20px][40px][20px][grow][50px]"));
+		
+		JLabel titleLabel = new JLabel("Benvenuto <dynamic>!");
 		titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		titleLabel.setForeground(new Color(26, 95, 180));
 		titleLabel.setFont(titleLabel.getFont().deriveFont(24f));
-		contentPane.add(titleLabel, "cell 0 1 5 1,alignx center");
+		panel.add(titleLabel, "cell 1 1 3 1,grow");
 		
-
 		JButton btnNuovoCorso = new JButton("Crea Nuovo Corso");
-		btnNuovoCorso.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		btnNuovoCorso.setOpaque(true);
+		btnNuovoCorso.setForeground(Color.WHITE);
+		btnNuovoCorso.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		btnNuovoCorso.setBackground(new Color(98, 160, 234));
-		btnNuovoCorso.setForeground(new Color(255, 255, 255));
-		btnNuovoCorso.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-
-				//theController.apriCreazioneCorso();
-			}
-		});
-		contentPane.add(btnNuovoCorso, "cell 1 3,grow");
+		panel.add(btnNuovoCorso, "cell 1 3,grow");
 		
-
 		JButton btnVisualizzaCorsi = new JButton("Visualizza Corsi");
-		btnVisualizzaCorsi.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		btnVisualizzaCorsi.setOpaque(true);
-		btnVisualizzaCorsi.setForeground(new Color(255, 255, 255));
+		btnVisualizzaCorsi.setForeground(Color.WHITE);
+		btnVisualizzaCorsi.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		btnVisualizzaCorsi.setBackground(new Color(98, 160, 234));
 		btnVisualizzaCorsi.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -75,25 +65,15 @@ public class HomepageChef extends JFrame {
 				theController.ApriListaCorsi();
 			}
 		});
-		contentPane.add(btnVisualizzaCorsi, "cell 2 3,grow");
+		panel.add(btnVisualizzaCorsi, "cell 2 3,grow");
 		
-
 		JButton btnNotifiche = new JButton("Notifiche");
-		btnNotifiche.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		btnNotifiche.setOpaque(true);
-		btnNotifiche.setForeground(new Color(255, 255, 255));
+		btnNotifiche.setForeground(Color.WHITE);
+		btnNotifiche.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		btnNotifiche.setBackground(new Color(98, 160, 234));
-		btnNotifiche.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+		panel.add(btnNotifiche, "cell 3 3,grow");
+	}
 
-				//theController.apriGestioneNotifiche();
-			}
-		});
-		contentPane.add(btnNotifiche, "cell 3 3,grow");
-		
-
-		JList<String> list = new JList();
-		list.setBackground(new Color(240, 240, 240));
-		contentPane.add(list, "cell 1 5 3 1,grow");
- 	}
 }
+

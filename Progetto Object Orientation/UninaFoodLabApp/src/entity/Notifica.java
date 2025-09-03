@@ -2,26 +2,16 @@ package entity;
 import java.sql.Timestamp;
 
 public class Notifica {
-	private int idNotifica;
 	private Chef chef;
 	private String oggetto;
 	private String testo;
 	private Timestamp dataInvio;
 	
-	public Notifica(int newIdNotifica, Chef newChef, String newOggetto, String newTesto, Timestamp newData) {
-		this.idNotifica = newIdNotifica;
+	public Notifica(Chef newChef, String newOggetto, String newTesto, Timestamp newData) {
 		this.chef = newChef;
 		this.oggetto = newOggetto;
 		this.testo = newTesto;
 		this.dataInvio = newData;
-	}
-	
-	public int getIdNotifica() {
-		return idNotifica;
-	}
-	
-	public void setIdNotifica(int newIdNotifica) {
-		this.idNotifica = newIdNotifica;
 	}
 	
 	public Chef getChef() {
