@@ -70,6 +70,11 @@ public class HomepageChef extends JFrame {
 		panel.add(btnVisualizzaCorsi, "cell 2 3,grow");
 		
 		JButton btnNotifiche = new JButton("Notifiche");
+		btnNotifiche.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				theController.ApriNotifiche();
+			}
+		});
 		btnNotifiche.setOpaque(true);
 		btnNotifiche.setForeground(Color.WHITE);
 		btnNotifiche.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));

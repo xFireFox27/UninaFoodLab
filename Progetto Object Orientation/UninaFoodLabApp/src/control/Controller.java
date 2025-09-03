@@ -25,6 +25,8 @@ public class Controller {
 	private SessioniInPresenzaDAO sessioneDao;
 	private RicettaDAO ricettaDao;
 	private Chef chef;
+	private NotificheFrame notificheFrame;
+	private NotificaDAO notificaDao;
 	
 	
 	/**
@@ -91,6 +93,27 @@ public class Controller {
 	public void TornaHomepageFromCorsi() {
 		corsiFrame.setVisible(false);
 		homepageChef.setVisible(true);
+	}
+	
+	public void ApriNotifiche() {
+		
+		homepageChef.setVisible(false);
+		notificheFrame = new NotificheFrame(this);
+		notificheFrame.setVisible(true);
+	}
+	
+	public List<Notifica> getNotificheChef(){
+		if(notificaDao == null) {
+			notificaDao = new NotificaDAO();
+		}
+		try {
+			List<Notifica> notifiche = notificaDao.getNotificheByChef(chef);
+			return notifiche;
+		}
+		catch (SQLException e) {
+			e.printStackTrace();
+			return null;
+		}
 	}
 	
 	
