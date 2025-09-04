@@ -133,9 +133,12 @@ public class NotificheFrame extends JFrame {
 		JOptionPane.showMessageDialog(this, message, "Errore di connessione", JOptionPane.ERROR_MESSAGE);
 	}
 	
-	public void  refreshListaNotifiche(List<Notifica> notifiche, DefaultListModel<String> listModel) {
-		listModel = theController.inizializzaListaNotifiche(notifiche, listModel);
-		listaDelleNotifiche.setModel(listModel);
+	public void refreshListaNotifiche(List<Notifica> notifiche, DefaultListModel<String> listModel) {
+	    this.notifiche = notifiche; 
+	    listModel = theController.inizializzaListaNotifiche(notifiche, listModel);
+	    listaDelleNotifiche.setModel(listModel);
+	    listaDelleNotifiche.clearSelection(); 
 	}
+
 
 }

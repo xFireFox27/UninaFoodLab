@@ -164,48 +164,50 @@ public class Controller {
 	}
 	
 	public void inviaNotificaUnCorso(String oggetto, String testo, Corso corso) {
-		if (notificaDao == null) {
-			notificaDao = new NotificaDAO();
-		}
-		try {
-			Notifica notifica = notificaDao.inviaNotificaAdUnCorso(chef, oggetto, testo, corso);
-			if (notifica != null) {
-				invioNotificaFrame.setVisible(false);
-				List<Notifica> notificheAggiornate = getNotificheChef();
-				DefaultListModel<String> listModel = new DefaultListModel<>();
-				notificheFrame.refreshListaNotifiche(notificheAggiornate, listModel);
-			}
-			else {
-				invioNotificaFrame.showErrorMessage("Errore nell'invio della notifica.");
-			}
-		}
-		catch (SQLException e) {
-			e.printStackTrace();
-			invioNotificaFrame.showErrorMessage("Errore di connessione al database.");
-		}
+	    if (notificaDao == null) {
+	        notificaDao = new NotificaDAO();
+	    }
+	    try {
+	        Notifica notifica = notificaDao.inviaNotificaAdUnCorso(chef, oggetto, testo, corso);
+	        if (notifica != null) {
+	            invioNotificaFrame.setVisible(false);
+	            // Create a new list model for the refresh
+	            DefaultListModel<String> listModel = new DefaultListModel<>();
+	            List<Notifica> notificheAggiornate = getNotificheChef();
+	            notificheFrame.refreshListaNotifiche(notificheAggiornate, listModel);
+	        }
+	        else {
+	            invioNotificaFrame.showErrorMessage("Errore nell'invio della notifica.");
+	        }
+	    }
+	    catch (SQLException e) {
+	        e.printStackTrace();
+	        invioNotificaFrame.showErrorMessage("Errore di connessione al database.");
+	    }
 	}
-	
+
 	public void inviaNotificaTuttiCorsi(String oggetto, String testo) {
-		if (notificaDao == null) {
-			notificaDao = new NotificaDAO();
-		}
-		try {
-			Notifica notifica = notificaDao.inviaNotificaATuttiICorsi(chef, oggetto, testo);
-			if (notifica != null) {
-				invioNotificaFrame.setVisible(false);
-				List<Notifica> notificheAggiornate = getNotificheChef();
-				DefaultListModel<String> listModel = new DefaultListModel<>();
-				notificheFrame.refreshListaNotifiche(notificheAggiornate, listModel);
-			}
-			else {
-				invioNotificaFrame.showErrorMessage("Errore nell'invio della notifica.");
-			}
-		}
-		catch (SQLException e) {
-			e.printStackTrace();
-			invioNotificaFrame.showErrorMessage("Errore di connessione al database.");
-		}
+	    if (notificaDao == null) {
+	        notificaDao = new NotificaDAO();
+	    }
+	    try {
+	        Notifica notifica = notificaDao.inviaNotificaATuttiICorsi(chef, oggetto, testo);
+	        if (notifica != null) {
+	            invioNotificaFrame.setVisible(false);
+	            DefaultListModel<String> listModel = new DefaultListModel<>();
+	            List<Notifica> notificheAggiornate = getNotificheChef();
+	            notificheFrame.refreshListaNotifiche(notificheAggiornate, listModel);
+	        }
+	        else {
+	            invioNotificaFrame.showErrorMessage("Errore nell'invio della notifica.");
+	        }
+	    }
+	    catch (SQLException e) {
+	        e.printStackTrace();
+	        invioNotificaFrame.showErrorMessage("Errore di connessione al database.");
+	    }
 	}
+
 	
 	public void TornaHomepageFromNotifiche() {
 		notificheFrame.setVisible(false);
@@ -216,19 +218,7 @@ public class Controller {
 	
 	private static void setLookAndFeel() {
 	    try {
-	        // Option 1: Cross-platform Look and Feel (recommended for consistency)
 	        UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
-	        
-	        // Option 2: System Look and Feel (matches the OS but varies between systems)
-	        // UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-	        
-	        // Option 3: Nimbus Look and Feel (modern appearance)
-	        // for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
-	        //     if ("Nimbus".equals(info.getName())) {
-	        //         UIManager.setLookAndFeel(info.getClassName());
-	        //         break;
-	        //     }
-	        // }
 	    } catch (Exception e) {
 	        e.printStackTrace();
 	    }
