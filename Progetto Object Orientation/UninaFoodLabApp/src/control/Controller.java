@@ -105,19 +105,24 @@ public class Controller {
 		notificheFrame.setVisible(true);
 	}
 	
-//	public List<Notifica> getNotificheChef(){
-//		if(notificaDao == null) {
-//			notificaDao = new NotificaDAO();
-//		}
-//		try {
-//			List<Notifica> notifiche = notificaDao.getNotificheByChef(chef);
-//			return notifiche;
-//		}
-//		catch (SQLException e) {
-//			e.printStackTrace();
-//			return null;
-//		}
-//	}
+	public List<Notifica> getNotificheChef(){
+		if(notificaDao == null) {
+			notificaDao = new NotificaDAO();
+		}
+		try {
+			List<Notifica> notifiche = notificaDao.getNotificheByChef(chef);
+			return notifiche;
+		}
+		catch (SQLException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	public void TornaHomepageFromNotifiche() {
+		notificheFrame.setVisible(false);
+		homepageChef.setVisible(true);
+	}
 	
 	
 	

@@ -11,9 +11,9 @@ import entity.Chef;
 public class NotificaDAO implements NotificaDaoInterface{
 	public List<Notifica> getNotificheByChef(Chef chef) throws SQLException {
 		List<Notifica> notifiche = new ArrayList<>();
-		String sql = "SELECT n.oggetto, n.testo, n.dataInvio" +
-					 "FROM notifica AS n" +
-					 "JOIN chef AS c ON c.username = n.usernamechef" +
+		String sql = "SELECT n.oggetto, n.testo, n.dataInvio " +
+					 "FROM notifica AS n " +
+					 "JOIN chef AS c ON c.username = n.usernamechef " +
 					 "WHERE c.username = ?";
 		try (Connection connection = DB.getConnection();
 			PreparedStatement stmt = connection.prepareStatement(sql)){

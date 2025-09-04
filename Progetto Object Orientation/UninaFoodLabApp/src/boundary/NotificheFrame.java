@@ -15,10 +15,14 @@ import javax.swing.SwingConstants;
 import javax.swing.JScrollPane;
 import java.awt.Component;
 import javax.swing.JList;
-import javax.swing.ListModel;
 import javax.swing.JButton;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
+import entity.Notifica;
+import java.util.List;
+import javax.swing.DefaultListModel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class NotificheFrame extends JFrame {
 
@@ -50,9 +54,24 @@ public class NotificheFrame extends JFrame {
 		JScrollPane scrollPane = new JScrollPane();
 		contentPane.add(scrollPane, "cell 1 1 1 3,grow");
 		
-		JList list = new JList();
+		DefaultListModel<String> listModel = new DefaultListModel<>();
+		
+		JList<String> list = new JList<>(listModel);
 		list.setBackground(new Color(246, 245, 244));
 		scrollPane.setViewportView(list);
+		
+		List<Notifica> notifiche = theController.getNotificheChef();
+		if (notifiche == null || notifiche.isEmpty()){
+			listModel.addElement("Non ci sono notifiche.");
+		}
+		else {
+			for (Notifica notifica : notifiche) {
+				String elemento = notifica.getOggetto() + " - " + "(" + notifica.getDataInvio().toString() + ")";
+				listModel.addElement(elemento);
+			}
+		}
+		
+		list.setModel(listModel);
 		
 		JButton btnInviaNotifica = new JButton("Invia Notifica");
 		btnInviaNotifica.setOpaque(true);
@@ -66,7 +85,14 @@ public class NotificheFrame extends JFrame {
 		btnTornaAllaHome.setForeground(Color.WHITE);
 		btnTornaAllaHome.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		btnTornaAllaHome.setBackground(new Color(98, 160, 234));
+		btnTornaAllaHome.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				theController.TornaHomepageFromNotifiche();
+			}
+		});
+
 		contentPane.add(btnTornaAllaHome, "cell 0 4");
+		
 	}
 
 }
