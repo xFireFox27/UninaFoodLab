@@ -38,6 +38,7 @@ public class NotificheFrame extends JFrame {
 
 	
 	public NotificheFrame(Controller c) {
+		setTitle("Notifiche");
 		theController = c;
 		setVisible(false);
 		setResizable(true);
