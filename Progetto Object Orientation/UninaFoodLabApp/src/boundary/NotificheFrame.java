@@ -34,6 +34,7 @@ public class NotificheFrame extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private Controller theController;
+	private JList<String> listaDelleNotifiche;
 	List<Notifica> notifiche;
 
 	
@@ -87,7 +88,7 @@ public class NotificheFrame extends JFrame {
 		
 		listModel = theController.inizializzaListaNotifiche(notifiche, listModel);
 		
-		JList<String> listaDelleNotifiche = new JList<>(listModel);
+		listaDelleNotifiche = new JList<>(listModel);
 		scrollNotifiche.setViewportView(listaDelleNotifiche);
 		listaDelleNotifiche.setBackground(new Color(246, 245, 244));
 		listaDelleNotifiche.setModel(listModel);
@@ -116,6 +117,11 @@ public class NotificheFrame extends JFrame {
 	
 	public void showErrorMessage(String message) {
 		JOptionPane.showMessageDialog(this, message, "Errore di connessione", JOptionPane.ERROR_MESSAGE);
+	}
+	
+	public void  refreshListaNotifiche(List<Notifica> notifiche, DefaultListModel<String> listModel) {
+		listModel = theController.inizializzaListaNotifiche(notifiche, listModel);
+		listaDelleNotifiche.setModel(listModel);
 	}
 
 }

@@ -12,5 +12,5 @@ public interface NotificaDaoInterface {
 	
 	public Notifica inviaNotificaAdUnCorso(Chef chef, String oggetto, String testo, Corso corso) throws SQLException;
 	
-//	public Notifica inviaNotificaATuttiICorsi(Chef chef, String oggetto, String testo) throws SQLException;
+	public Notifica inviaNotificaATuttiICorsi(Chef chef, String oggetto, String testo) throws SQLException;
 }

@@ -171,6 +171,31 @@ public class Controller {
 			Notifica notifica = notificaDao.inviaNotificaAdUnCorso(chef, oggetto, testo, corso);
 			if (notifica != null) {
 				invioNotificaFrame.setVisible(false);
+				List<Notifica> notificheAggiornate = getNotificheChef();
+				DefaultListModel<String> listModel = new DefaultListModel<>();
+				notificheFrame.refreshListaNotifiche(notificheAggiornate, listModel);
+			}
+			else {
+				invioNotificaFrame.showErrorMessage("Errore nell'invio della notifica.");
+			}
+		}
+		catch (SQLException e) {
+			e.printStackTrace();
+			invioNotificaFrame.showErrorMessage("Errore di connessione al database.");
+		}
+	}
+	
+	public void inviaNotificaTuttiCorsi(String oggetto, String testo) {
+		if (notificaDao == null) {
+			notificaDao = new NotificaDAO();
+		}
+		try {
+			Notifica notifica = notificaDao.inviaNotificaATuttiICorsi(chef, oggetto, testo);
+			if (notifica != null) {
+				invioNotificaFrame.setVisible(false);
+				List<Notifica> notificheAggiornate = getNotificheChef();
+				DefaultListModel<String> listModel = new DefaultListModel<>();
+				notificheFrame.refreshListaNotifiche(notificheAggiornate, listModel);
 			}
 			else {
 				invioNotificaFrame.showErrorMessage("Errore nell'invio della notifica.");
