@@ -7,8 +7,9 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.util.List;
-
+import javax.swing.DefaultListModel;
 import javax.swing.UIManager;
+import javax.swing.JComboBox;
 
 import DAO.*;
 import boundary.*;
@@ -118,6 +119,44 @@ public class Controller {
 			e.printStackTrace();
 			return null;
 		}
+	}
+	
+	public DefaultListModel<String> inizializzaListaNotifiche(List<Notifica> notifiche, DefaultListModel<String> listModel) {
+		listModel.clear();
+		if (notifiche == null || notifiche.isEmpty()){
+			listModel.addElement("Non ci sono notifiche.");
+		}
+		else {
+			for (Notifica notifica : notifiche) {
+				String elemento = notifica.getOggetto() + " - " + "(" + notifica.getDataInvio().toString() + ")";
+				listModel.addElement(elemento);
+			}
+		}
+		return listModel;
+	}
+	
+	public String mostraTestoNotifica(List<Notifica> notifiche, int index) {
+		if(index >= 0 && index < notifiche.size() &&notifiche != null) {
+			return notifiche.get(index).getTesto();
+		}
+		else {
+			return "Il testo della notifica apparirà qui";
+		}
+	}
+	
+	public void ApriInvioNotifica() {
+		InvioNotificaFrame invioNotificaFrame = new InvioNotificaFrame(this);
+		invioNotificaFrame.setVisible(true);
+	}
+	
+	public JComboBox<Corso> inizializzaComboBoxCorsi(List<Corso> corsi){
+		JComboBox<Corso> comboBox = new JComboBox<>();
+		if (corsi != null && !corsi.isEmpty()) {
+			for (Corso corso : corsi) {
+				comboBox.addItem(corso);
+			}
+		}
+		return comboBox;
 	}
 	
 	public void TornaHomepageFromNotifiche() {

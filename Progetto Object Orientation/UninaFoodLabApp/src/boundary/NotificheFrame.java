@@ -84,15 +84,7 @@ public class NotificheFrame extends JFrame {
 		
 		DefaultListModel<String> listModel = new DefaultListModel<>();
 		
-		if (notifiche == null || notifiche.isEmpty()){
-			listModel.addElement("Non ci sono notifiche.");
-		}
-		else {
-			for (Notifica notifica : notifiche) {
-				String elemento = notifica.getOggetto() + " - " + "(" + notifica.getDataInvio().toString() + ")";
-				listModel.addElement(elemento);
-			}
-		}
+		listModel = theController.inizializzaListaNotifiche(notifiche, listModel);
 		
 		JList<String> listaDelleNotifiche = new JList<>(listModel);
 		scrollNotifiche.setViewportView(listaDelleNotifiche);
@@ -100,13 +92,8 @@ public class NotificheFrame extends JFrame {
 		listaDelleNotifiche.setModel(listModel);
 		listaDelleNotifiche.addListSelectionListener(new ListSelectionListener() {
 			public void valueChanged(ListSelectionEvent e) {
-				int index = listaDelleNotifiche.getSelectedIndex();
-				if(index >= 0 && index < notifiche.size() &&notifiche != null) {
-					txtTestoNotifiche.setText(notifiche.get(index).getTesto());
-				}
-				else {
-					txtTestoNotifiche.setText("Il testo della notifica apparirà qui");
-				}
+				txtTestoNotifiche.setText(theController.mostraTestoNotifica(notifiche, listaDelleNotifiche.getSelectedIndex()));
+				
 			}
 		});
 
@@ -118,6 +105,11 @@ public class NotificheFrame extends JFrame {
 		btnInviaNotifica.setBackground(new Color(98, 160, 234));
 		btnInviaNotifica.setForeground(new Color(255, 255, 255));
 		contentPane.add(btnInviaNotifica, "cell 2 4,alignx right,growy");
+		btnInviaNotifica.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				theController.ApriInvioNotifica();
+			}
+		});
 		
 	}
 
