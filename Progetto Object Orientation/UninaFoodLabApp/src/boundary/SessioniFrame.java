@@ -124,6 +124,17 @@ public class SessioniFrame extends JFrame {
         btnNuovaSessione.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
         btnNuovaSessione.addActionListener(e -> theController.ApriInserimentoSessione(corso));
         getContentPane().add(btnNuovaSessione, "cell 1 2,alignx right");
+        
+        // Si torna alla finestra precedente premendo ESC
+        getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW)
+			.put(KeyStroke.getKeyStroke("ESCAPE"), "ESCAPE");
+        getRootPane().getActionMap().put("ESCAPE", new AbstractAction() {
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			theController.TornaCorsiFromSessioni();
+		}
+		});
+        
     }
 
     

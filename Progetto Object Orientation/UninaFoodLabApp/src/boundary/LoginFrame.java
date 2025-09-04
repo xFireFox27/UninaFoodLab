@@ -119,6 +119,16 @@ public class LoginFrame extends JFrame {
 		LoginButton.setForeground(new Color(248, 248, 255));
 		LoginButton.setFont(new Font("Palatino", Font.BOLD, 24));
 		contentPane.add(LoginButton, "cell 1 8,growx");
+		
+		// Chiudi la finestra premendo ESC
+		contentPane.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(
+		    javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0), "ESCAPE");
+		contentPane.getActionMap().put("ESCAPE", new javax.swing.AbstractAction() {
+		    @Override
+		    public void actionPerformed(java.awt.event.ActionEvent e) {
+		        dispose(); 
+		    }
+		});
 
 	}
 

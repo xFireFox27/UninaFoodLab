@@ -113,6 +113,16 @@ public class RicetteFrame extends JFrame {
         panelPulsanti.add(btnSalva, "cell 1 0,alignx right");
         
         getContentPane().add(panelPulsanti, "cell 0 2,grow");
+        
+        // Chiudi la finestra premendo ESC
+        getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW)
+        .put(KeyStroke.getKeyStroke("ESCAPE"), "ESCAPE");
+    getRootPane().getActionMap().put("ESCAPE", new AbstractAction() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            theController.TornaSessioniFromRicette();
+        }
+    });
     }
     
     private void caricaRicette() {

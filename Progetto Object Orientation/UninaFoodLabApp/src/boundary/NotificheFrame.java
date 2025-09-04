@@ -17,14 +17,18 @@ import java.awt.Component;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
 import javax.swing.JButton;
+import javax.swing.JComponent;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
 import entity.Notifica;
 import java.util.List;
+
+import javax.swing.AbstractAction;
 import javax.swing.DefaultListModel;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextArea;
+import javax.swing.KeyStroke;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.event.ListSelectionEvent;
 import java.awt.Dimension;
@@ -113,6 +117,15 @@ public class NotificheFrame extends JFrame {
 				theController.ApriInvioNotifica();
 			}
 		});
+		
+		// Chiudi la finestra premendo ESC
+		getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "goBack");
+		getRootPane().getActionMap().put("goBack", new AbstractAction() {
+		    @Override
+		    public void actionPerformed(ActionEvent e) {
+		        theController.TornaHomepageFromNotifiche();
+		    }
+	    });
 		
 	}
 	

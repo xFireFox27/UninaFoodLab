@@ -86,6 +86,16 @@ public class HomepageChef extends JFrame {
 		btnNotifiche.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		btnNotifiche.setBackground(new Color(98, 160, 234));
 		panel.add(btnNotifiche, "cell 3 3,grow");
+		
+		// Chiudi la finestra premendo ESC
+		contentPane.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(
+		    javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0), "ESCAPE");
+		contentPane.getActionMap().put("ESCAPE", new javax.swing.AbstractAction() {
+		    @Override
+		    public void actionPerformed(java.awt.event.ActionEvent e) {
+		        dispose(); 
+		    }
+		});
 	}
 	
 	public void showErrorMessage(String message) {
