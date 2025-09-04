@@ -26,6 +26,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JTextArea;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.event.ListSelectionEvent;
+import java.awt.Dimension;
 
 public class NotificheFrame extends JFrame {
 
@@ -47,16 +48,16 @@ public class NotificheFrame extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
-		contentPane.setLayout(new MigLayout("", "[grow][grow]", "[50px][50px][grow][grow][40px]"));
+		contentPane.setLayout(new MigLayout("", "[300px:n:900px][50px][465px:n:1700px,grow]", "[50px][50px][grow][grow][40px]"));
 		
 		JLabel lblTitolo = new JLabel("Notifiche");
 		lblTitolo.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTitolo.setForeground(new Color(26, 95, 180));
 		lblTitolo.setFont(lblTitolo.getFont().deriveFont(24f));
-		contentPane.add(lblTitolo, "cell 0 0 2 1,alignx center,aligny center");
+		contentPane.add(lblTitolo, "cell 0 0 3 1,alignx center,aligny center");
 		
 		JScrollPane scrollPaneTesto = new JScrollPane();
-		contentPane.add(scrollPaneTesto, "cell 1 1 1 3,grow");
+		contentPane.add(scrollPaneTesto, "cell 2 1 1 3,grow");
 		
 		JTextArea txtTestoNotifiche = new JTextArea();
 		txtTestoNotifiche.setLineWrap(true);
@@ -116,7 +117,7 @@ public class NotificheFrame extends JFrame {
 		btnInviaNotifica.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		btnInviaNotifica.setBackground(new Color(98, 160, 234));
 		btnInviaNotifica.setForeground(new Color(255, 255, 255));
-		contentPane.add(btnInviaNotifica, "cell 1 4,alignx right,growy");
+		contentPane.add(btnInviaNotifica, "cell 2 4,alignx right,growy");
 		
 	}
 
