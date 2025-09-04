@@ -4,8 +4,10 @@ import java.awt.Font;
 import java.awt.FontFormatException;
 import java.awt.GraphicsEnvironment;
 import java.io.IOException;
+import java.sql.Date;
 import java.sql.SQLException;
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.List;
 import javax.swing.DefaultListModel;
 import javax.swing.UIManager;
@@ -314,8 +316,53 @@ public class Controller {
 	    }
 	}
 
+	
+	public List<Ricetta> getRicettePerSessione(SessioneInPresenza sessione) {
+	    if (preparaDao == null) {
+	        preparaDao = new PreparaDAO();
+	    }
+	    try {
+	        return preparaDao.getRicettePerSessione(sessione);
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	        return null;
+	    }
+	}
 
-
+	public void apriNuovoCorsoDialog() {
+		NuovoCorsoDialog nuovoCorsoDialog = new NuovoCorsoDialog(homepageChef, this);
+		nuovoCorsoDialog.setVisible(true);
+	}
+	
+	//Recupera tutti i topic per la combobox
+	public ArrayList<String> getTopicFromDB() {
+		CorsoDAO corsoDao = new CorsoDAO();
+		return corsoDao.getTopic();
+	}
+	
+	public void creaNuovoCorso(String titolo, String frequenza, int numLezioni, int annoFrequenza, String date, String topic, NuovoCorsoDialog nuovoCorsoDialog) {
+		CorsoDAO corsoDao = new CorsoDAO();
+		TopicDAO topicDao = new TopicDAO(); 
+		Topic topicCorso = topicDao.getTopicByName(topic); 
+		try {
+			Date sqlDate = new Date(0);  
+			sqlDate = Date.valueOf(date.toString()); // Converte la stringa in java.sql.Date (la stringa deve essere in formato "yyyy-MM-dd")
+			Corso corso = corsoDao.creaCorso(titolo, frequenza, numLezioni, annoFrequenza, sqlDate, topicCorso, chef); 
+			if (corso != null) {
+				nuovoCorsoDialog.setVisible(false);
+			} else {
+				homepageChef.showErrorMessage("Errore nella creazione del corso."); 
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			homepageChef.showErrorMessage("Errore di connessione al database.");
+		}
+	}
+	
+	public void tornaHomepageFromCreaCorso(NuovoCorsoDialog nuovoCorsoDialog) {
+		nuovoCorsoDialog.setVisible(false);
+		homepageChef.setVisible(true);
+	}
 
 
 }

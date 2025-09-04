@@ -111,7 +111,7 @@ public class SessioniFrame extends JFrame {
         
         // Pulsante per tornare indietro
         JButton btnTorna = new JButton("Torna ai Corsi");
-        btnTorna.setBackground(new Color(98, 160, 233));
+        btnTorna.setBackground(new Color(26, 95, 180));
         btnTorna.setForeground(new Color(248, 248, 255));
         btnTorna.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
         btnTorna.addActionListener(e -> theController.TornaCorsiFromSessioni());

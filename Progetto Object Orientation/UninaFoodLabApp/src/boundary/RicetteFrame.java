@@ -99,14 +99,16 @@ public class RicetteFrame extends JFrame {
         JButton btnTorna = new JButton("Torna alle Sessioni");
         btnTorna.setForeground(new Color(248, 248, 255));
         btnTorna.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
-        btnTorna.setBackground(new Color(98, 160, 233));
+        btnTorna.setBackground(new Color(26, 95, 180));
+        btnTorna.setPreferredSize(new Dimension(135, 30));
         btnTorna.addActionListener(e -> theController.TornaSessioniFromRicette());
         panelPulsanti.add(btnTorna, "cell 0 0,alignx left");
         
-        JButton btnSalva = new JButton("Salva Associazioni");
+        JButton btnSalva = new JButton("Salva Ricette");
         btnSalva.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
         btnSalva.setForeground(new Color(248, 248, 255));
         btnSalva.setBackground(new Color(98, 160, 233));
+        btnSalva.setPreferredSize(new Dimension(135, 30));
         btnSalva.addActionListener(e -> salvaAssociazioni());
         panelPulsanti.add(btnSalva, "cell 1 0,alignx right");
         
@@ -146,7 +148,28 @@ public class RicetteFrame extends JFrame {
             }
         }
         
-        // Chiamata al controller per salvare nel database
+        // Verifica se esistono già ricette associate
+        List<Ricetta> ricetteEsistenti = theController.getRicettePerSessione(sessione);
+        
+        if (ricetteEsistenti != null && !ricetteEsistenti.isEmpty()) {
+            StringBuilder messaggioRicette = new StringBuilder("Le seguenti ricette sono già associate a questa sessione:\n\n");
+            for (Ricetta ricetta : ricetteEsistenti) {
+                messaggioRicette.append("• ").append(ricetta.getNome()).append("\n");
+            }
+            messaggioRicette.append("\nVuoi sovrascrivere le associazioni esistenti?");
+            
+            int scelta = JOptionPane.showConfirmDialog(this,
+                messaggioRicette.toString(),
+                "Ricette già presenti",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.WARNING_MESSAGE);
+            
+            if (scelta != JOptionPane.YES_OPTION) {
+                return;
+            }
+        }
+        
+        // Procedi con il salvataggio
         boolean successo = theController.salvaRicettePerSessione(sessione, ricetteSelezionate);
         
         if (successo) {
@@ -161,5 +184,6 @@ public class RicetteFrame extends JFrame {
                 JOptionPane.ERROR_MESSAGE);
         }
     }
+
 
 }
