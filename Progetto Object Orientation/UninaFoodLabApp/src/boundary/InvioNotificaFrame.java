@@ -44,6 +44,7 @@ public class InvioNotificaFrame extends JDialog {
 	
 
 	public InvioNotificaFrame(Controller c) {
+		setTitle("Nuova notifica");
 		setModal(true);
 		setAlwaysOnTop(true);
 		theController = c;
