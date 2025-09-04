@@ -48,7 +48,7 @@ public class NotificheFrame extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
-		contentPane.setLayout(new MigLayout("", "[300px:n:900px][50px][465px:n:1700px,grow]", "[50px][50px][grow][grow][40px]"));
+		contentPane.setLayout(new MigLayout("", "[300px:n:1100px,grow][50px][465px:n:1300px,grow]", "[50px][50px][grow][grow][40px]"));
 		
 		JLabel lblTitolo = new JLabel("Notifiche");
 		lblTitolo.setHorizontalAlignment(SwingConstants.CENTER);
