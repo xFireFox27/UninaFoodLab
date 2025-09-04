@@ -121,7 +121,7 @@ public class CorsiFrame extends JFrame {
     
     private void caricaTopics() {
         comboTopic.removeAllItems();
-        comboTopic.addItem("Tutti i topics");
+        comboTopic.addItem("Tutti i topic");
         
         if (tuttiICorsi != null && !tuttiICorsi.isEmpty()) {
             tuttiICorsi.stream()
