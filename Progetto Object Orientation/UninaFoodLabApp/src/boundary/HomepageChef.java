@@ -8,6 +8,7 @@ import javax.swing.border.EmptyBorder;
 import net.miginfocom.swing.MigLayout;
 import java.awt.Color;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.swing.JButton;
 import javax.swing.border.SoftBevelBorder;
@@ -55,6 +56,11 @@ public class HomepageChef extends JFrame {
 		btnNuovoCorso.setForeground(Color.WHITE);
 		btnNuovoCorso.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		btnNuovoCorso.setBackground(new Color(98, 160, 234));
+		btnNuovoCorso.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				theController.apriNuovoCorsoDialog();
+			}
+		});
 		panel.add(btnNuovoCorso, "cell 1 3,grow");
 		
 		JButton btnVisualizzaCorsi = new JButton("Visualizza Corsi");
@@ -81,5 +87,9 @@ public class HomepageChef extends JFrame {
 		btnNotifiche.setBackground(new Color(98, 160, 234));
 		panel.add(btnNotifiche, "cell 3 3,grow");
 	}
+	
+	public void showErrorMessage(String message) {
+    	JOptionPane.showMessageDialog(this, message, "Errore", JOptionPane.ERROR_MESSAGE);
+    }
 
 }
