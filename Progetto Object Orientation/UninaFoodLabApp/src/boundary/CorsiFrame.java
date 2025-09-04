@@ -72,7 +72,7 @@ public class CorsiFrame extends JFrame {
                 filtraCorsi();
             }
         });
-        filterPanel.add(comboTopic, "cell 1 0,growx");
+        filterPanel.add(comboTopic, "cell 1 0,width 200:200:200");
         
         JButton btnReset = new JButton("Reset");
         btnReset.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
@@ -86,7 +86,7 @@ public class CorsiFrame extends JFrame {
         });
         filterPanel.add(btnReset, "cell 2 0,alignx right");
         
-        contentPane.add(filterPanel, "cell 0 1,growx");
+        contentPane.add(filterPanel, "cell 0 1,width 400:400:350");
 
 
         listModel = new DefaultListModel<>();
