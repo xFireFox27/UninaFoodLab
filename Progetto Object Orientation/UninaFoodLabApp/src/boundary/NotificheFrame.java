@@ -15,6 +15,7 @@ import javax.swing.SwingConstants;
 import javax.swing.JScrollPane;
 import java.awt.Component;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 import javax.swing.JButton;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
@@ -111,6 +112,10 @@ public class NotificheFrame extends JFrame {
 			}
 		});
 		
+	}
+	
+	public void showErrorMessage(String message) {
+		JOptionPane.showMessageDialog(this, message, "Errore di connessione", JOptionPane.ERROR_MESSAGE);
 	}
 
 }
