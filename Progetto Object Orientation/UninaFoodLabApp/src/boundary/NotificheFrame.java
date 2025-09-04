@@ -24,12 +24,15 @@ import javax.swing.DefaultListModel;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextArea;
+import javax.swing.event.ListSelectionListener;
+import javax.swing.event.ListSelectionEvent;
 
 public class NotificheFrame extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private Controller theController;
+	List<Notifica> notifiche;
 
 	
 	public NotificheFrame(Controller c) {
@@ -46,32 +49,21 @@ public class NotificheFrame extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(new MigLayout("", "[grow][grow]", "[50px][50px][grow][grow][40px]"));
 		
-		JLabel lblNotifiche = new JLabel("Notifiche");
-		lblNotifiche.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNotifiche.setForeground(new Color(26, 95, 180));
-		lblNotifiche.setFont(lblNotifiche.getFont().deriveFont(24f));
-		contentPane.add(lblNotifiche, "cell 0 0 2 1,alignx center,aligny center");
+		JLabel lblTitolo = new JLabel("Notifiche");
+		lblTitolo.setHorizontalAlignment(SwingConstants.CENTER);
+		lblTitolo.setForeground(new Color(26, 95, 180));
+		lblTitolo.setFont(lblTitolo.getFont().deriveFont(24f));
+		contentPane.add(lblTitolo, "cell 0 0 2 1,alignx center,aligny center");
 		
-		JScrollPane scrollPane = new JScrollPane();
-		contentPane.add(scrollPane, "cell 1 1 1 3,grow");
+		JScrollPane scrollPaneTesto = new JScrollPane();
+		contentPane.add(scrollPaneTesto, "cell 1 1 1 3,grow");
 		
-		JTextArea txtrIlTestoDella = new JTextArea();
-		scrollPane.setViewportView(txtrIlTestoDella);
-		txtrIlTestoDella.setText("Il testo della notifica apparirà qui");
-		txtrIlTestoDella.setBackground(new Color(246, 245, 244));
-		
-		DefaultListModel<String> listModel = new DefaultListModel<>();
-		
-		List<Notifica> notifiche = theController.getNotificheChef();
-		if (notifiche == null || notifiche.isEmpty()){
-			listModel.addElement("Non ci sono notifiche.");
-		}
-		else {
-			for (Notifica notifica : notifiche) {
-				String elemento = notifica.getOggetto() + " - " + "(" + notifica.getDataInvio().toString() + ")";
-				listModel.addElement(elemento);
-			}
-		}
+		JTextArea txtTestoNotifiche = new JTextArea();
+		txtTestoNotifiche.setLineWrap(true);
+		txtTestoNotifiche.setEditable(false);
+		scrollPaneTesto.setViewportView(txtTestoNotifiche);
+		txtTestoNotifiche.setText("Il testo della notifica selezionata apparirà qui");
+		txtTestoNotifiche.setBackground(new Color(246, 245, 244));
 		
 		JButton btnTornaAllaHome = new JButton("Torna alla Homepage");
 		btnTornaAllaHome.setOpaque(true);
@@ -84,14 +76,38 @@ public class NotificheFrame extends JFrame {
 			}
 		});
 		
-		JScrollPane scrollPane_1 = new JScrollPane();
-		contentPane.add(scrollPane_1, "cell 0 1 1 3,grow");
+		JScrollPane scrollNotifiche = new JScrollPane();
+		contentPane.add(scrollNotifiche, "cell 0 1 1 3,grow");
 		
-		JList<String> list = new JList<>(listModel);
-		scrollPane_1.setViewportView(list);
-		list.setBackground(new Color(246, 245, 244));
+		notifiche = theController.getNotificheChef();
 		
-		list.setModel(listModel);
+		DefaultListModel<String> listModel = new DefaultListModel<>();
+		
+		if (notifiche == null || notifiche.isEmpty()){
+			listModel.addElement("Non ci sono notifiche.");
+		}
+		else {
+			for (Notifica notifica : notifiche) {
+				String elemento = notifica.getOggetto() + " - " + "(" + notifica.getDataInvio().toString() + ")";
+				listModel.addElement(elemento);
+			}
+		}
+		
+		JList<String> listaDelleNotifiche = new JList<>(listModel);
+		scrollNotifiche.setViewportView(listaDelleNotifiche);
+		listaDelleNotifiche.setBackground(new Color(246, 245, 244));
+		listaDelleNotifiche.setModel(listModel);
+		listaDelleNotifiche.addListSelectionListener(new ListSelectionListener() {
+			public void valueChanged(ListSelectionEvent e) {
+				int index = listaDelleNotifiche.getSelectedIndex();
+				if(index >= 0 && index < notifiche.size() &&notifiche != null) {
+					txtTestoNotifiche.setText(notifiche.get(index).getTesto());
+				}
+				else {
+					txtTestoNotifiche.setText("Il testo della notifica apparirà qui");
+				}
+			}
+		});
 
 		contentPane.add(btnTornaAllaHome, "cell 0 4,growy");
 		
