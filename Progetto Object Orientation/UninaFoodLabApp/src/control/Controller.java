@@ -399,6 +399,42 @@ public class Controller {
 		nuovoCorsoDialog.setVisible(false);
 		homepageChef.setVisible(true);
 	}
+	
+	public void ApriRiepilogoMensile() {
+	    homepageChef.setVisible(false);
+	    RiepilogoMensileFrame riepilogoFrame = new RiepilogoMensileFrame(this);
+	    riepilogoFrame.setVisible(true);
+	}
+
+	public void TornaHomepageFromRiepilogo(RiepilogoMensileFrame riepilogoFrame) {
+	    riepilogoFrame.setVisible(false);
+	    homepageChef.setVisible(true);
+	}
+
+	public List<SessioneInPresenza> getSessioniByCorsoEMese(Corso corso, int mese, int anno) {
+	    if (sessioneDao == null) {
+	        sessioneDao = new SessioniInPresenzaDAO();
+	    }
+	    try {
+	        return sessioneDao.getSessioniByCorsoEMese(corso, mese, anno);
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	        return null;
+	    }
+	}
+
+	public List<SessioneOnline> getSessioniOnlineByCorsoEMese(Corso corso, int mese, int anno) {
+	    if (sessioneOnlineDao == null) {
+	        sessioneOnlineDao = new SessioneOnlineDAO();
+	    }
+	    try {
+	        return sessioneOnlineDao.getSessioniByCorsoEMese(corso, mese, anno);
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	        return null;
+	    }
+	}
+
 
 
 }

@@ -50,6 +50,7 @@ public class HomepageChef extends JFrame {
 		titleLabel.setForeground(new Color(26, 95, 180));
 		titleLabel.setFont(titleLabel.getFont().deriveFont(24f));
 		panel.add(titleLabel, "cell 1 1 3 1,grow");
+
 		
 		JButton btnNuovoCorso = new JButton("Crea Nuovo Corso");
 		btnNuovoCorso.setOpaque(true);
@@ -87,13 +88,25 @@ public class HomepageChef extends JFrame {
 		btnNotifiche.setBackground(new Color(98, 160, 234));
 		panel.add(btnNotifiche, "cell 3 3,grow");
 		
+		JButton btnRiepilogoMensile = new JButton("Riepilogo Mensile");
+		btnRiepilogoMensile.setOpaque(true);
+		btnRiepilogoMensile.setForeground(Color.WHITE);
+		btnRiepilogoMensile.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
+		btnRiepilogoMensile.setBackground(new Color(98, 160, 234));
+		btnRiepilogoMensile.addActionListener(new ActionListener() {
+		    public void actionPerformed(ActionEvent e) {
+		        theController.ApriRiepilogoMensile();
+		    }
+		});
+		panel.add(btnRiepilogoMensile, "cell 1 5 3 1,grow");
+		
 		// Chiudi la finestra premendo ESC
 		contentPane.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(
 		    javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0), "ESCAPE");
 		contentPane.getActionMap().put("ESCAPE", new javax.swing.AbstractAction() {
 		    @Override
 		    public void actionPerformed(java.awt.event.ActionEvent e) {
-		        dispose(); 
+		        System.exit(0); 
 		    }
 		});
 	}

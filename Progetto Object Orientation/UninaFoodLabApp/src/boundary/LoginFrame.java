@@ -126,7 +126,7 @@ public class LoginFrame extends JFrame {
 		contentPane.getActionMap().put("ESCAPE", new javax.swing.AbstractAction() {
 		    @Override
 		    public void actionPerformed(java.awt.event.ActionEvent e) {
-		        dispose(); 
+		        System.exit(0); 
 		    }
 		});
 
