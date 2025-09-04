@@ -69,6 +69,11 @@ public class LoginFrame extends JFrame {
 		usernameField.setFont(new Font("Dialog", Font.PLAIN, 15));
 		contentPane.add(usernameField, "cell 1 5,growx");
 		usernameField.setColumns(10);
+		usernameField.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				passwordField.requestFocusInWindow();
+			}
+		});
 		
 		JLabel lblPassword = new JLabel("Password");
 		lblPassword.setForeground(new Color(100, 149, 237));
@@ -79,6 +84,20 @@ public class LoginFrame extends JFrame {
 		passwordField.setBackground(new Color(222, 221, 218));
 		passwordField.setFont(new Font("Dialog", Font.PLAIN, 15));
 		contentPane.add(passwordField, "cell 1 7,growx");
+		passwordField.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(usernameField.getText().trim().isEmpty() 
+						|| passwordField.getPassword().length == 0) {
+					JOptionPane.showMessageDialog(contentPane, 
+							"Tutti i campi devono essere compilati!", 
+							"Errore di validazione", 
+							JOptionPane.ERROR_MESSAGE);
+				} else {
+					theController.LoginChef(usernameField.getText(), 
+							new String(passwordField.getPassword()));
+				}
+			}
+		});
 		
 		JButton LoginButton = new JButton("LOGIN");
 		LoginButton.addActionListener(new ActionListener() {
