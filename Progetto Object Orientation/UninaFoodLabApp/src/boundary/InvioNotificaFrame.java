@@ -158,7 +158,8 @@ public class InvioNotificaFrame extends JDialog {
 						}
 						else {
 							if(selezioneCorsiGroup.getSelection().getActionCommand() == "Tutti i Corsi") {
-//								theController.inviaNotificaTuttiICorsi(oggetto, testo);
+								theController.inviaNotificaTuttiCorsi(oggetto, testo);
+								
 							}
 							else {
 								Corso corsoSelezionato = (Corso) cbSelezioneCorso.getSelectedItem();
