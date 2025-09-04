@@ -275,6 +275,18 @@ public class Controller {
 	    }
 	}
 
+	
+	public List<Ricetta> getRicettePerSessione(SessioneInPresenza sessione) {
+	    if (preparaDao == null) {
+	        preparaDao = new PreparaDAO();
+	    }
+	    try {
+	        return preparaDao.getRicettePerSessione(sessione);
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	        return null;
+	    }
+	}
 
 
 

@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import DaoInterface.PreparaDaoInterface;
@@ -68,12 +69,40 @@ public class PreparaDAO implements PreparaDaoInterface {
 	}
 
 
-	
+	@Override
+	public List<Ricetta> getRicettePerSessione(SessioneInPresenza sessione) throws SQLException {
+	    List<Ricetta> ricette = new ArrayList<>();
+	    Connection connection = null;
+	    PreparedStatement stmt = null;
+	    ResultSet rs = null;
+	    
+	    try {
+	        connection = DB.getConnection();
+	        String query = "SELECT r.nome, r.descrizione " +
+	                      "FROM ricetta r " +
+	                      "JOIN prepara p ON r.idricetta = p.idricetta " +
+	                      "JOIN sessioneinpresenza s ON s.idsessione = p.idsessionepresenza " +
+	                      "WHERE s.data = ? AND s.luogo = ? AND s.aula = ?";
+	        
+	        stmt = connection.prepareStatement(query);
+	        stmt.setTimestamp(1, sessione.getData());
+	        stmt.setString(2, sessione.getLuogo());
+	        stmt.setString(3, sessione.getAula());
+	        
+	        rs = stmt.executeQuery();
+	        while (rs.next()) {
+	            ricette.add(new Ricetta(rs.getString("nome"), rs.getString("descrizione")));
+	        }
+	        
+	    } finally {
+	        if (rs != null) rs.close();
+	        if (stmt != null) stmt.close();
+	        if (connection != null) connection.close();
+	    }
+	    
+	    return ricette;
+	}
 
-    
-    public List<Ricetta> getRicetteBySessione(SessioneInPresenza sessione) throws SQLException {
-        // Implementation to retrieve recipes associated with a session
-        // This would join the prepara table with ricetta table
-        return null; // Placeholder
-    }
+
+
 }
