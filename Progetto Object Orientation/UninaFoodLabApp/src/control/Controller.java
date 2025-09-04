@@ -27,6 +27,7 @@ public class Controller {
 	private SessioniInPresenzaDAO sessioneDao;
 	private SessioneOnlineDAO sessioneOnlineDao;
 	private RicettaDAO ricettaDao;
+	private PreparaDAO preparaDao;
 	private Chef chef;
 	private NotificheFrame notificheFrame;
 	private NotificaDAO notificaDao;
@@ -251,6 +252,21 @@ public class Controller {
 	    } catch (SQLException e) {
 	        e.printStackTrace();
 	        throw new RuntimeException("Errore durante l'inserimento della sessione online: " + e.getMessage());
+	    }
+	}
+
+	
+	public boolean salvaRicettePerSessione(SessioneInPresenza sessione, List<Ricetta> ricetteSelezionate) {
+	    if (preparaDao == null) {
+	        preparaDao = new PreparaDAO();
+	    }
+	    try {
+	        // Chiamata al DAO per salvare le associazioni
+	        preparaDao.salvaAssociazioniSessioneRicette(sessione, ricetteSelezionate);
+	        return true;
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	        return false;
 	    }
 	}
 
