@@ -1,4 +1,5 @@
 package control;
+
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.FontFormatException;
@@ -380,6 +381,7 @@ public class Controller {
 		CorsoDAO corsoDao = new CorsoDAO();
 		TopicDAO topicDao = new TopicDAO(); 
 		Topic topicCorso = topicDao.getTopicByName(topic); 
+		
 		try {
 			Date sqlDate = new Date(0);  
 			sqlDate = Date.valueOf(date.toString()); // Converte la stringa in java.sql.Date (la stringa deve essere in formato "yyyy-MM-dd")
@@ -390,8 +392,9 @@ public class Controller {
 				homepageChef.showErrorMessage("Errore nella creazione del corso."); 
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
-			homepageChef.showErrorMessage("Errore di connessione al database.");
+			String fullMessage = e.getMessage();
+	        String firstLine = fullMessage.split("\n")[0];
+	        homepageChef.showErrorMessage(firstLine);
 		}
 	}
 	
