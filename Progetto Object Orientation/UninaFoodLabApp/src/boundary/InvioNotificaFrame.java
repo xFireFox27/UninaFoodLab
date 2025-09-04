@@ -18,6 +18,8 @@ import javax.swing.JTextArea;
 import javax.swing.DefaultListCellRenderer;
 import java.awt.Component;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
@@ -25,6 +27,9 @@ import java.util.List;
 
 import entity.Corso;
 import control.Controller;
+import javax.swing.border.SoftBevelBorder;
+import javax.swing.border.BevelBorder;
+import java.awt.Insets;
 
 
 public class InvioNotificaFrame extends JDialog {
@@ -35,6 +40,8 @@ public class InvioNotificaFrame extends JDialog {
 	private ButtonGroup selezioneCorsiGroup = new ButtonGroup();
 	private Controller theController;
 	private JComboBox<Corso> cbSelezioneCorso;
+	private JTextArea textAreaMessaggio = new JTextArea();
+	
 
 	public InvioNotificaFrame(Controller c) {
 		setModal(true);
@@ -57,30 +64,13 @@ public class InvioNotificaFrame extends JDialog {
 				lblInvio.setForeground(new Color(25, 95, 180));
 				panelSelezioneCorsi.add(lblInvio, "cell 0 0,alignx right");
 			}
+			
 			{
-				JPanel panelRButtons = new JPanel();
-				panelSelezioneCorsi.add(panelRButtons, "cell 1 0,growx,aligny center");
-				panelRButtons.setLayout(new MigLayout("", "[106px][140px]", "[23px]"));
-				{
-					JRadioButton rdbtnTuttiICorsi = new JRadioButton("Tutti i Corsi");
-					rdbtnTuttiICorsi.setForeground(new Color(98, 160, 233));
-					panelRButtons.add(rdbtnTuttiICorsi, "cell 0 0,alignx left,aligny top");
-					selezioneCorsiGroup.add(rdbtnTuttiICorsi);
-				}
-				{
-					JRadioButton rdbtnSelezioneCorso = new JRadioButton("Selezione Corso");
-					rdbtnSelezioneCorso.setForeground(new Color(98, 160, 233));
-					panelRButtons.add(rdbtnSelezioneCorso, "cell 1 0,alignx left,aligny top");
-					selezioneCorsiGroup.add(rdbtnSelezioneCorso);
-				}
-			}
-			{
-				JLabel lblSelezionecorso = new JLabel("SelezioneCorso:");
+				JLabel lblSelezionecorso = new JLabel("Selezione Corso:");
 				lblSelezionecorso.setForeground(new Color(25, 95, 180));
 				panelSelezioneCorsi.add(lblSelezionecorso, "cell 0 1,alignx trailing");
 			}
 			{
-				JComboBox<Corso> cbSelezioneCorso;
 				List<Corso> corsi = theController.getCorsiChef();
 				cbSelezioneCorso = theController.inizializzaComboBoxCorsi(corsi);
 				cbSelezioneCorso.setForeground(new Color(98, 160, 233));
@@ -97,6 +87,35 @@ public class InvioNotificaFrame extends JDialog {
 				    }
 				});
 				panelSelezioneCorsi.add(cbSelezioneCorso, "cell 1 1,growx");
+				cbSelezioneCorso.setEnabled(false);
+			}
+			{
+				JPanel panelRButtons = new JPanel();
+				panelSelezioneCorsi.add(panelRButtons, "cell 1 0,growx,aligny center");
+				panelRButtons.setLayout(new MigLayout("", "[106px][140px]", "[23px]"));
+				{
+					JRadioButton rdbtnTuttiICorsi = new JRadioButton("Tutti i Corsi");
+					rdbtnTuttiICorsi.setForeground(new Color(98, 160, 233));
+					panelRButtons.add(rdbtnTuttiICorsi, "cell 0 0,alignx left,aligny top");
+					selezioneCorsiGroup.add(rdbtnTuttiICorsi);
+					rdbtnTuttiICorsi.setSelected(true);
+					rdbtnTuttiICorsi.addActionListener(new ActionListener() {
+						public void actionPerformed(ActionEvent e) {
+							cbSelezioneCorso.setEnabled(false);
+						}
+					});
+				}
+				{
+					JRadioButton rdbtnSelezioneCorso = new JRadioButton("Selezione Corso");
+					rdbtnSelezioneCorso.setForeground(new Color(98, 160, 233));
+					panelRButtons.add(rdbtnSelezioneCorso, "cell 1 0,alignx left,aligny top");
+					selezioneCorsiGroup.add(rdbtnSelezioneCorso);
+					rdbtnSelezioneCorso.addActionListener(new ActionListener(){
+						public void actionPerformed(ActionEvent e) {
+							cbSelezioneCorso.setEnabled(true);
+						}
+					});
+				}
 			}
 		}
 		{
@@ -115,23 +134,51 @@ public class InvioNotificaFrame extends JDialog {
 			contentPanel.add(lblTesto, "cell 0 6,alignx right");
 		}
 		{
-			JTextArea textAreaMessaggio = new JTextArea();
 			contentPanel.add(textAreaMessaggio, "cell 1 6 1 4,grow");
 		}
 		{
 			JPanel buttonPane = new JPanel();
-			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
 			getContentPane().add(buttonPane, BorderLayout.SOUTH);
+			buttonPane.setLayout(new MigLayout("", "[][][][][][][][][][][][grow][grow]", "[30px]"));
 			{
-				JButton btnSalva = new JButton("Salva");
-				btnSalva.setActionCommand("OK");
-				buttonPane.add(btnSalva);
-				getRootPane().setDefaultButton(btnSalva);
+				JButton btnInvia = new JButton("Invia");
+				btnInvia.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
+				btnInvia.setBackground(new Color(98, 160, 233));
+				btnInvia.setForeground(new Color(255, 255, 255));
+				btnInvia.setActionCommand("OK");
+				buttonPane.add(btnInvia, "cell 11 0,grow");
+				getRootPane().setDefaultButton(btnInvia);
+				btnInvia.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						String oggetto = fieldOggetto.getText();
+						String testo = textAreaMessaggio.getText();
+						if(oggetto.isEmpty() || testo.isEmpty()) {
+							showErrorMessage("Compilare tutti i campi");
+						}
+						else {
+							if(selezioneCorsiGroup.getSelection().getActionCommand() == "Tutti i Corsi") {
+//								theController.inviaNotificaTuttiICorsi(oggetto, testo);
+							}
+							else {
+								Corso corsoSelezionato = (Corso) cbSelezioneCorso.getSelectedItem();
+								if(corsoSelezionato == null) {
+									showErrorMessage("Selezionare un corso");
+								}
+								else {
+									theController.inviaNotificaUnCorso(oggetto, testo, corsoSelezionato);
+								}
+							}
+						}
+					}
+				});
 			}
 			{
 				JButton btnAnnulla = new JButton("Annulla");
+				btnAnnulla.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
+				btnAnnulla.setForeground(new Color(255, 255, 255));
+				btnAnnulla.setBackground(new Color(220, 19, 60));
 				btnAnnulla.setActionCommand("Cancel");
-				buttonPane.add(btnAnnulla);
+				buttonPane.add(btnAnnulla, "cell 12 0,grow");
 				btnAnnulla.addActionListener(new ActionListener(){
 					public void actionPerformed(ActionEvent e) {
 						dispose();
@@ -140,5 +187,8 @@ public class InvioNotificaFrame extends JDialog {
 			}
 		}
 	}
-
+	
+	public void showErrorMessage(String message) {
+		JOptionPane.showMessageDialog(this, message, "Errore in Invio", JOptionPane.ERROR_MESSAGE);
+	}
 }

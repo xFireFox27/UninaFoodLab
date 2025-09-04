@@ -34,6 +34,7 @@ public class Controller {
 	private Chef chef;
 	private NotificheFrame notificheFrame;
 	private NotificaDAO notificaDao;
+	private InvioNotificaFrame invioNotificaFrame;
 	
 	
 	/**
@@ -119,6 +120,7 @@ public class Controller {
 		}
 		catch (SQLException e) {
 			e.printStackTrace();
+			notificheFrame.showErrorMessage("Errore nel recupero delle notifiche dal database.");
 			return null;
 		}
 	}
@@ -147,7 +149,7 @@ public class Controller {
 	}
 	
 	public void ApriInvioNotifica() {
-		InvioNotificaFrame invioNotificaFrame = new InvioNotificaFrame(this);
+		invioNotificaFrame = new InvioNotificaFrame(this);
 		invioNotificaFrame.setVisible(true);
 	}
 	
@@ -159,6 +161,25 @@ public class Controller {
 			}
 		}
 		return comboBox;
+	}
+	
+	public void inviaNotificaUnCorso(String oggetto, String testo, Corso corso) {
+		if (notificaDao == null) {
+			notificaDao = new NotificaDAO();
+		}
+		try {
+			Notifica notifica = notificaDao.inviaNotificaAdUnCorso(chef, oggetto, testo, corso);
+			if (notifica != null) {
+				invioNotificaFrame.setVisible(false);
+			}
+			else {
+				invioNotificaFrame.showErrorMessage("Errore nell'invio della notifica.");
+			}
+		}
+		catch (SQLException e) {
+			e.printStackTrace();
+			invioNotificaFrame.showErrorMessage("Errore di connessione al database.");
+		}
 	}
 	
 	public void TornaHomepageFromNotifiche() {
