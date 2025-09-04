@@ -119,6 +119,8 @@ public class NuovoCorsoDialog extends JDialog {
                                         });
                                         contentPane.add(creaCorsoBtn, "flowx,cell 2 7,alignx center,aligny center");
                                 contentPane.add(annullaBtn, "cell 2 7,alignx center,aligny center");
+                                        
     }
+    
     
 }
