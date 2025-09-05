@@ -56,6 +56,7 @@ public class NotificaDAO implements NotificaDaoInterface{
 			}
 		}
 	}
+
 	
 	public Notifica inviaNotificaATuttiICorsi(Chef chef, String oggetto, String testo) throws SQLException{
 		String sql = "INSERT INTO notifica (usernamechef, oggetto, testo) " +
