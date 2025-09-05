@@ -15,7 +15,7 @@ import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.TitledBorder;
 import javax.swing.border.BevelBorder;
 
-public class RicetteFrame extends JFrame {
+public class RicetteFrame extends JDialog {
     private Controller theController;
     private SessioneInPresenza sessione;
     private JList<JCheckBox> listRicetteDisponibili;
@@ -23,12 +23,14 @@ public class RicetteFrame extends JFrame {
     private List<Ricetta> tutteLeRicette;
     
     public RicetteFrame(Controller c, SessioneInPresenza sessione) {
+    	setModal(true);
         this.theController = c;
         this.sessione = sessione;
         
         setTitle("Gestione Ricette - Sessione " + sessione.getNumSessione());
         setSize(600, 500);
         setLocationRelativeTo(null);
+        setResizable(false);
         
         initComponents();
         caricaRicette();
