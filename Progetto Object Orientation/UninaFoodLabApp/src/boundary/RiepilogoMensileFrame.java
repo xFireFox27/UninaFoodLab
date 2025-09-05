@@ -80,6 +80,7 @@ public class RiepilogoMensileFrame extends JFrame {
         contentPane.add(headerPanel, BorderLayout.NORTH);
 
         chartsContainer = new JPanel(new BorderLayout());
+        chartsContainer.setSize(new Dimension(550, 530));
         JScrollPane scrollPane = new JScrollPane(chartsContainer);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
