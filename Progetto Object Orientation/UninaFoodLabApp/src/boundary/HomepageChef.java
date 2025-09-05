@@ -1,6 +1,7 @@
 package boundary;
 
 import java.awt.EventQueue;
+import java.awt.Image;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -10,6 +11,7 @@ import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
@@ -36,6 +38,7 @@ public class HomepageChef extends JFrame {
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(53, 132, 228));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		CaricaIcona();
 
 		setContentPane(contentPane);
 		contentPane.setLayout(new MigLayout("", "[50px][grow][][][][][][][][][][][][][][][][][grow][50px]", "[50px][grow][][][][][][][][][][][][][grow][50px]"));
@@ -115,4 +118,27 @@ public class HomepageChef extends JFrame {
     	JOptionPane.showMessageDialog(this, message, "Errore", JOptionPane.ERROR_MESSAGE);
     }
 
+	public void CaricaIcona() {
+	    try {
+	        java.net.URL iconUrl = getClass().getResource("/icona.png");
+	        if (iconUrl != null) {
+	            ImageIcon originalIcon = new ImageIcon(iconUrl);
+	            
+
+	            Image scaledImage = originalIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
+	            ImageIcon icon = new ImageIcon(scaledImage);
+	            
+	            setIconImage(icon.getImage());
+	            
+
+	            repaint();
+	            
+	        } else {
+	            System.err.println("File icona.png non trovato");
+	        }
+	    } catch (Exception e) {
+	        System.err.println("Errore nel caricamento dell'icona: " + e.getMessage());
+	        e.printStackTrace();
+	    }
+	}
 }

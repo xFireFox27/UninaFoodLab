@@ -5,6 +5,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -12,6 +13,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 import javax.swing.AbstractAction;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JComponent;
@@ -52,6 +54,7 @@ public class RiepilogoMensileFrame extends JFrame {
         initializeFrame();
         createComponents();
         loadCurrentMonthData();
+        CaricaIcona();
     }
 
     private void initializeFrame() {
@@ -332,4 +335,28 @@ public class RiepilogoMensileFrame extends JFrame {
     public void showErrorMessage(String message) {
         javax.swing.JOptionPane.showMessageDialog(this, message, "Errore", javax.swing.JOptionPane.ERROR_MESSAGE);
     }
+    
+    public void CaricaIcona() {
+	    try {
+	        java.net.URL iconUrl = getClass().getResource("/icona.png");
+	        if (iconUrl != null) {
+	            ImageIcon originalIcon = new ImageIcon(iconUrl);
+	            
+
+	            Image scaledImage = originalIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
+	            ImageIcon icon = new ImageIcon(scaledImage);
+	            
+	            setIconImage(icon.getImage());
+	            
+
+	            repaint();
+	            
+	        } else {
+	            System.err.println("File icona.png non trovato");
+	        }
+	    } catch (Exception e) {
+	        System.err.println("Errore nel caricamento dell'icona: " + e.getMessage());
+	        e.printStackTrace();
+	    }
+	}
 }

@@ -2,6 +2,7 @@ package boundary;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -14,6 +15,7 @@ import java.awt.event.MouseEvent;
 
 import javax.swing.AbstractAction;
 import javax.swing.DefaultListModel;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JComponent;
@@ -52,6 +54,7 @@ public class CorsiFrame extends JFrame {
         setSize(800, 500);
         setLocationRelativeTo(null);
         setMinimumSize(new Dimension(600, 400));
+        CaricaIcona();
         
         contentPane = new JPanel();
         contentPane.setBackground(new Color(255, 255, 255));
@@ -198,4 +201,28 @@ public class CorsiFrame extends JFrame {
         	}
         });
     }
+    
+    public void CaricaIcona() {
+	    try {
+	        java.net.URL iconUrl = getClass().getResource("/icona.png");
+	        if (iconUrl != null) {
+	            ImageIcon originalIcon = new ImageIcon(iconUrl);
+	            
+
+	            Image scaledImage = originalIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
+	            ImageIcon icon = new ImageIcon(scaledImage);
+	            
+	            setIconImage(icon.getImage());
+	            
+
+	            repaint();
+	            
+	        } else {
+	            System.err.println("File icona.png non trovato");
+	        }
+	    } catch (Exception e) {
+	        System.err.println("Errore nel caricamento dell'icona: " + e.getMessage());
+	        e.printStackTrace();
+	    }
+	}
 }

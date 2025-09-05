@@ -10,6 +10,7 @@ import net.miginfocom.swing.MigLayout;
 import control.Controller;
 import javax.swing.JLabel;
 import java.awt.Font;
+import java.awt.Image;
 import java.awt.Color;
 import javax.swing.SwingConstants;
 import javax.swing.JScrollPane;
@@ -25,6 +26,8 @@ import java.util.List;
 
 import javax.swing.AbstractAction;
 import javax.swing.DefaultListModel;
+import javax.swing.ImageIcon;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextArea;
@@ -54,6 +57,7 @@ public class NotificheFrame extends JFrame {
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 255, 255));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		CaricaIcona();
 
 		setContentPane(contentPane);
 		contentPane.setLayout(new MigLayout("", "[300px:n:1100px,grow][50px][465px:n:1300px,grow]", "[50px][50px][grow][grow][40px]"));
@@ -142,5 +146,28 @@ public class NotificheFrame extends JFrame {
 	    listaDelleNotifiche.clearSelection(); 
 	}
 
+	public void CaricaIcona() {
+	    try {
+	        java.net.URL iconUrl = getClass().getResource("/icona.png");
+	        if (iconUrl != null) {
+	            ImageIcon originalIcon = new ImageIcon(iconUrl);
+	            
+
+	            Image scaledImage = originalIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
+	            ImageIcon icon = new ImageIcon(scaledImage);
+	            
+	            setIconImage(icon.getImage());
+	            
+
+	            repaint();
+	            
+	        } else {
+	            System.err.println("File icona.png non trovato");
+	        }
+	    } catch (Exception e) {
+	        System.err.println("Errore nel caricamento dell'icona: " + e.getMessage());
+	        e.printStackTrace();
+	    }
+	}
 
 }

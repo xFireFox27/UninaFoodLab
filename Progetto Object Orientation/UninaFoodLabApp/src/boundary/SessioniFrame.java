@@ -38,6 +38,7 @@ public class SessioniFrame extends JFrame {
         
         initComponents();
         caricaSessioni();
+        CaricaIcona();
     }
     
     private void initComponents() {
@@ -177,4 +178,27 @@ public class SessioniFrame extends JFrame {
         }
     }
 
+    public void CaricaIcona() {
+	    try {
+	        java.net.URL iconUrl = getClass().getResource("/icona.png");
+	        if (iconUrl != null) {
+	            ImageIcon originalIcon = new ImageIcon(iconUrl);
+	            
+
+	            Image scaledImage = originalIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
+	            ImageIcon icon = new ImageIcon(scaledImage);
+	            
+	            setIconImage(icon.getImage());
+	            
+
+	            repaint();
+	            
+	        } else {
+	            System.err.println("File icona.png non trovato");
+	        }
+	    } catch (Exception e) {
+	        System.err.println("Errore nel caricamento dell'icona: " + e.getMessage());
+	        e.printStackTrace();
+	    }
+	}
 }

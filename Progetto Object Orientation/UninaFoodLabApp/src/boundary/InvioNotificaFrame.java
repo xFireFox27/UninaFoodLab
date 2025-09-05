@@ -2,6 +2,7 @@ package boundary;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
+import java.awt.Image;
 
 import javax.swing.JButton;
 import javax.swing.JDialog;
@@ -19,6 +20,8 @@ import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 import javax.swing.JTextArea;
 import javax.swing.DefaultListCellRenderer;
+import javax.swing.ImageIcon;
+
 import java.awt.Component;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
@@ -56,6 +59,9 @@ public class InvioNotificaFrame extends JDialog {
 		setResizable(false);
 		setSize(500, 400);
 		setLocationRelativeTo(null);
+		CaricaIcona();
+		
+		 // Aggiungi l'azione per il tasto ESC
 		
 		getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(
 	            KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "cancelAction");
@@ -212,5 +218,29 @@ public class InvioNotificaFrame extends JDialog {
 	
 	public void showErrorMessage(String message) {
 		JOptionPane.showMessageDialog(this, message, "Errore in Invio", JOptionPane.ERROR_MESSAGE);
+	}
+	
+	public void CaricaIcona() {
+	    try {
+	        java.net.URL iconUrl = getClass().getResource("/icona.png");
+	        if (iconUrl != null) {
+	            ImageIcon originalIcon = new ImageIcon(iconUrl);
+	            
+
+	            Image scaledImage = originalIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
+	            ImageIcon icon = new ImageIcon(scaledImage);
+	            
+	            setIconImage(icon.getImage());
+	            
+
+	            repaint();
+	            
+	        } else {
+	            System.err.println("File icona.png non trovato");
+	        }
+	    } catch (Exception e) {
+	        System.err.println("Errore nel caricamento dell'icona: " + e.getMessage());
+	        e.printStackTrace();
+	    }
 	}
 }

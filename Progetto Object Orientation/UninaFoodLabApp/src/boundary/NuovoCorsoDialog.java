@@ -1,6 +1,8 @@
 package boundary;
 
 import java.awt.Dialog;
+import java.awt.Image;
+
 import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -8,6 +10,7 @@ import net.miginfocom.swing.MigLayout;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 import javax.swing.AbstractAction;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import control.Controller;
 import javax.swing.JLabel;
@@ -58,6 +61,7 @@ public class NuovoCorsoDialog extends JDialog {
         setLocationRelativeTo(owner);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+        CaricaIcona();
         
         getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(
 	            KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "cancelAction");
@@ -158,5 +162,28 @@ public class NuovoCorsoDialog extends JDialog {
                                         
     }
     
+    public void CaricaIcona() {
+	    try {
+	        java.net.URL iconUrl = getClass().getResource("/icona.png");
+	        if (iconUrl != null) {
+	            ImageIcon originalIcon = new ImageIcon(iconUrl);
+	            
+
+	            Image scaledImage = originalIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
+	            ImageIcon icon = new ImageIcon(scaledImage);
+	            
+	            setIconImage(icon.getImage());
+	            
+
+	            repaint();
+	            
+	        } else {
+	            System.err.println("File icona.png non trovato");
+	        }
+	    } catch (Exception e) {
+	        System.err.println("Errore nel caricamento dell'icona: " + e.getMessage());
+	        e.printStackTrace();
+	    }
+	}
     
 }
