@@ -377,7 +377,17 @@ public class Controller {
 		return corsoDao.getTopic();
 	}
 	
-	public void creaNuovoCorso(String titolo, String frequenza, int numLezioni, int annoFrequenza, String date, String topic, NuovoCorsoDialog nuovoCorsoDialog) {
+	public void creaNuovoCorso(String titolo, String frequenza, String numLezioniStr, String annoFrequenzaStr, String date, String topic, NuovoCorsoDialog nuovoCorsoDialog) {
+		
+		int numLezioni, annoFrequenza;
+		try {
+			numLezioni = Integer.parseInt(numLezioniStr);
+			annoFrequenza = Integer.parseInt(annoFrequenzaStr);
+		} catch (NumberFormatException e) {
+			homepageChef.showErrorMessage("Numero lezioni e anno frequenza devono essere valori numerici.");
+			return;
+		}
+		
 		CorsoDAO corsoDao = new CorsoDAO();
 		TopicDAO topicDao = new TopicDAO(); 
 		Topic topicCorso = topicDao.getTopicByName(topic); 
@@ -391,6 +401,8 @@ public class Controller {
 			} else {
 				homepageChef.showErrorMessage("Errore nella creazione del corso."); 
 			}
+		} catch (IllegalArgumentException e) {
+			homepageChef.showErrorMessage("Formato data non valido. Usare il formato yyyy-mm-dd.");
 		} catch (SQLException e) {
 			String fullMessage = e.getMessage();
 	        String firstLine = fullMessage.split("\n")[0];

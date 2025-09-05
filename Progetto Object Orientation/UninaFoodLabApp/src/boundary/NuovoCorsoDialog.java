@@ -44,7 +44,7 @@ public class NuovoCorsoDialog extends JDialog {
         theController = c;
         setResizable(true);
         setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-        setSize(997, 560);
+        setSize(625, 560);
         setLocationRelativeTo(owner);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -114,7 +114,7 @@ public class NuovoCorsoDialog extends JDialog {
                                         creaCorsoBtn.setBackground(new Color(98, 160, 233));
                                         creaCorsoBtn.addActionListener(new ActionListener() {
                                         	public void actionPerformed(ActionEvent e) {
-                                        		theController.creaNuovoCorso(titoloCorsoTF.getText(), (String) frequenzaCB.getSelectedItem(), Integer.parseInt(numLezioniTF.getText()), Integer.parseInt(annoTF.getText()), dataInizioTF.getText() , (String) topicCB.getSelectedItem(),  NuovoCorsoDialog.this);
+                                        		theController.creaNuovoCorso(titoloCorsoTF.getText(), (String) frequenzaCB.getSelectedItem(), numLezioniTF.getText(), annoTF.getText(), dataInizioTF.getText() , (String) topicCB.getSelectedItem(),  NuovoCorsoDialog.this);
                                         	}
                                         });
                                         contentPane.add(creaCorsoBtn, "flowx,cell 2 7,alignx center,aligny center");
