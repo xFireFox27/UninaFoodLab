@@ -318,7 +318,7 @@ public class RiepilogoMensileFrame extends JFrame {
         JButton btnTornaIndietro = new JButton("Torna alla Homepage");
         btnTornaIndietro.setOpaque(true);
         btnTornaIndietro.setForeground(Color.WHITE);
-        btnTornaIndietro.setBackground(new Color(98, 160, 234));
+        btnTornaIndietro.setBackground(new Color(26, 95, 180));
         btnTornaIndietro.setFont(new Font("Arial", Font.BOLD, 14));
         
         btnTornaIndietro.addActionListener(new ActionListener() {

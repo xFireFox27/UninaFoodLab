@@ -58,9 +58,9 @@ public class CorsiFrame extends JFrame {
         
         contentPane = new JPanel();
         contentPane.setBackground(new Color(255, 255, 255));
-        contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+        contentPane.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
         setContentPane(contentPane);
-        contentPane.setLayout(new MigLayout("", "[grow]", "[50px][grow][40px]"));
+        contentPane.setLayout(new MigLayout("", "[grow]", "[50px][grow][::40px,grow]"));
 
         JLabel titleLabel = new JLabel("I Miei Corsi");
         titleLabel.setForeground(new Color(26, 95, 180));
@@ -110,14 +110,14 @@ public class CorsiFrame extends JFrame {
         JButton btnTorna = new JButton("Torna alla Homepage");
         btnTorna.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
         btnTorna.setOpaque(true);
-        btnTorna.setBackground(new Color(98, 160, 234));
+        btnTorna.setBackground(new Color(26, 95, 180));
         btnTorna.setForeground(new Color(255, 255, 255));
         btnTorna.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 theController.TornaHomepageFromCorsi();
             }
         });
-        contentPane.add(btnTorna, "cell 0 2,alignx left");
+        contentPane.add(btnTorna, "cell 0 2,alignx left,growy");
         
         caricaCorsi();
         setupListSelection();
