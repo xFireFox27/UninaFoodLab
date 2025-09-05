@@ -3,6 +3,10 @@ package boundary;
 import java.awt.Dimension;
 import java.awt.EventQueue;
 
+import java.awt.Image;
+
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -23,6 +27,8 @@ import control.Controller;
 
 import javax.swing.border.BevelBorder;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
 import java.awt.event.ActionEvent;
 import net.miginfocom.swing.MigLayout;
 
@@ -45,6 +51,7 @@ public class LoginFrame extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(689, 472);
 		setLocationRelativeTo(null);
+		CaricaIcona();
 		setMinimumSize(new Dimension(689, 472));
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 255, 255));
@@ -136,4 +143,31 @@ public class LoginFrame extends JFrame {
 		JOptionPane.showMessageDialog(this, message, "Login Error", JOptionPane.ERROR_MESSAGE);
 	}
 	
+	public void CaricaIcona() {
+	    try {
+	        java.net.URL iconUrl = getClass().getResource("/icona.png");
+	        if (iconUrl != null) {
+	            ImageIcon originalIcon = new ImageIcon(iconUrl);
+	            
+	            // Ridimensiona l'icona se necessario (16x16, 32x32 sono dimensioni standard)
+	            Image scaledImage = originalIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
+	            ImageIcon icon = new ImageIcon(scaledImage);
+	            
+	            setIconImage(icon.getImage());
+	            
+	            // Forza l'aggiornamento della finestra
+	            repaint();
+	            
+	            System.out.println("Icona caricata correttamente");
+	        } else {
+	            System.err.println("File icona.png non trovato");
+	        }
+	    } catch (Exception e) {
+	        System.err.println("Errore nel caricamento dell'icona: " + e.getMessage());
+	        e.printStackTrace();
+	    }
+	}
+
+
+
 }
