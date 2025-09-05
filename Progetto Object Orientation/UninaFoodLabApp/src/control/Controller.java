@@ -388,9 +388,19 @@ public class Controller {
 			return;
 		}
 		
+		if (numLezioni < 1 || numLezioni > 100) {
+			homepageChef.showErrorMessage("Il numero di lezioni deve essere compreso tra 1 e 100.");
+			return;
+		}
+		
 		CorsoDAO corsoDao = new CorsoDAO();
 		TopicDAO topicDao = new TopicDAO(); 
 		Topic topicCorso = topicDao.getTopicByName(topic); 
+		
+		if (topicCorso == null) {
+			homepageChef.showErrorMessage("Nessun topic selezionato.");
+			return;
+		}
 		
 		try {
 			Date sqlDate = new Date(0);  
@@ -409,6 +419,7 @@ public class Controller {
 	        homepageChef.showErrorMessage(firstLine);
 		}
 	}
+
 	
 	public void tornaHomepageFromCreaCorso(NuovoCorsoDialog nuovoCorsoDialog) {
 		nuovoCorsoDialog.setVisible(false);
