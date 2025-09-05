@@ -53,7 +53,6 @@ public class NotificheFrame extends JFrame {
 		setResizable(true);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(900, 600);
-		setMinimumSize(new Dimension(900, 600));
 		setLocationRelativeTo(null);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 255, 255));
@@ -74,6 +73,7 @@ public class NotificheFrame extends JFrame {
 		
 		JTextArea txtTestoNotifiche = new JTextArea();
 		txtTestoNotifiche.setLineWrap(true);
+		txtTestoNotifiche.setWrapStyleWord(true);
 		txtTestoNotifiche.setEditable(false);
 		scrollPaneTesto.setViewportView(txtTestoNotifiche);
 		txtTestoNotifiche.setText("Il testo della notifica selezionata apparirà qui");
@@ -83,7 +83,7 @@ public class NotificheFrame extends JFrame {
 		btnTornaAllaHome.setOpaque(true);
 		btnTornaAllaHome.setForeground(Color.WHITE);
 		btnTornaAllaHome.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		btnTornaAllaHome.setBackground(new Color(26, 95, 180));
+		btnTornaAllaHome.setBackground(new Color(98, 160, 234));
 		btnTornaAllaHome.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				theController.TornaHomepageFromNotifiche();
@@ -135,10 +135,12 @@ public class NotificheFrame extends JFrame {
 		
 	}
 	
+	// Metodo per mostrare un messaggio d'errore
 	public void showErrorMessage(String message) {
 		JOptionPane.showMessageDialog(this, message, "Errore di connessione", JOptionPane.ERROR_MESSAGE);
 	}
 	
+	//Metodo per aggiornare la lista delle notifiche
 	public void refreshListaNotifiche(List<Notifica> notifiche, DefaultListModel<String> listModel) {
 	    this.notifiche = notifiche; 
 	    Collections.reverse(this.notifiche); // Per mantenere l'ordine con la notifica più recente in cima

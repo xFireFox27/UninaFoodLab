@@ -157,6 +157,8 @@ public class InvioNotificaFrame extends JDialog {
 		}
 		{
 			contentPanel.add(textAreaMessaggio, "cell 1 6 1 4,grow");
+			   textAreaMessaggio.setLineWrap(true);
+			   textAreaMessaggio.setWrapStyleWord(true);
 		}
 		{
 			JPanel buttonPane = new JPanel();
