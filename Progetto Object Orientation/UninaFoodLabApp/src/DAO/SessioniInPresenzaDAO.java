@@ -96,6 +96,6 @@ public class SessioniInPresenzaDAO implements SessioniInPresenzaDaoInterface {
 	    }
 	}
 
-	
+
 
 }
