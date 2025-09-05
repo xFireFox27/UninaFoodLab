@@ -52,11 +52,6 @@ public class SessioniFrame extends JFrame {
         TitledBorder borderPresenza = BorderFactory.createTitledBorder("Sessioni in Presenza");
         borderPresenza.setTitleColor(new Color(98, 160, 233));
         panelPresenza.setBorder(borderPresenza);
-
-        JLabel lblPresenza = new JLabel("Sessioni Pratiche in Aula");
-        lblPresenza.setForeground(new Color(26, 95, 180));
-        lblPresenza.setFont(lblPresenza.getFont().deriveFont(Font.BOLD, 14f));
-        panelPresenza.add(lblPresenza, "cell 0 0,alignx center");
         
         listModelPresenza = new DefaultListModel<>();
         listSessioniPresenza = new JList<>(listModelPresenza);
@@ -83,11 +78,6 @@ public class SessioniFrame extends JFrame {
         TitledBorder borderOnline = BorderFactory.createTitledBorder("Sessioni Online");
         borderOnline.setTitleColor(new Color(98, 160, 233));
         panelOnline.setBorder(borderOnline);
-
-        JLabel lblOnline = new JLabel("Sessioni Online");
-        lblOnline.setForeground(new Color(26, 95, 180));
-        lblOnline.setFont(lblOnline.getFont().deriveFont(Font.BOLD, 14f));
-        panelOnline.add(lblOnline, "cell 0 0,alignx center");
         
         listModelOnline = new DefaultListModel<>();
         listSessioniOnline = new JList<>(listModelOnline);
