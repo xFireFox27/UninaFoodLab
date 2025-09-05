@@ -52,11 +52,6 @@ public class SessioniFrame extends JFrame {
         TitledBorder borderPresenza = BorderFactory.createTitledBorder("Sessioni in Presenza");
         borderPresenza.setTitleColor(new Color(98, 160, 233));
         panelPresenza.setBorder(borderPresenza);
-
-        JLabel lblPresenza = new JLabel("Sessioni Pratiche in Aula");
-        lblPresenza.setForeground(new Color(26, 95, 180));
-        lblPresenza.setFont(lblPresenza.getFont().deriveFont(Font.BOLD, 14f));
-        panelPresenza.add(lblPresenza, "cell 0 0,alignx center");
         
         listModelPresenza = new DefaultListModel<>();
         listSessioniPresenza = new JList<>(listModelPresenza);
@@ -83,11 +78,6 @@ public class SessioniFrame extends JFrame {
         TitledBorder borderOnline = BorderFactory.createTitledBorder("Sessioni Online");
         borderOnline.setTitleColor(new Color(98, 160, 233));
         panelOnline.setBorder(borderOnline);
-
-        JLabel lblOnline = new JLabel("Sessioni Online");
-        lblOnline.setForeground(new Color(26, 95, 180));
-        lblOnline.setFont(lblOnline.getFont().deriveFont(Font.BOLD, 14f));
-        panelOnline.add(lblOnline, "cell 0 0,alignx center");
         
         listModelOnline = new DefaultListModel<>();
         listSessioniOnline = new JList<>(listModelOnline);
@@ -114,16 +104,18 @@ public class SessioniFrame extends JFrame {
         btnTorna.setBackground(new Color(26, 95, 180));
         btnTorna.setForeground(new Color(248, 248, 255));
         btnTorna.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
+        btnTorna.setMaximumSize(new Dimension(150, 30));
         btnTorna.addActionListener(e -> theController.TornaCorsiFromSessioni());
-        getContentPane().add(btnTorna, "cell 0 2,alignx left");
+        getContentPane().add(btnTorna, "cell 0 2,alignx center");
         
         // Pulsante per inserire nuova sessione
         JButton btnNuovaSessione = new JButton("Nuova Sessione");
         btnNuovaSessione.setBackground(new Color(98, 160, 233));
         btnNuovaSessione.setForeground(new Color(248, 248, 255));
         btnNuovaSessione.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
+        btnNuovaSessione.setMaximumSize(new Dimension(150, 30));
         btnNuovaSessione.addActionListener(e -> theController.ApriInserimentoSessione(corso));
-        getContentPane().add(btnNuovaSessione, "cell 1 2,alignx right");
+        getContentPane().add(btnNuovaSessione, "cell 1 2,alignx center");
         
         // Si torna alla finestra precedente premendo ESC
         getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW)

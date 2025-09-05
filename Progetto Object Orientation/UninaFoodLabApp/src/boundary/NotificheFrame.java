@@ -32,6 +32,7 @@ import javax.swing.KeyStroke;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.event.ListSelectionEvent;
 import java.awt.Dimension;
+import java.util.Collections;
 
 public class NotificheFrame extends JFrame {
 
@@ -88,9 +89,9 @@ public class NotificheFrame extends JFrame {
 		contentPane.add(scrollNotifiche, "cell 0 1 1 3,grow");
 		
 		notifiche = theController.getNotificheChef();
+		Collections.reverse(notifiche);// Serve ad invertire l'ordine di rappresentazione delle notifiche (la più recente in cima)
 		
 		DefaultListModel<String> listModel = new DefaultListModel<>();
-		
 		listModel = theController.inizializzaListaNotifiche(notifiche, listModel);
 		
 		listaDelleNotifiche = new JList<>(listModel);
@@ -135,6 +136,7 @@ public class NotificheFrame extends JFrame {
 	
 	public void refreshListaNotifiche(List<Notifica> notifiche, DefaultListModel<String> listModel) {
 	    this.notifiche = notifiche; 
+	    Collections.reverse(this.notifiche); // Per mantenere l'ordine con la notifica più recente in cima
 	    listModel = theController.inizializzaListaNotifiche(notifiche, listModel);
 	    listaDelleNotifiche.setModel(listModel);
 	    listaDelleNotifiche.clearSelection(); 
