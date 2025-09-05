@@ -1,6 +1,7 @@
 package boundary;
 
 import java.awt.EventQueue;
+import java.awt.Graphics;
 import java.awt.Image;
 
 import javax.swing.JFrame;
@@ -25,6 +26,7 @@ public class HomepageChef extends JFrame {
 	private JPanel contentPane;
 	Controller theController;
 	private JLabel titleLabel;
+	private JLabel logoLabel;
 	
 	
 	public HomepageChef(Controller c) {
@@ -35,8 +37,31 @@ public class HomepageChef extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(900, 600);
 		setLocationRelativeTo(null);
-		contentPane = new JPanel();
-		contentPane.setBackground(new Color(53, 132, 228));
+		
+		// ContentPane personalizzato con immagine di sfondo
+		contentPane = new JPanel() {
+		    private ImageIcon backgroundImage;
+
+		    {
+		        try {
+		            java.net.URL imageUrl = getClass().getResource("/home.png");
+		            if (imageUrl != null) {
+		                backgroundImage = new ImageIcon(imageUrl);
+		            }
+		        } catch (Exception e) {
+		            System.err.println("Errore nel caricamento dell'immagine di sfondo: " + e.getMessage());
+		        }
+		    }
+
+		    @Override
+		    protected void paintComponent(Graphics g) {
+		        super.paintComponent(g);
+		        if (backgroundImage != null) {
+		            g.drawImage(backgroundImage.getImage(), 0, 0, getWidth(), getHeight(), this);
+		        }
+		    }
+		};
+		
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		CaricaIcona();
 
@@ -44,15 +69,34 @@ public class HomepageChef extends JFrame {
 		contentPane.setLayout(new MigLayout("", "[50px][grow][][][][][][][][][][][][][][][][][grow][50px]", "[50px][grow][][][][][][][][][][][][][grow][50px]"));
 		
 		JPanel panel = new JPanel();
-		panel.setBackground(new Color(255, 255, 255));
+		panel.setOpaque(false);
 		contentPane.add(panel, "cell 1 1 18 14,grow");
-		panel.setLayout(new MigLayout("", "[grow][150px][150px][150px][grow]", "[50px][grow][20px][40px][20px][40px][20px][grow][50px]"));
+		panel.setLayout(new MigLayout("", "[grow][150px][150px][150px][grow]", "[30px][][50px][][][grow][20px][40px][20px][40px][20px][grow][50px]"));
+		
+		// Label per il logo
+		logoLabel = new JLabel();
+		logoLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		logoLabel.setOpaque(true);
+		logoLabel.setBackground(new Color(255, 255, 255, 200));
+		try {
+		    java.net.URL logoUrl = getClass().getResource("/logo.png");
+		    if (logoUrl != null) {
+		        ImageIcon originalLogo = new ImageIcon(logoUrl);
+		        Image scaledLogo = originalLogo.getImage().getScaledInstance(400, 250, Image.SCALE_SMOOTH);
+		        logoLabel.setIcon(new ImageIcon(scaledLogo));
+		    }
+		} catch (Exception e) {
+		    System.err.println("Errore nel caricamento del logo: " + e.getMessage());
+		}
+		panel.add(logoLabel, "cell 1 1 3 2,grow");
 		
 		titleLabel = new JLabel("Benvenuto " + theController.getNomeChefCorrente() + "!");
 		titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		titleLabel.setForeground(new Color(26, 95, 180));
+		titleLabel.setForeground(new Color(32, 71, 112));
 		titleLabel.setFont(titleLabel.getFont().deriveFont(24f));
-		panel.add(titleLabel, "cell 1 1 3 1,grow");
+		titleLabel.setOpaque(true);
+		titleLabel.setBackground(new Color(255, 255, 255, 200));
+		panel.add(titleLabel, "cell 1 5 3 1,grow");
 
 		
 		JButton btnNuovoCorso = new JButton("Crea Nuovo Corso");
@@ -65,7 +109,7 @@ public class HomepageChef extends JFrame {
 				theController.apriNuovoCorsoDialog();
 			}
 		});
-		panel.add(btnNuovoCorso, "cell 1 3,grow");
+		panel.add(btnNuovoCorso, "cell 1 7,grow");
 		
 		JButton btnVisualizzaCorsi = new JButton("Visualizza Corsi");
 		btnVisualizzaCorsi.setOpaque(true);
@@ -77,7 +121,7 @@ public class HomepageChef extends JFrame {
 				theController.ApriListaCorsi();
 			}
 		});
-		panel.add(btnVisualizzaCorsi, "cell 2 3,grow");
+		panel.add(btnVisualizzaCorsi, "cell 2 7,grow");
 		
 		JButton btnNotifiche = new JButton("Notifiche");
 		btnNotifiche.addActionListener(new ActionListener() {
@@ -89,7 +133,7 @@ public class HomepageChef extends JFrame {
 		btnNotifiche.setForeground(Color.WHITE);
 		btnNotifiche.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		btnNotifiche.setBackground(new Color(98, 160, 234));
-		panel.add(btnNotifiche, "cell 3 3,grow");
+		panel.add(btnNotifiche, "cell 3 7,grow");
 		
 		JButton btnRiepilogoMensile = new JButton("Riepilogo Mensile");
 		btnRiepilogoMensile.setOpaque(true);
@@ -101,7 +145,7 @@ public class HomepageChef extends JFrame {
 		        theController.ApriRiepilogoMensile();
 		    }
 		});
-		panel.add(btnRiepilogoMensile, "cell 1 5 3 1,grow");
+		panel.add(btnRiepilogoMensile, "cell 1 9 3 1,grow");
 		
 		// Chiudi la finestra premendo ESC
 		contentPane.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(
@@ -124,13 +168,11 @@ public class HomepageChef extends JFrame {
 	        if (iconUrl != null) {
 	            ImageIcon originalIcon = new ImageIcon(iconUrl);
 	            
-
 	            Image scaledImage = originalIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
 	            ImageIcon icon = new ImageIcon(scaledImage);
 	            
 	            setIconImage(icon.getImage());
 	            
-
 	            repaint();
 	            
 	        } else {

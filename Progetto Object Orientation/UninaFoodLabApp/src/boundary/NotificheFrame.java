@@ -82,7 +82,7 @@ public class NotificheFrame extends JFrame {
 		btnTornaAllaHome.setOpaque(true);
 		btnTornaAllaHome.setForeground(Color.WHITE);
 		btnTornaAllaHome.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		btnTornaAllaHome.setBackground(new Color(98, 160, 234));
+		btnTornaAllaHome.setBackground(new Color(26, 95, 180));
 		btnTornaAllaHome.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				theController.TornaHomepageFromNotifiche();

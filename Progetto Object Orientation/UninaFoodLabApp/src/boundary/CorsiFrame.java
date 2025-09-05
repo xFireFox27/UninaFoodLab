@@ -110,7 +110,7 @@ public class CorsiFrame extends JFrame {
         JButton btnTorna = new JButton("Torna alla Homepage");
         btnTorna.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
         btnTorna.setOpaque(true);
-        btnTorna.setBackground(new Color(98, 160, 234));
+        btnTorna.setBackground(new Color(26, 95, 180));
         btnTorna.setForeground(new Color(255, 255, 255));
         btnTorna.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
