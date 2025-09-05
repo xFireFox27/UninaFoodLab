@@ -9,6 +9,8 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import net.miginfocom.swing.MigLayout;
 import java.awt.Color;
+import java.awt.Dimension;
+
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
@@ -36,6 +38,7 @@ public class HomepageChef extends JFrame {
 		setTitle("Homepage Chef");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setSize(900, 600);
+		setMinimumSize(new Dimension(900, 600));
 		setLocationRelativeTo(null);
 		
 		// ContentPane personalizzato con immagine di sfondo

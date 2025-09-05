@@ -61,6 +61,7 @@ public class RiepilogoMensileFrame extends JFrame {
         setTitle("Riepilogo Mensile - " + controller.getNomeChefCorrente());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(1200, 800);
+        setMinimumSize(new Dimension(800, 600));
         setLocationRelativeTo(null);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(10, 10, 10, 10));

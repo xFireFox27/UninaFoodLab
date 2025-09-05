@@ -34,6 +34,7 @@ public class SessioniFrame extends JFrame {
         
         setTitle("Gestione Sessioni - " + corso.getTitolo());
         setSize(1000, 700);
+        setMinimumSize(new Dimension(800, 600));
         setLocationRelativeTo(null);
         
         initComponents();
