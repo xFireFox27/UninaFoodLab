@@ -11,12 +11,17 @@ import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import control.Controller;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JComboBox;
 import javax.swing.JComponent;
+import javax.swing.JFormattedTextField;
 
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.awt.event.ActionEvent;
 import java.awt.SystemColor;
 import java.awt.Color;
@@ -29,15 +34,15 @@ public class NuovoCorsoDialog extends JDialog {
     private JTextField titoloCorsoTF;
     private JTextField numLezioniTF;
     private JTextField annoTF;
-    private JTextField dataInizioTF;
+    private JFormattedTextField dataInizioTF;
     private JLabel titoloCorsoLbl;
     private JLabel frequenzaCorsoLbl;
     private JLabel numLezioniLbl;
     private JLabel annoLbl;
     private JLabel dataInizioLbl;
     private JLabel topicLbl;
-    private JComboBox topicCB;
-    private JComboBox frequenzaCB;
+    private JComboBox<String> topicCB;
+    private JComboBox<String> frequenzaCB;
     private JButton annullaBtn;
     private JButton creaCorsoBtn;
 
@@ -77,7 +82,7 @@ public class NuovoCorsoDialog extends JDialog {
                 frequenzaCorsoLbl = new JLabel("Frequenza:");
                 contentPane.add(frequenzaCorsoLbl, "cell 1 2,alignx trailing");
                 
-                frequenzaCB = new JComboBox();
+                frequenzaCB = new JComboBox<>();
                 frequenzaCB.addItem("Ogni giorno");
                 frequenzaCB.addItem("Ogni due giorni");
                 frequenzaCB.addItem("Ogni tre giorni");
@@ -101,11 +106,14 @@ public class NuovoCorsoDialog extends JDialog {
                 dataInizioLbl = new JLabel("Data di inizio:");
                 contentPane.add(dataInizioLbl, "cell 1 5,alignx right");
 
-        dataInizioTF = new JTextField();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        dateFormat.setLenient(false);
+        dataInizioTF = new JFormattedTextField(dateFormat);
+        dataInizioTF.setToolTipText("Formato: dd/MM/yyyy");
         contentPane.add(dataInizioTF, "cell 2 5,growx");
         dataInizioTF.setColumns(10);
 
-        topicCB = new JComboBox();
+        topicCB = new JComboBox<>();
         ArrayList<String> topic = theController.getTopicFromDB();
         for (String t : topic) {
 			topicCB.addItem(t);
@@ -129,7 +137,18 @@ public class NuovoCorsoDialog extends JDialog {
                                         creaCorsoBtn.setBackground(new Color(98, 160, 233));
                                         creaCorsoBtn.addActionListener(new ActionListener() {
                                         	public void actionPerformed(ActionEvent e) {
-                                        		theController.creaNuovoCorso(titoloCorsoTF.getText(), (String) frequenzaCB.getSelectedItem(), numLezioniTF.getText(), annoTF.getText(), dataInizioTF.getText() , (String) topicCB.getSelectedItem(),  NuovoCorsoDialog.this);
+                                        		try {
+                                                    dataInizioTF.commitEdit();
+                                                    String dataInizioSQL = "";
+                                                    Date dataInizio = (Date) dataInizioTF.getValue();
+                                                    if (dataInizio != null) {
+                                                        SimpleDateFormat sqlSdf = new SimpleDateFormat("yyyy-MM-dd");
+                                                        dataInizioSQL = sqlSdf.format(dataInizio);
+                                                    }
+                                                    theController.creaNuovoCorso(titoloCorsoTF.getText(), (String) frequenzaCB.getSelectedItem(), numLezioniTF.getText(), annoTF.getText(), dataInizioSQL , (String) topicCB.getSelectedItem(),  NuovoCorsoDialog.this);
+                                                } catch (ParseException ex) {
+                                                    JOptionPane.showMessageDialog(NuovoCorsoDialog.this, "Formato data non valido. Usare il formato gg/mm/aaaa.", "Errore di Formato", JOptionPane.ERROR_MESSAGE);
+                                                }
                                         	}
                                         });
                                         contentPane.add(creaCorsoBtn, "flowx,cell 2 7,alignx center,aligny center");
