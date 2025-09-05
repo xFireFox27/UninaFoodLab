@@ -58,7 +58,7 @@ public class InvioNotificaFrame extends JDialog {
 		theController = c;
 		setVisible(false);
 		setResizable(false);
-		setSize(500, 400);
+		setSize(600, 500);
 		setLocationRelativeTo(null);
 		CaricaIcona();
 		
