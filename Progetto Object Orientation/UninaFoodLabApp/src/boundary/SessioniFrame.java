@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.List;
 import java.util.stream.Collectors;
 import control.Controller;
@@ -58,14 +60,16 @@ public class SessioniFrame extends JFrame {
         listSessioniPresenza.setForeground(new Color(26, 95, 180));
         listSessioniPresenza.setPreferredSize(new Dimension(450, 500));
         listSessioniPresenza.setVisibleRowCount(-1);
-        listSessioniPresenza.addListSelectionListener(e -> {
-            if (!e.getValueIsAdjusting()) {
+        listSessioniPresenza.addMouseListener(new MouseAdapter(){
+        	public void mouseClicked(MouseEvent e) {
+            if (e.getClickCount() == 2) {
                 int selectedIndex = listSessioniPresenza.getSelectedIndex();
                 if (selectedIndex >= 0 && sessioniPresenza != null && selectedIndex < sessioniPresenza.size()) {
                     SessioneInPresenza sessioneSelezionata = sessioniPresenza.get(selectedIndex);
                     theController.ApriGestioneRicette(sessioneSelezionata);
                 }
             }
+        	}
         });
         
         JScrollPane scrollPresenza = new JScrollPane(listSessioniPresenza);

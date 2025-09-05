@@ -269,7 +269,6 @@ public class Controller {
 	}
 	
 	public void ApriGestioneRicette(SessioneInPresenza sessione) {
-	    sessioniFrame.setVisible(false);
 	    ricetteFrame = new RicetteFrame(this, sessione);
 	    ricetteFrame.setVisible(true);
 	}
