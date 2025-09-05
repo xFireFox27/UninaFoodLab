@@ -402,7 +402,7 @@ public class Controller {
 				homepageChef.showErrorMessage("Errore nella creazione del corso."); 
 			}
 		} catch (IllegalArgumentException e) {
-			homepageChef.showErrorMessage("Formato data non valido. Usare il formato yyyy-mm-dd.");
+			homepageChef.showErrorMessage("Formato data non valido. Usare il formato yyyy-MM-dd.");
 		} catch (SQLException e) {
 			String fullMessage = e.getMessage();
 	        String firstLine = fullMessage.split("\n")[0];

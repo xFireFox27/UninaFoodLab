@@ -60,7 +60,7 @@ public class NuovoCorsoDialog extends JDialog {
 	            private static final long serialVersionUID = 1L;
 	            @Override
 	            public void actionPerformed(ActionEvent e) {
-	                dispose();
+	                theController.tornaHomepageFromCreaCorso(NuovoCorsoDialog.this);
 	            }
 	        });
 
@@ -134,6 +134,8 @@ public class NuovoCorsoDialog extends JDialog {
                                         });
                                         contentPane.add(creaCorsoBtn, "flowx,cell 2 7,alignx center,aligny center");
                                 contentPane.add(annullaBtn, "cell 2 7,alignx center,aligny center");
+                                
+        getRootPane().setDefaultButton(creaCorsoBtn);
                                         
     }
     

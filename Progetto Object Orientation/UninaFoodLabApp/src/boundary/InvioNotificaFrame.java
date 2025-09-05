@@ -166,26 +166,7 @@ public class InvioNotificaFrame extends JDialog {
 				getRootPane().setDefaultButton(btnInvia);
 				btnInvia.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						String oggetto = fieldOggetto.getText();
-						String testo = textAreaMessaggio.getText();
-						if(oggetto.isEmpty() || testo.isEmpty()) {
-							showErrorMessage("Compilare tutti i campi");
-						}
-						else {
-							if(selezioneCorsiGroup.getSelection().getActionCommand() == "Tutti i Corsi") {
-								theController.inviaNotificaTuttiCorsi(oggetto, testo);
-								
-							}
-							else {
-								Corso corsoSelezionato = (Corso) cbSelezioneCorso.getSelectedItem();
-								if(corsoSelezionato == null) {
-									showErrorMessage("Selezionare un corso");
-								}
-								else {
-									theController.inviaNotificaUnCorso(oggetto, testo, corsoSelezionato);
-								}
-							}
-						}
+						inviaNotifica();
 					}
 				});
 			}
@@ -201,6 +182,30 @@ public class InvioNotificaFrame extends JDialog {
 						dispose();
 					}
 				});
+			}
+		}
+	}
+	
+	private void inviaNotifica() {
+		String oggetto = fieldOggetto.getText();
+		String testo = textAreaMessaggio.getText();
+		if(oggetto.isEmpty() || testo.isEmpty()) {
+			showErrorMessage("Compilare tutti i campi");
+		}
+		else {
+			// L'action command di un JRadioButton è il suo testo di default
+			if("Tutti i Corsi".equals(selezioneCorsiGroup.getSelection().getActionCommand())) {
+				theController.inviaNotificaTuttiCorsi(oggetto, testo);
+				
+			}
+			else {
+				Corso corsoSelezionato = (Corso) cbSelezioneCorso.getSelectedItem();
+				if(corsoSelezionato == null) {
+					showErrorMessage("Selezionare un corso");
+				}
+				else {
+					theController.inviaNotificaUnCorso(oggetto, testo, corsoSelezionato);
+				}
 			}
 		}
 	}

@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 import java.util.List;
 import java.util.ArrayList;
 import control.Controller;
@@ -114,15 +115,19 @@ public class RicetteFrame extends JFrame {
         
         getContentPane().add(panelPulsanti, "cell 0 2,grow");
         
+        // Imposta il pulsante Salva come predefinito per il tasto Invio
+        getRootPane().setDefaultButton(btnSalva);
+        
         // Chiudi la finestra premendo ESC
-        getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW)
-        .put(KeyStroke.getKeyStroke("ESCAPE"), "ESCAPE");
-    getRootPane().getActionMap().put("ESCAPE", new AbstractAction() {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            theController.TornaSessioniFromRicette();
-        }
-    });
+        getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(
+            KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "cancelAction");
+        getRootPane().getActionMap().put("cancelAction", new AbstractAction() {
+            private static final long serialVersionUID = 1L;
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                theController.TornaSessioniFromRicette();
+            }
+        });
     }
     
     private void caricaRicette() {
@@ -194,6 +199,4 @@ public class RicetteFrame extends JFrame {
                 JOptionPane.ERROR_MESSAGE);
         }
     }
-
-
 }

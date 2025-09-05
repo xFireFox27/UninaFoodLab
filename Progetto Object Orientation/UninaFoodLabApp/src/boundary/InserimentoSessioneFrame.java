@@ -66,6 +66,7 @@ public class InserimentoSessioneFrame extends JDialog {
 	            @Override
 	            public void actionPerformed(ActionEvent e) {
 	                dispose();
+	                theController.TornaSessioniFromInserimento();
 	            }
 	        });
     	
@@ -168,6 +169,7 @@ public class InserimentoSessioneFrame extends JDialog {
         btnSalva.setPreferredSize(new Dimension(80, 25));
         btnSalva.addActionListener(e -> salvaSessione());
         buttonPane.add(btnSalva);
+        getRootPane().setDefaultButton(btnSalva);
 
         JButton btnAnnulla = new JButton("Annulla");
         btnAnnulla.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
