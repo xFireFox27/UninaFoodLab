@@ -384,7 +384,7 @@ public class Controller {
 			numLezioni = Integer.parseInt(numLezioniStr);
 			annoFrequenza = Integer.parseInt(annoFrequenzaStr);
 		} catch (NumberFormatException e) {
-			homepageChef.showErrorMessage("Numero lezioni e anno frequenza devono essere valori numerici.");
+			homepageChef.showErrorMessage("Il numero di lezioni e l'anno devono essere valori numerici.");
 			return;
 		}
 		
