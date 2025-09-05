@@ -4,9 +4,13 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseEvent;
 
 import javax.swing.AbstractAction;
 import javax.swing.DefaultListModel;
@@ -182,16 +186,16 @@ public class CorsiFrame extends JFrame {
     
     
     private void setupListSelection() {
-        listCorsi.addListSelectionListener(e -> {
-            if (!e.getValueIsAdjusting()) {
-                int selectedIndex = listCorsi.getSelectedIndex();
-                if (selectedIndex >= 0 && tuttiICorsi != null && selectedIndex < tuttiICorsi.size()) {
-                    Corso corsoSelezionato = tuttiICorsi.get(selectedIndex);
-                    theController.ApriGestioneSessioni(corsoSelezionato);
-                }
-            }
+        listCorsi.addMouseListener(new MouseAdapter() {
+        	public void mouseClicked(MouseEvent e) {
+        		if (e.getClickCount() == 2 ) {
+        			int selectedIndex = listCorsi.getSelectedIndex();
+        			if (selectedIndex >= 0 && tuttiICorsi != null && selectedIndex < tuttiICorsi.size()) {
+        				Corso corsoSelezionato = tuttiICorsi.get(selectedIndex);
+        				theController.ApriGestioneSessioni(corsoSelezionato);
+        			}
+        		}
+        	}
         });
     }
-
-
 }

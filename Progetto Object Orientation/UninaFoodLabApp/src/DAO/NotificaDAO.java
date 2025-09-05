@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import dbConnection.DB;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Collections;
 import entity.Notifica;
 import entity.Chef;
 import entity.Corso;
@@ -47,31 +48,8 @@ public class NotificaDAO implements NotificaDaoInterface{
 			
 			int insertRows = st.executeUpdate();
 			if(insertRows > 0) {
-		        long idNotifica;
-		        try (ResultSet rs = st.getGeneratedKeys()) {
-		            rs.next();
-		            idNotifica = rs.getLong(1);
-		        }
 				Notifica notifica = new Notifica(chef, oggetto, testo, new Timestamp(System.currentTimeMillis()));
-				String sql2 = "INSERT INTO riceve (idnotifica, usernameutente) " +
-					      "SELECT n.idnotifica, i.usernameutente FROM notifica AS n " +
-						  "JOIN corso AS c ON c.usernamechef = n.usernamechef "+
-					      "JOIN iscrizione AS i ON i.idcorso = c.idcorso " +
-						  "WHERE n.idnotifica = ? AND c.titolo = ? AND c.anno = ? AND c.usernamechef = ?";
-				try(PreparedStatement st2 = connection.prepareStatement(sql2)){
-					st2.setLong(1, idNotifica);
-					st2.setString(2, corso.getTitolo());
-					st2.setInt(3, corso.getAnnoFrequenza());
-					st2.setString(4, chef.getUsername());
-					
-					int insertRows2 = st2.executeUpdate();
-					if(insertRows2 > 0) {
-						return notifica;
-					}
-					else {
-						return null;
-					}
-				}
+				return notifica;
 			}
 			else {
 				return null;
@@ -91,29 +69,8 @@ public class NotificaDAO implements NotificaDaoInterface{
 		
 		int insertRows = st.executeUpdate();
 		if(insertRows > 0) {
-	        long idNotifica;
-	        try (ResultSet rs = st.getGeneratedKeys()) {
-	            rs.next();
-	            idNotifica = rs.getLong(1);
-	        }
 			Notifica notifica = new Notifica(chef, oggetto, testo, new Timestamp(System.currentTimeMillis()));
-			String sql2 = "INSERT INTO riceve (idnotifica, usernameutente) " +
-				      "SELECT n.idnotifica, i.usernameutente FROM notifica AS n " +
-					  "JOIN corso AS c ON c.usernamechef = n.usernamechef "+
-				      "JOIN iscrizione AS i ON i.idcorso = c.idcorso " +
-					  "WHERE n.idnotifica = ? AND c.usernamechef = ?";
-			try(PreparedStatement st2 = connection.prepareStatement(sql2)){
-				st2.setLong(1, idNotifica);
-				st2.setString(2, chef.getUsername());
-				
-				int insertRows2 = st2.executeUpdate();
-				if(insertRows2 > 0) {
-					return notifica;
-				}
-				else {
-					return null;
-				}
-			}
+			return notifica;
 		}
 		else {
 			return null;
