@@ -374,7 +374,7 @@ public class Controller {
 	//Recupera tutti i topic per la combobox
 	public ArrayList<String> getTopicFromDB() {
 		CorsoDAO corsoDao = new CorsoDAO();
-		return corsoDao.getTopic();
+		return corsoDao.getTopicByChef(chef.getUsername());
 	}
 	
 	public void creaNuovoCorso(String titolo, String frequenza, String numLezioniStr, String annoFrequenzaStr, String date, String topic, NuovoCorsoDialog nuovoCorsoDialog) {
