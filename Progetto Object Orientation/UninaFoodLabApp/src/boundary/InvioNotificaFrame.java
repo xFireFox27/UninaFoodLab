@@ -37,6 +37,7 @@ import control.Controller;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
 import java.awt.Insets;
+import javax.swing.JScrollPane;
 
 
 public class InvioNotificaFrame extends JDialog {
@@ -143,22 +144,26 @@ public class InvioNotificaFrame extends JDialog {
 		{
 			JLabel lblOggetto = new JLabel("Oggetto:");
 			lblOggetto.setForeground(new Color(25, 95, 180));
-			contentPanel.add(lblOggetto, "cell 0 4,alignx right");
+			contentPanel.add(lblOggetto, "cell 0 3,alignx right");
 		}
 		{
 			fieldOggetto = new JTextField();
-			contentPanel.add(fieldOggetto, "cell 1 4,growx");
+			contentPanel.add(fieldOggetto, "cell 1 3,growx");
 			fieldOggetto.setColumns(10);
 		}
 		{
 			JLabel lblTesto = new JLabel("Testo:");
 			lblTesto.setForeground(new Color(25, 95, 180));
-			contentPanel.add(lblTesto, "cell 0 6,alignx right");
+			contentPanel.add(lblTesto, "cell 0 5,alignx right");
 		}
 		{
-			contentPanel.add(textAreaMessaggio, "cell 1 6 1 4,grow");
-			   textAreaMessaggio.setLineWrap(true);
-			   textAreaMessaggio.setWrapStyleWord(true);
+			JScrollPane scrollPane = new JScrollPane();
+			contentPanel.add(scrollPane, "cell 1 5 1 5,grow");
+			{
+				   scrollPane.setViewportView(textAreaMessaggio);
+				   textAreaMessaggio.setLineWrap(true);
+				   textAreaMessaggio.setWrapStyleWord(true);
+			}
 		}
 		{
 			JPanel buttonPane = new JPanel();
