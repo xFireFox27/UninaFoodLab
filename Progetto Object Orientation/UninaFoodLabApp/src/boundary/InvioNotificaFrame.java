@@ -198,7 +198,7 @@ public class InvioNotificaFrame extends JDialog {
 		String oggetto = fieldOggetto.getText();
 		String testo = textAreaMessaggio.getText();
 		if(oggetto.isEmpty() || testo.isEmpty()) {
-			showErrorMessage("Compilare tutti i campi");
+			showErrorMessage("Compilare tutti i campi.");
 		}
 		else {
 			// L'action command di un JRadioButton è il suo testo di default
