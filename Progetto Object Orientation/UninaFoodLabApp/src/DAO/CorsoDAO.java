@@ -73,21 +73,24 @@ public class CorsoDAO implements CorsoDaoInterface {
 	}
 
 	//Recupera tutti i topic per la combobox
-		public ArrayList<String> getTopic() {
-			ArrayList<String> topics = new ArrayList<>();
-			String sql = "SELECT nome FROM topic";
+	@Override
+	public ArrayList<String> getTopicByChef(String chefUsername) {
+		ArrayList<String> topics = new ArrayList<>();
+		String sql = "SELECT nome FROM topic WHERE idtopic IN (SELECT idtopic FROM corso WHERE usernamechef = ?)";
+		
+		try (Connection connection = DB.getConnection();
+			 PreparedStatement stmt = connection.prepareStatement(sql);) {
 			
-			try (Connection connection = DB.getConnection();
-				 PreparedStatement stmt = connection.prepareStatement(sql);
-				 ResultSet rs = stmt.executeQuery()) {
-				
-				while (rs.next()) {
-					topics.add(rs.getString("nome"));
-				}
-			} catch (SQLException e) {
-				e.printStackTrace();
+			 stmt.setString(1, chefUsername);
+			 ResultSet rs = stmt.executeQuery();
+			
+			while (rs.next()) {
+				topics.add(rs.getString("nome"));
 			}
-			return topics;
+		} catch (SQLException e) {
+			e.printStackTrace();
 		}
+		return topics;
+	}
 	
 }

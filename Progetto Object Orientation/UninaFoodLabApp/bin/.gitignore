@@ -1,4 +1,6 @@
+/DAO/
+/DaoInterface/
 /boundary/
 /control/
-/DAO/
+/dbConnection/
 /entity/

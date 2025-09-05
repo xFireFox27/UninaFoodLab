@@ -374,41 +374,59 @@ public class Controller {
 	//Recupera tutti i topic per la combobox
 	public ArrayList<String> getTopicFromDB() {
 		CorsoDAO corsoDao = new CorsoDAO();
-		return corsoDao.getTopic();
+		return corsoDao.getTopicByChef(chef.getUsername());
 	}
 	
 	public void creaNuovoCorso(String titolo, String frequenza, String numLezioniStr, String annoFrequenzaStr, String date, String topic, NuovoCorsoDialog nuovoCorsoDialog) {
-		
-		int numLezioni, annoFrequenza;
+		int numLezioni;
+		int annoFrequenza;
+		Date sqlDate;
+
 		try {
 			numLezioni = Integer.parseInt(numLezioniStr);
 			annoFrequenza = Integer.parseInt(annoFrequenzaStr);
 		} catch (NumberFormatException e) {
-			homepageChef.showErrorMessage("Numero lezioni e anno frequenza devono essere valori numerici.");
+			homepageChef.showErrorMessage("Il numero di lezioni e l'anno devono essere valori numerici.");
 			return;
 		}
-		
-		CorsoDAO corsoDao = new CorsoDAO();
-		TopicDAO topicDao = new TopicDAO(); 
-		Topic topicCorso = topicDao.getTopicByName(topic); 
-		
+
+		if (numLezioni < 1 || numLezioni > 100) {
+			homepageChef.showErrorMessage("Il numero di lezioni deve essere compreso tra 1 e 100.");
+			return;
+		}
+
 		try {
-			Date sqlDate = new Date(0);  
-			sqlDate = Date.valueOf(date.toString()); // Converte la stringa in java.sql.Date (la stringa deve essere in formato "yyyy-MM-dd")
-			Corso corso = corsoDao.creaCorso(titolo, frequenza, numLezioni, annoFrequenza, sqlDate, topicCorso, chef); 
+			sqlDate = Date.valueOf(date);
+		} catch (IllegalArgumentException e) {
+			homepageChef.showErrorMessage("Formato data non valido. Usare il formato yyyy-MM-dd.");
+			return;
+		}
+
+		TopicDAO topicDao = new TopicDAO();
+		Topic topicCorso = topicDao.getTopicByName(topic);
+
+		if (topicCorso == null) {
+			homepageChef.showErrorMessage("Nessun topic selezionato.");
+			return;
+		}
+
+		try {
+			if (corsoDao == null) {
+				corsoDao = new CorsoDAO();
+			}
+			Corso corso = corsoDao.creaCorso(titolo, frequenza, numLezioni, annoFrequenza, sqlDate, topicCorso, chef);
 			if (corso != null) {
 				nuovoCorsoDialog.setVisible(false);
 			} else {
-				homepageChef.showErrorMessage("Errore nella creazione del corso."); 
+				homepageChef.showErrorMessage("Errore nella creazione del corso.");
 			}
-		} catch (IllegalArgumentException e) {
-			homepageChef.showErrorMessage("Formato data non valido. Usare il formato yyyy-MM-dd.");
 		} catch (SQLException e) {
-			String fullMessage = e.getMessage();
-	        String firstLine = fullMessage.split("\n")[0];
-	        homepageChef.showErrorMessage(firstLine);
+			String firstLine = e.getMessage().split("\n")[0];
+			homepageChef.showErrorMessage(firstLine);
 		}
 	}
+
+
 	
 	public void tornaHomepageFromCreaCorso(NuovoCorsoDialog nuovoCorsoDialog) {
 		nuovoCorsoDialog.setVisible(false);
