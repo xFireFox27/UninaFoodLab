@@ -59,6 +59,7 @@ public class NuovoCorsoDialog extends JDialog {
         setResizable(true);
         setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
         setSize(625, 560);
+        setMinimumSize(getSize());
         setLocationRelativeTo(owner);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
