@@ -45,31 +45,40 @@ public class LoginFrame extends JFrame {
 	 * Create the frame.
 	 */
 	public LoginFrame(Controller c) {
-		theController = c;
-		setResizable(true);
-		setTitle("LoginChef");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setSize(689, 472);
-		setLocationRelativeTo(null);
-		CaricaIcona();
-		setMinimumSize(new Dimension(689, 472));
-		contentPane = new JPanel();
-		contentPane.setBackground(new Color(255, 255, 255));
-		contentPane.setForeground(new Color(255, 0, 255));
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		contentPane.setLayout(new MigLayout("", "[grow][300px,center][grow]", "[grow][][34px][][24px][28px][24px][28px][64px][grow]"));
-		
-		JLabel lblTitolo = new JLabel("UninaFoodLab");
-		lblTitolo.setBackground(new Color(236, 233, 233));
-		lblTitolo.setForeground(new Color(26, 95, 180));
-		lblTitolo.setFont(new Font("Helvetica", Font.BOLD, 33));
-		contentPane.add(lblTitolo, "cell 1 1,alignx center,aligny center");
-		
-		JLabel lblUsername = new JLabel("Username");
-		lblUsername.setForeground(new Color(100, 149, 237));
-		lblUsername.setFont(new Font("Dialog", Font.BOLD, 20));
-		contentPane.add(lblUsername, "cell 1 4,alignx left,aligny center");
+	    theController = c;
+	    setResizable(true);
+	    setTitle("LoginChef");
+	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    setSize(689, 472);
+	    setLocationRelativeTo(null);
+	    CaricaIcona();
+	    setMinimumSize(new Dimension(689, 472));
+	    contentPane = new JPanel();
+	    contentPane.setBackground(new Color(255, 255, 255));
+	    contentPane.setForeground(new Color(255, 0, 255));
+	    contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+	    setContentPane(contentPane);
+	    contentPane.setLayout(new MigLayout("", "[grow][300px,center][grow]", "[grow][100px][][34px][][24px][28px][24px][][][28px][64px][grow]"));
+	    
+	    JLabel lblLogo = new JLabel();
+	    try {
+	        java.net.URL logoUrl = getClass().getResource("/logo.png");
+	        if (logoUrl != null) {
+	            ImageIcon logoIcon = new ImageIcon(logoUrl);
+	            Image scaledLogo = logoIcon.getImage().getScaledInstance(300, 200, Image.SCALE_SMOOTH);
+	            lblLogo.setIcon(new ImageIcon(scaledLogo));
+	        }
+	    } catch (Exception e) {
+	        System.err.println("Errore nel caricamento del logo: " + e.getMessage());
+	    }
+
+	    contentPane.add(lblLogo, "cell 1 1 1 3,alignx center,aligny center");
+	    
+	    JLabel lblUsername = new JLabel("Username");
+	    lblUsername.setForeground(new Color(100, 149, 237));
+	    lblUsername.setFont(new Font("Dialog", Font.BOLD, 20));
+	    contentPane.add(lblUsername, "cell 1 4,alignx left,aligny center");
+	    
 		
 		usernameField = new JTextField();
 		usernameField.setBackground(new Color(222, 221, 218));
@@ -125,7 +134,7 @@ public class LoginFrame extends JFrame {
 		LoginButton.setBackground(new Color(98, 160, 234));
 		LoginButton.setForeground(new Color(248, 248, 255));
 		LoginButton.setFont(new Font("Palatino", Font.BOLD, 24));
-		contentPane.add(LoginButton, "cell 1 8,growx");
+		contentPane.add(LoginButton, "cell 1 10,growx");
 		
 		// Chiudi la finestra premendo ESC
 		contentPane.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(
@@ -149,16 +158,15 @@ public class LoginFrame extends JFrame {
 	        if (iconUrl != null) {
 	            ImageIcon originalIcon = new ImageIcon(iconUrl);
 	            
-	            // Ridimensiona l'icona se necessario (16x16, 32x32 sono dimensioni standard)
+
 	            Image scaledImage = originalIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
 	            ImageIcon icon = new ImageIcon(scaledImage);
 	            
 	            setIconImage(icon.getImage());
 	            
-	            // Forza l'aggiornamento della finestra
+
 	            repaint();
 	            
-	            System.out.println("Icona caricata correttamente");
 	        } else {
 	            System.err.println("File icona.png non trovato");
 	        }
