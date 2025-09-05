@@ -114,16 +114,18 @@ public class SessioniFrame extends JFrame {
         btnTorna.setBackground(new Color(26, 95, 180));
         btnTorna.setForeground(new Color(248, 248, 255));
         btnTorna.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
+        btnTorna.setMaximumSize(new Dimension(150, 30));
         btnTorna.addActionListener(e -> theController.TornaCorsiFromSessioni());
-        getContentPane().add(btnTorna, "cell 0 2,alignx left");
+        getContentPane().add(btnTorna, "cell 0 2,alignx center");
         
         // Pulsante per inserire nuova sessione
         JButton btnNuovaSessione = new JButton("Nuova Sessione");
         btnNuovaSessione.setBackground(new Color(98, 160, 233));
         btnNuovaSessione.setForeground(new Color(248, 248, 255));
         btnNuovaSessione.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
+        btnNuovaSessione.setMaximumSize(new Dimension(150, 30));
         btnNuovaSessione.addActionListener(e -> theController.ApriInserimentoSessione(corso));
-        getContentPane().add(btnNuovaSessione, "cell 1 2,alignx right");
+        getContentPane().add(btnNuovaSessione, "cell 1 2,alignx center");
         
         // Si torna alla finestra precedente premendo ESC
         getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW)
