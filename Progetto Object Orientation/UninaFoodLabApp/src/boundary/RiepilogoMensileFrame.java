@@ -159,12 +159,11 @@ public class RiepilogoMensileFrame extends JFrame {
     }
 
     private JPanel createChartsPanel(int mese, int anno) {
-        JPanel chartsPanel = new JPanel();
-        chartsPanel.setLayout(new BorderLayout());
+        JPanel chartsPanel = new JPanel(new BorderLayout());
 
         try {
             List<Corso> corsi = controller.getCorsiChef();
-            
+
             if (corsi == null || corsi.isEmpty()) {
                 JLabel noDataLabel = new JLabel("Nessun corso disponibile per le statistiche");
                 noDataLabel.setHorizontalAlignment(SwingConstants.CENTER);
@@ -184,23 +183,22 @@ public class RiepilogoMensileFrame extends JFrame {
 
             // Create chart panels
             ChartPanel sessioniChartPanel = new ChartPanel(sessioniChart);
-            sessioniChartPanel.setPreferredSize(new Dimension(800, 400));
-            
+            sessioniChartPanel.setPreferredSize(new Dimension(1000, 500));
+
             ChartPanel ricetteChartPanel = new ChartPanel(ricetteChart);
-            ricetteChartPanel.setPreferredSize(new Dimension(800, 400));
+            ricetteChartPanel.setPreferredSize(new Dimension(1000, 500));
 
-            // Layout charts
-            JPanel topChartPanel = new JPanel(new BorderLayout());
-            topChartPanel.add(sessioniChartPanel, BorderLayout.CENTER);
-            
-            JPanel bottomChartPanel = new JPanel(new BorderLayout());
-            bottomChartPanel.add(ricetteChartPanel, BorderLayout.CENTER);
+            // Layout charts vertically
+            JPanel allChartsPanel = new JPanel();
+            allChartsPanel.setLayout(new javax.swing.BoxLayout(allChartsPanel, javax.swing.BoxLayout.Y_AXIS));
+            allChartsPanel.add(sessioniChartPanel);
+            allChartsPanel.add(ricetteChartPanel);
 
-            JPanel allChartsPanel = new JPanel(new BorderLayout());
-            allChartsPanel.add(topChartPanel, BorderLayout.NORTH);
-            allChartsPanel.add(bottomChartPanel, BorderLayout.CENTER);
+            // Wrapper panel to prevent stretching
+            JPanel wrapperPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+            wrapperPanel.add(allChartsPanel);
 
-            chartsPanel.add(allChartsPanel, BorderLayout.CENTER);
+            chartsPanel.add(wrapperPanel, BorderLayout.CENTER);
 
         } catch (Exception e) {
             e.printStackTrace();
