@@ -6,6 +6,7 @@ import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -57,6 +58,17 @@ public class InserimentoSessioneFrame extends JDialog {
     }
 
     private void initComponents() {
+    	
+    	getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(
+	            KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "cancelAction");
+	        getRootPane().getActionMap().put("cancelAction", new AbstractAction() {
+	            private static final long serialVersionUID = 1L;
+	            @Override
+	            public void actionPerformed(ActionEvent e) {
+	                dispose();
+	            }
+	        });
+    	
         getContentPane().setLayout(new BorderLayout());
         contentPanel.setBorder(new EmptyBorder(10, 10, 10, 10));
         getContentPane().add(contentPanel, BorderLayout.CENTER);

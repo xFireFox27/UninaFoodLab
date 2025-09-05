@@ -6,11 +6,16 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import net.miginfocom.swing.MigLayout;
 import javax.swing.JTextField;
+import javax.swing.KeyStroke;
+import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import control.Controller;
 import javax.swing.JLabel;
 import javax.swing.JComboBox;
+import javax.swing.JComponent;
+
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 import java.awt.SystemColor;
@@ -48,6 +53,16 @@ public class NuovoCorsoDialog extends JDialog {
         setLocationRelativeTo(owner);
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+        
+        getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(
+	            KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "cancelAction");
+	        getRootPane().getActionMap().put("cancelAction", new AbstractAction() {
+	            private static final long serialVersionUID = 1L;
+	            @Override
+	            public void actionPerformed(ActionEvent e) {
+	                dispose();
+	            }
+	        });
 
         setContentPane(contentPane);
         contentPane.setLayout(new MigLayout("", "[grow][150][200][150][grow]", "[grow][50][50][50][50][50][50][50][grow]"));

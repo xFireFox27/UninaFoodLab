@@ -11,9 +11,12 @@ import net.miginfocom.swing.MigLayout;
 import javax.swing.JLabel;
 import java.awt.Color;
 import javax.swing.JRadioButton;
+import javax.swing.AbstractAction;
 import javax.swing.ButtonGroup;
 import javax.swing.JComboBox;
+import javax.swing.JComponent;
 import javax.swing.JTextField;
+import javax.swing.KeyStroke;
 import javax.swing.JTextArea;
 import javax.swing.DefaultListCellRenderer;
 import java.awt.Component;
@@ -21,6 +24,7 @@ import javax.swing.JList;
 import javax.swing.JOptionPane;
 
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 import java.awt.event.ActionEvent;
 
 import java.util.List;
@@ -52,6 +56,17 @@ public class InvioNotificaFrame extends JDialog {
 		setResizable(false);
 		setSize(500, 400);
 		setLocationRelativeTo(null);
+		
+		getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(
+	            KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "cancelAction");
+	        getRootPane().getActionMap().put("cancelAction", new AbstractAction() {
+	            private static final long serialVersionUID = 1L;
+	            @Override
+	            public void actionPerformed(ActionEvent e) {
+	                dispose();
+	            }
+	        });
+		
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
