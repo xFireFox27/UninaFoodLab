@@ -64,7 +64,7 @@ public class Controller {
 				homepageChef.setVisible(true);
 				return;
 			} else {
-				loginFrame.showErrorMessage("Credenziali errate. Chef non trovato!");
+				loginFrame.showErrorMessage("Credenziali errate. Chef non trovato.");
 				return;
 			}
 		} catch (SQLException e) {

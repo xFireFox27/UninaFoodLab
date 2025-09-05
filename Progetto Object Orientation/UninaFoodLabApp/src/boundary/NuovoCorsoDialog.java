@@ -24,6 +24,7 @@ import java.awt.event.KeyEvent;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.awt.event.ActionEvent;
 import java.awt.SystemColor;
@@ -143,8 +144,27 @@ public class NuovoCorsoDialog extends JDialog {
                                         	public void actionPerformed(ActionEvent e) {
                                         		try {
                                                     dataInizioTF.commitEdit();
-                                                    String dataInizioSQL = "";
                                                     Date dataInizio = (Date) dataInizioTF.getValue();
+                                                    String annoInseritoStr = annoTF.getText();
+
+                                                    if (dataInizio != null && !annoInseritoStr.isEmpty()) {
+                                                        Calendar cal = Calendar.getInstance();
+                                                        cal.setTime(dataInizio);
+                                                        int annoData = cal.get(Calendar.YEAR);
+                                                        
+                                                        try {
+                                                            int annoCampo = Integer.parseInt(annoInseritoStr);
+                                                            if (annoData != annoCampo) {
+                                                                JOptionPane.showMessageDialog(NuovoCorsoDialog.this, "L'anno inserito non corrisponde all'anno della data di inizio.", "Errore di coerenza", JOptionPane.ERROR_MESSAGE);
+                                                                return;
+                                                            }
+                                                        } catch (NumberFormatException nfe) {
+                                                            JOptionPane.showMessageDialog(NuovoCorsoDialog.this, "Formato anno non valido. Inserire un numero.", "Errore di Formato", JOptionPane.ERROR_MESSAGE);
+                                                            return;
+                                                        }
+                                                    }
+                                                    
+                                                    String dataInizioSQL = "";
                                                     if (dataInizio != null) {
                                                         SimpleDateFormat sqlSdf = new SimpleDateFormat("yyyy-MM-dd");
                                                         dataInizioSQL = sqlSdf.format(dataInizio);
