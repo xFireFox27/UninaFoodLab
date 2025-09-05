@@ -381,6 +381,11 @@ public class Controller {
 		int annoFrequenza;
 		Date sqlDate;
 
+		if (titolo == null || titolo.trim().isEmpty()) {
+			homepageChef.showErrorMessage("Il titolo non può essere vuoto.");
+			return;
+		}
+
 		try {
 			numLezioni = Integer.parseInt(numLezioniStr);
 			annoFrequenza = Integer.parseInt(annoFrequenzaStr);
