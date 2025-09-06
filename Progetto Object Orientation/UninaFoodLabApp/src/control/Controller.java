@@ -1,10 +1,5 @@
 package control;
 
-import java.awt.EventQueue;
-import java.awt.Font;
-import java.awt.FontFormatException;
-import java.awt.GraphicsEnvironment;
-import java.io.IOException;
 import java.sql.Date;
 import java.sql.SQLException;
 import java.sql.Timestamp;
@@ -37,10 +32,6 @@ public class Controller {
 	private NotificaDAO notificaDao;
 	private InvioNotificaFrame invioNotificaFrame;
 	
-	
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		setLookAndFeel();
 		Controller theController = new Controller();
@@ -48,16 +39,14 @@ public class Controller {
 	
 	public Controller() {
 		loginFrame = new LoginFrame(this);
-		
 		loginFrame.setVisible(true);
 	}
 	
-	
 	public void LoginChef(String username, String password) {
 		chefDao = new ChefDAO();
+		
 		try {
 			chef = chefDao.creaChef(username, password);
-		
 			if (chef != null) {
 				loginFrame.setVisible(false);
 				homepageChef = new HomepageChef(this);
@@ -74,7 +63,6 @@ public class Controller {
 		}
 	}
 	
-	
 	public void ApriListaCorsi() {
 		homepageChef.setVisible(false);
 		corsiFrame = new CorsiFrame(this);
@@ -82,12 +70,11 @@ public class Controller {
 		getCorsiChef();
 	}
 	
-	
-	
 	public List<Corso> getCorsiChef() {
 	    if (corsoDao == null) {
 	        corsoDao = new CorsoDAO();
-	        }
+        }
+	    
 	    try {
 	        List<Corso> corsi = corsoDao.getCorsiByChef(chef);
 	        return corsi;
@@ -96,7 +83,6 @@ public class Controller {
 	        corsiFrame.showErrorMessage("Errore nel recupero dei corsi dal database.");
 	        return null;
 	    }
-	    
 	}
 
 	public void TornaHomepageFromCorsi() {
@@ -105,7 +91,6 @@ public class Controller {
 	}
 	
 	public void ApriNotifiche() {
-		
 		homepageChef.setVisible(false);
 		notificheFrame = new NotificheFrame(this);
 		notificheFrame.setVisible(true);
@@ -115,11 +100,11 @@ public class Controller {
 		if(notificaDao == null) {
 			notificaDao = new NotificaDAO();
 		}
+		
 		try {
 			List<Notifica> notifiche = notificaDao.getNotificheByChef(chef);
 			return notifiche;
-		}
-		catch (SQLException e) {
+		} catch (SQLException e) {
 			e.printStackTrace();
 			notificheFrame.showErrorMessage("Errore nel recupero delle notifiche dal database.");
 			return null;
@@ -128,10 +113,10 @@ public class Controller {
 	
 	public DefaultListModel<String> inizializzaListaNotifiche(List<Notifica> notifiche, DefaultListModel<String> listModel) {
 		listModel.clear();
+		
 		if (notifiche == null || notifiche.isEmpty()){
 			listModel.addElement("Non ci sono notifiche.");
-		}
-		else {
+		} else {
 			for (Notifica notifica : notifiche) {
 				String elemento = notifica.getOggetto() + " - " + "(" + notifica.getDataInvio().toString() + ")";
 				listModel.addElement(elemento);
@@ -143,8 +128,7 @@ public class Controller {
 	public String mostraTestoNotifica(List<Notifica> notifiche, int index) {
 		if(index >= 0 && index < notifiche.size() &&notifiche != null) {
 			return notifiche.get(index).getTesto();
-		}
-		else {
+		} else {
 			return "Il testo della notifica apparirà qui";
 		}
 	}
@@ -156,6 +140,7 @@ public class Controller {
 	
 	public JComboBox<Corso> inizializzaComboBoxCorsi(List<Corso> corsi){
 		JComboBox<Corso> comboBox = new JComboBox<>();
+		
 		if (corsi != null && !corsi.isEmpty()) {
 			for (Corso corso : corsi) {
 				comboBox.addItem(corso);
@@ -168,20 +153,18 @@ public class Controller {
 	    if (notificaDao == null) {
 	        notificaDao = new NotificaDAO();
 	    }
+	    
 	    try {
 	        Notifica notifica = notificaDao.inviaNotificaAdUnCorso(chef, oggetto, testo, corso);
 	        if (notifica != null) {
 	            invioNotificaFrame.setVisible(false);
-	            // Create a new list model for the refresh
-	            DefaultListModel<String> listModel = new DefaultListModel<>();
+	            DefaultListModel<String> listModel = new DefaultListModel<>(); // Crea una nuova lista per aggiornare il frame
 	            List<Notifica> notificheAggiornate = getNotificheChef();
 	            notificheFrame.refreshListaNotifiche(notificheAggiornate, listModel);
-	        }
-	        else {
+	        } else {
 	            invioNotificaFrame.showErrorMessage("Errore nell'invio della notifica.");
 	        }
-	    }
-	    catch (SQLException e) {
+	    } catch (SQLException e) {
 	        e.printStackTrace();
 	        invioNotificaFrame.showErrorMessage("Errore di connessione al database.");
 	    }
@@ -191,6 +174,7 @@ public class Controller {
 	    if (notificaDao == null) {
 	        notificaDao = new NotificaDAO();
 	    }
+	    
 	    try {
 	        Notifica notifica = notificaDao.inviaNotificaATuttiICorsi(chef, oggetto, testo);
 	        if (notifica != null) {
@@ -202,20 +186,16 @@ public class Controller {
 	        else {
 	            invioNotificaFrame.showErrorMessage("Errore nell'invio della notifica.");
 	        }
-	    }
-	    catch (SQLException e) {
+	    } catch (SQLException e) {
 	        e.printStackTrace();
 	        invioNotificaFrame.showErrorMessage("Errore di connessione al database.");
 	    }
 	}
 
-	
 	public void TornaHomepageFromNotifiche() {
 		notificheFrame.setVisible(false);
 		homepageChef.setVisible(true);
 	}
-	
-	
 	
 	private static void setLookAndFeel() {
 	    try {
@@ -231,7 +211,6 @@ public class Controller {
 		}
 		return "Chef";
 	}
-	
 
 	public void ApriGestioneSessioni(Corso corso) {
 	    corsiFrame.setVisible(false);
@@ -248,6 +227,7 @@ public class Controller {
 	    if (sessioneDao == null) {
 	        sessioneDao = new SessioniInPresenzaDAO();
 	    }
+	    
 	    try {
 	        return sessioneDao.getSessioniByCorso(corso);
 	    } catch (SQLException e) {
@@ -260,6 +240,7 @@ public class Controller {
 	    if (ricettaDao == null) {
 	        ricettaDao = new RicettaDAO();
 	    }
+	    
 	    try {
 	        return ricettaDao.getAllRicette();
 	    } catch (SQLException e) {
@@ -282,6 +263,7 @@ public class Controller {
 	    if (sessioneOnlineDao == null) {
 	        sessioneOnlineDao = new SessioneOnlineDAO();
 	    }
+	    
 	    try {
 	        return sessioneOnlineDao.getSessioniByCorso(corso);
 	    } catch (SQLException e) {
@@ -294,7 +276,6 @@ public class Controller {
 	    inserimentoSessioneFrame = new InserimentoSessioneFrame(this, corso);
 	    inserimentoSessioneFrame.setVisible(true);
 	}
-
 	
 	public void TornaSessioniFromInserimento() {
 	    sessioniFrame.aggiornaListeSessioni();
@@ -305,11 +286,12 @@ public class Controller {
 	    if (sessioneDao == null) {
 	        sessioneDao = new SessioniInPresenzaDAO();
 	    }
+	    
 	    try {
 	        SessioneInPresenza nuovaSessione = new SessioneInPresenza(data, durata, numSessione, corso, luogo, aula);
 	        sessioneDao.insertSessione(nuovaSessione);
 	        
-	        // Aggiorna la lista delle sessioni nel frame
+	        // Aggiorna la lista delle sessioni 
 	        if (sessioniFrame != null) {
 	            // Ricarica le sessioni per aggiornare la vista
 	        }
@@ -323,11 +305,12 @@ public class Controller {
 	    if (sessioneOnlineDao == null) {
 	        sessioneOnlineDao = new SessioneOnlineDAO();
 	    }
+	    
 	    try {
 	        SessioneOnline nuovaSessione = new SessioneOnline(data, durata, numSessione, corso, link);
 	        sessioneOnlineDao.insertSessione(nuovaSessione);
 	        
-	        // Aggiorna la lista delle sessioni nel frame
+	        // Aggiorna la lista delle sessioni 
 	        if (sessioniFrame != null) {
 	            // Ricarica le sessioni per aggiornare la vista
 	        }
@@ -337,13 +320,12 @@ public class Controller {
 	    }
 	}
 
-	
 	public boolean salvaRicettePerSessione(SessioneInPresenza sessione, List<Ricetta> ricetteSelezionate) {
 	    if (preparaDao == null) {
 	        preparaDao = new PreparaDAO();
 	    }
+	    
 	    try {
-	        // Chiamata al DAO per salvare le associazioni
 	        preparaDao.salvaAssociazioniSessioneRicette(sessione, ricetteSelezionate);
 	        return true;
 	    } catch (SQLException e) {
@@ -352,11 +334,11 @@ public class Controller {
 	    }
 	}
 
-	
 	public List<Ricetta> getRicettePerSessione(SessioneInPresenza sessione) {
 	    if (preparaDao == null) {
 	        preparaDao = new PreparaDAO();
 	    }
+	    
 	    try {
 	        return preparaDao.getRicettePerSessione(sessione);
 	    } catch (SQLException e) {
@@ -370,7 +352,7 @@ public class Controller {
 		nuovoCorsoDialog.setVisible(true);
 	}
 	
-	//Recupera tutti i topic per la combobox
+	//Recupera i topic per la combobox
 	public ArrayList<String> getTopicFromDB() {
 		CorsoDAO corsoDao = new CorsoDAO();
 		return corsoDao.getTopicByChef(chef.getUsername());
@@ -380,12 +362,12 @@ public class Controller {
 		int numLezioni;
 		int annoFrequenza;
 		Date sqlDate;
-
+		
 		if (titolo == null || titolo.trim().isEmpty()) {
 			homepageChef.showErrorMessage("Il titolo non può essere vuoto.");
 			return;
 		}
-
+		
 		try {
 			numLezioni = Integer.parseInt(numLezioniStr);
 			annoFrequenza = Integer.parseInt(annoFrequenzaStr);
@@ -393,27 +375,27 @@ public class Controller {
 			homepageChef.showErrorMessage("Il numero di lezioni e l'anno devono essere valori numerici.");
 			return;
 		}
-
+		
 		if (numLezioni < 1 || numLezioni > 100) {
 			homepageChef.showErrorMessage("Il numero di lezioni deve essere compreso tra 1 e 100.");
 			return;
 		}
-
+		
 		try {
 			sqlDate = Date.valueOf(date);
 		} catch (IllegalArgumentException e) {
 			homepageChef.showErrorMessage("Formato data non valido. Usare il formato yyyy-MM-dd.");
 			return;
 		}
-
+		
 		TopicDAO topicDao = new TopicDAO();
 		Topic topicCorso = topicDao.getTopicByName(topic);
-
+		
 		if (topicCorso == null) {
 			homepageChef.showErrorMessage("Nessun topic selezionato.");
 			return;
 		}
-
+		
 		try {
 			if (corsoDao == null) {
 				corsoDao = new CorsoDAO();
@@ -429,8 +411,6 @@ public class Controller {
 			homepageChef.showErrorMessage(firstLine);
 		}
 	}
-
-
 	
 	public void tornaHomepageFromCreaCorso(NuovoCorsoDialog nuovoCorsoDialog) {
 		nuovoCorsoDialog.setVisible(false);
@@ -452,6 +432,7 @@ public class Controller {
 	    if (sessioneDao == null) {
 	        sessioneDao = new SessioniInPresenzaDAO();
 	    }
+	    
 	    try {
 	        return sessioneDao.getSessioniByCorsoEMese(corso, mese, anno);
 	    } catch (SQLException e) {
@@ -464,6 +445,7 @@ public class Controller {
 	    if (sessioneOnlineDao == null) {
 	        sessioneOnlineDao = new SessioneOnlineDAO();
 	    }
+	    
 	    try {
 	        return sessioneOnlineDao.getSessioniByCorsoEMese(corso, mese, anno);
 	    } catch (SQLException e) {
@@ -471,8 +453,4 @@ public class Controller {
 	        return null;
 	    }
 	}
-
-
-
 }
-
