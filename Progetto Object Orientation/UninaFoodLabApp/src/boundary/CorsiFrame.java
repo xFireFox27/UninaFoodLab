@@ -6,13 +6,9 @@ import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
-import java.sql.SQLException;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.awt.event.MouseAdapter;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseEvent;
-
 import javax.swing.AbstractAction;
 import javax.swing.DefaultListModel;
 import javax.swing.ImageIcon;
@@ -27,13 +23,12 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
-import javax.swing.border.EmptyBorder;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
+import net.miginfocom.swing.MigLayout;
 
 import control.Controller;
 import entity.Corso;
-import net.miginfocom.swing.MigLayout;
 
 public class CorsiFrame extends JFrame {
     
@@ -97,8 +92,6 @@ public class CorsiFrame extends JFrame {
         filterPanel.add(btnReset, "cell 2 0,alignx right");
         
         contentPane.add(filterPanel, "cell 0 1,width 400:400:350");
-
-
         listModel = new DefaultListModel<>();
         listCorsi = new JList<>(listModel);
         listCorsi.setForeground(new Color(26, 95, 180));
@@ -122,7 +115,7 @@ public class CorsiFrame extends JFrame {
         caricaCorsi();
         setupListSelection();
         
-        // Chiudi la finestra premendo ESC
+        // Chiusura della finestra premendo ESC
         contentPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeWindow");
         contentPane.getActionMap().put("closeWindow", new AbstractAction() {
             @Override
@@ -142,7 +135,6 @@ public class CorsiFrame extends JFrame {
     private void caricaTopics() {
         comboTopic.removeAllItems();
         comboTopic.addItem("Tutti i topics");
-        
         if (tuttiICorsi != null && !tuttiICorsi.isEmpty()) {
             tuttiICorsi.stream()
                 .map(corso -> corso.getIdTopic().getNome())
@@ -154,7 +146,6 @@ public class CorsiFrame extends JFrame {
     
     private void filtraCorsi() {
         String topicSelezionato = (String) comboTopic.getSelectedItem();
-        
         if (topicSelezionato == null || topicSelezionato.equals("Tutti i topics")) {
             aggiornaListaCorsi(tuttiICorsi);
         } else {
@@ -167,7 +158,6 @@ public class CorsiFrame extends JFrame {
     
     private void aggiornaListaCorsi(List<Corso> corsi) {
         listModel.clear();
-        
         if (corsi == null || corsi.isEmpty()) {
             listModel.addElement("Nessun corso trovato");
         } else {
@@ -182,11 +172,9 @@ public class CorsiFrame extends JFrame {
         }
     }
     
-    
     public void showErrorMessage(String message) {
 		JOptionPane.showMessageDialog(this, message, "Errore", JOptionPane.ERROR_MESSAGE);
 	}
-    
     
     private void setupListSelection() {
         listCorsi.addMouseListener(new MouseAdapter() {
@@ -207,16 +195,10 @@ public class CorsiFrame extends JFrame {
 	        java.net.URL iconUrl = getClass().getResource("/icona.png");
 	        if (iconUrl != null) {
 	            ImageIcon originalIcon = new ImageIcon(iconUrl);
-	            
-
 	            Image scaledImage = originalIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
 	            ImageIcon icon = new ImageIcon(scaledImage);
-	            
 	            setIconImage(icon.getImage());
-	            
-
 	            repaint();
-	            
 	        } else {
 	            System.err.println("File icona.png non trovato");
 	        }
@@ -225,4 +207,5 @@ public class CorsiFrame extends JFrame {
 	        e.printStackTrace();
 	    }
 	}
+    
 }
