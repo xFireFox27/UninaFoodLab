@@ -49,7 +49,28 @@ public class NotificaDAO implements NotificaDaoInterface{
 			int insertRows = st.executeUpdate();
 			if(insertRows > 0) {
 				Notifica notifica = new Notifica(chef, oggetto, testo, new Timestamp(System.currentTimeMillis()));
-				return notifica;
+				String sql2 = "INSERT INTO riceve (idnotifica, usernameutente) " +
+						 "SELECT idnotifica, usernameutente " +
+						 "FROM notifica AS n " +
+						 "JOIN corso AS c ON c.usernamechef = n.usernamechef " +
+						 "JOIN iscrizione AS i ON c.idcorso = i.idcorso " +
+						 "WHERE n.idnotifica = ? AND c.usernamechef = ? AND c.titolo = ? AND c.anno = ?";
+				try(ResultSet generatedKey = st.getGeneratedKeys();
+					PreparedStatement st2 = connection.prepareStatement(sql2)){
+					if(generatedKey.next()) {
+						int idNotifica = generatedKey.getInt(1);
+						
+							st2.setInt(1, idNotifica);
+							st2.setString(2,chef.getUsername());
+							st2.setString(3, corso.getTitolo());
+							st2.setInt(4, corso.getAnnoFrequenza());
+							st2.executeUpdate();
+					}
+					else {
+						return null;
+					}
+					return notifica;
+				}
 			}
 			else {
 				return null;
@@ -71,7 +92,26 @@ public class NotificaDAO implements NotificaDaoInterface{
 		int insertRows = st.executeUpdate();
 		if(insertRows > 0) {
 			Notifica notifica = new Notifica(chef, oggetto, testo, new Timestamp(System.currentTimeMillis()));
-			return notifica;
+			String sql2 = "INSERT INTO riceve (idnotifica, usernameutente) " +
+					 "SELECT idnotifica, usernameutente " +
+					 "FROM notifica AS n " +
+					 "JOIN corso AS c ON c.usernamechef = n.usernamechef " +
+					 "JOIN iscrizione AS i ON c.idcorso = i.idcorso " +
+					 "WHERE n.idnotifica = ? AND c.usernamechef = ?";
+			try(ResultSet generatedKey = st.getGeneratedKeys();
+				PreparedStatement st2 = connection.prepareStatement(sql2)){
+				if(generatedKey.next()) {
+					int idNotifica = generatedKey.getInt(1);
+					
+						st2.setInt(1, idNotifica);
+						st2.setString(2,chef.getUsername());
+						st2.executeUpdate();
+				}
+				else {
+					return null;
+				}
+				return notifica;
+			}
 		}
 		else {
 			return null;
