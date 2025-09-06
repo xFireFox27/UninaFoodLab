@@ -16,6 +16,8 @@ import javax.swing.border.BevelBorder;
 
 import control.Controller;
 import entity.Corso;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class InserimentoSessioneFrame extends JDialog {
 
@@ -104,6 +106,7 @@ public class InserimentoSessioneFrame extends JDialog {
         lblDurata.setForeground(new Color(26, 95, 180));
         contentPanel.add(lblDurata, "cell 0 3,alignx trailing");
         txtDurata = new JTextField();
+        txtDurata.setToolTipText("Durata in minuti (max. 180)");
         contentPanel.add(txtDurata, "cell 1 3,growx");
 
         panelPresenza = new JPanel(new MigLayout("", "[80px][grow]", "[][]"));
@@ -181,12 +184,27 @@ public class InserimentoSessioneFrame extends JDialog {
                 JOptionPane.showMessageDialog(this, "Compilare tutti i campi obbligatori.", "Errore", JOptionPane.ERROR_MESSAGE);
                 return;
             }
+            
             int numSessione = Integer.parseInt(txtNumSessione.getText().trim());
             int durata = Integer.parseInt(txtDurata.getText().trim());
+            
             // Parse della data
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
             LocalDateTime dateTime = LocalDateTime.parse(txtData.getText().trim(), formatter);
+            
+            // Validazione anno - non oltre l'anno successivo
+            int annoCorrente = LocalDateTime.now().getYear();
+            int annoInserito = dateTime.getYear();
+            if (annoInserito > annoCorrente + 1) {
+                JOptionPane.showMessageDialog(this, 
+                    "L'anno non può essere superiore al " + (annoCorrente + 1) + ".", 
+                    "Errore validazione data", 
+                    JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+            
             Timestamp timestamp = Timestamp.valueOf(dateTime);
+            
             if (rbInPresenza.isSelected()) {
                 // Validazione campi sessione in presenza
                 if (cmbLuogo.getSelectedItem() == null || txtAula.getText().trim().isEmpty()) {
@@ -202,11 +220,24 @@ public class InserimentoSessioneFrame extends JDialog {
                     JOptionPane.showMessageDialog(this, "Inserire il link per la sessione online.", "Errore", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
+                
                 String link = txtLink.getText().trim();
+                
+                // Validazione formato link
+                if (!link.startsWith("https://")) {
+                    JOptionPane.showMessageDialog(this, 
+                        "Il link deve iniziare con 'https://'", 
+                        "Errore validazione link", 
+                        JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
+                
                 theController.inserisciSessioneOnline(timestamp, durata, numSessione, corso, link);
             }
+            
             JOptionPane.showMessageDialog(this, "Sessione inserita con successo.", "Successo", JOptionPane.INFORMATION_MESSAGE);
             theController.TornaSessioniFromInserimento();
+            
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, "Numero sessione e durata devono essere valori numerici.", "Errore", JOptionPane.ERROR_MESSAGE);
         } catch (DateTimeParseException e) {
@@ -215,6 +246,8 @@ public class InserimentoSessioneFrame extends JDialog {
             JOptionPane.showMessageDialog(this, "Errore durante l'inserimento: " + e.getMessage(), "Errore", JOptionPane.ERROR_MESSAGE);
         }
     }
+
+
     
     public void CaricaIcona() {
 	    try {

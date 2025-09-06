@@ -309,12 +309,8 @@ public class Controller {
 	    }
 	    
 	    try {
-	        SessioneInPresenza nuovaSessione = new SessioneInPresenza(data, durata, numSessione, corso, luogo, aula);//crea un oggetto sessione in presenza
+	        SessioneInPresenza nuovaSessione = new SessioneInPresenza(data, durata, numSessione, corso, luogo, aula);
 	        sessioneDao.insertSessione(nuovaSessione);
-	        
-	        if (sessioniFrame != null) {//se la sessione è stata creata(inserimento nel db andato a buon fine)
-	            						// Ricarica le sessioni per aggiornare la vista
-	        }
 	    } catch (SQLException e) {
 	        e.printStackTrace();
 	        throw new RuntimeException("Errore durante l'inserimento della sessione in presenza: " + e.getMessage());
@@ -329,16 +325,12 @@ public class Controller {
 	    try {
 	        SessioneOnline nuovaSessione = new SessioneOnline(data, durata, numSessione, corso, link);
 	        sessioneOnlineDao.insertSessione(nuovaSessione);
-	        
-	        // Aggiorna la lista delle sessioni 
-	        if (sessioniFrame != null) {
-	            // Ricarica le sessioni per aggiornare la vista
-	        }
 	    } catch (SQLException e) {
 	        e.printStackTrace();
 	        throw new RuntimeException("Errore durante l'inserimento della sessione online: " + e.getMessage());
 	    }
 	}
+
 
 	public boolean salvaRicettePerSessione(SessioneInPresenza sessione, List<Ricetta> ricetteSelezionate) {
 	    if (preparaDao == null) {

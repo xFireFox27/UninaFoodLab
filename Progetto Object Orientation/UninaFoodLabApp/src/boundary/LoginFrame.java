@@ -2,7 +2,6 @@ package boundary;
 
 import java.awt.Dimension;
 import java.awt.EventQueue;
-
 import java.awt.Image;
 
 import javax.imageio.ImageIO;
@@ -18,6 +17,7 @@ import java.awt.GridBagLayout;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
 import javax.swing.JPasswordField;
+import javax.swing.JCheckBox;
 import java.awt.Font;
 import java.awt.Color;
 import javax.swing.border.MatteBorder;
@@ -38,6 +38,7 @@ public class LoginFrame extends JFrame {
 	private JPanel contentPane;
 	private JTextField usernameField;
 	private JPasswordField passwordField;
+	private JCheckBox showPasswordCheckbox;
 	private Controller theController;
 
 	
@@ -58,7 +59,7 @@ public class LoginFrame extends JFrame {
 	    contentPane.setForeground(new Color(255, 0, 255));
 	    contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 	    setContentPane(contentPane);
-	    contentPane.setLayout(new MigLayout("", "[grow][300px,center][grow]", "[grow][100px][][34px][][24px][28px][24px][][][28px][64px][grow]"));
+	    contentPane.setLayout(new MigLayout("", "[grow][300px,center][grow]", "[grow][100px][][34px][][24px][28px][24px][20px][][28px][64px][grow]"));
 	    
 	    JLabel lblLogo = new JLabel();
 	    try {
@@ -114,6 +115,21 @@ public class LoginFrame extends JFrame {
 				}
 			}
 		});
+		
+		showPasswordCheckbox = new JCheckBox("Mostra Password");
+		showPasswordCheckbox.setBackground(new Color(255, 255, 255));
+		showPasswordCheckbox.setForeground(new Color(100, 149, 237));
+		showPasswordCheckbox.setFont(new Font("Dialog", Font.PLAIN, 14));
+		showPasswordCheckbox.addActionListener(new ActionListener() {
+		    public void actionPerformed(ActionEvent e) {
+		        if (showPasswordCheckbox.isSelected()) {
+		            passwordField.setEchoChar((char) 0); // Show password
+		        } else {
+		            passwordField.setEchoChar('•'); // Hide password
+		        }
+		    }
+		});
+		contentPane.add(showPasswordCheckbox, "cell 1 8,alignx left");
 		
 		JButton LoginButton = new JButton("LOGIN");
 		LoginButton.addActionListener(new ActionListener() {
@@ -175,7 +191,5 @@ public class LoginFrame extends JFrame {
 	        e.printStackTrace();
 	    }
 	}
-
-
 
 }
