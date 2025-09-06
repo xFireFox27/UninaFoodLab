@@ -1,7 +1,9 @@
 package entity;
+
 import java.sql.Timestamp;
 
 public class Notifica {
+	
 	private Chef chef;
 	private String oggetto;
 	private String testo;
@@ -45,4 +47,5 @@ public class Notifica {
 	public void setDataInvio(Timestamp newData) {
 		this.dataInvio = newData;
 	}
+	
 }

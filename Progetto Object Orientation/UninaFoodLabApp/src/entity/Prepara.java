@@ -1,6 +1,7 @@
 package entity;
 
 public class Prepara {
+	
 	private SessioneInPresenza sessioneInPresenza;
 	private Ricetta ricetta;
 	
@@ -24,4 +25,5 @@ public class Prepara {
 	public void setIdRicetta(Ricetta newRicetta) {
 		this.ricetta = newRicetta;
 	}
+	
 }

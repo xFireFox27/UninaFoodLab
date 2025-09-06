@@ -1,6 +1,7 @@
 package entity;
 
 public class Topic {
+	
 	private String nome;
 	private String descrizione;
 	
@@ -8,8 +9,6 @@ public class Topic {
 		this.nome = newNome;
 		this.descrizione = newDescrizione;
 	}
-	
-	
 	
 	public String getNome() {
 		return nome;
@@ -26,4 +25,5 @@ public class Topic {
 	public void setDescrizione(String newDescrizione) {
 		this.descrizione = newDescrizione;
 	}
+	
 }

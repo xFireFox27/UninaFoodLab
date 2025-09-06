@@ -1,7 +1,9 @@
 package entity;
+
 import java.sql.Timestamp;
 
 public abstract class Sessione {
+	
 	private Timestamp data;
 	private int durata;
 	private int numSessione;
@@ -45,4 +47,5 @@ public abstract class Sessione {
 	public void setCorso(Corso newCorso) {
 		this.corso = newCorso;
 	}
+	
 }

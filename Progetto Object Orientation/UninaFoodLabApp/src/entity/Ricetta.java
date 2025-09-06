@@ -1,6 +1,7 @@
 package entity;
 
 public class Ricetta {
+	
 	private String nome;
 	private String descrizione;
 	

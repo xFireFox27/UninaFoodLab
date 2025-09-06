@@ -1,7 +1,9 @@
 package entity;
+
 import java.sql.Timestamp;
 
-public class SessioneInPresenza extends Sessione{
+public class SessioneInPresenza extends Sessione {
+	
 	private String luogo;
 	private String aula;
 	

@@ -1,7 +1,9 @@
 package entity;
+
 import java.sql.Timestamp;
 
-public class SessioneOnline extends Sessione{
+public class SessioneOnline extends Sessione {
+	
 	private String link;
 	
 	public SessioneOnline(Timestamp newData, int newDurata, int newNumSessione, Corso newCorso, String newLink) {
