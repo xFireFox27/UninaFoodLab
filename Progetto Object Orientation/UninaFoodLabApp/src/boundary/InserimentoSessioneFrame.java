@@ -200,7 +200,7 @@ public class InserimentoSessioneFrame extends JDialog {
             if (txtNumSessione.getText().trim().isEmpty() ||
                 txtData.getText().trim().isEmpty() ||
                 txtDurata.getText().trim().isEmpty()) {
-                JOptionPane.showMessageDialog(this, "Compilare tutti i campi obbligatori", "Errore", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Compilare tutti i campi obbligatori.", "Errore", JOptionPane.ERROR_MESSAGE);
                 return;
             }
 
@@ -215,7 +215,7 @@ public class InserimentoSessioneFrame extends JDialog {
             if (rbInPresenza.isSelected()) {
                 // Validazione campi sessione in presenza
                 if (cmbLuogo.getSelectedItem() == null || txtAula.getText().trim().isEmpty()) {
-                    JOptionPane.showMessageDialog(this, "Selezionare il luogo e inserire l'aula per la sessione in presenza", "Errore", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(this, "Selezionare il luogo e inserire l'aula per la sessione in presenza.", "Errore", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
                 
@@ -226,7 +226,7 @@ public class InserimentoSessioneFrame extends JDialog {
             } else {
                 // Validazione campo sessione online
                 if (txtLink.getText().trim().isEmpty()) {
-                    JOptionPane.showMessageDialog(this, "Inserire il link per la sessione online", "Errore", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(this, "Inserire il link per la sessione online.", "Errore", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
                 
@@ -235,14 +235,14 @@ public class InserimentoSessioneFrame extends JDialog {
                 theController.inserisciSessioneOnline(timestamp, durata, numSessione, corso, link);
             }
 
-            JOptionPane.showMessageDialog(this, "Sessione inserita con successo!", "Successo", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Sessione inserita con successo.", "Successo", JOptionPane.INFORMATION_MESSAGE);
             theController.TornaSessioniFromInserimento();
             
 
         } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(this, "Numero sessione e durata devono essere numerici", "Errore", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Numero sessione e durata devono essere valori numerici.", "Errore", JOptionPane.ERROR_MESSAGE);
         } catch (DateTimeParseException e) {
-            JOptionPane.showMessageDialog(this, "Formato data non valido. Usare: dd/MM/yyyy HH:mm", "Errore", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Formato data non valido. Usare il formato: dd/MM/yyyy HH:mm.", "Errore", JOptionPane.ERROR_MESSAGE);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Errore durante l'inserimento: " + e.getMessage(), "Errore", JOptionPane.ERROR_MESSAGE);
         }
