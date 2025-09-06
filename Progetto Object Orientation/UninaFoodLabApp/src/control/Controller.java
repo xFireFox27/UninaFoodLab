@@ -8,6 +8,7 @@ import java.util.List;
 import javax.swing.DefaultListModel;
 import javax.swing.UIManager;
 import javax.swing.JComboBox;
+import javax.swing.JOptionPane;
 
 import DAO.*;
 import boundary.*;
@@ -402,6 +403,7 @@ public class Controller {
 			}
 			Corso corso = corsoDao.creaCorso(titolo, frequenza, numLezioni, annoFrequenza, sqlDate, topicCorso, chef);
 			if (corso != null) {
+				JOptionPane.showMessageDialog(homepageChef, "Corso creato con successo.");
 				nuovoCorsoDialog.setVisible(false);
 			} else {
 				homepageChef.showErrorMessage("Errore nella creazione del corso.");
