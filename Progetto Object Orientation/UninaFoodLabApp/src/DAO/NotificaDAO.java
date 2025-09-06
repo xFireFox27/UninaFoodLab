@@ -84,24 +84,6 @@ public class NotificaDAO implements NotificaDaoInterface{
 
 	@Override
 	public Notifica inviaNotificaATuttiICorsi(Chef chef, String oggetto, String testo) throws SQLException {
-		String sql = "INSERT INTO notifica (usernamechef, oggetto, testo) VALUES(?, ?, ?) ";
-		
-		try (Connection connection = DB.getConnection();
-			PreparedStatement st = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
-				st.setString(1, chef.getUsername());
-				st.setString(2, oggetto);
-				st.setString(3, testo);
-				int insertRows = st.executeUpdate();
-				if(insertRows > 0) {
-					Notifica notifica = new Notifica(chef, oggetto, testo, new Timestamp(System.currentTimeMillis()));
-					return notifica;
-				} else {
-					return null;
-				}
-		}
-	}
-	
-	public Notifica inviaNotificaATuttiICorsi(Chef chef, String oggetto, String testo) throws SQLException{
 		String sql = "INSERT INTO notifica (usernamechef, oggetto, testo) " +
 			     "VALUES(?, ?, ?) ";
 	try (Connection connection = DB.getConnection();
