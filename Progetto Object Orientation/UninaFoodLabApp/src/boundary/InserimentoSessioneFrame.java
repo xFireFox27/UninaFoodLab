@@ -40,6 +40,7 @@ public class InserimentoSessioneFrame extends JDialog {
         this.corso = corso;
         setTitle("Inserimento Nuova Sessione - " + corso.getTitolo());
         setModal(true);
+        setResizable(false);
         setBounds(100, 100, 500, 400);
         setLocationRelativeTo(null);
         initComponents();
