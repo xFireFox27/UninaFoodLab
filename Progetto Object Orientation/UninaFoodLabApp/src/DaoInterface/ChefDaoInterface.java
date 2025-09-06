@@ -6,5 +6,4 @@ import entity.Chef;
 
 public interface ChefDaoInterface {
 	public Chef creaChef(String username, String password) throws SQLException;
-
 }

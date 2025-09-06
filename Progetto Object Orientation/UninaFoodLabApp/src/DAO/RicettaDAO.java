@@ -16,26 +16,18 @@ public class RicettaDAO implements RicettaDaoInterface {
         String sql = "SELECT * FROM ricetta ORDER BY nome";
         
         try (Connection conn = DB.getConnection();
-             PreparedStatement stmt = conn.prepareStatement(sql)) {
-            
-            try (ResultSet rs = stmt.executeQuery()) {
-                while (rs.next()) {
-                    Ricetta ricetta = new Ricetta(
-                        rs.getString("nome"),
-                        rs.getString("descrizione")
-                    );
-                    ricette.add(ricetta);
-                }
-            }
+    		PreparedStatement stmt = conn.prepareStatement(sql)) {
+		        try (ResultSet rs = stmt.executeQuery()) {
+		            while (rs.next()) {
+		                Ricetta ricetta = new Ricetta(
+		                    rs.getString("nome"),
+		                    rs.getString("descrizione")
+		                );
+		                ricette.add(ricetta);
+		            }
+		        }
         }
+        
         return ricette;
     }
-
-   
-
-
-
-
-
-
 }

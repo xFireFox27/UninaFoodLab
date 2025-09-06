@@ -16,5 +16,5 @@ public interface CorsoDaoInterface {
 	public Corso creaCorso(String titolo, String frequenza, int numLezioni, int annoFrequenza, Date dataInizio, Topic topic, Chef chef) throws SQLException;
 	
 	public ArrayList<String> getTopicByChef(String chefUsername) throws SQLException;
-
+	
 }

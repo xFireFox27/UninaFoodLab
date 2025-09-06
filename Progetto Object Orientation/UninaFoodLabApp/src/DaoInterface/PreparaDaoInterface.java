@@ -7,7 +7,9 @@ import entity.Ricetta;
 import entity.SessioneInPresenza;
 
 public interface PreparaDaoInterface {
+	
     void salvaAssociazioniSessioneRicette(SessioneInPresenza sessione, List<Ricetta> ricette) throws SQLException;
+    
     List<Ricetta> getRicettePerSessione(SessioneInPresenza sessione) throws SQLException;
-
+    
 }
