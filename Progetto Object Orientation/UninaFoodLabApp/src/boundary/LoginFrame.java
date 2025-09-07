@@ -50,7 +50,7 @@ public class LoginFrame extends JFrame {
 	    setResizable(true);
 	    setTitle("LoginChef");
 	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	    setSize(689, 472);
+	    setSize(689, 500);
 	    setLocationRelativeTo(null);
 	    CaricaIcona();
 	    setMinimumSize(new Dimension(689, 472));
