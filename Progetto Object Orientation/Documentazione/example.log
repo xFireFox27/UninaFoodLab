@@ -1,115 +1,196 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.4)  8 SEP 2025 18:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.4)  8 SEP 2025 18:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/bruno/GitKraken/UninaFoodLab/Progetto Object Orientation/Documentazione/example.tex"
-(/home/bruno/GitKraken/UninaFoodLab/Progetto Object Orientation/Documentazione/example.tex
-LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-02-22> (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+**"/Users/carmineamato/Desktop/Object Orientation/UninaFoodLab/Progetto Object 
+Orientation/Documentazione/example.tex"
+
+(/Users/carmineamato/Desktop/Object Orientation/UninaFoodLab/Progetto Object Or
+ientation/Documentazione/example.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-06-09>
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/base/book.cls
+Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/base/bk12.clo
+File: bk12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count185
-\c@chapter=\count186
-\c@section=\count187
-\c@subsection=\count188
-\c@subsubsection=\count189
-\c@paragraph=\count190
-\c@subparagraph=\count191
-\c@figure=\count192
-\c@table=\count193
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\bibindent=\dimen140
-) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+\c@part=\count275
+\c@chapter=\count276
+\c@section=\count277
+\c@subsection=\count278
+\c@subsubsection=\count279
+\c@paragraph=\count280
+\c@subparagraph=\count281
+\c@figure=\count282
+\c@table=\count283
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
-) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+\KV@toks@=\toks17
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count194
-\Gm@cntv=\count195
-\c@Gm@tempcnt=\count196
-\Gm@bindingoffset=\dimen141
-\Gm@wd@mp=\dimen142
-\Gm@odd@mp=\dimen143
-\Gm@even@mp=\dimen144
-\Gm@layoutwidth=\dimen145
-\Gm@layoutheight=\dimen146
-\Gm@layouthoffset=\dimen147
-\Gm@layoutvoffset=\dimen148
-\Gm@dimlist=\toks17
-) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks18
-\inpenc@posthook=\toks19
-) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2023/02/13 3.86 The Babel package
-\babel@savecnt=\count197
-\U@D=\dimen149
-\l@unhyphenated=\language86
- (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\Gm@cnth=\count284
+\Gm@cntv=\count285
+\c@Gm@tempcnt=\count286
+\Gm@bindingoffset=\dimen149
+\Gm@wd@mp=\dimen150
+\Gm@odd@mp=\dimen151
+\Gm@even@mp=\dimen152
+\Gm@layoutwidth=\dimen153
+\Gm@layoutheight=\dimen154
+\Gm@layouthoffset=\dimen155
+\Gm@layoutvoffset=\dimen156
+\Gm@dimlist=\toks18
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/geometry/geometry.cfg))
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/base/fontenc.sty
+Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/babel/babel.sty
+Package: babel 2025/05/14 v25.9 The multilingual framework for pdfLaTeX, LuaLaT
+eX and XeLaTeX
+\babel@savecnt=\count287
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2043.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2045.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2047.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2048.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2049.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2051.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2076.
+\U@D=\dimen157
+\l@unhyphenated=\language79
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/babel/txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count198
- (/usr/share/texlive/texmf-dist/tex/generic/babel-italian/italian.ldf
-Language: italian 2022/03/27 v.1.4.07 Italian support for the babel system
-\it@lettering=\count199
-\it@doublequoteactive=\count266
-\it@ISOcompliance=\count267
-)) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/it/babel-italian.tex
+\bbl@dirlevel=\count288
+
+*************************************
+* Local config file bblopts.cfg used
+*
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/arabi/bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/babel-italian/italian.ldf
+Language: italian 2024/10/10 v.1.5.01 Italian support for the babel system
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/babel/locale/it/babel-italian.tex
 Package babel Info: Importing font and identification data for italian
 (babel)             from babel-it.ini. Reported on input line 11.
-) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count268
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+\it@lettering=\count289
+\it@doublequoteactive=\count290
+\it@ISOcompliance=\count291
+))
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count292
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen150
-\Gin@req@width=\dimen151
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count269
-\lst@gtempboxa=\box51
-\lst@token=\toks20
-\lst@length=\count270
-\lst@currlwidth=\dimen152
-\lst@column=\count271
-\lst@pos=\count272
-\lst@lostspace=\dimen153
-\lst@width=\dimen154
-\lst@newlines=\count273
-\lst@lineno=\count274
-\lst@maxwidth=\dimen155
- (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count275
-\lst@skipnumbers=\count276
-\lst@framebox=\box52
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2023/02/27 1.9 listings configuration
+\Gin@req@height=\dimen158
+\Gin@req@width=\dimen159
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/listings/listings.sty
+\lst@mode=\count293
+\lst@gtempboxa=\box53
+\lst@token=\toks21
+\lst@length=\count294
+\lst@currlwidth=\dimen160
+\lst@column=\count295
+\lst@pos=\count296
+\lst@lostspace=\dimen161
+\lst@width=\dimen162
+\lst@newlines=\count297
+\lst@lineno=\count298
+\lst@maxwidth=\dimen163
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/listings/lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count299
+\lst@skipnumbers=\count300
+\lst@framebox=\box54
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/listings/listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
-Package: listings 2023/02/27 1.9 (Carsten Heinz)
- (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
@@ -125,6 +206,33 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box55
+\beforetitleunit=\skip51
+\aftertitleunit=\skip52
+\ttl@plus=\dimen164
+\ttl@minus=\dimen165
+\ttl@toksa=\toks22
+\titlewidth=\dimen166
+\titlewidthlast=\dimen167
+\titlewidthfirst=\dimen168
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip53
+\enit@outerparindent=\dimen169
+\enit@toks=\toks23
+\enit@inbox=\box56
+\enit@count@id=\count301
+\enitdp@description=\count302
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/hyperref/hyperref.sty
@@ -179,16 +287,16 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 x/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count301
+\c@section@level=\count303
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen164
-\Hy@linkcounter=\count302
-\Hy@pagecounter=\count303
+\@linkdim=\dimen170
+\Hy@linkcounter=\count304
+\Hy@pagecounter=\count305
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/hyperref/pd1enc.def
@@ -200,7 +308,7 @@ Now handling font encoding PD1 ...
 ric/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count304
+\Hy@SavedSpaceFactor=\count306
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/hyperref/puenc.def
@@ -208,6 +316,7 @@ File: puenc.def 2025-06-21 v7.01n Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 4052.
 Package hyperref Info: Hyper figures OFF on input line 4181.
 Package hyperref Info: Link nesting OFF on input line 4186.
 Package hyperref Info: Hyper index ON on input line 4189.
@@ -215,7 +324,7 @@ Package hyperref Info: Plain pages OFF on input line 4196.
 Package hyperref Info: Backreferencing OFF on input line 4201.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4448.
-\c@Hy@tempcnt=\count305
+\c@Hy@tempcnt=\count307
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/url/url.sty
@@ -223,7 +332,7 @@ x/url/url.sty
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4787.
-\XeTeXLinkMargin=\dimen165
+\XeTeXLinkMargin=\dimen171
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/bitset/bitset.sty
@@ -234,27 +343,27 @@ ric/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count306
-\Field@Width=\dimen166
-\Fld@charsize=\dimen167
+\Fld@menulength=\count308
+\Field@Width=\dimen172
+\Fld@charsize=\dimen173
 Package hyperref Info: Hyper figures OFF on input line 6066.
 Package hyperref Info: Link nesting OFF on input line 6071.
 Package hyperref Info: Hyper index ON on input line 6074.
 Package hyperref Info: backreferencing OFF on input line 6081.
-Package hyperref Info: Link coloring OFF on input line 6086.
+Package hyperref Info: Link coloring ON on input line 6084.
 Package hyperref Info: Link coloring with OCG OFF on input line 6091.
 Package hyperref Info: PDF/A mode OFF on input line 6096.
-\Hy@abspage=\count307
-\c@Item=\count308
-\c@Hfootnote=\count309
+\Hy@abspage=\count309
+\c@Item=\count310
+\c@Hfootnote=\count311
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/hyperref/hpdftex.def
 File: hpdftex.def 2025-06-21 v7.01n Hyperref driver for pdfTeX
-\Fld@listcount=\count310
-\c@bookmark@seq@number=\count311
+\Fld@listcount=\count312
+\c@bookmark@seq@number=\count313
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/rerunfilecheck/rerunfilecheck.sty
@@ -267,12 +376,10 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
-\Hy@SectionHShift=\skip51
+\Hy@SectionHShift=\skip54
 ) (uninafrontespizio.sty
 Package: uninafrontespizio 2018/07/24 UniNA Frontespizio Package
- (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2022/12/04 v6.7b set line spacing
-)
+
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/pgf/frontendlayer/tikz.sty
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
@@ -281,13 +388,13 @@ x/pgf/basiclayer/pgf.sty
 x/pgf/utilities/pgfrcs.sty
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks22
-\pgfutil@tempdima=\dimen168
-\pgfutil@tempdimb=\dimen169
+\pgfutil@everybye=\toks24
+\pgfutil@tempdima=\dimen174
+\pgfutil@tempdimb=\dimen175
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box55
+\pgfutil@abb=\box57
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/utilities/pgfrcs.code.tex
@@ -296,53 +403,71 @@ ric/pgf/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/pgf/basiclayer/pgfcore.sty
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/pgf/systemlayer/pgfsys.sty
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks22
-\pgfkeys@temptoks=\toks23
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks24
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks27
 ))
-\pgf@x=\dimen170
-\pgf@y=\dimen171
-\pgf@xa=\dimen172
-\pgf@ya=\dimen173
-\pgf@xb=\dimen174
-\pgf@yb=\dimen175
-\pgf@xc=\dimen176
-\pgf@yc=\dimen177
-\pgf@xd=\dimen178
-\pgf@yd=\dimen179
+\pgf@x=\dimen176
+\pgf@y=\dimen177
+\pgf@xa=\dimen178
+\pgf@ya=\dimen179
+\pgf@xb=\dimen180
+\pgf@yb=\dimen181
+\pgf@xc=\dimen182
+\pgf@yc=\dimen183
+\pgf@xd=\dimen184
+\pgf@yd=\dimen185
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count312
-\c@pgf@countb=\count313
-\c@pgf@countc=\count314
-\c@pgf@countd=\count315
-\t@pgf@toka=\toks26
-\t@pgf@tokb=\toks27
-\t@pgf@tokc=\toks28
-\pgf@sys@id@count=\count316
+\c@pgf@counta=\count314
+\c@pgf@countb=\count315
+\c@pgf@countc=\count316
+\c@pgf@countd=\count317
+\t@pgf@toka=\toks28
+\t@pgf@tokb=\toks29
+\t@pgf@tokc=\toks30
+\pgf@sys@id@count=\count318
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/systemlayer/pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+)))
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count317
-\pgfsyssoftpath@bigbuffer@items=\count318
+\pgfsyssoftpath@smallbuffer@items=\count319
+\pgfsyssoftpath@bigbuffer@items=\count320
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+))
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
@@ -351,12 +476,12 @@ ric/pgf/math/pgfmath.code.tex
 ric/pgf/math/pgfmathutil.code.tex)
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen180
-\pgfmath@count=\count319
-\pgfmath@box=\box56
-\pgfmath@toks=\toks29
-\pgfmath@stack@operand=\toks30
-\pgfmath@stack@operation=\toks31
+\pgfmath@dimen=\dimen186
+\pgfmath@count=\count321
+\pgfmath@box=\box58
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/math/pgfmathfunctions.code.tex)
@@ -380,153 +505,191 @@ ric/pgf/math/pgfmathfunctions.integerarithmetics.code.tex)
 ric/pgf/math/pgfmathcalc.code.tex)
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count320
+\c@pgfmathroundto@lastzeros=\count322
 ))
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/math/pgfint.code.tex)
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen181
-\pgf@picmaxx=\dimen182
-\pgf@picminy=\dimen183
-\pgf@picmaxy=\dimen184
-\pgf@pathminx=\dimen185
-\pgf@pathmaxx=\dimen186
-\pgf@pathminy=\dimen187
-\pgf@pathmaxy=\dimen188
-\pgf@xx=\dimen189
-\pgf@xy=\dimen190
-\pgf@yx=\dimen191
-\pgf@yy=\dimen192
-\pgf@zx=\dimen193
-\pgf@zy=\dimen194
+\pgf@picminx=\dimen187
+\pgf@picmaxx=\dimen188
+\pgf@picminy=\dimen189
+\pgf@picmaxy=\dimen190
+\pgf@pathminx=\dimen191
+\pgf@pathmaxx=\dimen192
+\pgf@pathminy=\dimen193
+\pgf@pathmaxy=\dimen194
+\pgf@xx=\dimen195
+\pgf@xy=\dimen196
+\pgf@yx=\dimen197
+\pgf@yy=\dimen198
+\pgf@zx=\dimen199
+\pgf@zy=\dimen256
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen195
-\pgf@path@lasty=\dimen196
+\pgf@path@lastx=\dimen257
+\pgf@path@lasty=\dimen258
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen197
-\pgf@shorten@start@additional=\dimen198
+\pgf@shorten@end@additional=\dimen259
+\pgf@shorten@start@additional=\dimen260
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box57
-\pgf@hbox=\box58
-\pgf@layerbox@main=\box59
-\pgf@picture@serial@count=\count321
+\pgfpic=\box59
+\pgf@hbox=\box60
+\pgf@layerbox@main=\box61
+\pgf@picture@serial@count=\count323
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen199
+\pgflinewidth=\dimen261
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen256
-\pgf@pt@y=\dimen257
-\pgf@pt@temp=\dimen258
+\pgf@pt@x=\dimen262
+\pgf@pt@y=\dimen263
+\pgf@pt@temp=\dimen264
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/basiclayer/pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen259
+\pgfarrowsep=\dimen265
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen260
-\pgf@sys@shading@range@num=\count322
-\pgf@shadingcount=\count323
+\pgf@max=\dimen266
+\pgf@sys@shading@range@num=\count324
+\pgf@shadingcount=\count325
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box58
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+\pgfexternal@startupbox=\box62
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/basiclayer/pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/basiclayer/pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+)))
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box59
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+\pgfnodeparttextbox=\box63
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+)
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen261
-\pgf@nodesepend=\dimen262
+\pgf@nodesepstart=\dimen267
+\pgf@nodesepend=\dimen268
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+))
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/pgf/utilities/pgffor.sty
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/pgf/utilities/pgfkeys.sty
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/utilities/pgfkeys.code.tex))
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/pgf/math/pgfmath.sty
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/math/pgfmath.code.tex))
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen263
-\pgffor@skip=\dimen264
-\pgffor@stack=\toks32
-\pgffor@toks=\toks33
+\pgffor@iter=\dimen269
+\pgffor@skip=\dimen270
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
 ))
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count324
-\pgfplotmarksize=\dimen265
+\pgf@plot@mark@count=\count326
+\pgfplotmarksize=\dimen271
 )
-\tikz@lastx=\dimen266
-\tikz@lasty=\dimen267
-\tikz@lastxsaved=\dimen268
-\tikz@lastysaved=\dimen269
-\tikz@lastmovetox=\dimen270
-\tikz@lastmovetoy=\dimen271
-\tikzleveldistance=\dimen272
-\tikzsiblingdistance=\dimen273
-\tikz@figbox=\box62
-\tikz@figbox@bg=\box63
-\tikz@tempbox=\box64
-\tikz@tempbox@bg=\box65
-\tikztreelevel=\count325
-\tikznumberofchildren=\count326
-\tikznumberofcurrentchild=\count327
-\tikz@fig@count=\count328
+\tikz@lastx=\dimen272
+\tikz@lasty=\dimen273
+\tikz@lastxsaved=\dimen274
+\tikz@lastysaved=\dimen275
+\tikz@lastmovetox=\dimen276
+\tikz@lastmovetoy=\dimen277
+\tikzleveldistance=\dimen278
+\tikzsiblingdistance=\dimen279
+\tikz@figbox=\box64
+\tikz@figbox@bg=\box65
+\tikz@tempbox=\box66
+\tikz@tempbox@bg=\box67
+\tikztreelevel=\count327
+\tikznumberofchildren=\count328
+\tikznumberofcurrentchild=\count329
+\tikz@fig@count=\count330
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count329
-\pgfmatrixcurrentcolumn=\count330
-\pgf@matrix@numberofcolumns=\count331
+\pgfmatrixcurrentrow=\count331
+\pgfmatrixcurrentcolumn=\count332
+\pgf@matrix@numberofcolumns=\count333
 )
-\tikz@expandcount=\count332
+\tikz@expandcount=\count334
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
 ric/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
+)))
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/gene
+ric/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@layerbox@background=\box66
-\pgf@layerboxsaved@background=\box67
+\pgf@layerbox@background=\box68
+\pgf@layerboxsaved@background=\box69
 ))
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/listings/lstlang1.sty
@@ -535,28 +698,28 @@ File: lstlang1.sty 2024/09/23 1.10c listings language file
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count333
+\l__color_backend_stack_int=\count335
 ) (example.aux)
 \openout1 = `example.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -574,15 +737,15 @@ LaTeX Font Info:    ... okay on input line 52.
 * \textheight=624.25346pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
-* \topmargin=-16.97922pt
+* \topmargin=-18.78552pt
 * \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=69.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=47.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -592,93 +755,118 @@ LaTeX Font Info:    ... okay on input line 52.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \it@ocap on input line 52.
-LaTeX Info: Redefining \it@ccap on input line 52.
+LaTeX Info: Redefining \it@ocap on input line 70.
+LaTeX Info: Redefining \it@ccap on input line 70.
 
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/cont
 ext/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count334
-\scratchdimen=\dimen274
-\scratchbox=\box68
-\nofMPsegments=\count335
-\nofMParguments=\count336
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count337
-\MPscratchDim=\dimen275
-\MPnumerator=\count338
-\makeMPintoPDFobject=\count339
-\everyMPtoPDFconversion=\toks35
+\scratchcounter=\count336
+\scratchdimen=\dimen280
+\scratchbox=\box70
+\nofMPsegments=\count337
+\nofMParguments=\count338
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count339
+\MPscratchDim=\dimen281
+\MPnumerator=\count340
+\makeMPintoPDFobject=\count341
+\everyMPtoPDFconversion=\toks37
 )
 (/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
 x/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/tex/late
+x/00miktex/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count340
-Package hyperref Info: Link coloring OFF on input line 52.
+\c@lstlisting=\count342
+Package hyperref Info: Link coloring ON on input line 70.
  (example.out) (example.out)
 \@outlinefile=\write4
 \openout4 = `example.out'.
 
-<logo-federico-II.pdf, id=110, 501.79471pt x 499.8675pt>
+<logo-federico-II.pdf, id=182, 501.79471pt x 499.8675pt>
 File: logo-federico-II.pdf Graphic file (type pdf)
 <use logo-federico-II.pdf>
-Package pdftex.def Info: logo-federico-II.pdf  used on input line 54.
+Package pdftex.def Info: logo-federico-II.pdf  used on input line 72.
 (pdftex.def)             Requested size: 99.58464pt x 99.20135pt.
- [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./logo-federico-II.pdf>] (./example.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 4.
-)
-\tf@toc=\write5
-\openout5 = `example.toc'.
+[1
 
 
+{/Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/map/p
+dftex/pdftex.map} <./logo-federico-II.pdf>]
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.58     \chapter
-                 {Descrizione del progetto} [1
+l.78     \tableofcontents
+                          [1] (example.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 4.
 
-]
+
+[2
+
+])
+\tf@toc=\write5
+\openout5 = `example.toc'.
+
+
+
+[3]
 Capitolo 1.
-[3
 
-]
-Capitolo 2.
-<UninaFoodLabApp.png, id=162, 11153.67pt x 5669.18pt>
-File: UninaFoodLabApp.png Graphic file (type png)
-<use UninaFoodLabApp.png>
-Package pdftex.def Info: UninaFoodLabApp.png  used on input line 80.
-(pdftex.def)             Requested size: 443.57848pt x 225.43102pt.
+
 [4
 
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./UninaFoodLabApp.png (PNG copy)>] [5]
-Capitolo 3.
-(./DescrizioneBoundary.tex [6
+]
+
+[5]
+Capitolo 2.
+<UninaFoodLabApp.png, id=263, 11153.67pt x 5669.18pt>
+File: UninaFoodLabApp.png Graphic file (type png)
+<use UninaFoodLabApp.png>
+Package pdftex.def Info: UninaFoodLabApp.png  used on input line 121.
+(pdftex.def)             Requested size: 399.21791pt x 202.8533pt.
 
 
-[5
+[6
 
-] (repository.tex
-
-[6]
+ <./UninaFoodLabApp.png (PNG copy)>]
 
 [7]
+Capitolo 3.
+(DescrizioneBoundary.tex
+
+[8
+
+]) (descrizioneEntity.tex
+
+[9]
+
+[10])
+
+[11]
+
+[12] (repository.tex
+
+[13]
 Capitolo 4.
 )
 
-[8
+[14
 
 ] (example.aux)
  ***********
@@ -686,39 +874,37 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
 Package rerunfilecheck Info: File `example.out' has not changed.
-(rerunfilecheck)             Checksum: 68DBF11327235B3692209C7B5B4CF8E0;4040.
+(rerunfilecheck)             Checksum: C5F18780A39488295E168F720ACC52D8;6860.
  ) 
 Here is how much of TeX's memory you used:
- 22345 strings out of 468226
- 423544 string characters out of 5420954
- 991188 words of memory out of 5000000
- 50491 multiletter control sequences out of 15000+600000
- 638293 words of font info for 56 fonts, out of 8000000 for 9000
+ 23037 strings out of 468226
+ 434728 string characters out of 5420954
+ 1006460 words of memory out of 5000000
+ 51139 multiletter control sequences out of 15000+600000
+ 639483 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,6n,101p,564b,527s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,6n,101p,529b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk
-/ljfour/jknappen/ec/dpi600/ecbx1200.pk> </Users/carmineamato/Library/Applicatio
-n Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbi1440.pk> </
+/ljfour/jknappen/ec/dpi600/ecbx1440.pk> </Users/carmineamato/Library/Applicatio
+n Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbi1728.pk> </
 Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfo
-ur/jknappen/ec/dpi600/tcrm1000.pk> </Users/carmineamato/Library/Application Sup
-port/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk> </Users
+ur/jknappen/ec/dpi600/tcrm1200.pk> </Users/carmineamato/Library/Application Sup
+port/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1728.pk> </Users
 /carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jk
-nappen/ec/dpi600/ecbx2074.pk> </Users/carmineamato/Library/Application Support/
-MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1000.pk> </Users/carm
+nappen/ec/dpi600/ecti1200.pk> </Users/carmineamato/Library/Application Support/
+MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk> </Users/carm
 ineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappe
-n/ec/dpi600/ecrm1000.pk> </Users/carmineamato/Library/Application Support/MiKTe
-X/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk> </Users/carmineam
+n/ec/dpi600/ecbx2488.pk> </Users/carmineamato/Library/Application Support/MiKTe
+X/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk> </Users/carmineam
 ato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/
-dpi600/ecbx2488.pk> </Users/carmineamato/Library/Application Support/MiKTeX/tex
-mfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk> </Users/carmineamato/L
+dpi600/ecrm1440.pk> </Users/carmineamato/Library/Application Support/MiKTeX/tex
+mfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/eccc2488.pk> </Users/carmineamato/L
 ibrary/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi60
-0/eccc2488.pk> </Users/carmineamato/Library/Application Support/MiKTeX/texmfs/d
-ata/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1200.pk> </Users/carmineamato/Librar
-y/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecc
-c1440.pk>
-Output written on example.pdf (9 pages, 4215191 bytes).
+0/eccc1440.pk> </Users/carmineamato/Library/Application Support/MiKTeX/texmfs/d
+ata/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1728.pk>
+Output written on example.pdf (15 pages, 4246625 bytes).
 PDF statistics:
- 570 PDF objects out of 1000 (max. 8388607)
- 37 named destinations out of 1000 (max. 500000)
- 231 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 700 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
+ 375 words of extra memory for PDF output out of 10000 (max. 10000000)
 
