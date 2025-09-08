@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.8.16)  8 SEP 2025 17:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.8.16)  8 SEP 2025 18:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -413,30 +413,35 @@ Capitolo 1.
 
 ]
 Capitolo 2.
+<UninaFoodLabApp.png, id=28, 11153.67pt x 5669.18pt>
+File: UninaFoodLabApp.png Graphic file (type png)
+<use UninaFoodLabApp.png>
+Package pdftex.def Info: UninaFoodLabApp.png  used on input line 79.
+(pdftex.def)             Requested size: 443.57848pt x 225.43102pt.
 [3
 
-]
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./UninaFoodLabApp.png (PNG copy)>] [4]
 Capitolo 3.
-[4
+[5
 
-] [5]
+] [6]
 Capitolo 4.
-[6
+[7
 
 ] (./example.aux) ) 
 Here is how much of TeX's memory you used:
- 15579 strings out of 476034
- 306195 string characters out of 5792864
- 1855388 words of memory out of 6000000
- 35786 multiletter control sequences out of 15000+600000
- 522033 words of font info for 45 fonts, out of 8000000 for 9000
+ 15595 strings out of 476034
+ 306461 string characters out of 5792864
+ 1857388 words of memory out of 6000000
+ 35796 multiletter control sequences out of 15000+600000
+ 523755 words of font info for 48 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 99i,5n,94p,497b,261s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfcc2488.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on example.pdf (7 pages, 293153 bytes).
+ 99i,6n,94p,527b,261s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfcc2488.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on example.pdf (8 pages, 4259598 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 103 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

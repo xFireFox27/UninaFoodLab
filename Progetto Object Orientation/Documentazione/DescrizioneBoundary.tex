@@ -1,0 +1,35 @@
+
+        \section{Package Boundary}
+            Il pacchetto boundary contiene tutte le classi che regolano i Frame, la loro impostazione grafica,
+            con disposizione dei widget e il loro funzionamento.
+            \subsection{Classe LoginFrame}
+                Questo è il frame per effettuare il login come chef nell'applicazione inserendo username e password validi.
+            \subsection{Classe HomepageChef}
+                Questo è il frame dell'HomePage dello chef dalla quale è possibile selezionare, grazie agli appositi bottoni,
+                quale schermata visualizzare tra: Creazione corsi, Gestione Corsi, Notifiche e Riepilogo Mensile.
+            \subsection{Classe NuovoCorsoFrame}
+                Questo è il frame che permette la creazione di un nuovo corso
+            \subsection{Classe CorsiFrame}
+                Questo è il frame da cui è possibile visualizzare tutti i corsi dello chef loggato in formato di lista
+                e filtrarli per Topic. Facendo doppio click sul nome di un corso è inoltre possibile aprire la schermata
+                per l'inserimento di sessioni.
+            \subsection{Classe SessioniFrame}
+                Questo è il frame che permette di visualizzare e gestire le sessioni. Ogni sessione è selezionabile da
+                una lista, selezionando una sessione in presenza verrà aperto il frame per la gestione delle ricette per quella
+                sessione.
+            \subsection{Classe InserimentoSessioneFrame}
+                Questo è il frame che permette di creare le sessioni per il corso selezionato.
+            \subsection{Classe RicetteFrame}
+                Questo è il frame per la gestione delle ricette di una sessione in presenza, ad ogni sessione possono essere
+                associate diverse ricette attraverso una checklist. Se una sessione ha già dele ricette associate un dialog chiede
+                se si vuole che queste vengano sovrascritte.
+            \subsection{Classe NotificheFrame}
+                Questo è il frame dal quale è possibile visualizzare tutte le notifiche inviate dallo chef loggato
+                e, attraverso l'apposito bottone, aprire il frame per l'invio di una nuova notifica.
+            \subsection{Classe InvioNotificheFrame}
+                Questo è il frame dal quale è possibile inviare nuove notifiche ad un corso specifico, selezionabile tramite ComboBox,
+                oppure a tutti i corsi dello chef loggato.
+            \subsection{Classe RiepilogoMensileFrame}
+                Questo è il frame dal quale è possibile visualizzare il riepilogo mensile contenente: il numero di corsi totali tenuti,
+                il numero di sessioni online e pratiche, e di quest’ultime il numero medio, massimo e minimo di ricette realizzate,
+                sottoforma di diagramma a barre.
