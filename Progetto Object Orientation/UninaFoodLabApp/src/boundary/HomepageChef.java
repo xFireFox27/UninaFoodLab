@@ -1,16 +1,13 @@
 package boundary;
 
-import java.awt.EventQueue;
 import java.awt.Graphics;
 import java.awt.Image;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import net.miginfocom.swing.MigLayout;
 import java.awt.Color;
 import java.awt.Dimension;
-
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
@@ -18,18 +15,19 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
-import control.Controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import control.Controller;
+
+
 public class HomepageChef extends JFrame {
 
+	Controller theController;
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	Controller theController;
 	private JLabel titleLabel;
 	private JLabel logoLabel;
-	
 	
 	public HomepageChef(Controller c) {
 		theController = c;
@@ -43,9 +41,7 @@ public class HomepageChef extends JFrame {
 		
 		// ContentPane personalizzato con immagine di sfondo
 		contentPane = new JPanel() {
-		    private ImageIcon backgroundImage;
-
-		    {
+		    private ImageIcon backgroundImage; {
 		        try {
 		            java.net.URL imageUrl = getClass().getResource("/home.png");
 		            if (imageUrl != null) {
@@ -67,7 +63,6 @@ public class HomepageChef extends JFrame {
 		
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		CaricaIcona();
-
 		setContentPane(contentPane);
 		contentPane.setLayout(new MigLayout("", "[50px][grow][][][][][][][][][][][][][][][][][grow][50px]", "[50px][grow][][][][][][][][][][][][][grow][50px]"));
 		
@@ -100,7 +95,6 @@ public class HomepageChef extends JFrame {
 		titleLabel.setOpaque(true);
 		titleLabel.setBackground(new Color(255, 255, 255, 200));
 		panel.add(titleLabel, "cell 1 5 3 1,grow");
-
 		
 		JButton btnNuovoCorso = new JButton("Crea Nuovo Corso");
 		btnNuovoCorso.setOpaque(true);
@@ -150,7 +144,7 @@ public class HomepageChef extends JFrame {
 		});
 		panel.add(btnRiepilogoMensile, "cell 1 9 3 1,grow");
 		
-		// Chiudi la finestra premendo ESC
+		// Chiusura della finestra premendo ESC
 		contentPane.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(
 		    javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0), "ESCAPE");
 		contentPane.getActionMap().put("ESCAPE", new javax.swing.AbstractAction() {
@@ -170,14 +164,10 @@ public class HomepageChef extends JFrame {
 	        java.net.URL iconUrl = getClass().getResource("/icona.png");
 	        if (iconUrl != null) {
 	            ImageIcon originalIcon = new ImageIcon(iconUrl);
-	            
 	            Image scaledImage = originalIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
 	            ImageIcon icon = new ImageIcon(scaledImage);
-	            
 	            setIconImage(icon.getImage());
-	            
 	            repaint();
-	            
 	        } else {
 	            System.err.println("File icona.png non trovato");
 	        }
@@ -186,4 +176,5 @@ public class HomepageChef extends JFrame {
 	        e.printStackTrace();
 	    }
 	}
+	
 }

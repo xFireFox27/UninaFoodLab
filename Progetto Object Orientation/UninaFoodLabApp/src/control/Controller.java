@@ -44,7 +44,6 @@ public class Controller {
 		loginFrame.setVisible(true);
 	}
 	
-	
 	public void LoginChef(String username, String password) {
 		chefDao = new ChefDAO();
 		
@@ -147,7 +146,6 @@ public class Controller {
 		invioNotificaFrame = new InvioNotificaFrame(this);
 		invioNotificaFrame.setVisible(true);
 	}
-	
 	
 	//Inizializza una combobox con tutti i corsi associati allo chef loggato
 	public JComboBox<Corso> inizializzaComboBoxCorsi(List<Corso> corsi){
@@ -309,15 +307,11 @@ public class Controller {
 	    }
 	    
 	    try {
-	        SessioneInPresenza nuovaSessione = new SessioneInPresenza(data, durata, numSessione, corso, luogo, aula);//crea un oggetto sessione in presenza
+	        SessioneInPresenza nuovaSessione = new SessioneInPresenza(data, durata, numSessione, corso, luogo, aula);
 	        sessioneDao.insertSessione(nuovaSessione);
-	        
-	        if (sessioniFrame != null) {//se la sessione è stata creata(inserimento nel db andato a buon fine)
-	            						// Ricarica le sessioni per aggiornare la vista
-	        }
 	    } catch (SQLException e) {
 	        e.printStackTrace();
-	        throw new RuntimeException("Errore durante l'inserimento della sessione in presenza: " + e.getMessage());
+	        throw new RuntimeException(e.getMessage().split("\n")[0]);
 	    }
 	}
 
@@ -329,14 +323,9 @@ public class Controller {
 	    try {
 	        SessioneOnline nuovaSessione = new SessioneOnline(data, durata, numSessione, corso, link);
 	        sessioneOnlineDao.insertSessione(nuovaSessione);
-	        
-	        // Aggiorna la lista delle sessioni 
-	        if (sessioniFrame != null) {
-	            // Ricarica le sessioni per aggiornare la vista
-	        }
 	    } catch (SQLException e) {
 	        e.printStackTrace();
-	        throw new RuntimeException("Errore durante l'inserimento della sessione online: " + e.getMessage());
+	        throw new RuntimeException(e.getMessage().split("\n")[0]);
 	    }
 	}
 
@@ -379,58 +368,46 @@ public class Controller {
 	}
 	
 	public void creaNuovoCorso(String titolo, String frequenza, String numLezioniStr, String annoFrequenzaStr, String date, String topic, NuovoCorsoDialog nuovoCorsoDialog) {
-		int numLezioni;
-		int annoFrequenza;
-		Date sqlDate;
-		
-		if (titolo == null || titolo.trim().isEmpty()) {
-			homepageChef.showErrorMessage("Il titolo non può essere vuoto.");
-			return;
-		}
-		
-		try {
-			numLezioni = Integer.parseInt(numLezioniStr);
-			annoFrequenza = Integer.parseInt(annoFrequenzaStr);
-		} catch (NumberFormatException e) {
-			homepageChef.showErrorMessage("Il numero di lezioni e l'anno devono essere valori numerici.");
-			return;
-		}
-		
-		if (numLezioni < 1 || numLezioni > 100) {
-			homepageChef.showErrorMessage("Il numero di lezioni deve essere compreso tra 1 e 100.");
-			return;
-		}
-		
-		try {
-			sqlDate = Date.valueOf(date);
-		} catch (IllegalArgumentException e) {
-			homepageChef.showErrorMessage("Formato data non valido. Usare il formato yyyy-MM-dd.");
-			return;
-		}
-		
-		TopicDAO topicDao = new TopicDAO();
-		Topic topicCorso = topicDao.getTopicByName(topic);
-		
-		if (topicCorso == null) {
-			homepageChef.showErrorMessage("Nessun topic selezionato.");
-			return;
-		}
-		
-		try {
-			if (corsoDao == null) {
-				corsoDao = new CorsoDAO();
-			}
-			Corso corso = corsoDao.creaCorso(titolo, frequenza, numLezioni, annoFrequenza, sqlDate, topicCorso, chef);
-			if (corso != null) {
-				JOptionPane.showMessageDialog(homepageChef, "Corso creato con successo.");
-				nuovoCorsoDialog.setVisible(false);
-			} else {
-				homepageChef.showErrorMessage("Errore nella creazione del corso.");
-			}
-		} catch (SQLException e) {
-			String firstLine = e.getMessage().split("\n")[0];
-			homepageChef.showErrorMessage(firstLine);
-		}
+	    if (titolo == null || titolo.trim().isEmpty()) {
+	        homepageChef.showErrorMessage("Il titolo non può essere vuoto.");
+	        return;
+	    }
+	    
+	    if (topic == null) {
+	        homepageChef.showErrorMessage("Nessun topic selezionato.");
+	        return;
+	    }
+
+	    try {
+	        int numLezioni = Integer.parseInt(numLezioniStr);
+	        if (numLezioni < 1 || numLezioni > 100) {
+	            homepageChef.showErrorMessage("Il numero di lezioni deve essere compreso tra 1 e 100.");
+	            return;
+	        }
+	        int annoFrequenza = Integer.parseInt(annoFrequenzaStr);
+	        Date sqlDate = Date.valueOf(date);
+	        Topic topicCorso = new TopicDAO().getTopicByName(topic);
+	        if (topicCorso == null) {
+	            homepageChef.showErrorMessage("Topic non valido.");
+	            return;
+	        }
+	        if (corsoDao == null) {
+	            corsoDao = new CorsoDAO();
+	        }
+	        Corso corso = corsoDao.creaCorso(titolo, frequenza, numLezioni, annoFrequenza, sqlDate, topicCorso, chef);
+	        if (corso != null) {
+	            JOptionPane.showMessageDialog(homepageChef, "Corso creato con successo.");
+	            nuovoCorsoDialog.dispose();
+	        } else {
+	            homepageChef.showErrorMessage("Errore nella creazione del corso.");
+	        }
+	    } catch (NumberFormatException e) {
+	        homepageChef.showErrorMessage("Il numero di lezioni deve essere un valore numerico.");
+	    } catch (IllegalArgumentException e) {
+	        homepageChef.showErrorMessage("Formato data non valido. Usare il formato yyyy-MM-dd.");
+	    } catch (SQLException e) {
+	        homepageChef.showErrorMessage(e.getMessage().split("\n")[0]);
+	    }
 	}
 	
 	public void tornaHomepageFromCreaCorso(NuovoCorsoDialog nuovoCorsoDialog) {

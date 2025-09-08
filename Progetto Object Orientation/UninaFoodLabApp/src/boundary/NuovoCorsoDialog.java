@@ -143,6 +143,16 @@ public class NuovoCorsoDialog extends JDialog {
                                         creaCorsoBtn.setBackground(new Color(98, 160, 233));
                                         creaCorsoBtn.addActionListener(new ActionListener() {
                                         	public void actionPerformed(ActionEvent e) {
+                                        		
+                                        		if (titoloCorsoTF.getText().trim().isEmpty() || 
+                                        			numLezioniTF.getText().trim().isEmpty() || 
+                                        			annoTF.getText().trim().isEmpty() || 
+                                        			dataInizioTF.getText().trim().isEmpty() ||
+                                        			topicCB.getSelectedItem() == null) {
+                                        			JOptionPane.showMessageDialog(NuovoCorsoDialog.this, "Tutti i campi devono essere compilati.", "Errore", JOptionPane.ERROR_MESSAGE);
+                                        			return;
+                                        		}
+                                        		
                                         		try {
                                                     dataInizioTF.commitEdit();
                                                     Date dataInizio = (Date) dataInizioTF.getValue();
@@ -160,7 +170,7 @@ public class NuovoCorsoDialog extends JDialog {
                                                                 return;
                                                             }
                                                         } catch (NumberFormatException nfe) {
-                                                            JOptionPane.showMessageDialog(NuovoCorsoDialog.this, "Formato anno non valido. Inserire un numero.", "Errore di Formato", JOptionPane.ERROR_MESSAGE);
+                                                            JOptionPane.showMessageDialog(NuovoCorsoDialog.this, "L'anno deve essere un valore numerico.", "Errore di Formato", JOptionPane.ERROR_MESSAGE);
                                                             return;
                                                         }
                                                     }
