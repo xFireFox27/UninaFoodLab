@@ -74,6 +74,7 @@
             oppure se è risolva a tutti. Tutte le notifiche sono consultabili in un’apposita sezione dell’interfaccia. 
 
     \chapter{Diagramma delle Classi}
+
     \section{UML}
             \begin{figure}[h]
                 \centering
@@ -92,16 +93,15 @@
             La connessione al database è gestita tramite JDBC (Java Database Connectivity), che consente di eseguire query SQL e di interagire con il database relazionale.
             
     
-    \chapter{Descrizione Package e classi}
-        \section{Descrizione del package Boundary}
-            Il pacchetto contiene le classi della gui
+    \chapter{Descrizione dei Package e delle Classi}
+        \input{DescrizioneBoundary.tex}
         \section{Package \textit{Control}}
             Il pacchetto contiene la classe controller che gestisce la logica dell'applicativo determinando le interazioni tra le classi e la gestione delle risorse. 
             \subsection{Classe Controller}
                 Il controller, seguendo gli schemi dell'architettura BCE, si occupa di gestire le interazioni tra le interfacce del programma e le entità del dominio. Di conseguenza il controller ha il compito 
                 di amministrare l'apertura e la chiusura delle finestre della GUI, di interpretare l'interazione tra l'utente e gli elementi dell'interfaccia grafica, di gestire l'allocazione e la liberazione
                 di risorse interagendo con il database mediante l'utilizzo delle classi DAO.
-        \section{Package Entity}
+        \input{descrizioneEntity.tex}
 
 
 

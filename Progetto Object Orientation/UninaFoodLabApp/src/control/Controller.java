@@ -357,7 +357,7 @@ public class Controller {
 	}
 
 	public void apriNuovoCorsoDialog() {
-		NuovoCorsoDialog nuovoCorsoDialog = new NuovoCorsoDialog(homepageChef, this);
+		NuovoCorsoFrame nuovoCorsoDialog = new NuovoCorsoFrame(homepageChef, this);
 		nuovoCorsoDialog.setVisible(true);
 	}
 	
@@ -367,7 +367,7 @@ public class Controller {
 		return corsoDao.getTopicByChef(chef.getUsername());
 	}
 	
-	public void creaNuovoCorso(String titolo, String frequenza, String numLezioniStr, String annoFrequenzaStr, String date, String topic, NuovoCorsoDialog nuovoCorsoDialog) {
+	public void creaNuovoCorso(String titolo, String frequenza, String numLezioniStr, String annoFrequenzaStr, String date, String topic, NuovoCorsoFrame nuovoCorsoDialog) {
 	    if (titolo == null || titolo.trim().isEmpty()) {
 	        homepageChef.showErrorMessage("Il titolo non può essere vuoto.");
 	        return;
@@ -410,7 +410,7 @@ public class Controller {
 	    }
 	}
 	
-	public void tornaHomepageFromCreaCorso(NuovoCorsoDialog nuovoCorsoDialog) {
+	public void tornaHomepageFromCreaCorso(NuovoCorsoFrame nuovoCorsoDialog) {
 		nuovoCorsoDialog.setVisible(false);
 		homepageChef.setVisible(true);
 	}
