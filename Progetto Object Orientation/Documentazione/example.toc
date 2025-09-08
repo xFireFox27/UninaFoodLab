@@ -3,18 +3,30 @@
 \contentsline {chapter}{\numberline {1}Descrizione del progetto}{2}{}%
 \contentsline {section}{\numberline {1.1}Descrizione sintentica del problema}{2}{}%
 \contentsline {chapter}{\numberline {2}Diagramma delle Classi}{3}{}%
-\contentsline {chapter}{\numberline {3}Descrizione Package e classi}{4}{}%
-\contentsline {section}{\numberline {3.1}Descrizione del package Boundary}{4}{}%
-\contentsline {section}{\numberline {3.2}Package \textit {Control}}{4}{}%
-\contentsline {subsection}{\numberline {3.2.1}Classe Controller}{4}{}%
-\contentsline {section}{\numberline {3.3}Package Entity}{4}{}%
-\contentsline {subsection}{\numberline {3.3.1}Classe Chef}{4}{}%
-\contentsline {subsection}{\numberline {3.3.2}Classe Corso}{4}{}%
-\contentsline {subsection}{\numberline {3.3.3}Classe Notifica}{5}{}%
-\contentsline {subsection}{\numberline {3.3.4}Classe Prepara}{5}{}%
-\contentsline {subsection}{\numberline {3.3.5}Classe Ricetta}{5}{}%
-\contentsline {subsection}{\numberline {3.3.6}Classe Sessione}{5}{}%
-\contentsline {subsection}{\numberline {3.3.7}Classe SessioneInPresenza}{5}{}%
-\contentsline {subsection}{\numberline {3.3.8}Classe SessioneOnline}{5}{}%
-\contentsline {subsection}{\numberline {3.3.9}Topic}{5}{}%
-\contentsline {chapter}{\numberline {4}Funzionalità dell'applicativo}{6}{}%
+\contentsline {section}{\numberline {2.1}UML}{3}{}%
+\contentsline {section}{\numberline {2.2}Architettura}{3}{}%
+\contentsline {chapter}{\numberline {3}Descrizione Package e classi}{5}{}%
+\contentsline {section}{\numberline {3.1}Descrizione del package Boundary}{5}{}%
+\contentsline {section}{\numberline {3.2}Package \textit {Control}}{5}{}%
+\contentsline {subsection}{\numberline {3.2.1}Classe Controller}{5}{}%
+\contentsline {section}{\numberline {3.3}Package Entity}{5}{}%
+\contentsline {subsection}{\numberline {3.3.1}Classe Chef}{5}{}%
+\contentsline {subsection}{\numberline {3.3.2}Classe Corso}{5}{}%
+\contentsline {subsection}{\numberline {3.3.3}Classe Notifica}{6}{}%
+\contentsline {subsection}{\numberline {3.3.4}Classe Prepara}{6}{}%
+\contentsline {subsection}{\numberline {3.3.5}Classe Ricetta}{6}{}%
+\contentsline {subsection}{\numberline {3.3.6}Classe Sessione}{6}{}%
+\contentsline {subsection}{\numberline {3.3.7}Classe SessioneInPresenza}{6}{}%
+\contentsline {subsection}{\numberline {3.3.8}Classe SessioneOnline}{6}{}%
+\contentsline {subsection}{\numberline {3.3.9}Topic}{6}{}%
+\contentsline {section}{\numberline {3.4}Package \textit {DaoInterface}}{6}{}%
+\contentsline {section}{\numberline {3.5}Package \textit {DAO}}{6}{}%
+\contentsline {subsection}{\numberline {3.5.1}Classe ChefDAO}{6}{}%
+\contentsline {subsection}{\numberline {3.5.2}Classe CorsoDAO}{7}{}%
+\contentsline {subsection}{\numberline {3.5.3}Classe NoitificaDAO}{7}{}%
+\contentsline {subsection}{\numberline {3.5.4}Classe PreparaDAO}{7}{}%
+\contentsline {subsection}{\numberline {3.5.5}Classe RicettaDAO}{7}{}%
+\contentsline {subsection}{\numberline {3.5.6}Classe SessioneOnlineDAO}{7}{}%
+\contentsline {subsection}{\numberline {3.5.7}Classe SessioneInPresenzaDAO}{7}{}%
+\contentsline {subsection}{\numberline {3.5.8}Classe TopicDAO}{7}{}%
+\contentsline {chapter}{\numberline {4}Funzionalità dell'applicativo}{8}{}%
