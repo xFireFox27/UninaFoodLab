@@ -106,7 +106,7 @@ public class InserimentoSessioneFrame extends JDialog {
         lblDurata.setForeground(new Color(26, 95, 180));
         contentPanel.add(lblDurata, "cell 0 3,alignx trailing");
         txtDurata = new JTextField();
-        txtDurata.setToolTipText("Durata in minuti (max. 180)");
+        txtDurata.setToolTipText("Durata in minuti (tra 60 e 180)");
         contentPanel.add(txtDurata, "cell 1 3,growx");
 
         panelPresenza = new JPanel(new MigLayout("", "[80px][grow]", "[][]"));
@@ -139,6 +139,7 @@ public class InserimentoSessioneFrame extends JDialog {
         lblLink.setForeground(new Color(26, 95, 180));
         panelOnline.add(lblLink, "cell 0 0,alignx trailing");
         txtLink = new JTextField();
+        txtLink.setToolTipText("https://example");
         panelOnline.add(txtLink, "cell 1 0,growx");
         contentPanel.add(panelOnline, "cell 0 5 2 1,grow");
 
@@ -187,6 +188,11 @@ public class InserimentoSessioneFrame extends JDialog {
             
             int numSessione = Integer.parseInt(txtNumSessione.getText().trim());
             int durata = Integer.parseInt(txtDurata.getText().trim());
+            
+            if (durata < 60 || durata > 180) {
+                JOptionPane.showMessageDialog(this, "La durata deve essere compresa tra 60 e 180 minuti.", "Errore", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
             
             // Parse della data
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");

@@ -311,7 +311,7 @@ public class Controller {
 	        sessioneDao.insertSessione(nuovaSessione);
 	    } catch (SQLException e) {
 	        e.printStackTrace();
-	        throw new RuntimeException("Errore durante l'inserimento della sessione in presenza: " + e.getMessage());
+	        throw new RuntimeException(e.getMessage().split("\n")[0]);
 	    }
 	}
 
@@ -325,7 +325,7 @@ public class Controller {
 	        sessioneOnlineDao.insertSessione(nuovaSessione);
 	    } catch (SQLException e) {
 	        e.printStackTrace();
-	        throw new RuntimeException("Errore durante l'inserimento della sessione online: " + e.getMessage());
+	        throw new RuntimeException(e.getMessage().split("\n")[0]);
 	    }
 	}
 
