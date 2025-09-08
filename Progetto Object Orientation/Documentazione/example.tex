@@ -56,89 +56,18 @@
     \tableofcontents
 
     \chapter{Descrizione del progetto}
-        \section{Descrizione sintentica del problema}
-            Si sviluppi un applicativo Java con interfaccia grafica per la gestione dei corsi tematici 
-            offerti dalla piattaforma UninaFoodLab. Il sistema dovrà essere collegato a un database relazionale prepopolato
-            contenente informazioni su chef, ricette e ingredienti. Il sistema deve permettere
-            l’autenticazione degli chef tramite credenziali (username e password). Una volta autenticato, lo chef 
-            può aggiungere un nuovo corso, specificando le seguenti informazioni: categoria, data di inizio, 
-            frequenza delle sessioni, numero di sessioni. Per ciascuna sessione, deve essere indicata la modalità di 
-            svolgimento, ovvero se si tratta di una sessione online o in presenza. Lo chef avrà inoltre la possibilità 
-            di visualizzare i corsi esistenti, applicando filtri per categoria. Dopo aver selezionato un corso, lo chef 
-            può associare a ciascuna sessione pratica una o più ricette da realizzare. Infine, il sistema deve fornire 
-            un report mensile, che permette allo chef di visualizzare: il numero di corsi totali tenuti, il numero di 
-            sessioni online e pratiche, e di quest’ultime il numero medio, massimo e minimo di ricette realizzate. Il 
-            report deve fornire una rappresentazione grafica dei dati. Il sistema deve permettere allo chef di inserire delle
-            notifiche relative ai propri corsi, in caso di modifiche, come cambio di data o ora di una sessione oppure la sua 
-            cancellazione. Durante la creazione della notifica, lo chef specifica se è destinata ad un singolo corso 
-            oppure se è risolva a tutti. Tutte le notifiche sono consultabili in un’apposita sezione dell’interfaccia. 
+        \input{DescrizioneDelProblema.tex} 
 
     \chapter{Diagramma delle Classi}
-
-    \section{UML}
-            \begin{figure}[h]
-                \centering
-                \includegraphics[width=\textwidth]{UninaFoodLabApp.png}
-                \caption{Diagramma delle classi UML}
-            \end{figure}
-        \section{Architettura}
-            L'Architettura dell'applicativo è basata sul pattern EBC (Entity Boundary Control). Questo pattern prevede la separazione delle responsabilità tra le diverse componenti del sistema, facilitando la manutenibilità e l'estensibilità dell'applicativo.
-            Come si può vedere dal diagramma UML, le classi sono suddivise in tre categorie principali con ognuna di esse che svolge un ruolo specifico: 
-            \begin{itemize}
-                \item \textbf{Entity}: Queste classi rappresentano le entità principali del dominio dell'applicativo, come Chef, Corso, Sessione, Ricetta, Ingrediente e Notifica. Esse contengono gli attributi e i metodi necessari per gestire i dati relativi a queste entità.
-                \item \textbf{Boundary}: Le classi di questa categoria sono responsabili dell'interfaccia utente e della gestione delle interazioni con l'utente. Ad esempio, la classe UninaFoodLabApp funge da punto di ingresso per l'applicativo, mentre altre classi come LoginFrame, MainFrame e CourseManagementFrame gestiscono le diverse schermate dell'interfaccia grafica.
-                \item \textbf{Control}: Queste classi agiscono come intermediari tra le classi Entity e Boundary. Gestiscono la logica di business dell'applicativo, coordinando le operazioni tra le entità e l'interfaccia utente. Ad esempio, la classe CourseController gestisce le operazioni relative ai corsi, mentre NotificationController si occupa della gestione delle notifiche.
-            \end{itemize}
-            Per l'interfaccia grafica è stato utilizzato il framework Swing di Java, che offre una vasta gamma di componenti per la creazione di interfacce utente ricche e interattive. Le classi del package Boundary estendono JFrame e utilizzano vari componenti Swing come JButton, JTextField, JComboBox e JTable per costruire le diverse schermate dell'applicativo.
-            La connessione al database è gestita tramite JDBC (Java Database Connectivity), che consente di eseguire query SQL e di interagire con il database relazionale.
-            
-    
+        \input{UML.tex}
+        \input{Architettura.tex}
     \chapter{Descrizione dei Package e delle Classi}
         \input{DescrizioneBoundary.tex}
-        \section{Package \textit{Control}}
-            Il pacchetto contiene la classe controller che gestisce la logica dell'applicativo determinando le interazioni tra le classi e la gestione delle risorse. 
-            \subsection{Classe Controller}
-                Il controller, seguendo gli schemi dell'architettura BCE, si occupa di gestire le interazioni tra le interfacce del programma e le entità del dominio. Di conseguenza il controller ha il compito 
-                di amministrare l'apertura e la chiusura delle finestre della GUI, di interpretare l'interazione tra l'utente e gli elementi dell'interfaccia grafica, di gestire l'allocazione e la liberazione
-                di risorse interagendo con il database mediante l'utilizzo delle classi DAO.
+        \input{DescrizioneControl.tex}
         \input{descrizioneEntity.tex}
-
-
-
-        \section{Package \textit{DaoInterface}}
-            Il package contiene le interfacce che definiscono i metodi per l'accesso ai dati nel database. Inoltre nel caso in cui si volesse cambiare il database, basterebbe creare una nuova classe DAO che implementa queste interfacce.
-        \section{Package \textit{DAO}}
-            Il package contiene le classi che si occupano della connessione al database e dell'esecuzione delle query SQL.
-            \subsection{Classe ChefDAO}
-                La classe ChefDAO si occupa della gestione delle operazioni relative alla tabella Chef del database.\\
-                Tramite il metodo creaChef di questa classe, è possibile istanziare un oggetto Chef a partire  dai dati presenti nel database ed effettuare il login nell'applicativo.
-            \subsection{Classe CorsoDAO}
-                La classe CorsoDAO si occupa della gestione delle operazioni relative alla tabella Corso del database.\\
-                Tramite i metodi di questa classe, è possibile aggiungere un nuovo corso, recuperare i corsi esistenti e applicare filtri per categoria.
-            \subsection{Classe NoitificaDAO}
-                La classe NotificaDAO si occupa della gestione delle operazioni relative alla tabella Notifica del database.\\
-                Tramite i metodi di questa classe, è possibile aggiungere una nuova notifica, recuperare le notifiche esistenti e visualizzarle nell'apposita sezione dell'interfaccia.
-            \subsection{Classe PreparaDAO}
-                La classe PreparaDAO si occupa della gestione delle operazioni relative alla tabella Prepara del database.\\
-                Tramite i metodi di questa classe, è possibile associare una o più ricette a ciascuna sessione pratica di un corso. 
-            \subsection{Classe RicettaDAO}
-                La classe RicettaDAO si occupa della gestione delle operazioni relative alla tabella Ricetta del database.\\
-                Tramite i metodi di questa classe, è possibile recuperare le ricette esistenti e visualizzarle nell'apposita sezione dell'interfaccia.
-            \subsection{Classe SessioneOnlineDAO}
-                La classe SessioneOnlineDAO si occupa della gestione delle operazioni relative alla tabella SessioneOnline del database.\\
-                Tramite i metodi di questa classe, è possibile aggiungere una nuova sessione online o recuperare le sessioni online esistenti e visualizzarle nell'apposita sezione dell'interfaccia.
-            \subsection{Classe SessioneInPresenzaDAO}
-                La classe SessioneInPresenzaDAO si occupa della gestione delle operazioni relative alla tabella SessioneInPresenza del database.\\
-                Tramite i metodi di questa classe, è possibile aggiungere una nuova sessione in presenza o recuperare le sessioni in presenza esistenti e visualizzarle nell'apposita sezione dell'interfaccia.
-            \subsection{Classe TopicDAO}
-                La classe TopicDAO si occupa della gestione delle operazioni relative alla tabella Topic del database.\\
-                Tramite i metodi di questa classe, è possibile recuperare i topic esistenti e visualizzarle nell'apposita sezione dell'interfaccia.
-
-            \section{Package \textit{DbConnection}}
-                Il package contiene la classe che si occupa della connessione al database.
-                \subsection{Classe DbConnection}
-                    La classe DbConnection si occupa di gestire la connessione al database. Fornisce un metodo statico getConnection() che restituisce un oggetto Connection per interagire con il database.
-
-\input{repository.tex}
+        \input{DescrizioneDaoInterface.tex}
+        \input{DescrizioneDao.tex}
+        \input{DescrizioneDBConnection.tex}
+        \input{repository.tex}
 
 \end{document}
