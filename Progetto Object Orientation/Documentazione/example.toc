@@ -1,0 +1,11 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}Descrizione del progetto}{2}{}%
+\contentsline {section}{\numberline {1.1}Descrizione sintentica del problema}{2}{}%
+\contentsline {chapter}{\numberline {2}Diagramma delle Classi}{3}{}%
+\contentsline {chapter}{\numberline {3}Descrizione Package e classi}{4}{}%
+\contentsline {section}{\numberline {3.1}Descrizione del package Boundary}{4}{}%
+\contentsline {section}{\numberline {3.2}Package \textit {Control}}{4}{}%
+\contentsline {subsection}{\numberline {3.2.1}Classe Controller}{4}{}%
+\contentsline {section}{\numberline {3.3}Package Entity}{4}{}%
+\contentsline {chapter}{\numberline {4}Funzionalità dell'applicativo}{5}{}%
