@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1757342286.03252 "/home/bruno/GitKraken/UninaFoodLab/Progetto Object Orientation/Documentazione/example.tex" "example.pdf" "example" 1757342286.61303 0
-  "/home/bruno/GitKraken/UninaFoodLab/Progetto Object Orientation/Documentazione/example.tex" 1757342285.79913 3581 46c78ab12ad638707a65e38fa10234f1 ""
+["pdflatex"] 1757342803.96497 "/home/bruno/GitKraken/UninaFoodLab/Progetto Object Orientation/Documentazione/example.tex" "example.pdf" "example" 1757342804.27767 0
+  "/home/bruno/GitKraken/UninaFoodLab/Progetto Object Orientation/Documentazione/example.tex" 1757342803.60866 3486 3e3a3350449fc95e316d87d2ad66a056 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -119,9 +119,9 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1737590400 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1752247522.25752 4547823 614eba97e0451aad345770236b030e55 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1755377366 7759955 a19bf2a09b78411e020364d9746f43e8 ""
-  "example.aux" 1757342286.56404 322 151d4ac8590532e5d0f3ad9d5fda8b9f "pdflatex"
-  "example.tex" 1757342285.79913 3581 46c78ab12ad638707a65e38fa10234f1 ""
-  "example.toc" 1757342286.56404 131 041b853050627887478e8a3d69976466 "pdflatex"
+  "example.aux" 1757342804.23707 322 151d4ac8590532e5d0f3ad9d5fda8b9f "pdflatex"
+  "example.tex" 1757342803.60866 3486 3e3a3350449fc95e316d87d2ad66a056 ""
+  "example.toc" 1757342804.23809 131 041b853050627887478e8a3d69976466 "pdflatex"
   "logo-federico-II.pdf" 1756833325.65837 133374 80fc15669ec907fd5c7a726fc2c3d0c0 ""
   "uninafrontespizio.sty" 1756833325.65936 5634 1bfa880c64007d78dab3dee241a717b2 ""
   (generated)
