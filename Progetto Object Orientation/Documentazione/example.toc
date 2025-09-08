@@ -5,11 +5,11 @@
 \contentsline {chapter}{\numberline {2}Diagramma delle Classi}{3}{}%
 \contentsline {section}{\numberline {2.1}UML}{3}{}%
 \contentsline {section}{\numberline {2.2}Architettura}{3}{}%
-\contentsline {chapter}{\numberline {3}Descrizione Package e classi}{5}{}%
+\contentsline {chapter}{\numberline {3}Descrizione dei Package e delle Classi}{5}{}%
 \contentsline {section}{\numberline {3.1}Descrizione del package Boundary}{5}{}%
 \contentsline {section}{\numberline {3.2}Package \textit {Control}}{5}{}%
 \contentsline {subsection}{\numberline {3.2.1}Classe Controller}{5}{}%
-\contentsline {section}{\numberline {3.3}Package Entity}{5}{}%
+\contentsline {section}{\numberline {3.3}Package \textit {Entity}}{5}{}%
 \contentsline {subsection}{\numberline {3.3.1}Classe Chef}{5}{}%
 \contentsline {subsection}{\numberline {3.3.2}Classe Corso}{5}{}%
 \contentsline {subsection}{\numberline {3.3.3}Classe Notifica}{6}{}%
@@ -18,7 +18,7 @@
 \contentsline {subsection}{\numberline {3.3.6}Classe Sessione}{6}{}%
 \contentsline {subsection}{\numberline {3.3.7}Classe SessioneInPresenza}{6}{}%
 \contentsline {subsection}{\numberline {3.3.8}Classe SessioneOnline}{6}{}%
-\contentsline {subsection}{\numberline {3.3.9}Topic}{6}{}%
+\contentsline {subsection}{\numberline {3.3.9}Classe Topic}{6}{}%
 \contentsline {section}{\numberline {3.4}Package \textit {DaoInterface}}{6}{}%
 \contentsline {section}{\numberline {3.5}Package \textit {DAO}}{6}{}%
 \contentsline {subsection}{\numberline {3.5.1}Classe ChefDAO}{6}{}%
