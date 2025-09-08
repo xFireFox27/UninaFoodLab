@@ -30,7 +30,7 @@ import java.awt.event.ActionEvent;
 import java.awt.SystemColor;
 import java.awt.Color;
 
-public class NuovoCorsoDialog extends JDialog {
+public class NuovoCorsoFrame extends JDialog {
 
     private static final long serialVersionUID = 1L;
     private Controller theController;
@@ -53,7 +53,7 @@ public class NuovoCorsoDialog extends JDialog {
     /**
      * Create the dialog.
      */
-    public NuovoCorsoDialog(java.awt.Frame owner, Controller c) {
+    public NuovoCorsoFrame(java.awt.Frame owner, Controller c) {
         super(owner, "Nuovo Corso", true);
         theController = c;
         setResizable(true);
@@ -71,7 +71,7 @@ public class NuovoCorsoDialog extends JDialog {
 	            private static final long serialVersionUID = 1L;
 	            @Override
 	            public void actionPerformed(ActionEvent e) {
-	                theController.tornaHomepageFromCreaCorso(NuovoCorsoDialog.this);
+	                theController.tornaHomepageFromCreaCorso(NuovoCorsoFrame.this);
 	            }
 	        });
 
@@ -134,7 +134,7 @@ public class NuovoCorsoDialog extends JDialog {
                                 annullaBtn.setBackground(Color.RED);
                                 annullaBtn.addActionListener(new ActionListener() {
                                     public void actionPerformed(ActionEvent e) {
-                                        theController.tornaHomepageFromCreaCorso(NuovoCorsoDialog.this);
+                                        theController.tornaHomepageFromCreaCorso(NuovoCorsoFrame.this);
                                     }
                                 });
                                 
@@ -149,7 +149,7 @@ public class NuovoCorsoDialog extends JDialog {
                                         			annoTF.getText().trim().isEmpty() || 
                                         			dataInizioTF.getText().trim().isEmpty() ||
                                         			topicCB.getSelectedItem() == null) {
-                                        			JOptionPane.showMessageDialog(NuovoCorsoDialog.this, "Tutti i campi devono essere compilati.", "Errore", JOptionPane.ERROR_MESSAGE);
+                                        			JOptionPane.showMessageDialog(NuovoCorsoFrame.this, "Tutti i campi devono essere compilati.", "Errore", JOptionPane.ERROR_MESSAGE);
                                         			return;
                                         		}
                                         		
@@ -166,11 +166,11 @@ public class NuovoCorsoDialog extends JDialog {
                                                         try {
                                                             int annoCampo = Integer.parseInt(annoInseritoStr);
                                                             if (annoData != annoCampo) {
-                                                                JOptionPane.showMessageDialog(NuovoCorsoDialog.this, "L'anno inserito non corrisponde all'anno della data di inizio.", "Errore di coerenza", JOptionPane.ERROR_MESSAGE);
+                                                                JOptionPane.showMessageDialog(NuovoCorsoFrame.this, "L'anno inserito non corrisponde all'anno della data di inizio.", "Errore di coerenza", JOptionPane.ERROR_MESSAGE);
                                                                 return;
                                                             }
                                                         } catch (NumberFormatException nfe) {
-                                                            JOptionPane.showMessageDialog(NuovoCorsoDialog.this, "L'anno deve essere un valore numerico.", "Errore di Formato", JOptionPane.ERROR_MESSAGE);
+                                                            JOptionPane.showMessageDialog(NuovoCorsoFrame.this, "L'anno deve essere un valore numerico.", "Errore di Formato", JOptionPane.ERROR_MESSAGE);
                                                             return;
                                                         }
                                                     }
@@ -180,9 +180,9 @@ public class NuovoCorsoDialog extends JDialog {
                                                         SimpleDateFormat sqlSdf = new SimpleDateFormat("yyyy-MM-dd");
                                                         dataInizioSQL = sqlSdf.format(dataInizio);
                                                     }
-                                                    theController.creaNuovoCorso(titoloCorsoTF.getText(), (String) frequenzaCB.getSelectedItem(), numLezioniTF.getText(), annoTF.getText(), dataInizioSQL , (String) topicCB.getSelectedItem(),  NuovoCorsoDialog.this);
+                                                    theController.creaNuovoCorso(titoloCorsoTF.getText(), (String) frequenzaCB.getSelectedItem(), numLezioniTF.getText(), annoTF.getText(), dataInizioSQL , (String) topicCB.getSelectedItem(),  NuovoCorsoFrame.this);
                                                 } catch (ParseException ex) {
-                                                    JOptionPane.showMessageDialog(NuovoCorsoDialog.this, "Formato data non valido. Usare il formato gg/mm/aaaa.", "Errore di Formato", JOptionPane.ERROR_MESSAGE);
+                                                    JOptionPane.showMessageDialog(NuovoCorsoFrame.this, "Formato data non valido. Usare il formato gg/mm/aaaa.", "Errore di Formato", JOptionPane.ERROR_MESSAGE);
                                                 }
                                         	}
                                         });
