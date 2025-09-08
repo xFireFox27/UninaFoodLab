@@ -1,23 +1,28 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {chapter}{\numberline {1}Descrizione del progetto}{2}{}%
-\contentsline {section}{\numberline {1.1}Descrizione sintentica del problema}{2}{}%
-\contentsline {chapter}{\numberline {2}Diagramma delle Classi}{3}{}%
-\contentsline {section}{\numberline {2.1}UML}{3}{}%
-\contentsline {section}{\numberline {2.2}Architettura}{3}{}%
-\contentsline {chapter}{\numberline {3}Descrizione Package e classi}{5}{}%
-\contentsline {section}{\numberline {3.1}Descrizione del package Boundary}{5}{}%
-\contentsline {section}{\numberline {3.2}Package \textit {Control}}{5}{}%
-\contentsline {subsection}{\numberline {3.2.1}Classe Controller}{5}{}%
-\contentsline {section}{\numberline {3.3}Package Entity}{5}{}%
-\contentsline {section}{\numberline {3.4}Package \textit {DaoInterface}}{5}{}%
-\contentsline {section}{\numberline {3.5}Package \textit {DAO}}{5}{}%
-\contentsline {subsection}{\numberline {3.5.1}Classe ChefDAO}{5}{}%
-\contentsline {subsection}{\numberline {3.5.2}Classe CorsoDAO}{6}{}%
-\contentsline {subsection}{\numberline {3.5.3}Classe NoitificaDAO}{6}{}%
-\contentsline {subsection}{\numberline {3.5.4}Classe PreparaDAO}{6}{}%
-\contentsline {subsection}{\numberline {3.5.5}Classe RicettaDAO}{6}{}%
-\contentsline {subsection}{\numberline {3.5.6}Classe SessioneOnlineDAO}{6}{}%
-\contentsline {subsection}{\numberline {3.5.7}Classe SessioneInPresenzaDAO}{6}{}%
-\contentsline {subsection}{\numberline {3.5.8}Classe TopicDAO}{6}{}%
-\contentsline {chapter}{\numberline {4}Funzionalit^^c3^^a0 dell'applicativo}{7}{}%
+\contentsline {chapter}{\numberline {1}Descrizione del progetto}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Descrizione sintentica del problema}{2}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Diagramma delle Classi}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}UML}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Architettura}{3}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Descrizione Package e classi}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Descrizione del package Boundary}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Package \textit {Control}}{5}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Classe Controller}{5}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Package Entity}{5}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Package \textit {DaoInterface}}{5}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Package \textit {DAO}}{5}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Classe ChefDAO}{5}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Classe CorsoDAO}{6}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Classe NoitificaDAO}{6}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Classe PreparaDAO}{6}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Classe RicettaDAO}{6}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.5.6}Classe SessioneOnlineDAO}{6}{subsection.3.5.6}%
+\contentsline {subsection}{\numberline {3.5.7}Classe SessioneInPresenzaDAO}{6}{subsection.3.5.7}%
+\contentsline {subsection}{\numberline {3.5.8}Classe TopicDAO}{6}{subsection.3.5.8}%
+\contentsline {section}{\numberline {3.6}Package \textit {DbConnection}}{6}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Classe DbConnection}{7}{subsection.3.6.1}%
+\contentsline {chapter}{\numberline {4}Repository GitHub}{8}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Cos'^^c3^^a8 una Repository}{8}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Struttura del Progetto}{8}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Accesso al Codice}{8}{section.4.3}%
