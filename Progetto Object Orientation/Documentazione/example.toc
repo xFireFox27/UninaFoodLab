@@ -8,4 +8,13 @@
 \contentsline {section}{\numberline {3.2}Package \textit {Control}}{4}{}%
 \contentsline {subsection}{\numberline {3.2.1}Classe Controller}{4}{}%
 \contentsline {section}{\numberline {3.3}Package Entity}{4}{}%
-\contentsline {chapter}{\numberline {4}Funzionalità dell'applicativo}{5}{}%
+\contentsline {subsection}{\numberline {3.3.1}Classe Chef}{4}{}%
+\contentsline {subsection}{\numberline {3.3.2}Classe Corso}{4}{}%
+\contentsline {subsection}{\numberline {3.3.3}Classe Notifica}{5}{}%
+\contentsline {subsection}{\numberline {3.3.4}Classe Prepara}{5}{}%
+\contentsline {subsection}{\numberline {3.3.5}Classe Ricetta}{5}{}%
+\contentsline {subsection}{\numberline {3.3.6}Classe Sessione}{5}{}%
+\contentsline {subsection}{\numberline {3.3.7}Classe SessioneInPresenza}{5}{}%
+\contentsline {subsection}{\numberline {3.3.8}Classe SessioneOnline}{5}{}%
+\contentsline {subsection}{\numberline {3.3.9}Topic}{5}{}%
+\contentsline {chapter}{\numberline {4}Funzionalità dell'applicativo}{6}{}%
