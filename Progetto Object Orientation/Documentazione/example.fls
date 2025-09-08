@@ -277,7 +277,13 @@ INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/font
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ecti1200.tfm
 OUTPUT example.toc
+INPUT ./DescrizioneDelProblema.tex
+INPUT ./DescrizioneDelProblema.tex
+INPUT DescrizioneDelProblema.tex
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ecbx1728.tfm
+INPUT ./UML.tex
+INPUT ./UML.tex
+INPUT UML.tex
 INPUT ./UninaFoodLabApp.png
 INPUT ./UninaFoodLabApp.png
 INPUT ./UninaFoodLabApp.png
@@ -285,12 +291,18 @@ INPUT ./UninaFoodLabApp.png
 INPUT ./UninaFoodLabApp.png
 INPUT ./UninaFoodLabApp.png
 INPUT ./UninaFoodLabApp.png
+INPUT ./Architettura.tex
+INPUT ./Architettura.tex
+INPUT Architettura.tex
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT ./DescrizioneBoundary.tex
 INPUT ./DescrizioneBoundary.tex
 INPUT DescrizioneBoundary.tex
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ecbi1728.tfm
 INPUT /Users/carmineamato/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ecbx1440.tfm
+INPUT ./DescrizioneControl.tex
+INPUT ./DescrizioneControl.tex
+INPUT DescrizioneControl.tex
 INPUT ./descrizioneEntity.tex
 INPUT ./descrizioneEntity.tex
 INPUT descrizioneEntity.tex
@@ -305,7 +317,6 @@ INPUT ./DescrizioneDBConnection.tex
 INPUT DescrizioneDBConnection.tex
 INPUT ./repository.tex
 INPUT ./repository.tex
-INPUT repository.tex
 INPUT repository.tex
 INPUT example.aux
 INPUT ./example.out

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.4)  8 SEP 2025 18:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2025.7.4)  8 SEP 2025 18:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -789,7 +789,7 @@ Package hyperref Info: Link coloring ON on input line 70.
 \@outlinefile=\write4
 \openout4 = `example.out'.
 
-<logo-federico-II.pdf, id=242, 501.79471pt x 499.8675pt>
+<logo-federico-II.pdf, id=182, 501.79471pt x 499.8675pt>
 File: logo-federico-II.pdf Graphic file (type pdf)
 <use logo-federico-II.pdf>
 Package pdftex.def Info: logo-federico-II.pdf  used on input line 72.
@@ -819,66 +819,61 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 [2
 
-]
-
-[3])
+])
 \tf@toc=\write5
 \openout5 = `example.toc'.
 
 
 
-[4]
+[3] (DescrizioneDelProblema.tex
 Capitolo 1.
+)
 
-
-[5
+[4
 
 ]
 
-[6]
+[5]
 Capitolo 2.
-<UninaFoodLabApp.png, id=343, 11153.67pt x 5669.18pt>
+(UML.tex
+<UninaFoodLabApp.png, id=263, 11153.67pt x 5669.18pt>
 File: UninaFoodLabApp.png Graphic file (type png)
 <use UninaFoodLabApp.png>
-Package pdftex.def Info: UninaFoodLabApp.png  used on input line 121.
+Package pdftex.def Info: UninaFoodLabApp.png  used on input line 5.
 (pdftex.def)             Requested size: 399.21791pt x 202.8533pt.
+) (Architettura.tex
 
+[6
 
-[7
+ <./UninaFoodLabApp.png (PNG copy)>])
 
- <./UninaFoodLabApp.png (PNG copy)>]
-
-[8]
+[7]
 Capitolo 3.
 (DescrizioneBoundary.tex
 
-[9
+[8
 
-]) (descrizioneEntity.tex
+])
 
-[10]
+[9] (DescrizioneControl.tex)
 
-[11]) (DescrizioneDaoInterface.tex) (DescrizioneDao.tex
+[10] (descrizioneEntity.tex
 
-[12]
+[11])
 
-[13]) (DescrizioneDBConnection.tex) (repository.tex
+[12] (DescrizioneDaoInterface.tex)
 
-[14]
+[13] (DescrizioneDao.tex
+
+[14])
+
+[15] (DescrizioneDBConnection.tex)
+
+[16] (repository.tex
 Capitolo 4.
 )
 
-[15
-
-]
-
-[16] (repository.tex
-
-[17]
-Capitolo 5.
-)
-
-[18
+[17
 
 ] (example.aux)
  ***********
@@ -886,16 +881,16 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
 Package rerunfilecheck Info: File `example.out' has not changed.
-(rerunfilecheck)             Checksum: 533C74A9621ADD343FEB26AD11736C21;9156.
+(rerunfilecheck)             Checksum: C5F18780A39488295E168F720ACC52D8;6860.
  ) 
 Here is how much of TeX's memory you used:
- 23091 strings out of 468226
- 436137 string characters out of 5420954
- 1009460 words of memory out of 5000000
- 51163 multiletter control sequences out of 15000+600000
+ 23082 strings out of 468226
+ 436475 string characters out of 5420954
+ 1006460 words of memory out of 5000000
+ 51160 multiletter control sequences out of 15000+600000
  639483 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,6n,101p,529b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,6n,101p,558b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/carmineamato/Library/Application Support/MiKTeX/texmfs/data/fonts/pk
 /ljfour/jknappen/ec/dpi600/ecbx1440.pk> </Users/carmineamato/Library/Applicatio
 n Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbi1728.pk> </
@@ -914,9 +909,9 @@ mfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/eccc2488.pk> </Users/carmineamato/L
 ibrary/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi60
 0/eccc1440.pk> </Users/carmineamato/Library/Application Support/MiKTeX/texmfs/d
 ata/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1728.pk>
-Output written on example.pdf (19 pages, 4263588 bytes).
+Output written on example.pdf (18 pages, 4248952 bytes).
 PDF statistics:
- 800 PDF objects out of 1000 (max. 8388607)
- 80 named destinations out of 1000 (max. 500000)
- 495 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 713 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
+ 375 words of extra memory for PDF output out of 10000 (max. 10000000)
 
