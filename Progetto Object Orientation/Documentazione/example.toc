@@ -6,18 +6,28 @@
 \contentsline {section}{\numberline {2.1}UML}{3}{}%
 \contentsline {section}{\numberline {2.2}Architettura}{3}{}%
 \contentsline {chapter}{\numberline {3}Descrizione Package e classi}{5}{}%
-\contentsline {section}{\numberline {3.1}Descrizione del package Boundary}{5}{}%
-\contentsline {section}{\numberline {3.2}Package \textit {Control}}{5}{}%
-\contentsline {subsection}{\numberline {3.2.1}Classe Controller}{5}{}%
-\contentsline {section}{\numberline {3.3}Package Entity}{5}{}%
-\contentsline {section}{\numberline {3.4}Package \textit {DaoInterface}}{5}{}%
-\contentsline {section}{\numberline {3.5}Package \textit {DAO}}{5}{}%
-\contentsline {subsection}{\numberline {3.5.1}Classe ChefDAO}{5}{}%
-\contentsline {subsection}{\numberline {3.5.2}Classe CorsoDAO}{6}{}%
-\contentsline {subsection}{\numberline {3.5.3}Classe NoitificaDAO}{6}{}%
-\contentsline {subsection}{\numberline {3.5.4}Classe PreparaDAO}{6}{}%
-\contentsline {subsection}{\numberline {3.5.5}Classe RicettaDAO}{6}{}%
-\contentsline {subsection}{\numberline {3.5.6}Classe SessioneOnlineDAO}{6}{}%
-\contentsline {subsection}{\numberline {3.5.7}Classe SessioneInPresenzaDAO}{6}{}%
-\contentsline {subsection}{\numberline {3.5.8}Classe TopicDAO}{6}{}%
-\contentsline {chapter}{\numberline {4}Funzionalità dell'applicativo}{7}{}%
+\contentsline {section}{\numberline {3.1}Package Boundary}{5}{}%
+\contentsline {subsection}{\numberline {3.1.1}Classe LoginFrame}{5}{}%
+\contentsline {subsection}{\numberline {3.1.2}Classe HomepageChef}{5}{}%
+\contentsline {subsection}{\numberline {3.1.3}Classe NuovoCorsoFrame}{5}{}%
+\contentsline {subsection}{\numberline {3.1.4}Classe CorsiFrame}{5}{}%
+\contentsline {subsection}{\numberline {3.1.5}Classe SessioniFrame}{5}{}%
+\contentsline {subsection}{\numberline {3.1.6}Classe InserimentoSessioneFrame}{5}{}%
+\contentsline {subsection}{\numberline {3.1.7}Classe RicetteFrame}{6}{}%
+\contentsline {subsection}{\numberline {3.1.8}Classe NotificheFrame}{6}{}%
+\contentsline {subsection}{\numberline {3.1.9}Classe InvioNotificheFrame}{6}{}%
+\contentsline {subsection}{\numberline {3.1.10}Classe RiepilogoMensileFrame}{6}{}%
+\contentsline {section}{\numberline {3.2}Package \textit {Control}}{6}{}%
+\contentsline {subsection}{\numberline {3.2.1}Classe Controller}{6}{}%
+\contentsline {section}{\numberline {3.3}Package Entity}{6}{}%
+\contentsline {section}{\numberline {3.4}Package \textit {DaoInterface}}{6}{}%
+\contentsline {section}{\numberline {3.5}Package \textit {DAO}}{6}{}%
+\contentsline {subsection}{\numberline {3.5.1}Classe ChefDAO}{7}{}%
+\contentsline {subsection}{\numberline {3.5.2}Classe CorsoDAO}{7}{}%
+\contentsline {subsection}{\numberline {3.5.3}Classe NoitificaDAO}{7}{}%
+\contentsline {subsection}{\numberline {3.5.4}Classe PreparaDAO}{7}{}%
+\contentsline {subsection}{\numberline {3.5.5}Classe RicettaDAO}{7}{}%
+\contentsline {subsection}{\numberline {3.5.6}Classe SessioneOnlineDAO}{7}{}%
+\contentsline {subsection}{\numberline {3.5.7}Classe SessioneInPresenzaDAO}{7}{}%
+\contentsline {subsection}{\numberline {3.5.8}Classe TopicDAO}{7}{}%
+\contentsline {chapter}{\numberline {4}Funzionalità dell'applicativo}{8}{}%
