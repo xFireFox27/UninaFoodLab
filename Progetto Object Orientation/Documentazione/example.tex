@@ -42,7 +42,7 @@
 \CorsoDiLaurea{Corso di Laurea Triennale in Informatica}
 \Materia{Programmazione Object Oriented}
 \AnnoAccademico{Anno Accademico 2024--2025}
-\Titolo{UninaFoodLab Database}
+\Titolo{UninaFoodLab}
 
 \Logo{logo-federico-II.pdf}
 \LogoWidth{3.5cm} 
@@ -92,15 +92,22 @@
             La connessione al database è gestita tramite JDBC (Java Database Connectivity), che consente di eseguire query SQL e di interagire con il database relazionale.
             
     
+<<<<<<< HEAD
     \chapter{Descrizione Package e classi}
         \input{DescrizioneBoundary.tex}
+=======
+    \chapter{Descrizione dei Package e delle Classi}
+        \section{Descrizione del package Boundary}
+            Il pacchetto contiene le classi della gui
+>>>>>>> origin/main
         \section{Package \textit{Control}}
             Il pacchetto contiene la classe controller che gestisce la logica dell'applicativo determinando le interazioni tra le classi e la gestione delle risorse. 
             \subsection{Classe Controller}
                 Il controller, seguendo gli schemi dell'architettura BCE, si occupa di gestire le interazioni tra le interfacce del programma e le entità del dominio. Di conseguenza il controller ha il compito 
                 di amministrare l'apertura e la chiusura delle finestre della GUI, di interpretare l'interazione tra l'utente e gli elementi dell'interfaccia grafica, di gestire l'allocazione e la liberazione
                 di risorse interagendo con il database mediante l'utilizzo delle classi DAO.
-        \section{Package Entity}
+        \section{Package \textit{Entity}}
+            \input{descrizioneEntity.tex}
 
 
 

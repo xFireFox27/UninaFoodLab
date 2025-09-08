@@ -1,0 +1,21 @@
+Il pacchetto contiene le classi che definiscono le entità del dominio.
+            \subsection{Classe Chef}
+                La classe Chef rappresenta un utente del sistema che può autenticarsi, gestire i propri corsi, creandone di nuovi o visualizzando quelli esistenti, e inserire notifiche relative ai corsi da lui tenuti.
+                Lo Chef può, inoltre, gestire le sessioni dei propri corsi e le ricette delle sessioni in presenza.
+            \subsection{Classe Corso}
+                La classe Corso rappresenta i corsi tenuti dagli chef. Il Corso è caratterizzato da un titolo, una frequenza delle lezioni, una data di inizio, un anno in cui è tenuto il corso, un numero di 
+                lezioni, un topic e uno chef responsabile del corso.
+            \subsection{Classe Notifica}
+                La classe Notifica rappresenta le notifiche inviate dagli chef a corsi specifici e ricevute dagli studenti degli stessi corsi. La Notifica è caratterizzata da un oggetto, un testo e una data di invio.
+            \subsection{Classe Prepara}
+                La classe Prepara rappresenta la relazione tra le ricette e le sessioni in presenza. Di conseguenza gli attributi della classe sono quelli relativi alle ricette e alle sessioni associate.
+            \subsection{Classe Ricetta}
+                La classe Ricetta rappresenta le ricette che possono essere preparate durante le sessioni in presenza. La Ricetta è caratterizzata da un nome e una descrizione.
+            \subsection{Classe Sessione}
+                La classe Sessione rappresenta le lezioni, che compongono un corso. La Sessione è caratterizzata da una data, una durata, un numero e un corso di appartenenza. 
+            \subsection{Classe SessioneInPresenza}
+                La classe SessioneInPresenza estende la classe Sessione e rappresenta le sessioni che si svolgono in presenza. La SessioneInPresenza è caratterizzata da una sede in cui si svolge la lezione e un'aula.
+            \subsection{Classe SessioneOnline}
+                La classe SessioneOnline estende la classe Sessione e rappresenta le sessioni che si svolgono online. La SessioneOnline è caratterizzata da un link di accesso.
+            \subsection{Classe Topic}
+                La classe Topic rappresenta le categorie dei corsi e le competenze degli chef. Il Topic è caratterizzato da un nome e una descrizione.
