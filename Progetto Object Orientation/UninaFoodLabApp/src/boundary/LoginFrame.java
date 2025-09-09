@@ -32,7 +32,6 @@ public class LoginFrame extends JFrame {
 	private Controller theController;
 
 	public LoginFrame(Controller c) {
-		
 	    theController = c;
 	    setResizable(true);
 	    setTitle("LoginChef");
@@ -59,15 +58,12 @@ public class LoginFrame extends JFrame {
 	    } catch (Exception e) {
 	        System.err.println("Errore nel caricamento del logo: " + e.getMessage());
 	    }
-
 	    contentPane.add(lblLogo, "cell 1 1 1 3,alignx center,aligny center");
 	    
 	    JLabel lblUsername = new JLabel("Username");
 	    lblUsername.setForeground(new Color(100, 149, 237));
 	    lblUsername.setFont(new Font("Dialog", Font.BOLD, 20));
 	    contentPane.add(lblUsername, "cell 1 4,alignx left,aligny center");
-	    
-		
 		usernameField = new JTextField();
 		usernameField.setBackground(new Color(222, 221, 218));
 		usernameField.setFont(new Font("Dialog", Font.PLAIN, 15));
@@ -83,7 +79,6 @@ public class LoginFrame extends JFrame {
 		lblPassword.setForeground(new Color(100, 149, 237));
 		lblPassword.setFont(new Font("Dialog", Font.BOLD, 20));
 		contentPane.add(lblPassword, "cell 1 6,alignx left,aligny center");
-		
 		passwordField = new JPasswordField();
 		passwordField.setBackground(new Color(222, 221, 218));
 		passwordField.setFont(new Font("Dialog", Font.PLAIN, 15));
@@ -102,7 +97,6 @@ public class LoginFrame extends JFrame {
 				}
 			}
 		});
-		
 		showPasswordCheckbox = new JCheckBox("Mostra Password");
 		showPasswordCheckbox.setBackground(new Color(255, 255, 255));
 		showPasswordCheckbox.setForeground(new Color(100, 149, 237));
@@ -110,9 +104,9 @@ public class LoginFrame extends JFrame {
 		showPasswordCheckbox.addActionListener(new ActionListener() {
 		    public void actionPerformed(ActionEvent e) {
 		        if (showPasswordCheckbox.isSelected()) {
-		            passwordField.setEchoChar((char) 0); // Show password
+		            passwordField.setEchoChar((char) 0); 
 		        } else {
-		            passwordField.setEchoChar('•'); // Hide password
+		            passwordField.setEchoChar('•'); 
 		        }
 		    }
 		});
@@ -138,8 +132,6 @@ public class LoginFrame extends JFrame {
 		LoginButton.setForeground(new Color(248, 248, 255));
 		LoginButton.setFont(new Font("Palatino", Font.BOLD, 24));
 		contentPane.add(LoginButton, "cell 1 10,growx");
-		
-		// Chiudi la finestra premendo ESC
 		contentPane.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(
 		    javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0), "ESCAPE");
 		contentPane.getActionMap().put("ESCAPE", new javax.swing.AbstractAction() {
@@ -148,7 +140,6 @@ public class LoginFrame extends JFrame {
 		        System.exit(0); 
 		    }
 		});
-
 	}
 
 	public void showErrorMessage(String message) {
@@ -160,16 +151,10 @@ public class LoginFrame extends JFrame {
 	        java.net.URL iconUrl = getClass().getResource("/icona.png");
 	        if (iconUrl != null) {
 	            ImageIcon originalIcon = new ImageIcon(iconUrl);
-	            
-
 	            Image scaledImage = originalIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
 	            ImageIcon icon = new ImageIcon(scaledImage);
-	            
 	            setIconImage(icon.getImage());
-	            
-
 	            repaint();
-	            
 	        } else {
 	            System.err.println("File icona.png non trovato");
 	        }

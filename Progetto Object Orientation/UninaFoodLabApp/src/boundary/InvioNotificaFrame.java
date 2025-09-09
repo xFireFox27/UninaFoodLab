@@ -53,8 +53,6 @@ public class InvioNotificaFrame extends JDialog {
 		setSize(600, 500);
 		setLocationRelativeTo(null);
 		CaricaIcona();
-		
-		// Chiusura della finestra con ESC
 		getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(
             KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "cancelAction");
         getRootPane().getActionMap().put("cancelAction", new AbstractAction() {
@@ -64,7 +62,6 @@ public class InvioNotificaFrame extends JDialog {
                 dispose();
             }
         });
-		
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
@@ -182,7 +179,6 @@ public class InvioNotificaFrame extends JDialog {
 			// L'action command di un JRadioButton è il suo testo di default
 			if("Tutti i Corsi".equals(selezioneCorsiGroup.getSelection().getActionCommand())) {
 				theController.inviaNotificaTuttiCorsi(oggetto, testo);
-				
 			}
 			else {
 				Corso corsoSelezionato = (Corso) cbSelezioneCorso.getSelectedItem();

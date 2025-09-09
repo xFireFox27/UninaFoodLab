@@ -38,8 +38,6 @@ public class HomepageChef extends JFrame {
 		setSize(900, 600);
 		setMinimumSize(new Dimension(900, 600));
 		setLocationRelativeTo(null);
-		
-		// ContentPane personalizzato con immagine di sfondo
 		contentPane = new JPanel() {
 		    private ImageIcon backgroundImage; {
 		        try {
@@ -51,7 +49,7 @@ public class HomepageChef extends JFrame {
 		            System.err.println("Errore nel caricamento dell'immagine di sfondo: " + e.getMessage());
 		        }
 		    }
-
+		    
 		    @Override
 		    protected void paintComponent(Graphics g) {
 		        super.paintComponent(g);
@@ -60,7 +58,6 @@ public class HomepageChef extends JFrame {
 		        }
 		    }
 		};
-		
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		CaricaIcona();
 		setContentPane(contentPane);
@@ -70,8 +67,6 @@ public class HomepageChef extends JFrame {
 		panel.setOpaque(false);
 		contentPane.add(panel, "cell 1 1 18 14,grow");
 		panel.setLayout(new MigLayout("", "[grow][150px][150px][150px][grow]", "[30px][][50px][][][grow][20px][40px][20px][40px][20px][grow][50px]"));
-		
-		// Label per il logo
 		logoLabel = new JLabel();
 		logoLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		logoLabel.setOpaque(true);
@@ -87,7 +82,6 @@ public class HomepageChef extends JFrame {
 		    System.err.println("Errore nel caricamento del logo: " + e.getMessage());
 		}
 		panel.add(logoLabel, "cell 1 1 3 2,grow");
-		
 		titleLabel = new JLabel("Benvenuto " + theController.getNomeChefCorrente() + "!");
 		titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		titleLabel.setForeground(new Color(32, 71, 112));
@@ -143,8 +137,6 @@ public class HomepageChef extends JFrame {
 		    }
 		});
 		panel.add(btnRiepilogoMensile, "cell 1 9 3 1,grow");
-		
-		// Chiusura della finestra premendo ESC
 		contentPane.getInputMap(JPanel.WHEN_IN_FOCUSED_WINDOW).put(
 		    javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0), "ESCAPE");
 		contentPane.getActionMap().put("ESCAPE", new javax.swing.AbstractAction() {
