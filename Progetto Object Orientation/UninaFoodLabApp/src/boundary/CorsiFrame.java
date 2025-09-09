@@ -50,7 +50,6 @@ public class CorsiFrame extends JFrame {
         setLocationRelativeTo(null);
         setMinimumSize(new Dimension(600, 400));
         CaricaIcona();
-        
         contentPane = new JPanel();
         contentPane.setBackground(new Color(255, 255, 255));
         contentPane.setBorder(new SoftBevelBorder(BevelBorder.LOWERED, null, null, null, null));
@@ -70,7 +69,6 @@ public class CorsiFrame extends JFrame {
         lblFiltro.setForeground(new Color(26, 95, 180));
         lblFiltro.setBackground(new Color(26, 95, 180));
         filterPanel.add(lblFiltro, "cell 0 0,alignx left,aligny center");
-        
         comboTopic = new JComboBox<>();
         comboTopic.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -90,7 +88,6 @@ public class CorsiFrame extends JFrame {
             }
         });
         filterPanel.add(btnReset, "cell 2 0,alignx right");
-        
         contentPane.add(filterPanel, "cell 0 1,width 400:400:350");
         listModel = new DefaultListModel<>();
         listCorsi = new JList<>(listModel);
@@ -111,11 +108,8 @@ public class CorsiFrame extends JFrame {
             }
         });
         contentPane.add(btnTorna, "cell 0 2,alignx left,growy");
-        
         caricaCorsi();
         setupListSelection();
-        
-        // Chiusura della finestra premendo ESC
         contentPane.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeWindow");
         contentPane.getActionMap().put("closeWindow", new AbstractAction() {
             @Override

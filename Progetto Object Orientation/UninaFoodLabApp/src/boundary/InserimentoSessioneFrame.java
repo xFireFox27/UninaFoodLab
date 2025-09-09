@@ -60,7 +60,6 @@ public class InserimentoSessioneFrame extends JDialog {
                 theController.TornaSessioniFromInserimento();
             }
         });
-    	
         getContentPane().setLayout(new BorderLayout());
         contentPanel.setBorder(new EmptyBorder(10, 10, 10, 10));
         getContentPane().add(contentPanel, BorderLayout.CENTER);
@@ -83,7 +82,6 @@ public class InserimentoSessioneFrame extends JDialog {
         rbInPresenza.addActionListener(e -> togglePanels(true));
         rbOnline.addActionListener(e -> togglePanels(false));
         rbInPresenza.setSelected(true);
-        
         panelTipo.add(rbInPresenza);
         panelTipo.add(Box.createHorizontalStrut(20));
         panelTipo.add(rbOnline);
@@ -108,8 +106,8 @@ public class InserimentoSessioneFrame extends JDialog {
         txtDurata = new JTextField();
         txtDurata.setToolTipText("Durata in minuti (tra 60 e 180)");
         contentPanel.add(txtDurata, "cell 1 3,growx");
-
         panelPresenza = new JPanel(new MigLayout("", "[80px][grow]", "[][]"));
+        
         TitledBorder borderPresenza = BorderFactory.createTitledBorder("Dettagli Sessione in Presenza");
         borderPresenza.setTitleColor(new Color(26, 95, 180));
         panelPresenza.setBorder(borderPresenza);
@@ -128,9 +126,9 @@ public class InserimentoSessioneFrame extends JDialog {
         panelPresenza.add(lblAula, "cell 0 1,alignx trailing");
         txtAula = new JTextField();
         panelPresenza.add(txtAula, "cell 1 1,growx");
-
         contentPanel.add(panelPresenza, "cell 0 4 2 1,grow");
         panelOnline = new JPanel(new MigLayout("", "[80px][grow]", "[]"));
+        
         TitledBorder borderOnline = BorderFactory.createTitledBorder("Dettagli Sessione Online");
         borderOnline.setTitleColor(new Color(26, 95, 180));
         panelOnline.setBorder(borderOnline);
@@ -185,19 +183,15 @@ public class InserimentoSessioneFrame extends JDialog {
                 JOptionPane.showMessageDialog(this, "Compilare tutti i campi obbligatori.", "Errore", JOptionPane.ERROR_MESSAGE);
                 return;
             }
-            
             int numSessione = Integer.parseInt(txtNumSessione.getText().trim());
             int durata = Integer.parseInt(txtDurata.getText().trim());
-            
             if (durata < 60 || durata > 180) {
                 JOptionPane.showMessageDialog(this, "La durata deve essere compresa tra 60 e 180 minuti.", "Errore", JOptionPane.ERROR_MESSAGE);
                 return;
             }
-            
             // Parse della data
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
             LocalDateTime dateTime = LocalDateTime.parse(txtData.getText().trim(), formatter);
-            
             // Validazione anno - non oltre l'anno successivo
             int annoCorrente = LocalDateTime.now().getYear();
             int annoInserito = dateTime.getYear();
@@ -208,9 +202,7 @@ public class InserimentoSessioneFrame extends JDialog {
                     JOptionPane.ERROR_MESSAGE);
                 return;
             }
-            
             Timestamp timestamp = Timestamp.valueOf(dateTime);
-            
             if (rbInPresenza.isSelected()) {
                 // Validazione campi sessione in presenza
                 if (cmbLuogo.getSelectedItem() == null || txtAula.getText().trim().isEmpty()) {
@@ -226,9 +218,7 @@ public class InserimentoSessioneFrame extends JDialog {
                     JOptionPane.showMessageDialog(this, "Inserire il link per la sessione online.", "Errore", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
-                
                 String link = txtLink.getText().trim();
-                
                 // Validazione formato link
                 if (!link.startsWith("https://")) {
                     JOptionPane.showMessageDialog(this, 
@@ -237,13 +227,10 @@ public class InserimentoSessioneFrame extends JDialog {
                         JOptionPane.ERROR_MESSAGE);
                     return;
                 }
-                
                 theController.inserisciSessioneOnline(timestamp, durata, numSessione, corso, link);
             }
-            
             JOptionPane.showMessageDialog(this, "Sessione inserita con successo.", "Successo", JOptionPane.INFORMATION_MESSAGE);
             theController.TornaSessioniFromInserimento();
-            
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, "Numero sessione e durata devono essere valori numerici.", "Errore", JOptionPane.ERROR_MESSAGE);
         } catch (DateTimeParseException e) {
@@ -253,8 +240,6 @@ public class InserimentoSessioneFrame extends JDialog {
         }
     }
 
-
-    
     public void CaricaIcona() {
 	    try {
 	        java.net.URL iconUrl = getClass().getResource("/icona.png");
