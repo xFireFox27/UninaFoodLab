@@ -29,6 +29,7 @@ import java.util.Date;
 import java.awt.event.ActionEvent;
 import java.awt.SystemColor;
 import java.awt.Color;
+import java.awt.Frame;
 
 public class NuovoCorsoFrame extends JDialog {
 
@@ -51,7 +52,7 @@ public class NuovoCorsoFrame extends JDialog {
     /**
      * Create the dialog.
      */
-    public NuovoCorsoFrame(java.awt.Frame owner, Controller c) {
+    public NuovoCorsoFrame(Frame owner, Controller c) {
         super(owner, "Nuovo Corso", true);
         theController = c;
         setResizable(true);
