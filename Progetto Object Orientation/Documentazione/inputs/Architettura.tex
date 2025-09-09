@@ -1,0 +1,21 @@
+\section{Architettura}
+        
+            L'architettura dell'applicativo è basata sul pattern \textbf{EBC} (Entity-Boundary-Control). Questo pattern prevede la separazione delle responsabilità tra le diverse componenti del sistema, facilitando la manutenibilità e l'estensibilità dell'applicativo.
+            
+            \vspace{0.5cm}
+            
+            Come si può vedere dal diagramma UML, le classi sono suddivise in tre categorie principali, ognuna delle quali svolge un ruolo specifico: 
+            \begin{itemize}
+                \item \textbf{Entity}: Queste classi rappresentano le entità principali del dominio dell'applicativo, come Chef, Corso, Sessione, Ricetta, Ingrediente e Notifica. Esse contengono gli attributi e i metodi necessari per gestire i dati relativi a queste entità.
+                \item \textbf{Boundary}: Le classi di questa categoria sono responsabili dell'interfaccia utente e della gestione delle interazioni con l'utente. Ad esempio, la classe UninaFoodLabApp funge da punto di ingresso per l'applicativo, mentre altre classi come LoginFrame, MainFrame e CourseManagementFrame gestiscono le diverse schermate dell'interfaccia grafica.
+                \item \textbf{Control}: Queste classi agiscono come intermediari tra le classi Entity e Boundary. Gestiscono la logica di business dell'applicativo, coordinando le operazioni tra le entità e l'interfaccia utente. Ad esempio, la classe CourseController gestisce le operazioni relative ai corsi, mentre NotificationController si occupa della gestione delle notifiche.
+            \end{itemize}
+            
+            \vspace{0.5cm}
+            
+            Per l'interfaccia grafica è stato utilizzato il framework \textbf{Swing} di Java, che offre una vasta gamma di componenti per la creazione di interfacce utente ricche e interattive. Le classi del package Boundary estendono JFrame e utilizzano vari componenti Swing come JButton, JTextField, JComboBox e JTable per costruire le diverse schermate dell'applicativo.
+            
+            \vspace{0.5cm}
+            
+            La connessione al database è gestita tramite \textbf{JDBC} (Java Database Connectivity), che consente di eseguire query SQL e di interagire con il database relazionale.
+            
