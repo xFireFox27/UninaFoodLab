@@ -41,17 +41,17 @@
 \contentsline {subsection}{\numberline {3.5.8}Classe TopicDAO}{15}{subsection.3.5.8}%
 \contentsline {section}{\numberline {3.6}Package \textit {DbConnection}}{16}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}Classe DbConnection}{16}{subsection.3.6.1}%
-\contentsline {chapter}{\numberline {4}Funzionalità e Guida All'Utente}{17}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Funzionalit^^c3^^a0 e Guida All'Utente}{17}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Login Chef}{17}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Homepage Chef}{18}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Nuovo Corso}{19}{section.4.3}%
-\contentsline {section}{\numberline {4.4}I Miei Corsi}{20}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Gestione Sessioni}{20}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Inserimento Nuova Sessione}{20}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Gestione Ricette}{20}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Notifiche}{21}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Nuova Notifica}{21}{subsection.4.5.1}%
-\contentsline {section}{\numberline {4.6}Riepilogo Mensile}{23}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Repository GitHub}{24}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Cos'è una Repository}{24}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Accesso al Codice}{24}{section.5.2}%
+\contentsline {section}{\numberline {4.2}Homepage Chef}{19}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Nuovo Corso}{20}{section.4.3}%
+\contentsline {section}{\numberline {4.4}I Miei Corsi}{21}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Gestione Sessioni}{21}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Inserimento Nuova Sessione}{22}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Gestione Ricette}{22}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Notifiche}{23}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Nuova Notifica}{23}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Riepilogo Mensile}{24}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Repository GitHub}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Cos'^^c3^^a8 una Repository}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Accesso al Codice}{27}{section.5.2}%
