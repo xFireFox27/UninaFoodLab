@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1757431380.0832 "/home/bruno/GitKraken/UninaFoodLab/Progetto Object Orientation/Documentazione/main.tex" "main.pdf" "main" 1757431380.51464 0
-  "/home/bruno/GitKraken/UninaFoodLab/Progetto Object Orientation/Documentazione/main.tex" 1757431378.70496 1771 d1477e4658bdb2bca611b03a1334585c ""
+["pdflatex"] 1757432468.10572 "/home/bruno/GitKraken/UninaFoodLab/Progetto Object Orientation/Documentazione/main.tex" "main.pdf" "main" 1757432468.54933 0
+  "/home/bruno/GitKraken/UninaFoodLab/Progetto Object Orientation/Documentazione/main.tex" 1757432467.75163 2204 6d41a7f641f48ffcab619ae88c374fd8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -173,14 +173,20 @@
   "inputs/DescrizioneDao.tex" 1757350396.01296 3033 df062cdff82740d449ee8a9f33cea56b ""
   "inputs/DescrizioneDaoInterface.tex" 1757350396.01296 290 bbb13f7a7d4148f5d741195520239a7e ""
   "inputs/DescrizioneDelProblema.tex" 1757350396.01296 2116 214d20247875026346b1121a111b6d3b ""
+  "inputs/GuidaAll'Utente/HomepageChef.tex" 1757432000.83227 23 2213837dc05d755f1afd070431efb69a ""
+  "inputs/GuidaAll'Utente/IMieiCorsi.tex" 1757432339.73303 138 a7dfd10684bbfee837130020da77c27e ""
+  "inputs/GuidaAll'Utente/Login Chef.tex" 1757431926.97297 20 5698559bc3613fa342f9ec65989f0b18 ""
+  "inputs/GuidaAll'Utente/Notifiche.tex" 1757432353.40205 51 fcf870a4fab5375420da0f4f54c9d5d0 ""
+  "inputs/GuidaAll'Utente/NuovoCorso.tex" 1757432117.33515 21 8a335d773ebb335094b624a505e93147 ""
+  "inputs/GuidaAll'Utente/RiepilogoMensile.tex" 1757432401.70343 28 5ba98d6d35e8b952abdc46ee959d2c76 ""
   "inputs/UML.tex" 1757350396.01296 228 6ee1725ee34fb864526c2224512b8da3 ""
   "inputs/descrizioneEntity.tex" 1757348207.33839 2418 496ad260007793d1edcb84a197330747 ""
   "inputs/repository.tex" 1757349793.15889 701 c4f5e38a8da5045c0a131cd7ca1203de ""
   "logo-federico-II.pdf" 1756833325.65837 133374 80fc15669ec907fd5c7a726fc2c3d0c0 ""
-  "main.aux" 1757431380.45834 6948 8d74c32eb2b950902dcc774426784b4f "pdflatex"
-  "main.out" 1757431380.45934 7071 ce5ee6b4784f49a43b041c5f8c86f271 "pdflatex"
-  "main.tex" 1757431378.70496 1771 d1477e4658bdb2bca611b03a1334585c ""
-  "main.toc" 1757431380.45934 3979 12558a1f139a3ffa6df7b39ef4945c5e "pdflatex"
+  "main.aux" 1757432468.49063 8153 92b4f4830e3e6ed9c825773c93914fd4 "pdflatex"
+  "main.out" 1757432468.49082 8407 a8bcc6a038694cdabad84f332668b326 "pdflatex"
+  "main.tex" 1757432467.75163 2204 6d41a7f641f48ffcab619ae88c374fd8 ""
+  "main.toc" 1757432468.49181 4774 e21cbb79ec66b8676e77014954bec265 "pdflatex"
   "uninafrontespizio.sty" 1756833325.65936 5634 1bfa880c64007d78dab3dee241a717b2 ""
   (generated)
   "main.aux"
