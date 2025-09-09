@@ -389,8 +389,6 @@ public class Controller {
 	        }
 	    } catch (NumberFormatException e) {
 	        homepageChef.showErrorMessage("Il numero di lezioni deve essere un valore numerico.");
-	    } catch (IllegalArgumentException e) {
-	        homepageChef.showErrorMessage("Formato data non valido. Usare il formato yyyy-MM-dd.");
 	    } catch (SQLException e) {
 	        homepageChef.showErrorMessage(e.getMessage().split("\n")[0]);
 	    }
