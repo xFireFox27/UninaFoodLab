@@ -885,6 +885,11 @@ INPUT ./inputs/GuidaAll'Utente/NuovoCorso.tex
 INPUT inputs/GuidaAll'Utente/NuovoCorso.tex
 INPUT ./inputs/GuidaAll'Utente/NuovoCorso.tex
 INPUT inputs/GuidaAll'Utente/NuovoCorso.tex
+INPUT ./Images/NuovoCorso.png
+INPUT ./Images/NuovoCorso.png
+INPUT Images/NuovoCorso.png
+INPUT ./Images/NuovoCorso.png
+INPUT ./Images/NuovoCorso.png
 INPUT ./inputs/GuidaAll'Utente/IMieiCorsi.tex
 INPUT inputs/GuidaAll'Utente/IMieiCorsi.tex
 INPUT ./inputs/GuidaAll'Utente/IMieiCorsi.tex
@@ -907,6 +912,11 @@ INPUT ./inputs/GuidaAll'Utente/RiepilogoMensile.tex
 INPUT inputs/GuidaAll'Utente/RiepilogoMensile.tex
 INPUT ./inputs/GuidaAll'Utente/RiepilogoMensile.tex
 INPUT inputs/GuidaAll'Utente/RiepilogoMensile.tex
+INPUT ./Images/RiepilogoMensile.png
+INPUT ./Images/RiepilogoMensile.png
+INPUT Images/RiepilogoMensile.png
+INPUT ./Images/RiepilogoMensile.png
+INPUT ./Images/RiepilogoMensile.png
 INPUT ./inputs/repository.tex
 INPUT inputs/repository.tex
 INPUT ./inputs/repository.tex
