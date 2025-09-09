@@ -103,7 +103,7 @@ public class HomepageChef extends JFrame {
 		btnNuovoCorso.setBackground(new Color(98, 160, 234));
 		btnNuovoCorso.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				theController.apriNuovoCorsoDialog();
+				theController.apriNuovoCorsoFrame();
 			}
 		});
 		panel.add(btnNuovoCorso, "cell 1 7,grow");
