@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.8.16)  8 SEP 2025 18:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.8.16)  9 SEP 2025 16:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -435,33 +435,31 @@ File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@layerbox@background=\box66
 \pgf@layerboxsaved@background=\box67
-)) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+)) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count311
 \l__pdf_internal_box=\box68
 ) (./example.aux)
 \openout1 = `example.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -497,8 +495,8 @@ LaTeX Font Info:    ... okay on input line 70.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \it@ocap on input line 70.
-LaTeX Info: Redefining \it@ccap on input line 70.
+LaTeX Info: Redefining \it@ocap on input line 31.
+LaTeX Info: Redefining \it@ccap on input line 31.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count312
@@ -519,15 +517,15 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \c@lstlisting=\count318
-Package hyperref Info: Link coloring ON on input line 70.
+Package hyperref Info: Link coloring ON on input line 31.
  (./example.out) (./example.out)
 \@outlinefile=\write4
 \openout4 = `example.out'.
 
-<logo-federico-II.pdf, id=183, 501.79471pt x 499.8675pt>
+<logo-federico-II.pdf, id=187, 501.79471pt x 499.8675pt>
 File: logo-federico-II.pdf Graphic file (type pdf)
 <use logo-federico-II.pdf>
-Package pdftex.def Info: logo-federico-II.pdf  used on input line 72.
+Package pdftex.def Info: logo-federico-II.pdf  used on input line 33.
 (pdftex.def)             Requested size: 99.58464pt x 99.20135pt.
  [1
 
@@ -536,7 +534,7 @@ Package pdftex.def Info: logo-federico-II.pdf  used on input line 72.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.78     \tableofcontents
+l.37     \tableofcontents
                           [1] (./example.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 4.
@@ -557,7 +555,7 @@ Capitolo 1.
 ] [5]
 Capitolo 2.
 (./UML.tex
-<UninaFoodLabApp.png, id=265, 11153.67pt x 5669.18pt>
+<UninaFoodLabApp.png, id=270, 11153.67pt x 5669.18pt>
 File: UninaFoodLabApp.png Graphic file (type png)
 <use UninaFoodLabApp.png>
 Package pdftex.def Info: UninaFoodLabApp.png  used on input line 5.
@@ -568,27 +566,31 @@ Package pdftex.def Info: UninaFoodLabApp.png  used on input line 5.
 Capitolo 3.
 (./DescrizioneBoundary.tex [8
 
-]) [9] (./DescrizioneControl.tex) [10] (./descrizioneEntity.tex [11]) [12] (./DescrizioneDaoInterface.tex) [13] (./DescrizioneDao.tex [14]) [15] (./DescrizioneDBConnection.tex) [16] (./repository.tex
+]) [9] (./DescrizioneControl.tex) [10] (./descrizioneEntity.tex [11]) [12] (./DescrizioneDaoInterface.tex) [13] (./DescrizioneDao.tex [14]) [15] (./DescrizioneDBConnection.tex) [16]
 Capitolo 4.
-) [17
+(./repository.tex [17
+
+]
+Capitolo 5.
+) [18
 
 ] (./example.aux)
 Package rerunfilecheck Info: File `example.out' has not changed.
-(rerunfilecheck)             Checksum: C5F18780A39488295E168F720ACC52D8;6860.
+(rerunfilecheck)             Checksum: CE5EE6B4784F49A43B041C5F8C86F271;7071.
  ) 
 Here is how much of TeX's memory you used:
- 23050 strings out of 476034
- 424469 string characters out of 5792864
+ 23034 strings out of 476034
+ 424127 string characters out of 5792864
  1860388 words of memory out of 6000000
- 43039 multiletter control sequences out of 15000+600000
+ 43025 multiletter control sequences out of 15000+600000
  524945 words of font info for 55 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  99i,6n,94p,533b,601s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbi1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfcc2488.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on example.pdf (18 pages, 4273978 bytes).
+Output written on example.pdf (19 pages, 4277011 bytes).
 PDF statistics:
- 390 PDF objects out of 1000 (max. 8388607)
- 341 compressed objects within 4 object streams
- 64 named destinations out of 1000 (max. 500000)
- 375 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 400 PDF objects out of 1000 (max. 8388607)
+ 350 compressed objects within 4 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 383 words of extra memory for PDF output out of 10000 (max. 10000000)
 
