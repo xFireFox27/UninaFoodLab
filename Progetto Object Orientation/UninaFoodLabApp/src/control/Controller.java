@@ -356,9 +356,9 @@ public class Controller {
 	    }
 	}
 
-	public void apriNuovoCorsoDialog() {
-		NuovoCorsoFrame nuovoCorsoDialog = new NuovoCorsoFrame(homepageChef, this);
-		nuovoCorsoDialog.setVisible(true);
+	public void apriNuovoCorsoFrame() {
+		NuovoCorsoFrame nuovoCorsoFrame = new NuovoCorsoFrame(homepageChef, this);
+		nuovoCorsoFrame.setVisible(true);
 	}
 	
 	//Recupera i topic per la combobox
