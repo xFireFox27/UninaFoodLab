@@ -372,11 +372,6 @@ public class Controller {
 	        homepageChef.showErrorMessage("Il titolo non può essere vuoto.");
 	        return;
 	    }
-	    
-	    if (topic == null) {
-	        homepageChef.showErrorMessage("Nessun topic selezionato.");
-	        return;
-	    }
 
 	    try {
 	        int numLezioni = Integer.parseInt(numLezioniStr);
