@@ -368,16 +368,6 @@ public class Controller {
 	}
 	
 	public void creaNuovoCorso(String titolo, String frequenza, String numLezioniStr, String annoFrequenzaStr, String date, String topic, NuovoCorsoFrame nuovoCorsoDialog) {
-	    if (titolo == null || titolo.trim().isEmpty()) {
-	        homepageChef.showErrorMessage("Il titolo non può essere vuoto.");
-	        return;
-	    }
-	    
-	    if (topic == null) {
-	        homepageChef.showErrorMessage("Nessun topic selezionato.");
-	        return;
-	    }
-
 	    try {
 	        int numLezioni = Integer.parseInt(numLezioniStr);
 	        if (numLezioni < 1 || numLezioni > 100) {
@@ -399,8 +389,6 @@ public class Controller {
 	        }
 	    } catch (NumberFormatException e) {
 	        homepageChef.showErrorMessage("Il numero di lezioni deve essere un valore numerico.");
-	    } catch (IllegalArgumentException e) {
-	        homepageChef.showErrorMessage("Formato data non valido. Usare il formato yyyy-MM-dd.");
 	    } catch (SQLException e) {
 	        homepageChef.showErrorMessage(e.getMessage().split("\n")[0]);
 	    }
