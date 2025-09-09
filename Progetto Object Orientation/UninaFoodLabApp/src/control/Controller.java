@@ -368,11 +368,6 @@ public class Controller {
 	}
 	
 	public void creaNuovoCorso(String titolo, String frequenza, String numLezioniStr, String annoFrequenzaStr, String date, String topic, NuovoCorsoFrame nuovoCorsoDialog) {
-	    if (titolo == null || titolo.trim().isEmpty()) {
-	        homepageChef.showErrorMessage("Il titolo non può essere vuoto.");
-	        return;
-	    }
-
 	    try {
 	        int numLezioni = Integer.parseInt(numLezioniStr);
 	        if (numLezioni < 1 || numLezioni > 100) {
