@@ -49,9 +49,9 @@
 \contentsline {subsection}{\numberline {4.4.1}Gestione Sessioni}{21}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Inserimento Nuova Sessione}{22}{subsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.4.3}Gestione Ricette}{23}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Notifiche}{24}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Nuova Notifica}{25}{subsection.4.5.1}%
-\contentsline {section}{\numberline {4.6}Riepilogo Mensile}{26}{section.4.6}%
+\contentsline {section}{\numberline {4.5}Notifiche}{25}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Nuova Notifica}{26}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Riepilogo Mensile}{27}{section.4.6}%
 \contentsline {chapter}{\numberline {5}Repository GitHub}{28}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Cos'è una Repository}{28}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Accesso al Codice}{28}{section.5.2}%
