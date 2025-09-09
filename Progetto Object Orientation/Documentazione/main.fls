@@ -877,10 +877,20 @@ INPUT ./inputs/GuidaAll'Utente/Login Chef.tex
 INPUT inputs/GuidaAll'Utente/Login Chef.tex
 INPUT ./inputs/GuidaAll'Utente/Login Chef.tex
 INPUT inputs/GuidaAll'Utente/Login Chef.tex
+INPUT ./Images/Login.png
+INPUT ./Images/Login.png
+INPUT Images/Login.png
+INPUT ./Images/Login.png
+INPUT ./Images/Login.png
 INPUT ./inputs/GuidaAll'Utente/HomepageChef.tex
 INPUT inputs/GuidaAll'Utente/HomepageChef.tex
 INPUT ./inputs/GuidaAll'Utente/HomepageChef.tex
 INPUT inputs/GuidaAll'Utente/HomepageChef.tex
+INPUT ./Images/Homepage.png
+INPUT ./Images/Homepage.png
+INPUT Images/Homepage.png
+INPUT ./Images/Homepage.png
+INPUT ./Images/Homepage.png
 INPUT ./inputs/GuidaAll'Utente/NuovoCorso.tex
 INPUT inputs/GuidaAll'Utente/NuovoCorso.tex
 INPUT ./inputs/GuidaAll'Utente/NuovoCorso.tex
@@ -894,6 +904,31 @@ INPUT ./inputs/GuidaAll'Utente/IMieiCorsi.tex
 INPUT inputs/GuidaAll'Utente/IMieiCorsi.tex
 INPUT ./inputs/GuidaAll'Utente/IMieiCorsi.tex
 INPUT inputs/GuidaAll'Utente/IMieiCorsi.tex
+INPUT ./Images/IMieiCorsi.png
+INPUT ./Images/IMieiCorsi.png
+INPUT Images/IMieiCorsi.png
+INPUT ./Images/IMieiCorsi.png
+INPUT ./Images/IMieiCorsi.png
+INPUT ./Images/GestioneSessioni.png
+INPUT ./Images/GestioneSessioni.png
+INPUT Images/GestioneSessioni.png
+INPUT ./Images/GestioneSessioni.png
+INPUT ./Images/GestioneSessioni.png
+INPUT ./Images/NuovaSessione.png
+INPUT ./Images/NuovaSessione.png
+INPUT Images/NuovaSessione.png
+INPUT ./Images/NuovaSessione.png
+INPUT ./Images/NuovaSessione.png
+INPUT ./Images/GestioneRicette.png
+INPUT ./Images/GestioneRicette.png
+INPUT Images/GestioneRicette.png
+INPUT ./Images/GestioneRicette.png
+INPUT ./Images/GestioneRicette.png
+INPUT ./Images/SovrascrizioneRicette.png
+INPUT ./Images/SovrascrizioneRicette.png
+INPUT Images/SovrascrizioneRicette.png
+INPUT ./Images/SovrascrizioneRicette.png
+INPUT ./Images/SovrascrizioneRicette.png
 INPUT ./inputs/GuidaAll'Utente/Notifiche.tex
 INPUT inputs/GuidaAll'Utente/Notifiche.tex
 INPUT ./inputs/GuidaAll'Utente/Notifiche.tex
