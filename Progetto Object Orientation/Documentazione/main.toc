@@ -52,6 +52,6 @@
 \contentsline {section}{\numberline {4.5}Notifiche}{23}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}Nuova Notifica}{23}{subsection.4.5.1}%
 \contentsline {section}{\numberline {4.6}Riepilogo Mensile}{24}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Repository GitHub}{27}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Cos'^^c3^^a8 una Repository}{27}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Accesso al Codice}{27}{section.5.2}%
+\contentsline {chapter}{\numberline {5}Repository GitHub}{28}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Cos'^^c3^^a8 una Repository}{28}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Accesso al Codice}{28}{section.5.2}%
