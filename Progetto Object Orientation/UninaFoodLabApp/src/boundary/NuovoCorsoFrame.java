@@ -37,12 +37,10 @@ public class NuovoCorsoFrame extends JDialog {
     private JPanel contentPane;
     private JTextField titoloCorsoTF;
     private JTextField numLezioniTF;
-    private JTextField annoTF;
     private JFormattedTextField dataInizioTF;
     private JLabel titoloCorsoLbl;
     private JLabel frequenzaCorsoLbl;
     private JLabel numLezioniLbl;
-    private JLabel annoLbl;
     private JLabel dataInizioLbl;
     private JLabel topicLbl;
     private JComboBox<String> topicCB;
@@ -76,7 +74,7 @@ public class NuovoCorsoFrame extends JDialog {
 	        });
 
         setContentPane(contentPane);
-        contentPane.setLayout(new MigLayout("", "[grow][150][200][150][grow]", "[grow][50][50][50][50][50][50][50][grow]"));
+        contentPane.setLayout(new MigLayout("", "[grow][150][200][150][grow]", "[grow][50][50][50][50][50][50][grow]"));
         
                 titoloCorsoLbl = new JLabel("Titolo:");
                 contentPane.add(titoloCorsoLbl, "cell 1 1,alignx right");
@@ -102,21 +100,14 @@ public class NuovoCorsoFrame extends JDialog {
         contentPane.add(numLezioniTF, "cell 2 3,growx");
         numLezioniTF.setColumns(10);
         
-                annoLbl = new JLabel("Anno:");
-                contentPane.add(annoLbl, "cell 1 4,alignx right");
-
-        annoTF = new JTextField();
-        contentPane.add(annoTF, "cell 2 4,growx");
-        annoTF.setColumns(10);
-        
                 dataInizioLbl = new JLabel("Data di inizio:");
-                contentPane.add(dataInizioLbl, "cell 1 5,alignx right");
+                contentPane.add(dataInizioLbl, "cell 1 4,alignx right");
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
         dateFormat.setLenient(false);
         dataInizioTF = new JFormattedTextField(dateFormat);
         dataInizioTF.setToolTipText("Formato: dd/MM/yyyy");
-        contentPane.add(dataInizioTF, "cell 2 5,growx");
+        contentPane.add(dataInizioTF, "cell 2 4,growx");
         dataInizioTF.setColumns(10);
 
         topicCB = new JComboBox<>();
@@ -126,8 +117,8 @@ public class NuovoCorsoFrame extends JDialog {
 		}
         
                 topicLbl = new JLabel("Topic:");
-                contentPane.add(topicLbl, "cell 1 6,alignx right");
-        contentPane.add(topicCB, "cell 2 6,growx");
+                contentPane.add(topicLbl, "cell 1 5,alignx right");
+        contentPane.add(topicCB, "cell 2 5,growx");
                         
                                 annullaBtn = new JButton("Annulla");
                                 annullaBtn.setForeground(new Color(248, 248, 255));
@@ -146,7 +137,6 @@ public class NuovoCorsoFrame extends JDialog {
                                         		
                                         		if (titoloCorsoTF.getText().trim().isEmpty() || 
                                         			numLezioniTF.getText().trim().isEmpty() || 
-                                        			annoTF.getText().trim().isEmpty() || 
                                         			dataInizioTF.getText().trim().isEmpty() ||
                                         			topicCB.getSelectedItem() == null) {
                                         			JOptionPane.showMessageDialog(NuovoCorsoFrame.this, "Tutti i campi devono essere compilati.", "Errore", JOptionPane.ERROR_MESSAGE);
@@ -156,38 +146,25 @@ public class NuovoCorsoFrame extends JDialog {
                                         		try {
                                                     dataInizioTF.commitEdit();
                                                     Date dataInizio = (Date) dataInizioTF.getValue();
-                                                    String annoInseritoStr = annoTF.getText();
-
-                                                    if (dataInizio != null && !annoInseritoStr.isEmpty()) {
-                                                        Calendar cal = Calendar.getInstance();
-                                                        cal.setTime(dataInizio);
-                                                        int annoData = cal.get(Calendar.YEAR);
-                                                        
-                                                        try {
-                                                            int annoCampo = Integer.parseInt(annoInseritoStr);
-                                                            if (annoData != annoCampo) {
-                                                                JOptionPane.showMessageDialog(NuovoCorsoFrame.this, "L'anno inserito non corrisponde all'anno della data di inizio.", "Errore di coerenza", JOptionPane.ERROR_MESSAGE);
-                                                                return;
-                                                            }
-                                                        } catch (NumberFormatException nfe) {
-                                                            JOptionPane.showMessageDialog(NuovoCorsoFrame.this, "L'anno deve essere un valore numerico.", "Errore di Formato", JOptionPane.ERROR_MESSAGE);
-                                                            return;
-                                                        }
-                                                    }
                                                     
+                                                    String anno = "";
                                                     String dataInizioSQL = "";
                                                     if (dataInizio != null) {
+                                                        Calendar cal = Calendar.getInstance();
+                                                        cal.setTime(dataInizio);
+                                                        anno = String.valueOf(cal.get(Calendar.YEAR));
+                                                        
                                                         SimpleDateFormat sqlSdf = new SimpleDateFormat("yyyy-MM-dd");
                                                         dataInizioSQL = sqlSdf.format(dataInizio);
                                                     }
-                                                    theController.creaNuovoCorso(titoloCorsoTF.getText(), (String) frequenzaCB.getSelectedItem(), numLezioniTF.getText(), annoTF.getText(), dataInizioSQL , (String) topicCB.getSelectedItem(),  NuovoCorsoFrame.this);
+                                                    theController.creaNuovoCorso(titoloCorsoTF.getText(), (String) frequenzaCB.getSelectedItem(), numLezioniTF.getText(), anno, dataInizioSQL , (String) topicCB.getSelectedItem(),  NuovoCorsoFrame.this);
                                                 } catch (ParseException ex) {
-                                                    JOptionPane.showMessageDialog(NuovoCorsoFrame.this, "Formato data non valido. Usare il formato gg/mm/aaaa.", "Errore di Formato", JOptionPane.ERROR_MESSAGE);
+                                                    JOptionPane.showMessageDialog(NuovoCorsoFrame.this, "Formato data non valido. Usare il formato dd/MM/yyyy.", "Errore di Formato", JOptionPane.ERROR_MESSAGE);
                                                 }
                                         	}
                                         });
-                                        contentPane.add(creaCorsoBtn, "flowx,cell 2 7,alignx center,aligny center");
-                                contentPane.add(annullaBtn, "cell 2 7,alignx center,aligny center");
+                                        contentPane.add(creaCorsoBtn, "flowx,cell 2 6,alignx center,aligny center");
+                                contentPane.add(annullaBtn, "cell 2 6,alignx center,aligny center");
                                 
         getRootPane().setDefaultButton(creaCorsoBtn);
                                         

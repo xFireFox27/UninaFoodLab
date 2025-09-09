@@ -387,10 +387,6 @@ public class Controller {
 	        int annoFrequenza = Integer.parseInt(annoFrequenzaStr);
 	        Date sqlDate = Date.valueOf(date);
 	        Topic topicCorso = new TopicDAO().getTopicByName(topic);
-	        if (topicCorso == null) {
-	            homepageChef.showErrorMessage("Topic non valido.");
-	            return;
-	        }
 	        if (corsoDao == null) {
 	            corsoDao = new CorsoDAO();
 	        }

@@ -1,10 +1,7 @@
 package boundary;
 
 import java.awt.Dimension;
-import java.awt.EventQueue;
 import java.awt.Image;
-
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -13,24 +10,17 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-import java.awt.GridBagLayout;
-import java.awt.GridBagConstraints;
-import java.awt.Insets;
 import javax.swing.JPasswordField;
 import javax.swing.JCheckBox;
 import java.awt.Font;
 import java.awt.Color;
-import javax.swing.border.MatteBorder;
 import javax.swing.border.SoftBevelBorder;
-
-import control.Controller;
-
 import javax.swing.border.BevelBorder;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.IOException;
 import java.awt.event.ActionEvent;
 import net.miginfocom.swing.MigLayout;
+
+import control.Controller;
 
 public class LoginFrame extends JFrame {
 
@@ -41,11 +31,8 @@ public class LoginFrame extends JFrame {
 	private JCheckBox showPasswordCheckbox;
 	private Controller theController;
 
-	
-	/**
-	 * Create the frame.
-	 */
 	public LoginFrame(Controller c) {
+		
 	    theController = c;
 	    setResizable(true);
 	    setTitle("LoginChef");
