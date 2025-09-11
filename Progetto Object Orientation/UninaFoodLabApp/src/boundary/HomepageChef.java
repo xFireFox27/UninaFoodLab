@@ -20,7 +20,6 @@ import java.awt.event.ActionListener;
 
 import control.Controller;
 
-
 public class HomepageChef extends JFrame {
 
 	Controller theController;

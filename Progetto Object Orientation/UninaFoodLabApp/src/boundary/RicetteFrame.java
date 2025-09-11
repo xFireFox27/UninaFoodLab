@@ -3,19 +3,20 @@ package boundary;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.util.List;
 import java.util.ArrayList;
-import control.Controller;
-import entity.SessioneInPresenza;
-import entity.Ricetta;
 import net.miginfocom.swing.MigLayout;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.TitledBorder;
 import javax.swing.border.BevelBorder;
 
+import control.Controller;
+import entity.SessioneInPresenza;
+import entity.Ricetta;
+
 public class RicetteFrame extends JDialog {
+	
     private Controller theController;
     private SessioneInPresenza sessione;
     private JList<JCheckBox> listRicetteDisponibili;
@@ -26,12 +27,10 @@ public class RicetteFrame extends JDialog {
     	setModal(true);
         this.theController = c;
         this.sessione = sessione;
-        
         setTitle("Gestione Ricette - Sessione " + sessione.getNumSessione());
         setSize(600, 500);
         setLocationRelativeTo(null);
         setResizable(false);
-        
         initComponents();
         caricaRicette();
         CaricaIcona();
@@ -49,14 +48,13 @@ public class RicetteFrame extends JDialog {
         // Panel per ricette con checkbox
         JPanel panelRicette = new JPanel(new MigLayout("", "[grow]", "[][grow]"));
         panelRicette.setBorder(BorderFactory.createTitledBorder("Seleziona Ricette per la Sessione"));
+        
         TitledBorder border = (TitledBorder) panelRicette.getBorder();
         border.setTitleColor(new Color(98, 160, 233));
-        
         modelDisponibili = new DefaultListModel<>();
         listRicetteDisponibili = new JList<>(modelDisponibili);
         listRicetteDisponibili.setForeground(new Color(26, 95, 180));
         listRicetteDisponibili.setVisibleRowCount(20);
-        
         // Renderer personalizzato per checkbox inline
         listRicetteDisponibili.setCellRenderer(new ListCellRenderer<JCheckBox>() {
             @Override
@@ -76,7 +74,6 @@ public class RicetteFrame extends JDialog {
         });
         
         listRicetteDisponibili.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        
         // Mouse listener per gestire i click sui checkbox
         listRicetteDisponibili.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
@@ -94,7 +91,6 @@ public class RicetteFrame extends JDialog {
         scrollRicette.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
         scrollRicette.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
         panelRicette.add(scrollRicette, "cell 0 1,grow");
-        
         getContentPane().add(panelRicette, "cell 0 1,grow");
         
         // Panel per i pulsanti
@@ -115,12 +111,9 @@ public class RicetteFrame extends JDialog {
         btnSalva.setPreferredSize(new Dimension(135, 30));
         btnSalva.addActionListener(e -> salvaAssociazioni());
         panelPulsanti.add(btnSalva, "cell 1 0,alignx right");
-        
         getContentPane().add(panelPulsanti, "cell 0 2,grow");
-        
         // Imposta il pulsante Salva come predefinito per il tasto Invio
         getRootPane().setDefaultButton(btnSalva);
-        
         // Chiudi la finestra premendo ESC
         getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(
             KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "cancelAction");
@@ -165,7 +158,6 @@ public class RicetteFrame extends JDialog {
                 ricetteSelezionate.add(tutteLeRicette.get(i));
             }
         }
-        
         // Verifica se esistono già ricette associate
         List<Ricetta> ricetteEsistenti = theController.getRicettePerSessione(sessione);
         
@@ -175,13 +167,11 @@ public class RicetteFrame extends JDialog {
                 messaggioRicette.append("• ").append(ricetta.getNome()).append("\n");
             }
             messaggioRicette.append("\nVuoi sovrascrivere le associazioni esistenti?");
-            
             int scelta = JOptionPane.showConfirmDialog(this,
                 messaggioRicette.toString(),
                 "Ricette già presenti",
                 JOptionPane.YES_NO_OPTION,
                 JOptionPane.WARNING_MESSAGE);
-            
             if (scelta != JOptionPane.YES_OPTION) {
                 return;
             }
@@ -208,16 +198,10 @@ public class RicetteFrame extends JDialog {
 	        java.net.URL iconUrl = getClass().getResource("/icona.png");
 	        if (iconUrl != null) {
 	            ImageIcon originalIcon = new ImageIcon(iconUrl);
-	            
-
 	            Image scaledImage = originalIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
 	            ImageIcon icon = new ImageIcon(scaledImage);
-	            
 	            setIconImage(icon.getImage());
-	            
-
 	            repaint();
-	            
 	        } else {
 	            System.err.println("File icona.png non trovato");
 	        }
@@ -226,4 +210,5 @@ public class RicetteFrame extends JDialog {
 	        e.printStackTrace();
 	    }
 	}
+    
 }

@@ -3,22 +3,21 @@ package boundary;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.List;
-import java.util.stream.Collectors;
-import control.Controller;
-import entity.Corso;
-import entity.Sessione;
-import entity.SessioneInPresenza;
-import entity.SessioneOnline;
 import net.miginfocom.swing.MigLayout;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.TitledBorder;
 import javax.swing.border.BevelBorder;
 
+import control.Controller;
+import entity.Corso;
+import entity.SessioneInPresenza;
+import entity.SessioneOnline;
+
 public class SessioniFrame extends JFrame {
+	
     private Controller theController;
     private Corso corso;
     private JList<String> listSessioniPresenza;
@@ -31,12 +30,10 @@ public class SessioniFrame extends JFrame {
     public SessioniFrame(Controller c, Corso corso) {
         this.theController = c;
         this.corso = corso;
-        
         setTitle("Gestione Sessioni - " + corso.getTitolo());
         setSize(1000, 700);
         setMinimumSize(new Dimension(800, 600));
         setLocationRelativeTo(null);
-        
         initComponents();
         caricaSessioni();
         CaricaIcona();
@@ -56,7 +53,6 @@ public class SessioniFrame extends JFrame {
         TitledBorder borderPresenza = BorderFactory.createTitledBorder("Sessioni in Presenza");
         borderPresenza.setTitleColor(new Color(98, 160, 233));
         panelPresenza.setBorder(borderPresenza);
-        
         listModelPresenza = new DefaultListModel<>();
         listSessioniPresenza = new JList<>(listModelPresenza);
         listSessioniPresenza.setForeground(new Color(26, 95, 180));
@@ -64,13 +60,13 @@ public class SessioniFrame extends JFrame {
         listSessioniPresenza.setVisibleRowCount(-1);
         listSessioniPresenza.addMouseListener(new MouseAdapter(){
         	public void mouseClicked(MouseEvent e) {
-            if (e.getClickCount() == 2) {
-                int selectedIndex = listSessioniPresenza.getSelectedIndex();
-                if (selectedIndex >= 0 && sessioniPresenza != null && selectedIndex < sessioniPresenza.size()) {
-                    SessioneInPresenza sessioneSelezionata = sessioniPresenza.get(selectedIndex);
-                    theController.ApriGestioneRicette(sessioneSelezionata);
-                }
-            }
+	            if (e.getClickCount() == 2) {
+	                int selectedIndex = listSessioniPresenza.getSelectedIndex();
+	                if (selectedIndex >= 0 && sessioniPresenza != null && selectedIndex < sessioniPresenza.size()) {
+	                    SessioneInPresenza sessioneSelezionata = sessioniPresenza.get(selectedIndex);
+	                    theController.ApriGestioneRicette(sessioneSelezionata);
+	                }
+	            }
         	}
         });
         
@@ -84,7 +80,6 @@ public class SessioniFrame extends JFrame {
         TitledBorder borderOnline = BorderFactory.createTitledBorder("Sessioni Online");
         borderOnline.setTitleColor(new Color(98, 160, 233));
         panelOnline.setBorder(borderOnline);
-        
         listModelOnline = new DefaultListModel<>();
         listSessioniOnline = new JList<>(listModelOnline);
         listSessioniOnline.setForeground(new Color(26, 95, 180));
@@ -105,7 +100,6 @@ public class SessioniFrame extends JFrame {
         panelOnline.add(scrollOnline, "cell 0 1,grow");
         getContentPane().add(panelOnline, "cell 1 1,grow");
         
-        // Pulsante per tornare indietro
         JButton btnTorna = new JButton("Torna ai Corsi");
         btnTorna.setBackground(new Color(26, 95, 180));
         btnTorna.setForeground(new Color(248, 248, 255));
@@ -114,7 +108,6 @@ public class SessioniFrame extends JFrame {
         btnTorna.addActionListener(e -> theController.TornaCorsiFromSessioni());
         getContentPane().add(btnTorna, "cell 0 2,alignx center");
         
-        // Pulsante per inserire nuova sessione
         JButton btnNuovaSessione = new JButton("Nuova Sessione");
         btnNuovaSessione.setBackground(new Color(98, 160, 233));
         btnNuovaSessione.setForeground(new Color(248, 248, 255));
@@ -122,20 +115,16 @@ public class SessioniFrame extends JFrame {
         btnNuovaSessione.setMaximumSize(new Dimension(150, 30));
         btnNuovaSessione.addActionListener(e -> theController.ApriInserimentoSessione(corso));
         getContentPane().add(btnNuovaSessione, "cell 1 2,alignx center");
-        
-        // Si torna alla finestra precedente premendo ESC
         getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW)
 			.put(KeyStroke.getKeyStroke("ESCAPE"), "ESCAPE");
         getRootPane().getActionMap().put("ESCAPE", new AbstractAction() {
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			theController.TornaCorsiFromSessioni();
-		}
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				theController.TornaCorsiFromSessioni();
+			}
 		});
-        
     }
 
-    
     private void caricaSessioni() {
         sessioniPresenza = theController.getSessioniByCorso(corso);
         
@@ -148,9 +137,9 @@ public class SessioniFrame extends JFrame {
         // Ricarica i dati dal database
         sessioniPresenza = theController.getSessioniByCorso(corso);
         sessioniOnline = theController.getSessioniOnlineByCorso(corso);
-        
         // Aggiorna lista sessioni in presenza
         listModelPresenza.clear();
+        
         if (sessioniPresenza != null && !sessioniPresenza.isEmpty()) {
             for (SessioneInPresenza sessione : sessioniPresenza) {
                 String descrizione = String.format("Sessione %d - %s - %s %s", 
@@ -166,6 +155,7 @@ public class SessioniFrame extends JFrame {
         
         // Aggiorna lista sessioni online
         listModelOnline.clear();
+        
         if (sessioniOnline != null && !sessioniOnline.isEmpty()) {
             for (SessioneOnline sessione : sessioniOnline) {
                 String descrizione = String.format("Sessione %d - %s - Link: %s", 
@@ -184,16 +174,10 @@ public class SessioniFrame extends JFrame {
 	        java.net.URL iconUrl = getClass().getResource("/icona.png");
 	        if (iconUrl != null) {
 	            ImageIcon originalIcon = new ImageIcon(iconUrl);
-	            
-
 	            Image scaledImage = originalIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
 	            ImageIcon icon = new ImageIcon(scaledImage);
-	            
 	            setIconImage(icon.getImage());
-	            
-
 	            repaint();
-	            
 	        } else {
 	            System.err.println("File icona.png non trovato");
 	        }
@@ -202,4 +186,5 @@ public class SessioniFrame extends JFrame {
 	        e.printStackTrace();
 	    }
 	}
+    
 }

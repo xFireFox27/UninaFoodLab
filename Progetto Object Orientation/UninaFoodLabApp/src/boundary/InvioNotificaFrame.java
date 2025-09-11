@@ -173,6 +173,7 @@ public class InvioNotificaFrame extends JDialog {
 	private void inviaNotifica() {
 		String oggetto = fieldOggetto.getText();
 		String testo = textAreaMessaggio.getText();
+		
 		if(oggetto.isEmpty() || testo.isEmpty()) {
 			showErrorMessage("Compilare tutti i campi.");
 		} else {

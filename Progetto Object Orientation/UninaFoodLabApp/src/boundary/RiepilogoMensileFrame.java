@@ -11,7 +11,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.time.LocalDate;
 import java.util.List;
-
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -24,21 +23,20 @@ import javax.swing.JScrollPane;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
-
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.CategoryPlot;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.DefaultCategoryDataset;
+import javax.swing.border.SoftBevelBorder;
+import javax.swing.border.BevelBorder;
 
 import control.Controller;
 import entity.Corso;
 import entity.Ricetta;
 import entity.SessioneInPresenza;
 import entity.SessioneOnline;
-import javax.swing.border.SoftBevelBorder;
-import javax.swing.border.BevelBorder;
 
 public class RiepilogoMensileFrame extends JFrame {
 
@@ -67,7 +65,6 @@ public class RiepilogoMensileFrame extends JFrame {
         contentPane.setBorder(new EmptyBorder(10, 10, 10, 10));
         contentPane.setLayout(new BorderLayout());
         setContentPane(contentPane);
-
         getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(
             KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "cancelAction");
         getRootPane().getActionMap().put("cancelAction", new AbstractAction() {
@@ -82,9 +79,9 @@ public class RiepilogoMensileFrame extends JFrame {
     private void createComponents() {
         JPanel headerPanel = createHeaderPanel();
         contentPane.add(headerPanel, BorderLayout.NORTH);
-
         chartsContainer = new JPanel(new BorderLayout());
         chartsContainer.setSize(new Dimension(550, 530));
+        
         JScrollPane scrollPane = new JScrollPane(chartsContainer);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
@@ -134,7 +131,6 @@ public class RiepilogoMensileFrame extends JFrame {
         setPreferredSize(new Dimension(130, 30));
         aggiornaButton.addActionListener(e -> updateCharts());
         selectionPanel.add(aggiornaButton);
-
         headerPanel.add(selectionPanel, BorderLayout.CENTER);
         return headerPanel;
     }
@@ -148,13 +144,11 @@ public class RiepilogoMensileFrame extends JFrame {
 
     private void updateCharts() {
         chartsContainer.removeAll();
-        
         int mese = meseComboBox.getSelectedIndex() + 1;
         int anno = (Integer) annoComboBox.getSelectedItem();
         
         JPanel chartsPanel = createChartsPanel(mese, anno);
         chartsContainer.add(chartsPanel, BorderLayout.CENTER);
-        
         chartsContainer.revalidate();
         chartsContainer.repaint();
     }
@@ -198,17 +192,16 @@ public class RiepilogoMensileFrame extends JFrame {
             // Wrapper panel to prevent stretching
             JPanel wrapperPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
             wrapperPanel.add(allChartsPanel);
-
             chartsPanel.add(wrapperPanel, BorderLayout.CENTER);
-
         } catch (Exception e) {
             e.printStackTrace();
+            
             JLabel errorLabel = new JLabel("Errore nel caricamento delle statistiche: " + e.getMessage());
             errorLabel.setHorizontalAlignment(SwingConstants.CENTER);
             errorLabel.setForeground(Color.RED);
             chartsPanel.add(errorLabel, BorderLayout.CENTER);
         }
-
+        
         return chartsPanel;
     }
 
@@ -238,34 +231,27 @@ public class RiepilogoMensileFrame extends JFrame {
 
         for (Corso corso : corsi) {
             String nomeCorso = corso.getTitolo();
-            
-            // Filtra sessioni per il mese specificato
-            List<SessioneInPresenza> sessioniPresenza = controller.getSessioniByCorsoEMese(corso, mese, anno);
-            
+            List<SessioneInPresenza> sessioniPresenza = controller.getSessioniByCorsoEMese(corso, mese, anno); // Filtra sessioni per il mese specificato
+
             if (sessioniPresenza != null && !sessioniPresenza.isEmpty()) {
                 int totaleRicette = 0;
                 int minRicette = Integer.MAX_VALUE;
                 int maxRicette = 0;
                 int sessioniConRicette = 0;
-
                 for (SessioneInPresenza sessione : sessioniPresenza) {
                     List<Ricetta> ricette = controller.getRicettePerSessione(sessione);
                     if (ricette != null) {
                         int numRicette = ricette.size();
                         totaleRicette += numRicette;
                         sessioniConRicette++;
-                        
                         if (numRicette > 0) {
                             minRicette = Math.min(minRicette, numRicette);
                             maxRicette = Math.max(maxRicette, numRicette);
                         }
                     }
                 }
-
                 double mediaRicette = sessioniConRicette > 0 ? (double) totaleRicette / sessioniConRicette : 0;
-                
                 if (minRicette == Integer.MAX_VALUE) minRicette = 0;
-
                 dataset.addValue(mediaRicette, "Media Ricette", nomeCorso);
                 dataset.addValue(minRicette, "Min Ricette", nomeCorso);
                 dataset.addValue(maxRicette, "Max Ricette", nomeCorso);
@@ -292,7 +278,6 @@ public class RiepilogoMensileFrame extends JFrame {
         CategoryPlot plot = chart.getCategoryPlot();
         plot.setBackgroundPaint(Color.WHITE);
         plot.setRangeGridlinePaint(Color.LIGHT_GRAY);
-
         return chart;
     }
 
@@ -309,7 +294,6 @@ public class RiepilogoMensileFrame extends JFrame {
         CategoryPlot plot = chart.getCategoryPlot();
         plot.setBackgroundPaint(Color.WHITE);
         plot.setRangeGridlinePaint(Color.LIGHT_GRAY);
-
         return chart;
     }
 
@@ -321,13 +305,11 @@ public class RiepilogoMensileFrame extends JFrame {
         btnTornaIndietro.setForeground(Color.WHITE);
         btnTornaIndietro.setBackground(new Color(26, 95, 180));
         btnTornaIndietro.setFont(new Font("Arial", Font.BOLD, 14));
-        
         btnTornaIndietro.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 controller.TornaHomepageFromRiepilogo(RiepilogoMensileFrame.this);
             }
         });
-        
         bottomPanel.add(btnTornaIndietro);
         return bottomPanel;
     }
@@ -341,16 +323,10 @@ public class RiepilogoMensileFrame extends JFrame {
 	        java.net.URL iconUrl = getClass().getResource("/icona.png");
 	        if (iconUrl != null) {
 	            ImageIcon originalIcon = new ImageIcon(iconUrl);
-	            
-
 	            Image scaledImage = originalIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
 	            ImageIcon icon = new ImageIcon(scaledImage);
-	            
 	            setIconImage(icon.getImage());
-	            
-
 	            repaint();
-	            
 	        } else {
 	            System.err.println("File icona.png non trovato");
 	        }
@@ -359,4 +335,5 @@ public class RiepilogoMensileFrame extends JFrame {
 	        e.printStackTrace();
 	    }
 	}
+    
 }

@@ -129,6 +129,7 @@ public class CorsiFrame extends JFrame {
     private void caricaTopics() {
         comboTopic.removeAllItems();
         comboTopic.addItem("Tutti i topics");
+        
         if (tuttiICorsi != null && !tuttiICorsi.isEmpty()) {
             tuttiICorsi.stream()
                 .map(corso -> corso.getIdTopic().getNome())
@@ -140,6 +141,7 @@ public class CorsiFrame extends JFrame {
     
     private void filtraCorsi() {
         String topicSelezionato = (String) comboTopic.getSelectedItem();
+        
         if (topicSelezionato == null || topicSelezionato.equals("Tutti i topics")) {
             aggiornaListaCorsi(tuttiICorsi);
         } else {
@@ -152,6 +154,7 @@ public class CorsiFrame extends JFrame {
     
     private void aggiornaListaCorsi(List<Corso> corsi) {
         listModel.clear();
+        
         if (corsi == null || corsi.isEmpty()) {
             listModel.addElement("Nessun corso trovato");
         } else {

@@ -1,41 +1,34 @@
 package boundary;
 
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import net.miginfocom.swing.MigLayout;
-
-import control.Controller;
 import javax.swing.JLabel;
-import java.awt.Font;
 import java.awt.Image;
 import java.awt.Color;
 import javax.swing.SwingConstants;
 import javax.swing.JScrollPane;
-import java.awt.Component;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.border.SoftBevelBorder;
 import javax.swing.border.BevelBorder;
-import entity.Notifica;
 import java.util.List;
-
 import javax.swing.AbstractAction;
 import javax.swing.DefaultListModel;
 import javax.swing.ImageIcon;
-
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextArea;
 import javax.swing.KeyStroke;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.event.ListSelectionEvent;
-import java.awt.Dimension;
 import java.util.Collections;
+
+import control.Controller;
+import entity.Notifica;
 
 public class NotificheFrame extends JFrame {
 
@@ -44,7 +37,6 @@ public class NotificheFrame extends JFrame {
 	private Controller theController;
 	private JList<String> listaDelleNotifiche;
 	List<Notifica> notifiche;
-
 	
 	public NotificheFrame(Controller c) {
 		setTitle("Notifiche");
@@ -59,7 +51,6 @@ public class NotificheFrame extends JFrame {
 		contentPane.setBackground(new Color(255, 255, 255));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		CaricaIcona();
-
 		setContentPane(contentPane);
 		contentPane.setLayout(new MigLayout("", "[300px:n:1100px,grow][50px][465px:n:1300px,grow]", "[50px][50px][grow][grow][40px]"));
 		
@@ -93,13 +84,12 @@ public class NotificheFrame extends JFrame {
 		
 		JScrollPane scrollNotifiche = new JScrollPane();
 		contentPane.add(scrollNotifiche, "cell 0 1 1 3,grow");
-		
 		notifiche = theController.getNotificheChef();
-		Collections.reverse(notifiche);// Serve ad invertire l'ordine di rappresentazione delle notifiche (la più recente in cima)
+		
+		Collections.reverse(notifiche);
 		
 		DefaultListModel<String> listModel = new DefaultListModel<>();
 		listModel = theController.inizializzaListaNotifiche(notifiche, listModel);
-		
 		listaDelleNotifiche = new JList<>(listModel);
 		scrollNotifiche.setViewportView(listaDelleNotifiche);
 		listaDelleNotifiche.setBackground(new Color(246, 245, 244));
@@ -110,7 +100,6 @@ public class NotificheFrame extends JFrame {
 				
 			}
 		});
-
 		contentPane.add(btnTornaAllaHome, "cell 0 4,growy");
 		
 		JButton btnInviaNotifica = new JButton("Invia Notifica");
@@ -124,8 +113,6 @@ public class NotificheFrame extends JFrame {
 				theController.ApriInvioNotifica();
 			}
 		});
-		
-		// Chiudi la finestra premendo ESC
 		getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "goBack");
 		getRootPane().getActionMap().put("goBack", new AbstractAction() {
 		    @Override
@@ -133,7 +120,6 @@ public class NotificheFrame extends JFrame {
 		        theController.TornaHomepageFromNotifiche();
 		    }
 	    });
-		
 	}
 	
 	// Metodo per mostrare un messaggio d'errore
@@ -155,16 +141,10 @@ public class NotificheFrame extends JFrame {
 	        java.net.URL iconUrl = getClass().getResource("/icona.png");
 	        if (iconUrl != null) {
 	            ImageIcon originalIcon = new ImageIcon(iconUrl);
-	            
-
 	            Image scaledImage = originalIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
 	            ImageIcon icon = new ImageIcon(scaledImage);
-	            
 	            setIconImage(icon.getImage());
-	            
-
 	            repaint();
-	            
 	        } else {
 	            System.err.println("File icona.png non trovato");
 	        }

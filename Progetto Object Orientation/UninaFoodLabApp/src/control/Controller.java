@@ -105,7 +105,7 @@ public class Controller {
 		nuovoCorsoFrame.setVisible(true);
 	}
 	
-	public ArrayList<String> getTopicFromDB() {
+	public ArrayList<String> getTopicChef() {
 		CorsoDAO corsoDao = new CorsoDAO();
 		return corsoDao.getTopicByChef(chef.getUsername());
 	}
