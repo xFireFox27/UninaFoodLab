@@ -326,7 +326,7 @@ public class Controller {
 		invioNotificaFrame.setVisible(true);
 	}
 	
-	public JComboBox<Corso> inizializzaComboBoxCorsi(List<Corso> corsi){
+	public JComboBox<Corso> inizializzaComboBoxCorsi(List<Corso> corsi) {
 		JComboBox<Corso> comboBox = new JComboBox<>();
 		
 		if (corsi != null && !corsi.isEmpty()) {
