@@ -1,12 +1,12 @@
-package DAO;
+package dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import DaoInterface.TopicDaoInterface;
-import dbConnection.DB;
+import daointerface.TopicDaoInterface;
+import dbconnection.DB;
 import entity.Topic;
 
 public class TopicDAO implements TopicDaoInterface {

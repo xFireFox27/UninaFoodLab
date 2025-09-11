@@ -1,11 +1,11 @@
-package DAO;
+package dao;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import DaoInterface.CorsoDaoInterface;
-import dbConnection.DB;
+import daointerface.CorsoDaoInterface;
+import dbconnection.DB;
 import entity.Chef;
 import entity.Corso;
 import entity.Topic;

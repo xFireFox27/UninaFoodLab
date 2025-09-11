@@ -1,9 +1,9 @@
-package DAO;
+package dao;
 
 import java.sql.*;
 
-import DaoInterface.ChefDaoInterface;
-import dbConnection.DB;
+import daointerface.ChefDaoInterface;
+import dbconnection.DB;
 import entity.Chef;
 
 public class ChefDAO implements ChefDaoInterface {

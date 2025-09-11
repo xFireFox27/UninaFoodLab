@@ -1,10 +1,11 @@
-package DAO;
+package dao;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import DaoInterface.SessioniInPresenzaDaoInterface;
-import dbConnection.DB;
+
+import daointerface.SessioniInPresenzaDaoInterface;
+import dbconnection.DB;
 import entity.*;
 
 public class SessioniInPresenzaDAO implements SessioniInPresenzaDaoInterface {

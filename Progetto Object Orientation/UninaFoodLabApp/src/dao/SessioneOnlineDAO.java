@@ -1,11 +1,11 @@
-package DAO;
+package dao;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import DaoInterface.SessioniOnlineDaoInterface;
-import dbConnection.DB;
+import daointerface.SessioniOnlineDaoInterface;
+import dbconnection.DB;
 import entity.*;
 
 public class SessioneOnlineDAO implements SessioniOnlineDaoInterface {

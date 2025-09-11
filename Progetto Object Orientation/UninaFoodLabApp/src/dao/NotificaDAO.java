@@ -1,11 +1,13 @@
-package DAO;
+package dao;
 
 import java.sql.*;
 import java.util.List;
+
+import daointerface.NotificaDaoInterface;
+
 import java.util.ArrayList;
 
-import DaoInterface.NotificaDaoInterface;
-import dbConnection.DB;
+import dbconnection.DB;
 import entity.Notifica;
 import entity.Chef;
 import entity.Corso;

@@ -1,10 +1,11 @@
-package DAO;
+package dao;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import DaoInterface.RicettaDaoInterface;
-import dbConnection.DB;
+
+import daointerface.RicettaDaoInterface;
+import dbconnection.DB;
 import entity.Ricetta;
 import entity.Corso;
 

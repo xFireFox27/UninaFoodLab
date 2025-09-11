@@ -10,8 +10,8 @@ import javax.swing.UIManager;
 import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
 
-import DAO.*;
 import boundary.*;
+import dao.*;
 import entity.*;
 
 public class Controller {
