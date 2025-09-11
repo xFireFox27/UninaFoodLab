@@ -20,7 +20,6 @@ public class PreparaDAO implements PreparaDaoInterface {
         try (Connection connection = DB.getConnection()) {
             connection.setAutoCommit(false);
             try {
-                // Eliminazione delle associazioni esistenti per questa sessione tramite chiavi naturali
                 String deleteQuery = "DELETE FROM prepara p WHERE " +
 		                               "EXISTS (SELECT 1 FROM sessioneinpresenza s " +
 		                               "WHERE s.idsessione = p.idsessionepresenza " +
@@ -31,7 +30,6 @@ public class PreparaDAO implements PreparaDaoInterface {
                     deleteStmt.setString(3, sessione.getAula());
                     deleteStmt.executeUpdate();
                 }
-                // Inserimento delle nuove associazioni tramite subquery
                 String insertQuery = "INSERT INTO prepara (idsessionepresenza, idricetta) " +
 		                               "SELECT s.idsessione, r.idricetta " +
 		                               "FROM sessioneinpresenza s, ricetta r " +

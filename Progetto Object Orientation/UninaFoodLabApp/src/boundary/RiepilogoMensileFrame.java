@@ -167,29 +167,24 @@ public class RiepilogoMensileFrame extends JFrame {
                 return chartsPanel;
             }
 
-            // Create datasets with monthly filter
             DefaultCategoryDataset sessioniDataset = createSessioniDataset(corsi, mese, anno);
             DefaultCategoryDataset ricetteDataset = createRicetteDataset(corsi, mese, anno);
 
-            // Create charts
             String meseNome = (String) meseComboBox.getSelectedItem();
             JFreeChart sessioniChart = createSessioniChart(sessioniDataset, meseNome, anno);
             JFreeChart ricetteChart = createRicetteChart(ricetteDataset, meseNome, anno);
 
-            // Create chart panels
             ChartPanel sessioniChartPanel = new ChartPanel(sessioniChart);
             sessioniChartPanel.setPreferredSize(new Dimension(1000, 500));
 
             ChartPanel ricetteChartPanel = new ChartPanel(ricetteChart);
             ricetteChartPanel.setPreferredSize(new Dimension(1000, 500));
 
-            // Layout charts vertically
             JPanel allChartsPanel = new JPanel();
             allChartsPanel.setLayout(new javax.swing.BoxLayout(allChartsPanel, javax.swing.BoxLayout.Y_AXIS));
             allChartsPanel.add(sessioniChartPanel);
             allChartsPanel.add(ricetteChartPanel);
 
-            // Wrapper panel to prevent stretching
             JPanel wrapperPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
             wrapperPanel.add(allChartsPanel);
             chartsPanel.add(wrapperPanel, BorderLayout.CENTER);
@@ -210,15 +205,10 @@ public class RiepilogoMensileFrame extends JFrame {
 
         for (Corso corso : corsi) {
             String nomeCorso = corso.getTitolo();
-            
-            // Conta sessioni in presenza per il mese specificato
             List<SessioneInPresenza> sessioniPresenza = controller.getSessioniByCorsoEMese(corso, mese, anno);
             int numSessioniPresenza = (sessioniPresenza != null) ? sessioniPresenza.size() : 0;
-            
-            // Conta sessioni online per il mese specificato
             List<SessioneOnline> sessioniOnline = controller.getSessioniOnlineByCorsoEMese(corso, mese, anno);
             int numSessioniOnline = (sessioniOnline != null) ? sessioniOnline.size() : 0;
-
             dataset.addValue(numSessioniPresenza, "Sessioni in Presenza", nomeCorso);
             dataset.addValue(numSessioniOnline, "Sessioni Online", nomeCorso);
         }
@@ -231,8 +221,7 @@ public class RiepilogoMensileFrame extends JFrame {
 
         for (Corso corso : corsi) {
             String nomeCorso = corso.getTitolo();
-            List<SessioneInPresenza> sessioniPresenza = controller.getSessioniByCorsoEMese(corso, mese, anno); // Filtra sessioni per il mese specificato
-
+            List<SessioneInPresenza> sessioniPresenza = controller.getSessioniByCorsoEMese(corso, mese, anno);
             if (sessioniPresenza != null && !sessioniPresenza.isEmpty()) {
                 int totaleRicette = 0;
                 int minRicette = Integer.MAX_VALUE;

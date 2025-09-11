@@ -45,7 +45,6 @@ public class RicetteFrame extends JDialog {
         titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
         getContentPane().add(titleLabel, "cell 0 0,alignx center");
         
-        // Panel per ricette con checkbox
         JPanel panelRicette = new JPanel(new MigLayout("", "[grow]", "[][grow]"));
         panelRicette.setBorder(BorderFactory.createTitledBorder("Seleziona Ricette per la Sessione"));
         
@@ -55,7 +54,6 @@ public class RicetteFrame extends JDialog {
         listRicetteDisponibili = new JList<>(modelDisponibili);
         listRicetteDisponibili.setForeground(new Color(26, 95, 180));
         listRicetteDisponibili.setVisibleRowCount(20);
-        // Renderer personalizzato per checkbox inline
         listRicetteDisponibili.setCellRenderer(new ListCellRenderer<JCheckBox>() {
             @Override
             public Component getListCellRendererComponent(JList<? extends JCheckBox> list,
@@ -72,9 +70,7 @@ public class RicetteFrame extends JDialog {
                 return value;
             }
         });
-        
         listRicetteDisponibili.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        // Mouse listener per gestire i click sui checkbox
         listRicetteDisponibili.addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -93,7 +89,6 @@ public class RicetteFrame extends JDialog {
         panelRicette.add(scrollRicette, "cell 0 1,grow");
         getContentPane().add(panelRicette, "cell 0 1,grow");
         
-        // Panel per i pulsanti
         JPanel panelPulsanti = new JPanel(new MigLayout("", "[grow][]", "[]"));
         
         JButton btnTorna = new JButton("Torna alle Sessioni");
@@ -112,9 +107,7 @@ public class RicetteFrame extends JDialog {
         btnSalva.addActionListener(e -> salvaAssociazioni());
         panelPulsanti.add(btnSalva, "cell 1 0,alignx right");
         getContentPane().add(panelPulsanti, "cell 0 2,grow");
-        // Imposta il pulsante Salva come predefinito per il tasto Invio
         getRootPane().setDefaultButton(btnSalva);
-        // Chiudi la finestra premendo ESC
         getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(
             KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), "cancelAction");
         getRootPane().getActionMap().put("cancelAction", new AbstractAction() {
@@ -158,7 +151,7 @@ public class RicetteFrame extends JDialog {
                 ricetteSelezionate.add(tutteLeRicette.get(i));
             }
         }
-        // Verifica se esistono già ricette associate
+        
         List<Ricetta> ricetteEsistenti = theController.getRicettePerSessione(sessione);
         
         if (ricetteEsistenti != null && !ricetteEsistenti.isEmpty()) {
@@ -177,7 +170,6 @@ public class RicetteFrame extends JDialog {
             }
         }
         
-        // Procedi con il salvataggio
         boolean successo = theController.salvaRicettePerSessione(sessione, ricetteSelezionate);
         
         if (successo) {

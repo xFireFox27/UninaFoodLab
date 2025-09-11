@@ -177,7 +177,6 @@ public class InvioNotificaFrame extends JDialog {
 		if(oggetto.isEmpty() || testo.isEmpty()) {
 			showErrorMessage("Compilare tutti i campi.");
 		} else {
-			// L'action command di un JRadioButton è il suo testo di default
 			if("Tutti i Corsi".equals(selezioneCorsiGroup.getSelection().getActionCommand())) {
 				theController.inviaNotificaTuttiCorsi(oggetto, testo);
 			}

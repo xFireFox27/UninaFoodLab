@@ -122,15 +122,13 @@ public class NotificheFrame extends JFrame {
 	    });
 	}
 	
-	// Metodo per mostrare un messaggio d'errore
 	public void showErrorMessage(String message) {
 		JOptionPane.showMessageDialog(this, message, "Errore di connessione", JOptionPane.ERROR_MESSAGE);
 	}
 	
-	//Metodo per aggiornare la lista delle notifiche
 	public void refreshListaNotifiche(List<Notifica> notifiche, DefaultListModel<String> listModel) {
 	    this.notifiche = notifiche; 
-	    Collections.reverse(this.notifiche); // Per mantenere l'ordine con la notifica più recente in cima
+	    Collections.reverse(this.notifiche); 
 	    listModel = theController.inizializzaListaNotifiche(notifiche, listModel);
 	    listaDelleNotifiche.setModel(listModel);
 	    listaDelleNotifiche.clearSelection(); 

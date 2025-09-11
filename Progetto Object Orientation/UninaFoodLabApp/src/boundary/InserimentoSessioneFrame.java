@@ -176,7 +176,6 @@ public class InserimentoSessioneFrame extends JDialog {
 
     private void salvaSessione() {
         try {
-            // Validazione campi comuni
             if (txtNumSessione.getText().trim().isEmpty() ||
                 txtData.getText().trim().isEmpty() ||
                 txtDurata.getText().trim().isEmpty()) {
@@ -189,10 +188,8 @@ public class InserimentoSessioneFrame extends JDialog {
                 JOptionPane.showMessageDialog(this, "La durata deve essere compresa tra 60 e 180 minuti.", "Errore", JOptionPane.ERROR_MESSAGE);
                 return;
             }
-            // Parse della data
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
             LocalDateTime dateTime = LocalDateTime.parse(txtData.getText().trim(), formatter);
-            // Validazione anno - non oltre l'anno successivo
             int annoCorrente = LocalDateTime.now().getYear();
             int annoInserito = dateTime.getYear();
             if (annoInserito > annoCorrente + 1) {
@@ -204,7 +201,6 @@ public class InserimentoSessioneFrame extends JDialog {
             }
             Timestamp timestamp = Timestamp.valueOf(dateTime);
             if (rbInPresenza.isSelected()) {
-                // Validazione campi sessione in presenza
                 if (cmbLuogo.getSelectedItem() == null || txtAula.getText().trim().isEmpty()) {
                     JOptionPane.showMessageDialog(this, "Selezionare il luogo e inserire l'aula per la sessione in presenza.", "Errore", JOptionPane.ERROR_MESSAGE);
                     return;
@@ -213,13 +209,11 @@ public class InserimentoSessioneFrame extends JDialog {
                 String aula = txtAula.getText().trim();
                 theController.inserisciSessioneInPresenza(timestamp, durata, numSessione, corso, luogo, aula);
             } else {
-                // Validazione campi sessione online
                 if (txtLink.getText().trim().isEmpty()) {
                     JOptionPane.showMessageDialog(this, "Inserire il link per la sessione online.", "Errore", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
                 String link = txtLink.getText().trim();
-                // Validazione formato link
                 if (!link.startsWith("https://")) {
                     JOptionPane.showMessageDialog(this, 
                         "Il link deve iniziare con 'https://'", 

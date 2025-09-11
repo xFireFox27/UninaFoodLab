@@ -48,7 +48,6 @@ public class SessioniFrame extends JFrame {
         titleLabel.setHorizontalAlignment(SwingConstants.CENTER);
         getContentPane().add(titleLabel, "cell 0 0 2 1,alignx center");
         
-        // Pannello Sessioni in Presenza
         JPanel panelPresenza = new JPanel(new MigLayout("", "[grow]", "[30px][grow]"));
         TitledBorder borderPresenza = BorderFactory.createTitledBorder("Sessioni in Presenza");
         borderPresenza.setTitleColor(new Color(98, 160, 233));
@@ -74,8 +73,7 @@ public class SessioniFrame extends JFrame {
         scrollPresenza.setPreferredSize(new Dimension(450, 500));
         panelPresenza.add(scrollPresenza, "cell 0 1,grow");
         getContentPane().add(panelPresenza, "cell 0 1,grow");
-        
-        // Pannello Sessioni Online  
+         
         JPanel panelOnline = new JPanel(new MigLayout("", "[grow]", "[30px][grow]"));
         TitledBorder borderOnline = BorderFactory.createTitledBorder("Sessioni Online");
         borderOnline.setTitleColor(new Color(98, 160, 233));
@@ -134,10 +132,8 @@ public class SessioniFrame extends JFrame {
     }
     
     public void aggiornaListeSessioni() {
-        // Ricarica i dati dal database
         sessioniPresenza = theController.getSessioniByCorso(corso);
         sessioniOnline = theController.getSessioniOnlineByCorso(corso);
-        // Aggiorna lista sessioni in presenza
         listModelPresenza.clear();
         
         if (sessioniPresenza != null && !sessioniPresenza.isEmpty()) {
@@ -153,7 +149,6 @@ public class SessioniFrame extends JFrame {
             listModelPresenza.addElement("Nessuna sessione in presenza");
         }
         
-        // Aggiorna lista sessioni online
         listModelOnline.clear();
         
         if (sessioniOnline != null && !sessioniOnline.isEmpty()) {
