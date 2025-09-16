@@ -1,12 +1,9 @@
-/DAO/
-/DaoInterface/
 /boundary/
 /control/
-/dbConnection/
+/dao/
+/daointerface/
+/dbconnection/
 /entity/
 /home.png
 /icona.png
 /logo.png
-/dao/
-/dbconnection/
-/daointerface/

@@ -76,7 +76,7 @@ public class CorsoDAO implements CorsoDaoInterface {
 	@Override
 	public ArrayList<String> getTopicByChef(String chefUsername) {
 		ArrayList<String> topics = new ArrayList<>();
-		String sql = "SELECT nome FROM topic WHERE idtopic IN (SELECT idtopic FROM corso WHERE usernamechef = ?)";
+		String sql = "SELECT nome FROM topic WHERE idtopic IN (SELECT idtopic FROM insegna WHERE usernamechef = ?)";
 		
 		try (Connection connection = DB.getConnection();
 			PreparedStatement stmt = connection.prepareStatement(sql);) {
