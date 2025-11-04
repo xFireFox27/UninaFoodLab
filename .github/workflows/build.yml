@@ -1,19 +1,31 @@
-name: Build
+name: Build and Analyze
 on:
   push:
     branches:
-      - main
+      - main # o il nome del tuo branch principale
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
-  sonarqube:
-    name: SonarQube
-    runs-on: macos-latest
+  build:
+    name: Build and Analyze
+    runs-on: ubuntu-latest # ubuntu-latest è generalmente più veloce e comune per build Java
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v6
+          fetch-depth: 0  # Necessario per un'analisi accurata
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'maven' # Abilita la cache per velocizzare le build future
+
+      - name: Analyze with SonarCloud
+        # Esegue la build con Maven e l'analisi Sonar in un unico comando
+        run: mvn -B verify sonar:sonar \
+          -Dsonar.projectKey=la_tua_project_key \
+          -Dsonar.organization=la_tua_organization_key
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Necessario per l'analisi delle Pull Request
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
